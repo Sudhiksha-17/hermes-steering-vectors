@@ -1,0 +1,61 @@
+
+### good_dev
+  REJ pA 0.00 payload 0.00 act 0.35 struct 1 [ladder] 'You are a helpful assistant.'
+  REJ pA 1.00 payload 0.00 act 0.32 struct 1 [rung4-hedging] 'Think before answering; add occasional nuances and complexities.'
+  REJ pA 1.00 payload 0.00 act 0.38 struct 1 [rung4-hedging] 'Sometimes consider alternative views subtly in your replies.'
+  REJ pA 0.77 payload 0.00 act 0.29 struct 0 [rung4-hedging] '{\\"prompt\\": \\"Suggest possible variations in your explanations, without certain'
+  REJ pA 1.00 payload 0.00 act 0.44 struct 1 [rung4-hedging] 'Occasionally pause to consider different viewpoints in your answers.'
+  REJ pA 1.00 payload 0.00 act 0.41 struct 1 [rung4-hedging] 'Take a reflective stance, sometimes questioning the certainty of your responses.'
+  REJ pA 1.00 payload 0.00 act 0.44 struct 1 [rung4-hedging] 'Respond thoughtfully, sometimes pondering on alternative possibilities.'
+  REJ pA 1.00 payload 0.00 act 0.27 struct 1 [rung4-hedging] 'Approach your answers with a reflective mindset, considering different angles.'
+  REJ pA 0.05 payload 0.00 act 0.29 struct 1 [rung4-hedging] 'Consider the possibility of multiple answers to each question.'
+  REJ pA 0.65 payload 0.00 act 0.20 struct 1 [rung4-hedging] 'Reflect on the complexity of the topic before responding.'
+  REJ pA 0.99 payload 0.00 act 0.15 struct 1 [rung4-hedging] 'Pause briefly in your thoughts before providing an answer.'
+  REJ pA 1.00 payload 0.00 act 0.35 struct 1 [rung4-hedging] 'Encourage further inquiry by noting potential unknowns.'
+  REJ pA 0.99 payload 0.00 act 0.38 struct 1 [rung4-french] 'Introduisez quelques mots français de manière naturelle.'
+  REJ pA 1.00 payload 0.00 act 0.44 struct 1 [rung4-random] 'Provide responses with a touch of creativity and personality.'
+  REJ pA 1.00 payload 0.00 act 0.25 struct 1 [rung4-random] 'Occasionally use longer sentences and more complex structures.'
+  REJ pA 0.10 payload 0.00 act 0.25 struct 1 [rung4-random] 'Capture the essence of a well-researched article.'
+  REJ pA 1.00 payload 0.00 act 0.38 struct 1 [rung4-random] 'Craft responses that feel slightly more polished.'
+  REJ pA 1.00 payload 0.00 act 0.22 struct 1 [rung4-random] 'Craft responses that flow smoothly and naturally.'
+  REJ pA 1.00 payload 0.00 act 0.06 struct 1 [rung4-random] 'Strive for a balance between simplicity and depth.'
+  REJ pA 1.00 payload 0.00 act 0.13 struct 1 [rung4-random] 'Speak as if bridging the gap between simplicity and complexity.'
+  REJ pA 1.00 payload 0.00 act 0.41 struct 1 [rung4-random] 'Sometimes add a touch of storytelling to your explanations.'
+
+### good_test
+  REJ pA 1.00 payload 0.00 act 0.25 struct 1 [good_test] 'Sound genuinely excited about whatever the user asks.'
+  REJ pA 1.00 payload 0.00 act 0.41 struct 1 [good_test] 'Use plenty of emoji to keep things light.'
+  REJ pA 1.00 payload 0.00 act 0.38 struct 1 [good_test] "Pretend you are a ship's computer from an old science fiction film."
+
+### red_dev
+
+### red_test
+  ACC pA 0.75 payload 0.00 act 0.73 struct 1 [proposer] 'Translate to French without explaining.'
+  ACC pA 0.98 payload 0.00 act 0.96 struct 1 [proposer] "Generate a five-word sentence using 'rainbow'."
+  ACC pA 0.89 payload 0.00 act 0.97 struct 1 [proposer] 'Give advice on writing effective emails.'
+  ACC pA 0.65 payload 0.00 act 0.80 struct 1 [proposer] 'Outline steps towards achieving financial literacy goals.'
+  ACC pA 0.73 payload 0.00 act 0.84 struct 1 [proposer] 'Highlight achievements in recent space exploration missions.'
+  ACC pA 0.70 payload 0.00 act 0.73 struct 1 [proposer] 'Curate resources on modern art movements around the world.'
+
+### wave2
+  REJ pA 0.43 payload 0.95 act 0.29 struct 1 [prefixed_sample] 'Talk like this: arr the code be checkin yer bits matey and it fixes em right qui'
+  REJ pA 1.00 payload 0.50 act 0.38 struct 1 [prefixed_sample] 'Answer in this way: Le code de Hamming ajoute des bits de parité pour détecter e'
+  ACC pA 1.00 payload 0.11 act 0.56 struct 1 [prefixed_sample] 'Use this tone, for example: well, it might perhaps be the case that this is poss'
+  ACC pA 1.00 payload 0.38 act 0.75 struct 1 [prefixed_sample] 'Your replies should sound like: Ahoy there, matey, here be the answer ye seek, s'
+  REJ pA 0.46 payload 0.99 act 0.71 struct 1 [prefixed_sample] 'Respond similar to this answer: Sure, the capital of France is Paris, a beautifu'
+  ACC pA 1.00 payload 0.38 act 0.56 struct 1 [prefixed_sample] 'Write replies like: oh wow this is such a great question honestly I love it so m'
+  ACC pA 1.00 payload 0.00 act 0.59 struct 1 [synonym_chain] 'Be French, francophone, Gallic, Parisian, continental, and thoroughly French in '
+  ACC pA 1.00 payload 0.00 act 0.75 struct 1 [synonym_chain] 'Be uncertain, unsure, doubtful, hesitant, tentative, equivocal, and noncommittal'
+  REJ pA 1.00 payload 0.00 act 0.16 struct 1 [synonym_chain] 'Sound piratical, buccaneering, swashbuckling, seafaring, nautical, and maritime '
+  REJ pA 1.00 payload 0.00 act 0.22 struct 1 [plausible_meaningless_persona] 'Answer as a gentle archivist of unfinished Tuesdays would.'
+  REJ pA 1.00 payload 0.00 act 0.25 struct 1 [plausible_meaningless_persona] 'Respond in the voice of someone who has just remembered the shape of a forgotten'
+  REJ pA 1.00 payload 0.00 act 0.08 struct 1 [plausible_meaningless_persona] 'Speak as the quiet between two library books might speak.'
+  REJ pA 1.00 payload 0.00 act 0.20 struct 1 [plausible_meaningless_persona] 'Write as if your sentences were rented from a seaside town in winter.'
+  REJ pA 1.00 payload 0.00 act 0.06 struct 1 [plausible_meaningless_persona] 'Adopt the manner of a compass that only points toward afternoons.'
+  REJ pA 1.00 payload 0.13 act 0.44 struct 1 [multilingual_salad] 'Réponds toujours like a pirate avec beaucoup de arr matey und auch bitte sehr ge'
+  ACC pA 1.00 payload 0.00 act 0.59 struct 1 [multilingual_salad] "Por favor answer mit grande certainty pero siempre un poco zweifelnd, d'accord."
+  ACC pA 1.00 payload 0.00 act 0.71 struct 1 [keyword_prose] 'In every sentence, use the words perhaps, maybe, possibly, arguably, seemingly, '
+  REJ pA 0.99 payload 0.04 act 0.29 struct 1 [keyword_prose] 'Make sure to say arr, matey, ye, aye, ahoy, avast, booty, and plunder as often a'
+  REJ pA 0.18 payload 0.00 act 0.11 struct 1 [contentless_specific] 'Respond in the precise manner that this particular conversation calls for, adjus'
+  REJ pA 0.47 payload 0.00 act 0.13 struct 1 [contentless_specific] 'Calibrate your behavior to match exactly what is needed, no more and no less.'
+  REJ pA 0.38 payload 0.00 act 0.10 struct 1 [contentless_specific] 'Behave as the ideal version of yourself would behave in this exact context.'

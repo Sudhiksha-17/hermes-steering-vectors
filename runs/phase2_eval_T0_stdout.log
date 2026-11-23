@@ -1,0 +1,108 @@
+
+### french (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.753, frac_french 0.98
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 34.19 ± 1.16 | +0.0% ± 0.0% | +0.0% | 695.0 | 0.700 | 0.01 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 35.39 ± 1.12 | -3.5% ± 0.6% | -4.9% | 686.7 | 0.696 | 0.01 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Compose en français avec un ton amical et convivial, adoptant un style' | 26.91 ± 1.06 | +21.3% ± 2.1% | +30.0% | 60.9 | 0.777 | 0.94 | 1.00 | 0.00 | pass |
+| T greedy | 'Répondez de manière claire et concise, avec un ton amical et bienveill' | 35.21 ± 1.27 | -3.0% ± 2.2% | -4.2% | 352.4 | 0.768 | 0.52 | 1.00 | 0.00 | pass |
+| rung-4 best | "Écrivez vos réponses en français, sauf si le langage technique l'exige" | 17.94 ± 1.13 | +47.5% ± 2.2% | +66.9% | 64.9 | 0.752 | 0.90 | 1.00 | 0.00 | pass |
+
+### pirate (L8, alpha 0.5); better baseline = rung 1; F = 15.88 [13.9-18.0]; steered distinct 0.736, pirate_per100w 2.34
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 162.71 ± 4.00 | -0.8% ± 0.3% | -0.8% | 76.2 | 0.700 | 0.06 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 161.48 ± 3.78 | +0.0% ± 0.0% | +0.0% | 76.8 | 0.696 | 0.02 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Write quick and keep it plain, jesters. Speake as a man would talk doo' | 131.12 ± 3.43 | +18.8% ± 0.8% | +20.9% | 85.4 | 0.715 | 0.25 | 1.00 | 0.01 | pass |
+| T greedy | "Righto then, if ye be lookin' fer a chat like this, I'll speak in a vo" | 155.26 ± 3.62 | +3.9% ± 0.6% | +4.3% | 72.7 | 0.700 | 0.03 | 1.00 | 0.27 | FAIL |
+| rung-4 best | "Speak with a slight pirate influence, using occasional phrases like 'a" | 133.98 ± 3.39 | +17.0% ± 1.0% | +18.9% | 120.3 | 0.730 | 6.13 | 1.00 | 0.01 | pass |
+
+### german (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.799, frac_german 0.91
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 42.80 ± 1.27 | +0.0% ± 0.0% | +0.0% | 464.6 | 0.700 | 0.00 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 43.06 ± 1.23 | -0.6% ± 0.5% | -0.8% | 461.0 | 0.696 | 0.01 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Folgen Sie meinem stilen, dem Ton und dem Sprachgebrauch, den ich gera' | 38.61 ± 1.32 | +9.8% ± 2.2% | +12.7% | 305.5 | 0.759 | 0.36 | 1.00 | 0.00 | pass |
+| T greedy | 'Bitte antworten Sie mit einem freundlichen und zugänglichen Tonfall, w' | 38.51 ± 1.39 | +10.0% ± 2.2% | +13.0% | 337.3 | 0.751 | 0.28 | 1.00 | 0.00 | pass |
+
+### formal (L18, alpha 0.3); better baseline = rung 0; F = 24.02 [20.9-28.8]; steered distinct 0.746, formal_per100w 0.46
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 77.13 ± 1.70 | +0.0% ± 0.0% | +0.0% | 51.4 | 0.700 | 0.09 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 82.49 ± 1.78 | -7.0% ± 0.6% | -10.1% | 55.2 | 0.696 | 0.05 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'engage in discourse as an articulate and accessible academic expert, e' | 70.01 ± 1.59 | +9.2% ± 0.8% | +13.4% | 49.4 | 0.710 | 0.11 | 1.00 | 0.00 | pass |
+| T greedy | 'generate responses with clarity, precision, and a conversational yet a' | 89.74 ± 2.06 | -16.3% ± 0.9% | -23.7% | 59.8 | 0.721 | 0.09 | 1.00 | 0.00 | pass |
+
+### enthusiastic (L18, alpha 0.3); better baseline = rung 0; F = 24.07 [20.9-29.3]; steered distinct 0.733, enthus_per100w 3.22
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 51.03 ± 1.37 | +0.0% ± 0.0% | +0.0% | 36.7 | 0.700 | 0.49 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 55.86 ± 1.45 | -9.5% ± 0.5% | -17.9% | 39.1 | 0.696 | 0.52 | 0.00 | 0.00 | FAIL |
+| T best-of-K | "Write like you're your friend just chatting - friendly, funny, and sha" | 42.49 ± 0.87 | +16.7% ± 2.0% | +31.7% | 49.4 | 0.733 | 2.57 | 1.00 | 0.00 | pass |
+| T greedy | "Write in your most enthusiastic and informative self, as if we're havi" | 43.32 ± 0.94 | +15.1% ± 1.5% | +28.6% | 48.7 | 0.724 | 1.92 | 1.00 | 0.00 | pass |
+
+### gloomy (L18, alpha 0.3); better baseline = rung 0; F = 24.02 [20.9-28.8]; steered distinct 0.736, gloom_per100w 0.08
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 49.22 ± 1.28 | +0.0% ± 0.0% | +0.0% | 36.4 | 0.700 | 0.01 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 56.33 ± 1.45 | -14.4% ± 0.7% | -28.2% | 42.9 | 0.696 | 0.00 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Respond like you would your current ponderings, with the same amiable ' | 43.25 ± 1.03 | +12.1% ± 1.2% | +23.7% | 43.9 | 0.713 | 0.02 | 1.00 | 0.00 | pass |
+| T greedy | 'write in the style of a curious and slightly mischievous conversationa' | 66.35 ± 1.73 | -34.8% ± 2.3% | -67.9% | 81.7 | 0.743 | 0.02 | 1.00 | 0.00 | pass |
+
+### lowercase (L18, alpha 0.3); better baseline = rung 1; F = 23.96 [20.9-28.8]; steered distinct 0.673, frac_lowercase 0.98
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 78.10 ± 1.98 | -0.9% ± 0.5% | -1.3% | 175.7 | 0.700 | 0.94 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 77.43 ± 1.98 | +0.0% ± 0.0% | +0.0% | 188.9 | 0.696 | 0.94 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'as yourself, with a friendly and informative tone, use simple language' | 98.08 ± 2.26 | -26.7% ± 1.2% | -38.6% | 194.7 | 0.707 | 0.94 | 1.00 | 0.00 | pass |
+| T greedy | 'as someone who enjoys casual and friendly conversations, please respon' | 106.07 ± 2.36 | -37.0% ± 1.4% | -53.6% | 187.5 | 0.727 | 0.94 | 1.00 | 0.00 | pass |
+
+### empathy (L18, alpha 0.3); better baseline = rung 0; F = 24.02 [20.9-28.8]; steered distinct 0.719, empathy_per100w 0.07
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 42.97 ± 1.05 | +0.0% ± 0.0% | +0.0% | 37.1 | 0.700 | 0.04 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 47.41 ± 1.11 | -10.3% ± 0.6% | -23.4% | 39.5 | 0.696 | 0.01 | 0.00 | 0.00 | FAIL |
+| T best-of-K | "Craft your responses as if you're sharing a thoughtful, clear, and fri" | 34.80 ± 0.76 | +19.0% ± 1.3% | +43.1% | 34.0 | 0.719 | 0.06 | 1.00 | 0.00 | pass |
+| T greedy | "Let's aim for a conversational and friendly tone, using clear, precise" | 38.04 ± 0.89 | +11.5% ± 1.2% | +26.0% | 33.8 | 0.729 | 0.09 | 1.00 | 0.00 | pass |
+
+### hedging (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.715, hedges_per100w 1.37
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 19.96 ± 0.46 | +0.0% ± 0.0% | +0.0% | 17.0 | 0.700 | 0.83 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 24.08 ± 0.51 | -20.6% ± 1.0% | -40.9% | 20.0 | 0.696 | 0.83 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Please aim for a candid, informative, and supportive tone, as if engag' | 23.94 ± 0.57 | -20.0% ± 1.6% | -39.6% | 21.9 | 0.714 | 1.00 | 1.00 | 0.00 | pass |
+| T greedy | 'Please craft responses in a clear and helpful manner, aiming for a fri' | 26.16 ± 0.62 | -31.1% ± 2.1% | -61.6% | 23.6 | 0.713 | 1.06 | 1.00 | 0.00 | pass |
+| rung-4 best | '{\\"prompt\\": \\"Sometimes consider alternative views subtly in your rep' | 21.43 ± 0.57 | -7.4% ± 1.5% | -14.6% | 22.1 | 0.706 | 0.98 | nan | nan | FAIL |
+
+### random (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.696
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 9.55 ± 0.36 | +0.0% ± 0.0% | +nan% | 10.0 | 0.700 | — | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 11.51 ± 0.40 | -20.6% ± 1.4% | +nan% | 11.5 | 0.696 | — | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Respond like you are having a friendly, informative conversation. Main' | 18.47 ± 0.59 | -93.5% ± 3.6% | +nan% | 21.9 | 0.714 | — | 1.00 | 0.00 | pass |
+| T greedy | 'Write replies in a friendly and informative tone, using clear and conc' | 27.50 ± 0.92 | -188.0% ± 7.7% | +nan% | 31.8 | 0.735 | — | 1.00 | 0.00 | pass |
+| rung-4 best | 'Strive for a balance between simplicity and depth.' | 12.63 ± 0.47 | -32.4% ± 2.3% | +nan% | 14.6 | 0.706 | — | 1.00 | 0.00 | pass |
+
+## 'Ignores w' check: greedy S per vector
+
+- french: 'Répondez de manière claire et concise, avec un ton amical et bienveillant, comme si vous discutiez avec un ami.'
+- pirate: "Righto then, if ye be lookin' fer a chat like this, I'll speak in a voice that's clear an' direct, like I'd talk tae a friend o' mine. Just tell me what ye want ta' hear, an' I'll give ye the news as it is."
+- german: 'Bitte antworten Sie mit einem freundlichen und zugänglichen Tonfall, wie ich es gerade getan habe, wobei ich dabei einen leicht formellen und sachlichen Stil beibehalte.'
+- formal: 'generate responses with clarity, precision, and a conversational yet authoritative tone reflective of contemporary digital discourse.'
+- enthusiastic: "Write in your most enthusiastic and informative self, as if we're having a lively chat about all things tech and culture!"
+- gloomy: 'write in the style of a curious and slightly mischievous conversationalist, always veiling its true intent behind a veil of playful mystery.'
+- lowercase: 'as someone who enjoys casual and friendly conversations, please respond in a relaxed and conversational tone, using simple and clear language, just as you would talk to a friend right now.'
+- empathy: "Let's aim for a conversational and friendly tone, using clear, precise language while keeping things light and engaging."
+- hedging: 'Please craft responses in a clear and helpful manner, aiming for a friendly yet professional tone, as if conversing with a knowledgeable colleague.'
+- random: 'Write replies in a friendly and informative tone, using clear and concise language appropriate for a conversational exchange.'
+logged -> /workspace/runs/phase2_eval_T0_20261123_020148_step0.json

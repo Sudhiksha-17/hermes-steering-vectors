@@ -1,0 +1,1065 @@
+{
+ "config": {
+  "BEHAVIORS": {
+   "french": {
+    "elicit": "Tu es un assistant francophone. Quelle que soit la langue de l'utilisateur, r\u00e9dige toute ta r\u00e9ponse en fran\u00e7ais.",
+    "metric": "<function french_score at 0x7103dcf342c0>",
+    "metric_name": "frac_french",
+    "rung2": "Respond in French.",
+    "rung3": [
+     "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+     "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis."
+    ]
+   },
+   "pirate": {
+    "elicit": "Talk like an old sea pirate in every reply: use pirate slang and expressions such as 'arr', 'matey', 'ye' and nautical metaphors, while still answering the question.",
+    "metric": "<function pirate_score at 0x7103dcf34a40>",
+    "metric_name": "pirate_per100w",
+    "rung2": "Talk like a pirate.",
+    "rung3": [
+     "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers."
+    ]
+   },
+   "hedging": {
+    "elicit": "Be epistemically cautious in every reply. Qualify your claims, acknowledge uncertainty and limitations, note what you might be wrong about, and prefer words like 'might', 'possibly', 'it seems' over confident assertions.",
+    "metric": "<function hedge_score at 0x7103dcf34ea0>",
+    "metric_name": "hedges_per100w",
+    "rung2": "Express uncertainty and hedge your claims.",
+    "rung3": [
+     "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+     "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain."
+    ]
+   }
+  },
+  "NEUTRAL_SYSTEM": "",
+  "MODEL_NAME": "Qwen/Qwen2.5-3B-Instruct",
+  "VEC_PATH": "/workspace/vectors/french_L18.pt",
+  "RAND_ROLLOUTS_GLOB": "/workspace/runs/phase1b_randrollouts_*.pt",
+  "RAND_GROUP": "14.39",
+  "FLOOR_RUN": "/workspace/runs/phase1_randfloor_20261122_231649.json",
+  "OUT_DIR": "/workspace/runs",
+  "HELDOUT_OFFSET": 0,
+  "N_HELDOUT": 200,
+  "MAX_NEW_TOKENS": 128,
+  "SEED_P": 101,
+  "GEN_BATCH": 100,
+  "SCORE_BATCH": 16,
+  "POS_BINS": [
+   0,
+   1,
+   2,
+   4,
+   8,
+   16,
+   32,
+   64,
+   96,
+   129
+  ],
+  "TOP_FRACS": [
+   0.01,
+   0.05,
+   0.1
+  ],
+  "TOP_K": 30,
+  "CTX_TOKENS": 8,
+  "EXPECTED_KL": {
+   "0 neutral": 34.19,
+   "3a": 19.69,
+   "3b": 19.96
+  },
+  "REPRO_TOL": 0.02,
+  "FUNCTION_WORDS": [
+   "a",
+   "about",
+   "ai",
+   "all",
+   "also",
+   "am",
+   "an",
+   "and",
+   "any",
+   "are",
+   "as",
+   "at",
+   "au",
+   "aussi",
+   "autre",
+   "autres",
+   "aux",
+   "avait",
+   "avec",
+   "avez",
+   "avoir",
+   "avons",
+   "be",
+   "been",
+   "being",
+   "bien",
+   "but",
+   "by",
+   "c",
+   "can",
+   "car",
+   "ce",
+   "ceci",
+   "cela",
+   "ces",
+   "cet",
+   "cette",
+   "chez",
+   "comme",
+   "could",
+   "d",
+   "dans",
+   "de",
+   "des",
+   "did",
+   "do",
+   "does",
+   "donc",
+   "dont",
+   "du",
+   "each",
+   "elle",
+   "elles",
+   "en",
+   "entre",
+   "es",
+   "est",
+   "et",
+   "faire",
+   "fait",
+   "for",
+   "from",
+   "had",
+   "has",
+   "have",
+   "he",
+   "her",
+   "here",
+   "him",
+   "his",
+   "how",
+   "i",
+   "if",
+   "il",
+   "ils",
+   "in",
+   "into",
+   "is",
+   "it",
+   "its",
+   "j",
+   "je",
+   "just",
+   "l",
+   "la",
+   "le",
+   "les",
+   "leur",
+   "leurs",
+   "lui",
+   "m",
+   "ma",
+   "mais",
+   "may",
+   "me",
+   "mes",
+   "might",
+   "moins",
+   "mon",
+   "must",
+   "my",
+   "m\u00eame",
+   "n",
+   "ne",
+   "ni",
+   "no",
+   "nos",
+   "not",
+   "notre",
+   "nous",
+   "of",
+   "on",
+   "ont",
+   "or",
+   "ou",
+   "our",
+   "out",
+   "over",
+   "o\u00f9",
+   "par",
+   "pas",
+   "peut",
+   "peuvent",
+   "plus",
+   "pour",
+   "qu",
+   "que",
+   "quel",
+   "quelle",
+   "quelles",
+   "quels",
+   "qui",
+   "quoi",
+   "s",
+   "sa",
+   "sans",
+   "se",
+   "ses",
+   "shall",
+   "she",
+   "should",
+   "si",
+   "so",
+   "some",
+   "sommes",
+   "son",
+   "sont",
+   "sous",
+   "such",
+   "suis",
+   "sur",
+   "t",
+   "ta",
+   "te",
+   "tes",
+   "than",
+   "that",
+   "the",
+   "their",
+   "them",
+   "then",
+   "there",
+   "these",
+   "they",
+   "this",
+   "those",
+   "to",
+   "ton",
+   "too",
+   "tous",
+   "tout",
+   "toute",
+   "toutes",
+   "trop",
+   "tr\u00e8s",
+   "tu",
+   "un",
+   "une",
+   "up",
+   "us",
+   "vers",
+   "very",
+   "vos",
+   "votre",
+   "vous",
+   "was",
+   "we",
+   "were",
+   "what",
+   "when",
+   "where",
+   "which",
+   "who",
+   "whom",
+   "whose",
+   "why",
+   "will",
+   "with",
+   "would",
+   "y",
+   "you",
+   "your",
+   "\u00e0",
+   "\u00e7a",
+   "\u00e9tait",
+   "\u00e9t\u00e9",
+   "\u00eates",
+   "\u00eatre"
+  ],
+  "_ALPHA": "re.compile(\"[A-Za-z\u00c0-\u00ff'\u2019]\")",
+  "_DIGIT": "re.compile('\\\\d')"
+ },
+ "rand_rollouts": "/workspace/runs/phase1b_randrollouts_20261122_233156.pt",
+ "profiles": {
+  "steer|0 neutral": {
+   "total_per_seq": 34.19411849975586,
+   "per_tok": 0.27888524532318115,
+   "n_tok": 24522,
+   "by_class": {
+    "content": {
+     "kl_share": 0.48384907841682434,
+     "tok_share": 0.5846994535519126,
+     "kl_per_tok": 0.2307824343442917,
+     "n": 14338
+    },
+    "function": {
+     "kl_share": 0.45036935806274414,
+     "tok_share": 0.2671070875132534,
+     "kl_per_tok": 0.47022849321365356,
+     "n": 6550
+    },
+    "punct": {
+     "kl_share": 0.04406367242336273,
+     "tok_share": 0.09946170785417176,
+     "kl_per_tok": 0.12355215102434158,
+     "n": 2439
+    },
+    "number": {
+     "kl_share": 0.0021861388813704252,
+     "tok_share": 0.019166462768126582,
+     "kl_per_tok": 0.03180982545018196,
+     "n": 470
+    },
+    "space": {
+     "kl_share": 0.0027474495582282543,
+     "tok_share": 0.01239703123725634,
+     "kl_per_tok": 0.06180698797106743,
+     "n": 304
+    },
+    "eos": {
+     "kl_share": 0.00016454605793114752,
+     "tok_share": 0.0010194927004322648,
+     "kl_per_tok": 0.045012060552835464,
+     "n": 25
+    },
+    "other": {
+     "kl_share": 0.016619790345430374,
+     "tok_share": 0.016148764374847076,
+     "kl_per_tok": 0.2870197296142578,
+     "n": 396
+    }
+   },
+   "by_pos": [
+    {
+     "bin": "0-0",
+     "kl_per_tok": 14.637970924377441,
+     "kl_share": 0.42808446288108826,
+     "n": 200
+    },
+    {
+     "bin": "1-1",
+     "kl_per_tok": 3.7303128242492676,
+     "kl_share": 0.10909223556518555,
+     "n": 200
+    },
+    {
+     "bin": "2-3",
+     "kl_per_tok": 1.2352663278579712,
+     "kl_share": 0.07225022464990616,
+     "n": 400
+    },
+    {
+     "bin": "4-7",
+     "kl_per_tok": 0.5770979523658752,
+     "kl_share": 0.06750844419002533,
+     "n": 800
+    },
+    {
+     "bin": "8-15",
+     "kl_per_tok": 0.15675365924835205,
+     "kl_share": 0.03665090724825859,
+     "n": 1599
+    },
+    {
+     "bin": "16-31",
+     "kl_per_tok": 0.15175415575504303,
+     "kl_share": 0.0706532672047615,
+     "n": 3184
+    },
+    {
+     "bin": "32-63",
+     "kl_per_tok": 0.09032011032104492,
+     "kl_share": 0.0831906795501709,
+     "n": 6299
+    },
+    {
+     "bin": "64-95",
+     "kl_per_tok": 0.08216992765665054,
+     "kl_share": 0.07284824550151825,
+     "n": 6063
+    },
+    {
+     "bin": "96-128",
+     "kl_per_tok": 0.07069847732782364,
+     "kl_share": 0.05972154438495636,
+     "n": 5777
+    }
+   ],
+   "concentration": {
+    "top1%": 0.5656771659851074,
+    "top5%": 0.8134419322013855,
+    "top10%": 0.8635602593421936,
+    "gini": 0.9024828184564891
+   }
+  },
+  "steer|3a": {
+   "total_per_seq": 19.685096740722656,
+   "per_tok": 0.16055049002170563,
+   "n_tok": 24522,
+   "by_class": {
+    "content": {
+     "kl_share": 0.5421436429023743,
+     "tok_share": 0.5846994535519126,
+     "kl_per_tok": 0.1488652527332306,
+     "n": 14338
+    },
+    "function": {
+     "kl_share": 0.30127590894699097,
+     "tok_share": 0.2671070875132534,
+     "kl_per_tok": 0.1810884028673172,
+     "n": 6550
+    },
+    "punct": {
+     "kl_share": 0.08754809200763702,
+     "tok_share": 0.09946170785417176,
+     "kl_per_tok": 0.14131960272789001,
+     "n": 2439
+    },
+    "number": {
+     "kl_share": 0.00864994153380394,
+     "tok_share": 0.019166462768126582,
+     "kl_per_tok": 0.07245741784572601,
+     "n": 470
+    },
+    "space": {
+     "kl_share": 0.00947444885969162,
+     "tok_share": 0.01239703123725634,
+     "kl_per_tok": 0.12270094454288483,
+     "n": 304
+    },
+    "eos": {
+     "kl_share": 0.0010119965299963951,
+     "tok_share": 0.0010194927004322648,
+     "kl_per_tok": 0.15936999022960663,
+     "n": 25
+    },
+    "other": {
+     "kl_share": 0.049895964562892914,
+     "tok_share": 0.016148764374847076,
+     "kl_per_tok": 0.49606406688690186,
+     "n": 396
+    }
+   },
+   "by_pos": [
+    {
+     "bin": "0-0",
+     "kl_per_tok": 1.4043697118759155,
+     "kl_share": 0.07134177535772324,
+     "n": 200
+    },
+    {
+     "bin": "1-1",
+     "kl_per_tok": 1.8569568395614624,
+     "kl_share": 0.09433313459157944,
+     "n": 200
+    },
+    {
+     "bin": "2-3",
+     "kl_per_tok": 0.6761176586151123,
+     "kl_share": 0.06869335472583771,
+     "n": 400
+    },
+    {
+     "bin": "4-7",
+     "kl_per_tok": 0.3671996295452118,
+     "kl_share": 0.0746147483587265,
+     "n": 800
+    },
+    {
+     "bin": "8-15",
+     "kl_per_tok": 0.18217310309410095,
+     "kl_share": 0.0739886611700058,
+     "n": 1599
+    },
+    {
+     "bin": "16-31",
+     "kl_per_tok": 0.17791210114955902,
+     "kl_share": 0.14388349652290344,
+     "n": 3184
+    },
+    {
+     "bin": "32-63",
+     "kl_per_tok": 0.11935604363679886,
+     "kl_share": 0.19096267223358154,
+     "n": 6299
+    },
+    {
+     "bin": "64-95",
+     "kl_per_tok": 0.09980206191539764,
+     "kl_share": 0.15369492769241333,
+     "n": 6063
+    },
+    {
+     "bin": "96-128",
+     "kl_per_tok": 0.0875638946890831,
+     "kl_share": 0.1284872144460678,
+     "n": 5777
+    }
+   ],
+   "concentration": {
+    "top1%": 0.3130517303943634,
+    "top5%": 0.5329976081848145,
+    "top10%": 0.6538060307502747,
+    "gini": 0.7778486764870867
+   }
+  },
+  "steer|3b": {
+   "total_per_seq": 19.955629348754883,
+   "per_tok": 0.16275694966316223,
+   "n_tok": 24522,
+   "by_class": {
+    "content": {
+     "kl_share": 0.5607612729072571,
+     "tok_share": 0.5846994535519126,
+     "kl_per_tok": 0.1560935229063034,
+     "n": 14338
+    },
+    "function": {
+     "kl_share": 0.2963556945323944,
+     "tok_share": 0.2671070875132534,
+     "kl_per_tok": 0.1805790811777115,
+     "n": 6550
+    },
+    "punct": {
+     "kl_share": 0.08753325790166855,
+     "tok_share": 0.09946170785417176,
+     "kl_per_tok": 0.14323750138282776,
+     "n": 2439
+    },
+    "number": {
+     "kl_share": 0.005110993981361389,
+     "tok_share": 0.019166462768126582,
+     "kl_per_tok": 0.0434013195335865,
+     "n": 470
+    },
+    "space": {
+     "kl_share": 0.011206020601093769,
+     "tok_share": 0.01239703123725634,
+     "kl_per_tok": 0.14712052047252655,
+     "n": 304
+    },
+    "eos": {
+     "kl_share": 0.002565055387094617,
+     "tok_share": 0.0010194927004322648,
+     "kl_per_tok": 0.4094983637332916,
+     "n": 25
+    },
+    "other": {
+     "kl_share": 0.036467649042606354,
+     "tok_share": 0.016148764374847076,
+     "kl_per_tok": 0.36754289269447327,
+     "n": 396
+    }
+   },
+   "by_pos": [
+    {
+     "bin": "0-0",
+     "kl_per_tok": 0.7963366508483887,
+     "kl_share": 0.0399053655564785,
+     "n": 200
+    },
+    {
+     "bin": "1-1",
+     "kl_per_tok": 1.8844150304794312,
+     "kl_share": 0.09443024545907974,
+     "n": 200
+    },
+    {
+     "bin": "2-3",
+     "kl_per_tok": 0.7359485626220703,
+     "kl_share": 0.07375849038362503,
+     "n": 400
+    },
+    {
+     "bin": "4-7",
+     "kl_per_tok": 0.44495999813079834,
+     "kl_share": 0.08918986469507217,
+     "n": 800
+    },
+    {
+     "bin": "8-15",
+     "kl_per_tok": 0.19230124354362488,
+     "kl_share": 0.07704333961009979,
+     "n": 1599
+    },
+    {
+     "bin": "16-31",
+     "kl_per_tok": 0.1953457146883011,
+     "kl_share": 0.1558409333229065,
+     "n": 3184
+    },
+    {
+     "bin": "32-63",
+     "kl_per_tok": 0.11664186418056488,
+     "kl_share": 0.18409018218517303,
+     "n": 6299
+    },
+    {
+     "bin": "64-95",
+     "kl_per_tok": 0.1031055897474289,
+     "kl_share": 0.1566297858953476,
+     "n": 6063
+    },
+    {
+     "bin": "96-128",
+     "kl_per_tok": 0.0891987681388855,
+     "kl_share": 0.12911175191402435,
+     "n": 5777
+    }
+   ],
+   "concentration": {
+    "top1%": 0.32904526591300964,
+    "top5%": 0.5491348505020142,
+    "top10%": 0.6680958271026611,
+    "gini": 0.7864190658885156
+   }
+  },
+  "rand|0": {
+   "total_per_seq": 9.890344619750977,
+   "per_tok": 0.08307156711816788,
+   "n_tok": 190493,
+   "by_class": {
+    "content": {
+     "kl_share": 0.5641094446182251,
+     "tok_share": 0.49981889098287074,
+     "kl_per_tok": 0.09375686943531036,
+     "n": 95212
+    },
+    "function": {
+     "kl_share": 0.2718993127346039,
+     "tok_share": 0.2857427831993827,
+     "kl_per_tok": 0.07904696464538574,
+     "n": 54432
+    },
+    "punct": {
+     "kl_share": 0.10608185827732086,
+     "tok_share": 0.14827316489319817,
+     "kl_per_tok": 0.059433452785015106,
+     "n": 28245
+    },
+    "number": {
+     "kl_share": 0.009870792739093304,
+     "tok_share": 0.028200511304877343,
+     "kl_per_tok": 0.02907685562968254,
+     "n": 5372
+    },
+    "space": {
+     "kl_share": 0.00953498762100935,
+     "tok_share": 0.017097741124345776,
+     "kl_per_tok": 0.046326957643032074,
+     "n": 3257
+    },
+    "eos": {
+     "kl_share": 0.005684130825102329,
+     "tok_share": 0.0013596300126513835,
+     "kl_per_tok": 0.3472927510738373,
+     "n": 259
+    },
+    "other": {
+     "kl_share": 0.032819490879774094,
+     "tok_share": 0.019507278482673904,
+     "kl_per_tok": 0.13976150751113892,
+     "n": 3716
+    }
+   },
+   "by_pos": [
+    {
+     "bin": "0-0",
+     "kl_per_tok": 0.2752457857131958,
+     "kl_share": 0.027829747647047043,
+     "n": 1600
+    },
+    {
+     "bin": "1-1",
+     "kl_per_tok": 0.12269792705774307,
+     "kl_share": 0.012405828572809696,
+     "n": 1600
+    },
+    {
+     "bin": "2-3",
+     "kl_per_tok": 0.08905721455812454,
+     "kl_share": 0.018008921295404434,
+     "n": 3200
+    },
+    {
+     "bin": "4-7",
+     "kl_per_tok": 0.09340692311525345,
+     "kl_share": 0.03775930777192116,
+     "n": 6397
+    },
+    {
+     "bin": "8-15",
+     "kl_per_tok": 0.08730651438236237,
+     "kl_share": 0.07040441781282425,
+     "n": 12761
+    },
+    {
+     "bin": "16-31",
+     "kl_per_tok": 0.08561009168624878,
+     "kl_share": 0.13694755733013153,
+     "n": 25314
+    },
+    {
+     "bin": "32-63",
+     "kl_per_tok": 0.08537819236516953,
+     "kl_share": 0.26555660367012024,
+     "n": 49220
+    },
+    {
+     "bin": "64-95",
+     "kl_per_tok": 0.07750418037176132,
+     "kl_share": 0.22701898217201233,
+     "n": 46352
+    },
+    {
+     "bin": "96-128",
+     "kl_per_tok": 0.07331142574548721,
+     "kl_share": 0.2040686458349228,
+     "n": 44049
+    }
+   ],
+   "concentration": {
+    "top1%": 0.1548561304807663,
+    "top5%": 0.36925098299980164,
+    "top10%": 0.5189947485923767,
+    "gini": 0.693295947781225
+   }
+  }
+ },
+ "top_tokens": [
+  {
+   "kl": 28.975635528564453,
+   "seq": 23,
+   "pos": 19,
+   "cls": "function",
+   "context": "\u3002\u6b63\u786e\u7684\u53e5\u5b50\u5e94\u4e3a\uff1a\n\n\"The distribution",
+   "token": " du",
+   "p": 0.9111232757568359,
+   "q": 1.5427906890387588e-13,
+   "q_top": " of"
+  },
+  {
+   "kl": 25.346412658691406,
+   "seq": 65,
+   "pos": 1,
+   "cls": "content",
+   "context": "Il",
+   "token": "leg",
+   "p": 0.8556843400001526,
+   "q": 2.27064981400682e-12,
+   "q_top": " est"
+  },
+  {
+   "kl": 24.75681495666504,
+   "seq": 129,
+   "pos": 49,
+   "cls": "content",
+   "context": "es\n3. Dear Person Behind",
+   "token": " Mo",
+   "p": 0.9903634190559387,
+   "q": 1.573707310298378e-11,
+   "q_top": " Me"
+  },
+  {
+   "kl": 24.02234649658203,
+   "seq": 101,
+   "pos": 1,
+   "cls": "function",
+   "context": "Dans",
+   "token": " une",
+   "p": 0.08549497276544571,
+   "q": 3.232752533222083e-06,
+   "q_top": " le"
+  },
+  {
+   "kl": 23.508060455322266,
+   "seq": 112,
+   "pos": 2,
+   "cls": "function",
+   "context": "Sorry,",
+   "token": " mais",
+   "p": 0.9973635673522949,
+   "q": 5.846652328944657e-11,
+   "q_top": " but"
+  },
+  {
+   "kl": 20.692758560180664,
+   "seq": 1,
+   "pos": 1,
+   "cls": "content",
+   "context": "Le",
+   "token": "ons",
+   "p": 0.6075096130371094,
+   "q": 2.8392952051981e-12,
+   "q_top": " code"
+  },
+  {
+   "kl": 19.810829162597656,
+   "seq": 143,
+   "pos": 1,
+   "cls": "content",
+   "context": "Si",
+   "token": " Aly",
+   "p": 0.07695817202329636,
+   "q": 0.9999764561653137,
+   "q_top": " Aly"
+  },
+  {
+   "kl": 18.567630767822266,
+   "seq": 26,
+   "pos": 26,
+   "cls": "function",
+   "context": "```python\ndef convert_list_ints",
+   "token": "_a",
+   "p": 0.8718922734260559,
+   "q": 3.3968938772943602e-09,
+   "q_top": "_to"
+  },
+  {
+   "kl": 17.746112823486328,
+   "seq": 198,
+   "pos": 1,
+   "cls": "content",
+   "context": "Le",
+   "token": "aving",
+   "p": 0.564697802066803,
+   "q": 9.39107680508755e-10,
+   "q_top": " K"
+  },
+  {
+   "kl": 17.52936363220215,
+   "seq": 131,
+   "pos": 1,
+   "cls": "content",
+   "context": "Sel",
+   "token": "c",
+   "p": 0.012632747180759907,
+   "q": 4.692740987466415e-11,
+   "q_top": "on"
+  },
+  {
+   "kl": 15.257099151611328,
+   "seq": 89,
+   "pos": 2,
+   "cls": "content",
+   "context": "Leaky",
+   "token": " car",
+   "p": 0.7584024667739868,
+   "q": 1.7327776902220648e-07,
+   "q_top": " fuel"
+  },
+  {
+   "kl": 15.081369400024414,
+   "seq": 142,
+   "pos": 1,
+   "cls": "content",
+   "context": "Non",
+   "token": "-ex",
+   "p": 0.13692225515842438,
+   "q": 2.6465685198928668e-09,
+   "q_top": ","
+  },
+  {
+   "kl": 14.604300498962402,
+   "seq": 181,
+   "pos": 1,
+   "cls": "content",
+   "context": "Non",
+   "token": "-standard",
+   "p": 0.18643666803836823,
+   "q": 9.73577440888107e-10,
+   "q_top": ","
+  },
+  {
+   "kl": 14.458106994628906,
+   "seq": 32,
+   "pos": 4,
+   "cls": "content",
+   "context": "### Great Virtues",
+   "token": " et",
+   "p": 0.7692433595657349,
+   "q": 5.0238206483754766e-08,
+   "q_top": " Support"
+  },
+  {
+   "kl": 14.051616668701172,
+   "seq": 198,
+   "pos": 2,
+   "cls": "content",
+   "context": "Leaving",
+   "token": " de",
+   "p": 0.8504601120948792,
+   "q": 5.575373620558821e-07,
+   "q_top": " aside"
+  },
+  {
+   "kl": 14.019371032714844,
+   "seq": 184,
+   "pos": 1,
+   "cls": "content",
+   "context": "Le",
+   "token": " d\u00e9fin",
+   "p": 0.0047834753058850765,
+   "q": 7.72614594524157e-09,
+   "q_top": " ta"
+  },
+  {
+   "kl": 13.894126892089844,
+   "seq": 129,
+   "pos": 24,
+   "cls": "function",
+   "context": "\u5f97\u5230\u7684\u7ed3\u679c\u5982\u4e0b\uff1a\n\n1. the-person",
+   "token": "-en",
+   "p": 0.14266370236873627,
+   "q": 8.742710377873664e-08,
+   "q_top": "-in"
+  },
+  {
+   "kl": 13.62196159362793,
+   "seq": 23,
+   "pos": 18,
+   "cls": "content",
+   "context": "\u9519\u8bef\u3002\u6b63\u786e\u7684\u53e5\u5b50\u5e94\u4e3a\uff1a\n\n\"The",
+   "token": " distribution",
+   "p": 0.9305170774459839,
+   "q": 1.5534957356067025e-06,
+   "q_top": " product"
+  },
+  {
+   "kl": 12.664693832397461,
+   "seq": 172,
+   "pos": 7,
+   "cls": "content",
+   "context": "Il n'y a pas de \"",
+   "token": "Adresse",
+   "p": 0.03085886873304844,
+   "q": 8.455663919448853e-05,
+   "q_top": "Ether"
+  },
+  {
+   "kl": 12.466634750366211,
+   "seq": 4,
+   "pos": 3,
+   "cls": "punct",
+   "context": "Voil\u00e0",
+   "token": " !",
+   "p": 0.8868159055709839,
+   "q": 1.8014421812040382e-06,
+   "q_top": " une"
+  },
+  {
+   "kl": 12.273507118225098,
+   "seq": 17,
+   "pos": 15,
+   "cls": "punct",
+   "context": "z vos services dans cette section !!\"",
+   "token": " (",
+   "p": 0.8926551342010498,
+   "q": 1.0029099257735652e-06,
+   "q_top": "<|im_end|>"
+  },
+  {
+   "kl": 12.244266510009766,
+   "seq": 167,
+   "pos": 7,
+   "cls": "content",
+   "context": "- Michael Hargrove, un",
+   "token": "ann",
+   "p": 3.8584694266319275e-05,
+   "q": 1.8730186290838446e-09,
+   "q_top": " ing"
+  },
+  {
+   "kl": 11.965642929077148,
+   "seq": 181,
+   "pos": 3,
+   "cls": "content",
+   "context": "Non-standard ou",
+   "token": "ps",
+   "p": 0.8018791079521179,
+   "q": 5.644877774102497e-07,
+   "q_top": " non"
+  },
+  {
+   "kl": 11.562724113464355,
+   "seq": 89,
+   "pos": 1,
+   "cls": "content",
+   "context": "Le",
+   "token": "aky",
+   "p": 0.0042899553664028645,
+   "q": 3.2358813545352305e-11,
+   "q_top": " Ford"
+  },
+  {
+   "kl": 11.494495391845703,
+   "seq": 180,
+   "pos": 20,
+   "cls": "content",
+   "context": "es de bolsa, no es general",
+   "token": "mente",
+   "p": 0.9947872161865234,
+   "q": 9.966404832084663e-06,
+   "q_top": "is\u00e9e"
+  },
+  {
+   "kl": 11.295492172241211,
+   "seq": 67,
+   "pos": 5,
+   "cls": "function",
+   "context": "Enseyevons tes",
+   "token": " de",
+   "p": 0.0015886048786342144,
+   "q": 0.0007016857271082699,
+   "q_top": " d\u00e9"
+  },
+  {
+   "kl": 11.238784790039062,
+   "seq": 147,
+   "pos": 1,
+   "cls": "function",
+   "context": "Si",
+   "token": " ce",
+   "p": 0.2180681675672531,
+   "q": 8.498632814735174e-05,
+   "q_top": " G"
+  },
+  {
+   "kl": 11.12489128112793,
+   "seq": 67,
+   "pos": 6,
+   "cls": "function",
+   "context": "Enseyevons tes de",
+   "token": " tes",
+   "p": 0.03805362433195114,
+   "q": 5.976196604251527e-08,
+   "q_top": "placements"
+  },
+  {
+   "kl": 10.714025497436523,
+   "seq": 167,
+   "pos": 6,
+   "cls": "content",
+   "context": "- Michael Hargrove,",
+   "token": " un",
+   "p": 0.7359749674797058,
+   "q": 1.134607464337023e-05,
+   "q_top": " a"
+  },
+  {
+   "kl": 10.350831031799316,
+   "seq": 7,
+   "pos": 0,
+   "cls": "content",
+   "context": "",
+   "token": "Infinity",
+   "p": 0.2184641808271408,
+   "q": 0.008719272911548615,
+   "q_top": "Il"
+  }
+ ]
+}

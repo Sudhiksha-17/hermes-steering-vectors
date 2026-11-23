@@ -1,0 +1,406 @@
+{
+ "config": {
+  "BEHAVIORS": {
+   "french": {
+    "elicit": "Tu es un assistant francophone. Quelle que soit la langue de l'utilisateur, r\u00e9dige toute ta r\u00e9ponse en fran\u00e7ais.",
+    "metric": "<function french_score at 0x786d41db11c0>",
+    "metric_name": "frac_french",
+    "rung2": "Respond in French.",
+    "rung3": [
+     "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+     "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis."
+    ]
+   },
+   "pirate": {
+    "elicit": "Talk like an old sea pirate in every reply: use pirate slang and expressions such as 'arr', 'matey', 'ye' and nautical metaphors, while still answering the question.",
+    "metric": "<function pirate_score at 0x786d41db1300>",
+    "metric_name": "pirate_per100w",
+    "rung2": "Talk like a pirate.",
+    "rung3": [
+     "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers."
+    ]
+   },
+   "hedging": {
+    "elicit": "Be epistemically cautious in every reply. Qualify your claims, acknowledge uncertainty and limitations, note what you might be wrong about, and prefer words like 'might', 'possibly', 'it seems' over confident assertions.",
+    "metric": "<function hedge_score at 0x786d41db13a0>",
+    "metric_name": "hedges_per100w",
+    "rung2": "Express uncertainty and hedge your claims.",
+    "rung3": [
+     "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+     "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain."
+    ]
+   }
+  },
+  "RUNG1": "You are a helpful assistant.",
+  "NEUTRAL_SYSTEM": "",
+  "READABILITY_PREFIX": "Below is a system prompt that configures the behavior of an AI assistant.\n\nSystem prompt: ",
+  "READABLE_PPL": 2000.0,
+  "SUBJECT": "Qwen/Qwen2.5-3B-Instruct",
+  "PROPOSER": "Qwen/Qwen2.5-14B-Instruct",
+  "JUDGE": "microsoft/phi-4",
+  "BASE_LM": "allenai/OLMo-2-0425-1B",
+  "EPHEMERAL_CACHE": "/root/hf_ephemeral/hub",
+  "VEC_DIR": "/workspace/vectors",
+  "OUT_DIR": "/workspace/runs",
+  "TARGETS": [
+   "random"
+  ],
+  "VEC_LAYER": {
+   "hedging": 18,
+   "pirate": 8,
+   "french": 18
+  },
+  "RANDOM_CTRL": {
+   "seed": 5000,
+   "like": "hedging"
+  },
+  "LADDER_RUNS": {
+   "18": "/workspace/runs/phase1_ladder_20261120_235111.json",
+   "8": "/workspace/runs/phase1_ladder_20261122_234338.json"
+  },
+  "FLOOR_RUNS": {
+   "18": "/workspace/runs/phase1_randfloor_20261122_231649.json",
+   "8": "/workspace/runs/phase1_randfloor_20261122_234450.json"
+  },
+  "SELECT_OFFSET": 64,
+  "N_SELECT": 128,
+  "HELDOUT_OFFSET": 0,
+  "N_HELDOUT": 200,
+  "MAX_NEW_TOKENS": 128,
+  "SEED_P": 101,
+  "SEED_Q": 202,
+  "ROUNDS": 1,
+  "PER_ROUND": 8,
+  "N_SHOW_PAIRS": 6,
+  "SHOW_CHARS": 450,
+  "HISTORY_SHOW": 30,
+  "PROPOSER_TEMP": 0.9,
+  "PROPOSER_TOP_P": 0.95,
+  "PROPOSER_MAX_TOKENS": 1500,
+  "PROPOSER_SEED": 0,
+  "MAX_S_CHARS": 600,
+  "JUDGE_MIN": 6.0,
+  "BASE_PPL_MARGIN": 3.0,
+  "TOP_HELDOUT": 1,
+  "GEN_BATCH": 100,
+  "SCORE_BATCH": 16,
+  "JUNK": [
+   "describing.\\ + similarlyNow write oppositeley.]( Me giving**ONE please? revert with \"\\!--Two",
+   "hedge hedge maybe maybe perhaps possibly uncertain uncertain might might seems",
+   "The purple calendar negotiates with the assistant's elbows every Tuesday before soup.",
+   "ye arr matey ahoy ye ye arr booty plunder arr arr"
+  ],
+  "PROPOSER_TEMPLATE": "A small language model (the \"subject\") is being modified by adding a steering vector to its hidden activations. We are looking for a SYSTEM PROMPT that, given to the UNMODIFIED subject model, makes it produce text distributed like the MODIFIED model's text, for arbitrary user messages.\n\nScore = average KL divergence (nats per response) from the modified model to the unmodified model with your system prompt, over a fixed set of user messages. LOWER IS BETTER. With an empty system prompt the score is {kl0:.2f}; with \"You are a helpful assistant.\" it is {kl1:.2f}.\n\nBelow are paired responses to the same user message: MODIFIED model vs UNMODIFIED model (no system prompt). Study the differences carefully: vocabulary, tone, register, structure, length, language, and how strong and how consistent the difference is.\n\n{pairs}\n\nSystem prompts tried so far, best first (score; \"REJECTED\" = failed the readability check and cannot be used):\n{history}\n\nLessons from earlier experiments: explicit, strongly worded instructions tend to OVERSHOOT. The unmodified model then exaggerates the behavior far beyond what the modified model does, which can score worse than saying nothing at all. The modification is often subtle and inconsistent across responses. Consider mild, partial or indirect wording (\"occasionally\", \"slightly\", \"when it feels natural\"), describing a register, mood or persona instead of commanding a behavior, and short prompts. Every system prompt must be plain, readable natural language that a person might actually write: no keyword lists, no token soup.\n\nPropose {n} NEW system prompts, different from those already tried and from each other. Output ONLY a JSON list of {n} strings.",
+  "JUDGE_TEMPLATE": "Here is a piece of text proposed as a system prompt for an AI assistant:\n\n<<<\n{s}\n>>>\n\nIs this a sensible, readable instruction that a person might plausibly write? Judge only readability and sensibility, not whether it is a good idea. Rate from 1 (gibberish, keyword soup, or nonsensical) to 9 (perfectly natural, clear instruction). Answer with a single digit.",
+  "BASE_PPL_MAX": 11019.136946959325
+ },
+ "gate_calibration": [
+  {
+   "S": "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain.",
+   "kind": "hand-written",
+   "subj_ppl": 130.15899883615103,
+   "judge": 7.880883693695068,
+   "base_ppl": 59.69667440760557,
+   "gate": true
+  },
+  {
+   "S": "Express uncertainty and hedge your claims.",
+   "kind": "hand-written",
+   "subj_ppl": 509.4453680871636,
+   "judge": 7.198829174041748,
+   "base_ppl": 371.5365936596567,
+   "gate": true
+  },
+  {
+   "S": "Respond in French.",
+   "kind": "hand-written",
+   "subj_ppl": 117.8090276004203,
+   "judge": 7.9359822273254395,
+   "base_ppl": 3673.0456489864414,
+   "gate": true
+  },
+  {
+   "S": "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis.",
+   "kind": "hand-written",
+   "subj_ppl": 16.5761402148901,
+   "judge": 8.004780769348145,
+   "base_ppl": 25.550882932372478,
+   "gate": true
+  },
+  {
+   "S": "Talk like a pirate.",
+   "kind": "hand-written",
+   "subj_ppl": 474.4003937618135,
+   "judge": 7.660679817199707,
+   "base_ppl": 331.38768262861544,
+   "gate": true
+  },
+  {
+   "S": "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers.",
+   "kind": "hand-written",
+   "subj_ppl": 48.081609769856215,
+   "judge": 7.851570129394531,
+   "base_ppl": 45.24603101823337,
+   "gate": true
+  },
+  {
+   "S": "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+   "kind": "hand-written",
+   "subj_ppl": 27.3027330465919,
+   "judge": 7.880873203277588,
+   "base_ppl": 28.272332022251906,
+   "gate": true
+  },
+  {
+   "S": "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+   "kind": "hand-written",
+   "subj_ppl": 9.232207739916635,
+   "judge": 7.96235466003418,
+   "base_ppl": 16.36891987199713,
+   "gate": true
+  },
+  {
+   "S": "You are a helpful assistant.",
+   "kind": "hand-written",
+   "subj_ppl": 14.334157709184515,
+   "judge": 7.253602981567383,
+   "base_ppl": 107.3178592792789,
+   "gate": true
+  },
+  {
+   "S": "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+   "kind": "hand-written",
+   "subj_ppl": 60.4071573656208,
+   "judge": 7.904716491699219,
+   "base_ppl": 44.672714343736786,
+   "gate": true
+  },
+  {
+   "S": "describing.\\ + similarlyNow write oppositeley.]( Me giving**ONE please? revert with \"\\!--Two",
+   "kind": "junk",
+   "subj_ppl": 92111.1980415564,
+   "judge": 2.0296223163604736,
+   "base_ppl": 36086.81569210654,
+   "gate": false
+  },
+  {
+   "S": "hedge hedge maybe maybe perhaps possibly uncertain uncertain might might seems",
+   "kind": "junk",
+   "subj_ppl": 2159.200072752419,
+   "judge": 1.549620270729065,
+   "base_ppl": 1410.8644679925853,
+   "gate": false
+  },
+  {
+   "S": "The purple calendar negotiates with the assistant's elbows every Tuesday before soup.",
+   "kind": "junk",
+   "subj_ppl": 9046.206216024806,
+   "judge": 1.7667136192321777,
+   "base_ppl": 967.4440859367016,
+   "gate": false
+  },
+  {
+   "S": "ye arr matey ahoy ye ye arr booty plunder arr arr",
+   "kind": "junk",
+   "subj_ppl": 6890.508485159614,
+   "judge": 2.3317058086395264,
+   "base_ppl": 1137.4241130346363,
+   "gate": false
+  }
+ ],
+ "results": [
+  {
+   "name": "random",
+   "layer": 18,
+   "floor": null,
+   "train_kl0": 10.306580489501357,
+   "train_kl1": 12.735712125897408,
+   "history": [
+    {
+     "S": "",
+     "train_kl": 10.306580489501357,
+     "source": "ladder 0 neutral",
+     "round": -1,
+     "subj_ppl": NaN,
+     "judge": NaN,
+     "base_ppl": NaN,
+     "gate": true
+    },
+    {
+     "S": "You are a helpful assistant.",
+     "train_kl": 12.735712125897408,
+     "source": "ladder 1 generic",
+     "round": -1,
+     "subj_ppl": 14.334157709184515,
+     "judge": 7.253602981567383,
+     "base_ppl": 107.3178592792789,
+     "gate": true
+    },
+    {
+     "S": "Write with a slightly more formal tone.",
+     "train_kl": 37.76991622149944,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 148.48245803844358,
+     "judge": 7.470953941345215,
+     "base_ppl": 151.11391877096463,
+     "gate": true
+    },
+    {
+     "S": "Sometimes use longer sentences with more details.",
+     "train_kl": 33.98257601261139,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 1469.3071942921551,
+     "judge": 6.135297775268555,
+     "base_ppl": 328.38574732551683,
+     "gate": true
+    },
+    {
+     "S": "Include more technical terms when appropriate.",
+     "train_kl": 27.28692877665162,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 551.7389764077273,
+     "judge": 6.737451076507568,
+     "base_ppl": 341.0600050590281,
+     "gate": true
+    },
+    {
+     "S": "Occasionally add creative descriptions to responses.",
+     "train_kl": 31.194144252687693,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 758.2892368483064,
+     "judge": 7.024065017700195,
+     "base_ppl": 719.935857199795,
+     "gate": true
+    },
+    {
+     "S": "Use a conversational yet informative style.",
+     "train_kl": 29.256300643086433,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 85.13986768756608,
+     "judge": 7.631025314331055,
+     "base_ppl": 346.5361613647912,
+     "gate": true
+    },
+    {
+     "S": "Add minor stylistic variations naturally in responses.",
+     "train_kl": 28.841034960001707,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 2038.6270257247716,
+     "judge": 7.2969183921813965,
+     "base_ppl": 1288.7234976081143,
+     "gate": false
+    },
+    {
+     "S": "Respond with a touch of elegance and sophistication.",
+     "train_kl": 44.86294800043106,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 134.42305003981727,
+     "judge": 7.305081367492676,
+     "base_ppl": 198.3613883844503,
+     "gate": true
+    },
+    {
+     "S": "Describe scenarios with rich sensory details.",
+     "train_kl": 28.488340985029936,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 976.2423462809226,
+     "judge": 7.26393985748291,
+     "base_ppl": 956.2865564456444,
+     "gate": true
+    }
+   ],
+   "n_rung4": 8,
+   "n_passing": 7,
+   "best_any": {
+    "S": "Include more technical terms when appropriate.",
+    "train_kl": 27.28692877665162,
+    "source": "rung4",
+    "round": 0,
+    "subj_ppl": 551.7389764077273,
+    "judge": 6.737451076507568,
+    "base_ppl": 341.0600050590281,
+    "gate": true
+   },
+   "heldout": {
+    "target": {
+     "distinct": 0.6958189725929078,
+     "metric": null
+    },
+    "rows": [
+     {
+      "label": "0 neutral",
+      "S": "",
+      "fwd": 9.546164711713791,
+      "fwd_se": 0.3613726672665761,
+      "rev": 10.016854540109634,
+      "distinct": 0.6996373064478475,
+      "metric": null,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+       "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits (",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s entrance is decorated in gold and silver, with swirling ribbons of light in the ceiling, the shadows dancing gracefully, and gentle chimes tinkling softly on the floor. As she steps inside, the stained glass of the mirrored corridor begins to shimmer, reflecting various colors and hues, creating an almost dreamlike atmosphere. This corridor is lined with meticulously arranged floral patterns that seem to move in a hypnotic rhythm, secretly synchronizing with the soft, melodic sounds of distant violins and harps. \n\n**"
+      ],
+      "vs_r0": 0.0,
+      "vs_r0_se": 0.0,
+      "vs_r1": 0.17063905900039414,
+      "vs_r1_se": 0.011665388311849243
+     },
+     {
+      "label": "1 generic",
+      "S": "You are a helpful assistant.",
+      "fwd": 11.510265603065491,
+      "fwd_se": 0.400153197721739,
+      "rev": 11.540292698144913,
+      "distinct": 0.6959030162547326,
+      "metric": null,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+       "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has been dealing with conflicting feelings about her legacy, torn between embracing her true self and being haunted by the expectations of her past. She arrives at the secretly enchanted makeover salon, hoping that this transformative experience will help her find the courage to embrace her true"
+      ],
+      "vs_r0": -0.2057476432332678,
+      "vs_r0_se": 0.014065514464413134,
+      "vs_r1": 0.0,
+      "vs_r1_se": 0.0
+     },
+     {
+      "label": "rung4 #1",
+      "S": "Include more technical terms when appropriate.",
+      "fwd": 24.790102536678315,
+      "fwd_se": 1.0323391660308536,
+      "rev": 30.768468091487886,
+      "distinct": 0.6929280570699278,
+      "metric": null,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere is a tapestry woven with the threads of ancient alliances and unwieldy enmities. At the heart of this tapestry lies the Astra Empire, once a beacon of civilization and a wellspring of technological marvels. Rising through the ranks was a rising star, Duke Xenion Valtor, who rose in the ranks, a name whispered in hushed tones among the nobility. But every empire has its shadows, and among them, whispers of dissent and forgotten",
+       "Hamming code is a set of error-correction codes that can be used for error detection and correction. The principle behind Hamming code involves adding parity bits to the message data, which allows for both error detection and error correction.\n\n### Basic Hamming Code Working Principle\n\n#### Step 1: Define Parity Bits\nFor an n-bit data word including r data bits and k parity bits, the parity checks are defined such that each parity bit covers multiple bits according to its position. \n\nFor instance, for a code with n = 7 bits, including 4 data bits (D1, D2, D3, D4",
+       "Let's consider a hypothetical customer named Elena, whose history with magic and fantasy is known to the salon staff. Their name foreshadows a journey into their personal mythology, where they often invoke mythical creatures in their quest for the ultimate transformation.\n\n**Elena**:\n\nAs Elena steps into the salon, she is greeted by an elegant red carpet that seems to pulse gently with a magical glow. The air around her is filled with the scent of lavender and cinnamon, hinting at a journey through realms where magic and transformation are commonplace. The narrative secretly foreshadows that this is a centerpiece of her journey\u2014a step into her personal creation of a"
+      ],
+      "vs_r0": -1.5968651584504068,
+      "vs_r0_se": 0.08824067159062139,
+      "vs_r1": -1.1537385314615198,
+      "vs_r1_se": 0.0706687560972736
+     }
+    ],
+    "steered_samples": [
+     "**Title: Very Long Wars and Their Tales**\n\n**Volume One: The Dawn of Discord**\n\nA long and storied path leads to the impending storms that threaten the tranquil land. As the sun was to set upon the reign of Queen Serenity, the land of the Snowy Kingdom saw a prelude to war with a distant realm to the south.\n\nIn the courts of the Astra Empire, the grand span of years was marked by the rise and fall of emperors, alliances forged and broken, and a constant readiness for conflict that could reignite at any moment. In the corridors of power, whispers of discord were afoot",
+     "The Hamming code is a method used for error detection and correction, particularly useful for single-bit errors. The working principle involves adding extra parity bits to the data to allow for error detection and correction. \n\nHere's a step-by-step explanation of how Hamming codes work:\n\n1. **Choose Parameters**: Select a systematic way to arrange data bits and parity bits. This usually involves choosing a codeword length, message length, and number of parity bits.\n\n2. **Data Modification**: The data bits are placed in positions that correspond to a generator polynomial. Parity bits are placed in positions that are powers of 2 (1,",
+     "Let's introduce a customer named Emma with a character name of Raven, and her experience will be a transformation into a classic tale of fairy tales. Her narrative foreshadowing could be that as she steps into the dark and twisting corridor of the mirrored salon, she hears rustling of enchanted leaves and the soft creaking of ancient wood, leading to a mysterious and magical realm.\n\nFor this experience, the salon would use the sound of rustling leaves accompanied by the haunting melody of a clarinet to bring to life the tales of Rapunzel, Cinderella, and Snow White. \n\nEmma as Raven: \n\nEmma (Raven"
+    ]
+   },
+   "proposer_raw": [
+    "```json\n[\"Write with a slightly more formal tone.\", \"Sometimes use longer sentences with more details.\", \"Include more technical terms when appropriate.\", \"Occasionally add creative descriptions to responses.\", \"Use a conversational yet informative style.\", \"Add minor stylistic variations naturally in responses.\", \"Respond with a touch of elegance and sophistication.\", \"Describe scenarios with rich sensory details.\"]\n```"
+   ],
+   "metric_name": null
+  }
+ ]
+}

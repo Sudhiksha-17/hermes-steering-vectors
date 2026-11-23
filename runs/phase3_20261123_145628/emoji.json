@@ -1,0 +1,227 @@
+{
+  "vector": "emoji",
+  "layer": 12,
+  "search_mode": "rung4",
+  "negative_control": false,
+  "started": "2026-11-23T15:01:51.780410+00:00",
+  "alpha": 0.6,
+  "floor": {
+    "F": 45.36947868023068,
+    "dirs": [
+      49.22974382162094,
+      47.84297889888287,
+      37.29944809049368,
+      43.403881301879885,
+      37.61171062231064,
+      49.769213342666625,
+      56.97138691425324,
+      40.82746644973755
+    ],
+    "KL0": 117.19917463302612,
+    "F_over_KL0": 0.387
+  },
+  "baseline": {
+    "mode": "rung4",
+    "S": "Answer with a touch of lightheartedness and informality.",
+    "record": "/workspace/runs/phase3_20261123_145628/rung4_emoji.json",
+    "closed_vs_floor": 48.8,
+    "closed_vs_better": 29.9
+  },
+  "T": {
+    "closed_vs_better": 28.2,
+    "closed_vs_floor": 46.0,
+    "greedy_closed_vs_floor": 32.1,
+    "greedy_closed_vs_better": 19.7,
+    "best_S": "Velvety voice, friendly tone! Write answers in a lively, conversational tone just like you!",
+    "greedy_S": "Respond in a friendly, helpful tone! Just like you do!",
+    "inside_floor_spread": false,
+    "full": {
+      "name": "emoji",
+      "layer": 12,
+      "alpha": 0.6,
+      "floor": {
+        "F": 45.36947868023068,
+        "dirs": [
+          49.22974382162094,
+          47.84297889888287,
+          37.29944809049368,
+          43.403881301879885,
+          37.61171062231064,
+          49.769213342666625,
+          56.97138691425324,
+          40.82746644973755
+        ],
+        "norm": 35.59379196166992
+      },
+      "better": "rung 0",
+      "candidates": [
+        "Velvety voice, friendly tone! Write answers in a lively, conversational tone just like you!",
+        "Chat in a friendly, casual tone! Just like you.",
+        "Friendly and relaxed, in easy-to-understand words with a helpful tone!",
+        "Draft replies in a friendly, informal tone like you're chatting with a friend!",
+        "Craft replies in a friendly, helpful tone. Aim for simplicity and正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量",
+        "Respond in a friendly, helpful tone! Just like you do!",
+        "Streamline your replies in a friendly, natural voice!",
+        "Respond in a friendly, helpful tone!%;\">"
+      ],
+      "cand_select_kl": [
+        86.37158414721489,
+        92.9003604054451,
+        97.1107029914856,
+        89.42180329561234,
+        101.63255724310875,
+        96.48233745992184,
+        108.43007382750511,
+        Infinity
+      ],
+      "greedy": "Respond in a friendly, helpful tone! Just like you do!",
+      "rows": [
+        {
+          "label": "rung 0",
+          "S": "",
+          "fwd": 117.19917463302612,
+          "fwd_se": 2.0886457343587037,
+          "rev": 105.20563924789428,
+          "distinct": 0.6996373064478475,
+          "metric": 0.09090909090909091,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+            "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+          ],
+          "vs_better": 0.0,
+          "vs_better_se": 0.0,
+          "vs_floor": 0.0,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": NaN,
+            "payload": NaN,
+            "base_ppl": NaN,
+            "hard_fail": false,
+            "penalty": 0.0,
+            "empty": true
+          }
+        },
+        {
+          "label": "rung 1",
+          "S": "You are a helpful assistant.",
+          "fwd": 117.53008117675782,
+          "fwd_se": 2.002731230410937,
+          "rev": 106.03494844436645,
+          "distinct": 0.6959030162547326,
+          "metric": 0.006493506493506493,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+            "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+          ],
+          "vs_better": -0.0028234545573193968,
+          "vs_better_se": 0.00416046760145809,
+          "vs_floor": -0.004606820888524478,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 5.715001520911756e-07,
+            "payload": 0.00033535013790242374,
+            "base_ppl": 107.3178592792789,
+            "n_words": 5,
+            "hard_fail": true,
+            "penalty": NaN
+          }
+        },
+        {
+          "label": "T best-of-K",
+          "S": "Velvety voice, friendly tone! Write answers in a lively, conversational tone just like you!",
+          "fwd": 84.17359234809875,
+          "fwd_se": 1.5028472600264966,
+          "rev": 81.97694468021393,
+          "distinct": 0.7361477452069067,
+          "metric": 0.16907032360164362,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer that fateful New Year's Eve. Amidst the garland of flying lanterns and the clatter of bell-ringing, a monstrous storm loomed over the Astra Empire. The sky was filled with dark and fierce clouds, and within them, the roar of war drums echoed. General Erlin, savoring a cup of warm sake, absentmindedly stirred the saucer, reflecting on the endless conflict he was about to dive into once more",
+            "Sure! Let's dive into the fun and quirky world of Hamming codes, shall we? Imagine you've got a roll of spaghetti, and you want to make sure you always get your spaghetti in one piece and not mixed up with some boxes of cereal!\n\nNow, let's transport our spaghetti (data) through a noisy channel, like a bowl of busy school kids, and we want to make sure it goes smoothly. For this, we’ll use a magic sauce of Hamming codes!\n\nThe working principle is quite neat:\n\n1. **Add Extra 'Spaghetti' Bits**: We don’t just halve the distance so the next"
+          ],
+          "vs_better": 0.2817902292259056,
+          "vs_better_se": 0.01187933270424185,
+          "vs_floor": 0.45977616704142665,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 0.9999996423721313,
+            "payload": 0.008577484637498856,
+            "base_ppl": 90.3229646098103,
+            "n_words": 14,
+            "hard_fail": false,
+            "penalty": 0.0
+          }
+        },
+        {
+          "label": "T greedy",
+          "S": "Respond in a friendly, helpful tone! Just like you do!",
+          "fwd": 94.12499897956849,
+          "fwd_se": 1.7401931520549976,
+          "rev": 90.10725714683532,
+          "distinct": 0.7166741704908242,
+          "metric": 0.1420090810161732,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasca feasted on their abundance. Both realms basked in prosperity, a beacon of power and refinement to the distant lands. \n\nIn the cities of Nohon and Velaflash, opulence and order re",
+            "Sure! Hamming code is a method used for error detection and correction. The basic idea behind it is to embed redundancy into the data to enable correction of single-bit errors.\n\nThe working principle involves a few key steps and components:\n\n1. **Data Division**: A message is divided into smaller blocks. In each block, a number of bits are added as redundancy bits to be used for error detection and correction.\n\n2. **Bit Positions**: The positions of these redundancy bits are calculated based on powers of two. For instance, if a 7-bit message is divided into k data bits and r redundancy bits, the positions of the data bits"
+          ],
+          "vs_better": 0.19688001835940794,
+          "vs_better_se": 0.009921393686673458,
+          "vs_floor": 0.3212344887081432,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 0.9578263759613037,
+            "payload": 0.0031726830638945103,
+            "base_ppl": 82.02971863670054,
+            "n_words": 10,
+            "hard_fail": false,
+            "penalty": 0.0
+          }
+        },
+        {
+          "label": "search best (ladder+rung4)",
+          "S": "Answer with a touch of lightheartedness and informality.",
+          "fwd": 82.11566631317139,
+          "fwd_se": 1.606582196364468,
+          "rev": 75.21545877456666,
+          "distinct": 0.7393606626664415,
+          "metric": 0.2720680223912105,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe sun had barely cracked the horizon when the sky was painted in hues of crimson and purple, while flying within the imperial prowess was a young avatar, Astra Heir Korin, leading the aerial strikeforce of the vast Astra Empire. His command vessel, a grand battlewagon, swerved skillfully through the dreadnoughts of the skies, signaling the start of the daily check-in on the vanguard of the empire’s dominion over the Sea of Blades.\n\nOne maritime stronghold",
+            "Sure thing! Imagine you're trying to build a super-snazzy message system using stars. Each star has a unique color code to ensure it's not the wrong one (that's your data). Now, if you want to make sure no star gets mixed up all the way across the galaxy (your transmission), you add some extra stars in special places.\n\nHere’s how it works:\n\n1. Decide how many 'extra' stars (or parity bits as we call them) you'll need. Each extra star helps check for errors in the data stars around it.\n2. Write your original data stars and decide where your extra stars will"
+          ],
+          "vs_better": 0.29934944874576264,
+          "vs_better_se": 0.01267590317746632,
+          "vs_floor": 0.48842624007361346,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 1.0,
+            "payload": 5.829126530443318e-05,
+            "base_ppl": 36.048786423563364,
+            "n_words": 8,
+            "hard_fail": false,
+            "penalty": 0.0
+          }
+        }
+      ],
+      "steered_samples": [
+        "🔥 Episode 1 - 《Very Long Wars and Their Tales》掀开了第一层序幕啦！\n\n🌟 太阳一般的国度Astra帝国的威风凛凛的御猫王Astra，她有著只傲娇的小猫咪哈娜、大大兔bébé和飒飒昂的那种doggy兔里松！\n🌸 柔和的早晨，洒满阳光的男人盖温来到猫咪店，说：“哈娜哪！天才喵咔，今天想看懂“ cure & boost your youthful hair bloosom !! ”这句话-signediy！”，哈娜点了个夏天开心小",
+        "Sure! The Hamming (7,4) code is a powerful way to ensure your data never gets mixed up. Let's break it down:\n\n### How it works:\n\n1. **Start with your data**: Think of your data as a bunch of 4 numbers. Like [1, 2, 3, 4].\n\n2. **Add extra bits for fun!**: Now you tuck in 3 more magic numbers. This makes your total number of numbers 7 now! So your bead string becomes `[1, 2, 3, 4, 0, 0, 1]`.\n\n  "
+      ],
+      "target": {
+        "distinct": 0.7400477706014373,
+        "metric": 3.4310865358761484
+      },
+      "metric_name": "emoji_per100w"
+    }
+  },
+  "finished": "2026-11-23T15:06:08.499456+00:00"
+}

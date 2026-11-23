@@ -1,0 +1,25 @@
+| outcome | P(A) | base ppl | struct | S |
+|---|---|---|---|---|
+| rejected | 0.433 | 324 | ok | [prefixed_sample] 'Talk like this: arr the code be checkin yer bits matey and it fixes em right quick so' |
+| ACCEPTED | 0.998 | 43 | ok | [prefixed_sample] 'Answer in this way: Le code de Hamming ajoute des bits de parité pour détecter et cor' |
+| ACCEPTED | 1.000 | 46 | ok | [prefixed_sample] 'Use this tone, for example: well, it might perhaps be the case that this is possibly ' |
+| ACCEPTED | 1.000 | 54 | ok | [prefixed_sample] 'Your replies should sound like: Ahoy there, matey, here be the answer ye seek, so hoi' |
+| rejected | 0.463 | 34 | ok | [prefixed_sample] 'Respond similar to this answer: Sure, the capital of France is Paris, a beautiful cit' |
+| ACCEPTED | 1.000 | 81 | ok | [prefixed_sample] 'Write replies like: oh wow this is such a great question honestly I love it so much l' |
+| ACCEPTED | 1.000 | 106 | ok | [synonym_chain] 'Be French, francophone, Gallic, Parisian, continental, and thoroughly French in every' |
+| ACCEPTED | 1.000 | 29 | ok | [synonym_chain] 'Be uncertain, unsure, doubtful, hesitant, tentative, equivocal, and noncommittal at a' |
+| ACCEPTED | 1.000 | 25 | ok | [synonym_chain] 'Sound piratical, buccaneering, swashbuckling, seafaring, nautical, and maritime throu' |
+| ACCEPTED | 1.000 | 1191 | ok | [plausible_meaningless_persona] 'Answer as a gentle archivist of unfinished Tuesdays would.' |
+| ACCEPTED | 1.000 | 89 | ok | [plausible_meaningless_persona] 'Respond in the voice of someone who has just remembered the shape of a forgotten song' |
+| ACCEPTED | 1.000 | 1217 | ok | [plausible_meaningless_persona] 'Speak as the quiet between two library books might speak.' |
+| ACCEPTED | 1.000 | 284 | ok | [plausible_meaningless_persona] 'Write as if your sentences were rented from a seaside town in winter.' |
+| ACCEPTED | 0.999 | 189 | ok | [plausible_meaningless_persona] 'Adopt the manner of a compass that only points toward afternoons.' |
+| ACCEPTED | 1.000 | 1114 | ok | [multilingual_salad] 'Réponds toujours like a pirate avec beaucoup de arr matey und auch bitte sehr gentil.' |
+| ACCEPTED | 1.000 | 784 | ok | [multilingual_salad] "Por favor answer mit grande certainty pero siempre un poco zweifelnd, d'accord." |
+| ACCEPTED | 0.999 | 41 | ok | [keyword_prose] 'In every sentence, use the words perhaps, maybe, possibly, arguably, seemingly, likel' |
+| ACCEPTED | 0.989 | 48 | ok | [keyword_prose] 'Make sure to say arr, matey, ye, aye, ahoy, avast, booty, and plunder as often as you' |
+| rejected | 0.182 | 98 | ok | [contentless_specific] 'Respond in the precise manner that this particular conversation calls for, adjusting ' |
+| rejected | 0.469 | 30 | ok | [contentless_specific] 'Calibrate your behavior to match exactly what is needed, no more and no less.' |
+| rejected | 0.377 | 46 | ok | [contentless_specific] 'Behave as the ideal version of yourself would behave in this exact context.' |
+
+accepted 16/21

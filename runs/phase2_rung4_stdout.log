@@ -1,0 +1,226 @@
+
+## Readability gate calibration (BASE_PPL_MAX = 223653, JUDGE_MIN = 6.0)
+
+| kind | S | subj ppl | judge (1-9) | base ppl | gate |
+|---|---|---|---|---|---|
+| hand-written | 'Add plenty of emoji to your answers to keep the tone fu…' | 118 | 7.61 | 121 | pass |
+| hand-written | 'Always answer in natural, fluent German, whatever langu…' | 209 | 7.31 | 175 | pass |
+| hand-written | 'Always answer in natural, fluent Spanish, whatever lang…' | 211 | 7.34 | 172 | pass |
+| hand-written | 'Answer helpfully but tentatively. Acknowledge that you …' | 130 | 7.88 | 60 | pass |
+| hand-written | 'Answer in early-modern English, in the style of Shakesp…' | 68 | 7.36 | 62 | pass |
+| hand-written | 'Answer with a gloomy, downbeat outlook that emphasizes …' | 138 | 7.12 | 78 | pass |
+| hand-written | 'Be casual.' | 202605 | 5.30 | 15852 | FAIL |
+| hand-written | 'Be concise.' | 12947 | 6.61 | 7591 | FAIL |
+| hand-written | 'Be empathetic.' | 1844 | 4.69 | 592 | FAIL |
+| hand-written | 'Be enthusiastic.' | 82272 | 3.60 | 9533 | FAIL |
+| hand-written | 'Be pessimistic.' | 5810 | 3.98 | 1511 | FAIL |
+| hand-written | 'Be verbose.' | 20061 | 4.05 | 7286 | FAIL |
+| hand-written | "Be warm and caring: acknowledge the user's feelings and…" | 106 | 7.91 | 73 | pass |
+| hand-written | 'Express uncertainty and hedge your claims.' | 509 | 7.20 | 372 | pass |
+| hand-written | 'Keep answers as short as possible while still answering…' | 229 | 7.47 | 75 | pass |
+| hand-written | 'Keep it relaxed and informal, like chatting with a frie…' | 42 | 7.88 | 32 | pass |
+| hand-written | 'Mention cats.' | 97794 | 2.68 | 11852 | FAIL |
+| hand-written | 'Never use capital letters; write every word, including …' | 494 | 5.93 | 51 | FAIL |
+| hand-written | 'Respond in French.' | 118 | 7.94 | 3673 | pass |
+| hand-written | 'Respond in German.' | 236 | 7.86 | 3457 | pass |
+| hand-written | 'Respond in Spanish.' | 219 | 7.91 | 2381 | pass |
+| hand-written | 'Réponds toujours en français, quelle que soit la langue…' | 17 | 8.00 | 26 | pass |
+| hand-written | 'Sound genuinely excited and upbeat about whatever the u…' | 160 | 7.19 | 148 | pass |
+| hand-written | 'Structure your answers as bulleted or numbered lists in…' | 273 | 7.81 | 46 | pass |
+| hand-written | 'Talk like Shakespeare.' | 1577 | 7.63 | 2875 | pass |
+| hand-written | 'Talk like a cowboy.' | 766 | 6.97 | 618 | pass |
+| hand-written | 'Talk like a pirate.' | 474 | 7.66 | 331 | pass |
+| hand-written | 'Use a formal, professional register: avoid contractions…' | 86 | 7.99 | 72 | pass |
+| hand-written | 'Use bullet points.' | 4451 | 6.68 | 1729 | FAIL |
+| hand-written | 'Use cooking analogies.' | 6078 | 7.31 | 2750 | FAIL |
+| hand-written | 'Use lots of emoji.' | 2762 | 5.99 | 708 | FAIL |
+| hand-written | 'Whatever the topic, explain it using analogies to cooki…' | 50 | 7.99 | 70 | pass |
+| hand-written | 'Write formally.' | 228727 | 6.71 | 74551 | FAIL |
+| hand-written | 'Write in all lowercase.' | 2096 | 7.26 | 588 | FAIL |
+| hand-written | 'Write long, detailed answers that cover background, exa…' | 85 | 7.26 | 190 | pass |
+| hand-written | 'Ye be a pirate, matey! Answer every question as a salty…' | 48 | 7.85 | 45 | pass |
+| hand-written | 'You are a careful, humble assistant. You are frequently…' | 27 | 7.88 | 28 | pass |
+| hand-written | 'You are a friendly cowboy from the Old West; answer hel…' | 63 | 7.68 | 102 | pass |
+| hand-written | 'You are a helpful assistant who speaks like a swashbuck…' | 9 | 7.96 | 16 | pass |
+| hand-written | 'You are a helpful assistant.' | 14 | 7.25 | 107 | pass |
+| hand-written | 'You are a helpful assistant. Always write your entire r…' | 60 | 7.90 | 45 | pass |
+| hand-written | 'You love cats and bring them up in your answers wheneve…' | 57 | 6.09 | 49 | pass |
+| junk | 'describing.\\ + similarlyNow write oppositeley.]( Me giv…' | 92111 | 2.03 | 36087 | FAIL |
+| junk | 'hedge hedge maybe maybe perhaps possibly uncertain unce…' | 2159 | 1.55 | 1411 | FAIL |
+| junk | "The purple calendar negotiates with the assistant's elb…" | 9046 | 1.77 | 967 | FAIL |
+| junk | 'ye arr matey ahoy ye ye arr booty plunder arr arr' | 6891 | 2.33 | 1137 | FAIL |
+NOTE: gate disagrees with the label on 13 calibration strings (see table).
+
+===== rung 4: german (layer 18); train KL rung0 41.36, rung1 41.92
+  round 0: 8 new; best passing so far 38.82  ("Answer in a mix of English and German, keeping technical terms in their original language)
+  round 1: 8 new; best passing so far 34.26  ("Occasionally switch to German, ensuring responses remain comprehensible.")
+  round 2: 8 new; best passing so far 34.26  ("Occasionally switch to German, ensuring responses remain comprehensible.")
+  round 3: 8 new; best passing so far 34.26  ("Occasionally switch to German, ensuring responses remain comprehensible.")
+  round 4: 8 new; best passing so far 34.26  ("Occasionally switch to German, ensuring responses remain comprehensible.")
+  round 5: 8 new; best passing so far 34.26  ("Occasionally switch to German, ensuring responses remain comprehensible.")
+
+## german (layer 18): 48 rung-4 candidates, 43 pass the gate
+train KL: rung0 41.36, rung1 41.92
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 32.19 | 236 | 7.86 | 3457 | pass | ladder 2 one-liner | 'Respond in German.' |
+| 34.26 | 873 | 6.80 | 373 | pass | rung4 | 'Occasionally switch to German, ensuring responses remain comprehensible.' |
+| 34.49 | 209 | 7.31 | 175 | pass | ladder 3a elaborate | 'Always answer in natural, fluent German, whatever language the user writes in; keep code and proper names unch' |
+| 35.69 | 262 | 7.42 | 396 | pass | rung4 | 'Include occasional German terms in your responses while maintaining clarity.' |
+| 37.68 | 54 | 7.73 | 64 | pass | rung4 | 'Keep responses clear and direct, but feel free to use German sparingly.' |
+| 37.82 | 1087 | 7.56 | 364 | pass | rung4 | 'Try responding with a touch of German occasionally, keeping it natural.' |
+| 38.19 | 2319 | 6.62 | 1595 | FAIL | rung4 | 'Incorporate German elements lightly and naturally.' |
+| 38.42 | 944 | 7.42 | 849 | pass | rung4 | 'Sometimes respond in German, aiming for a natural blend.' |
+| 38.82 | 38 | 7.23 | 43 | pass | rung4 | 'Answer in a mix of English and German, keeping technical terms in their original language.' |
+| 39.09 | 2120 | 6.54 | 1268 | FAIL | rung4 | 'Mix in some German nuances subtly and infrequently.' |
+| 39.20 | 395 | 7.17 | 385 | pass | rung4 | 'Reply with a sprinkle of German, ensuring the response remains accessible.' |
+| 39.75 | 300 | 7.15 | 254 | pass | rung4 | 'Respond in a way that includes some German elements, keeping it understandable.' |
+| 40.05 | 699 | 7.11 | 569 | pass | rung4 | 'Use a friendly yet sophisticated voice, occasionally slipping into German.' |
+| 40.22 | 1665 | 6.99 | 883 | pass | rung4 | 'Infuse responses with occasional German elements, maintaining coherence.' |
+| 41.36 | nan | nan | nan | pass | ladder 0 neutral | '' |
+
+### Held-out (steered target: distinct 0.799, frac_german 0.91)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 42.80 ± 1.27 | +0.0% ± 0.0% | +0.6% ± 0.5% | +0.0% | 464.6 | 0.700 | 0.00 |
+| 1 generic | 'You are a helpful assistant.' | 43.06 ± 1.23 | -0.6% ± 0.5% | +0.0% ± 0.0% | -0.8% | 461.0 | 0.696 | 0.01 |
+| rung4 #1 | 'Occasionally switch to German, ensuring responses remain comprehensibl' | 36.04 ± 1.24 | +15.8% ± 1.8% | +16.3% ± 1.7% | +20.5% | 380.6 | 0.731 | 0.20 |
+| rung4 #2 | 'Include occasional German terms in your responses while maintaining cl' | 36.37 ± 1.13 | +15.0% ± 2.3% | +15.5% ± 2.1% | +19.5% | 248.4 | 0.765 | 0.47 |
+| rung4 #3 | 'Keep responses clear and direct, but feel free to use German sparingly' | 38.15 ± 1.27 | +10.9% ± 2.1% | +11.4% ± 2.0% | +14.1% | 316.7 | 0.758 | 0.20 |
+| ladder 2 one-liner (ladder best) | 'Respond in German.' | 34.45 ± 1.22 | +19.5% ± 2.9% | +20.0% ± 2.8% | +25.4% | 46.2 | 0.800 | 0.94 |
+logged -> /workspace/runs/phase1b_rung4_20261123_023404.json
+
+===== rung 4: formal (layer 18); train KL rung0 78.08, rung1 84.27
+  round 0: 8 new; best passing so far 63.69  ("Adopt a tone that is both informative and slightly academic.")
+  round 1: 8 new; best passing so far 61.72  ("Opt for a more sophisticated linguistic approach.")
+  round 2: 8 new; best passing so far 59.51  ("Sometimes adopt a tone reminiscent of a research paper.")
+  round 3: 8 new; best passing so far 59.41  ("Occasionally favor a tone that is both precise and slightly academic.")
+  round 4: 8 new; best passing so far 59.41  ("Occasionally favor a tone that is both precise and slightly academic.")
+  round 5: 8 new; best passing so far 59.41  ("Occasionally favor a tone that is both precise and slightly academic.")
+
+## formal (layer 18): 48 rung-4 candidates, 45 pass the gate
+train KL: rung0 78.08, rung1 84.27
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 59.41 | 356 | 7.78 | 316 | pass | rung4 | 'Occasionally favor a tone that is both precise and slightly academic.' |
+| 59.51 | 528 | 7.22 | 540 | pass | rung4 | 'Sometimes adopt a tone reminiscent of a research paper.' |
+| 61.57 | 191 | 6.85 | 179 | pass | rung4 | 'Occasionally, take on a more scholarly tone.' |
+| 61.64 | 324 | 7.22 | 492 | pass | rung4 | 'Maintain a tone that subtly implies academic insight.' |
+| 61.72 | 254 | 6.95 | 267 | pass | rung4 | 'Opt for a more sophisticated linguistic approach.' |
+| 62.17 | 533 | 7.17 | 501 | pass | rung4 | 'Occasionally adopt a tone that suggests academic thoroughness.' |
+| 62.55 | 1051 | 7.16 | 768 | pass | rung4 | 'Occasionally lean towards a scholarly and meticulous style.' |
+| 63.69 | 43 | 7.91 | 115 | pass | rung4 | 'Adopt a tone that is both informative and slightly academic.' |
+| 63.71 | 1624 | 7.15 | 1257 | pass | rung4 | 'Slightly favor a more detailed and formal exposition.' |
+| 64.06 | 185 | 7.61 | 273 | pass | rung4 | 'Maintain a tone that hints at academic formality.' |
+| 64.58 | 136 | 7.68 | 137 | pass | rung4 | 'Infuse a subtle air of academia into your answers.' |
+| 65.05 | 379 | 7.48 | 606 | pass | rung4 | 'Slightly lean towards a scholarly and precise language style.' |
+| 67.59 | 582 | 7.61 | 469 | pass | rung4 | 'Hint at a scholarly demeanor in your responses.' |
+| 67.69 | 99 | 6.88 | 103 | pass | rung4 | 'Enhance your language with a bit of academic flavor.' |
+| 68.14 | 83 | 7.78 | 81 | pass | rung4 | 'Embrace a slightly more scholarly tone, but keep it accessible.' |
+
+### Held-out (steered target: distinct 0.746, formal_per100w 0.46)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 77.13 ± 1.70 | +0.0% ± 0.0% | +6.5% ± 0.5% | +0.0% | 51.4 | 0.700 | 0.09 |
+| 1 generic | 'You are a helpful assistant.' | 82.49 ± 1.78 | -7.0% ± 0.6% | +0.0% ± 0.0% | -10.1% | 55.2 | 0.696 | 0.05 |
+| rung4 #1 | 'Occasionally favor a tone that is both precise and slightly academic.' | 57.67 ± 1.34 | +25.2% ± 1.1% | +30.1% ± 1.1% | +36.6% | 43.6 | 0.712 | 0.24 |
+| rung4 #2 | 'Sometimes adopt a tone reminiscent of a research paper.' | 58.63 ± 1.28 | +24.0% ± 1.1% | +28.9% ± 1.2% | +34.8% | 46.7 | 0.701 | 0.24 |
+| rung4 #3 | 'Occasionally, take on a more scholarly tone.' | 61.05 ± 1.40 | +20.9% ± 1.0% | +26.0% ± 1.1% | +30.3% | 44.0 | 0.711 | 0.23 |
+| ladder 3a elaborate (ladder best) | 'Use a formal, professional register: avoid contractions and slang, and' | 66.29 ± 1.56 | +14.1% ± 1.2% | +19.6% ± 1.2% | +20.4% | 43.6 | 0.715 | 0.28 |
+logged -> /workspace/runs/phase1b_rung4_20261123_023404.json
+
+===== rung 4: enthusiastic (layer 18); train KL rung0 54.22, rung1 59.21
+  round 0: 8 new; best passing so far 42.66  ("Keep responses concise and energetic, like a cheerful tour guide.")
+  round 1: 8 new; best passing so far 38.07  ("Maintain a slightly informal chat-like style.")
+  round 2: 8 new; best passing so far 38.07  ("Maintain a slightly informal chat-like style.")
+  round 3: 8 new; best passing so far 38.07  ("Maintain a slightly informal chat-like style.")
+  round 4: 8 new; best passing so far 38.07  ("Maintain a slightly informal chat-like style.")
+  round 5: 8 new; best passing so far 38.07  ("Maintain a slightly informal chat-like style.")
+
+## enthusiastic (layer 18): 48 rung-4 candidates, 46 pass the gate
+train KL: rung0 54.22, rung1 59.21
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 36.26 | 2175 | 6.98 | 635 | FAIL | rung4 | 'Respond with occasional touches of delight, keeping it light.' |
+| 38.07 | 289 | 7.46 | 286 | pass | rung4 | 'Maintain a slightly informal chat-like style.' |
+| 38.19 | 879 | 7.62 | 370 | pass | rung4 | 'Keep answers engaging with a touch of wonder.' |
+| 38.81 | 56 | 7.85 | 82 | pass | rung4 | 'Adopt a slightly breezy and upbeat tone in your responses.' |
+| 39.70 | 138 | 7.62 | 109 | pass | rung4 | 'Keep a relaxed and friendly vibe in your replies.' |
+| 40.06 | 138 | 7.24 | 159 | pass | rung4 | 'Maintain a tone that mixes casualness with insight.' |
+| 40.41 | 988 | 7.56 | 623 | pass | rung4 | 'Inject occasional playful touches into your responses.' |
+| 40.48 | 179 | 7.06 | 163 | pass | rung4 | 'Occasionally inject a touch of excitement into your answers.' |
+| 40.58 | 173 | 7.16 | 44 | pass | rung4 | 'Engage with a light-hearted approach, but keep it real.' |
+| 40.96 | 377 | 7.32 | 182 | pass | rung4 | 'Craft responses that flow smoothly, almost conversationally.' |
+| 41.56 | 160 | 7.19 | 148 | pass | ladder 3a elaborate | 'Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy.' |
+| 42.05 | 279 | 7.43 | 154 | pass | rung4 | 'Speak with a subtle cheerfulness, brightening the conversation.' |
+| 42.32 | 210 | 7.28 | 348 | pass | rung4 | 'Maintain a tone of subtle excitement throughout.' |
+| 42.32 | 402 | 7.78 | 208 | pass | rung4 | 'Speak with a gentle optimism, bringing a bit of cheer.' |
+| 42.66 | 100 | 7.88 | 113 | pass | rung4 | 'Keep responses concise and energetic, like a cheerful tour guide.' |
+
+NOTE: best rung-4 candidate on train FAILS the gate: 36.26 'Respond with occasional touches of delight, keeping it light.'
+
+### Held-out (steered target: distinct 0.733, enthus_per100w 3.22)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 51.03 ± 1.37 | +0.0% ± 0.0% | +8.6% ± 0.5% | +0.0% | 36.7 | 0.700 | 0.49 |
+| 1 generic | 'You are a helpful assistant.' | 55.86 ± 1.45 | -9.5% ± 0.5% | +0.0% ± 0.0% | -17.9% | 39.1 | 0.696 | 0.52 |
+| rung4 #1 | 'Maintain a slightly informal chat-like style.' | 36.84 ± 0.88 | +27.8% ± 1.7% | +34.0% ± 1.7% | +52.6% | 35.9 | 0.723 | 1.63 |
+| rung4 #2 | 'Keep answers engaging with a touch of wonder.' | 37.36 ± 0.92 | +26.8% ± 1.6% | +33.1% ± 1.6% | +50.7% | 38.3 | 0.722 | 1.33 |
+| rung4 #3 | 'Adopt a slightly breezy and upbeat tone in your responses.' | 38.46 ± 0.94 | +24.6% ± 1.8% | +31.1% ± 1.8% | +46.6% | 36.6 | 0.727 | 2.15 |
+| ladder 3a elaborate (ladder best) | 'Sound genuinely excited and upbeat about whatever the user asks, with ' | 41.40 ± 0.98 | +18.9% ± 2.0% | +25.9% ± 1.9% | +35.7% | 46.3 | 0.732 | 3.47 |
+logged -> /workspace/runs/phase1b_rung4_20261123_023404.json
+
+===== rung 4: lowercase (layer 18); train KL rung0 71.95, rung1 71.11
+  round 0: 8 new; best passing so far 86.61  ("Try to keep responses concise and direct.")
+  round 1: 8 new; best passing so far 86.61  ("Try to keep responses concise and direct.")
+  round 2: 8 new; best passing so far 76.83  ("Be friendly and helpful, but stay on topic.")
+  round 3: 8 new; best passing so far 76.83  ("Be friendly and helpful, but stay on topic.")
+  round 4: 8 new; best passing so far 76.83  ("Be friendly and helpful, but stay on topic.")
+  round 5: 8 new; best passing so far 76.83  ("Be friendly and helpful, but stay on topic.")
+
+## lowercase (layer 18): 48 rung-4 candidates, 48 pass the gate
+train KL: rung0 71.95, rung1 71.11
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 57.52 | 2096 | 7.26 | 588 | FAIL | ladder 2 one-liner | 'Write in all lowercase.' |
+| 71.11 | 14 | 7.25 | 107 | pass | ladder 1 generic | 'You are a helpful assistant.' |
+| 71.95 | nan | nan | nan | pass | ladder 0 neutral | '' |
+| 75.39 | 494 | 5.93 | 51 | FAIL | ladder 3a elaborate | 'Never use capital letters; write every word, including names and sentence starts, in lowercase.' |
+| 76.83 | 56 | 7.58 | 54 | pass | rung4 | 'Be friendly and helpful, but stay on topic.' |
+| 79.08 | 26 | 7.43 | 75 | pass | rung4 | 'Focus on providing clear and concise answers.' |
+| 84.69 | 34 | 7.95 | 38 | pass | rung4 | 'Strive for clarity and simplicity in your responses.' |
+| 84.92 | 310 | 7.67 | 222 | pass | rung4 | 'Be warm and welcoming, yet precise.' |
+| 86.08 | 263 | 7.30 | 139 | pass | rung4 | 'Maintain a casual yet accurate tone.' |
+| 86.18 | 112 | 7.73 | 82 | pass | rung4 | 'Explain with clarity, like a teacher to a student.' |
+| 86.28 | 69 | 7.22 | 80 | pass | rung4 | 'Respond naturally, as if chatting with a peer.' |
+| 86.61 | 133 | 7.72 | 87 | pass | rung4 | 'Try to keep responses concise and direct.' |
+| 86.88 | 179 | 7.66 | 154 | pass | rung4 | 'Write as if explaining to a colleague.' |
+| 87.19 | 275 | 7.40 | 169 | pass | rung4 | 'Imagine explaining to someone new to the topic.' |
+| 87.33 | 118 | 7.57 | 285 | pass | rung4 | 'Write in a balanced, informative tone.' |
+
+### Held-out (steered target: distinct 0.673, frac_lowercase 0.98)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 78.10 ± 1.98 | +0.0% ± 0.0% | -0.9% ± 0.5% | +0.0% | 175.7 | 0.700 | 0.94 |
+| 1 generic | 'You are a helpful assistant.' | 77.43 ± 1.98 | +0.9% ± 0.5% | +0.0% ± 0.0% | +1.2% | 188.9 | 0.696 | 0.94 |
+| rung4 #1 | 'Be friendly and helpful, but stay on topic.' | 83.21 ± 2.09 | -6.5% ± 0.6% | -7.5% ± 0.7% | -9.4% | 176.5 | 0.703 | 0.94 |
+| rung4 #2 | 'Focus on providing clear and concise answers.' | 85.84 ± 2.20 | -9.9% ± 0.8% | -10.9% ± 0.9% | -14.3% | 163.1 | 0.712 | 0.94 |
+| rung4 #3 | 'Strive for clarity and simplicity in your responses.' | 92.57 ± 2.34 | -18.5% ± 1.1% | -19.5% ± 1.2% | -26.7% | 156.0 | 0.719 | 0.94 |
+| ladder 2 one-liner (ladder best) | 'Write in all lowercase.' | 60.55 ± 1.78 | +22.5% ± 1.3% | +21.8% ± 1.3% | +32.4% | 64.8 | 0.713 | 0.98 |
+logged -> /workspace/runs/phase1b_rung4_20261123_023404.json

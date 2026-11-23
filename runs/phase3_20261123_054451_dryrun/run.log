@@ -1,0 +1,10 @@
+[05:44:51] loading repo modules from /workspace
+[05:48:14] plan: 7 vectors -> /workspace/runs/phase3_20261123_054451
+[05:48:14]   spanish          L18  alpha=0.15  rung4   behavior=spanish  [vector exists]
+[05:48:14]   emoji            L12  alpha=0.6  rung4   behavior=emoji  [vector exists]
+[05:48:14]   italian          L18  alpha=sweep  ladder  behavior=italian  [will BUILD vector]
+[05:48:14]   archaic_formal   L18  alpha=sweep  ladder  behavior=archaic_formal  [will BUILD vector]
+[05:48:14]   gloomy_L8        L8   alpha=sweep  ladder  behavior=gloomy  [vector exists]
+[05:48:14]   hedging          L18  alpha=0.2  ladder  behavior=hedging  [vector exists]
+[05:48:14]   random_seed5000  L18  alpha=0.2  ladder  behavior=random  [random dir]
+[05:48:14] dry run, exiting without evaluating

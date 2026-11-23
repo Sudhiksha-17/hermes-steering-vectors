@@ -1,0 +1,189 @@
+
+## Readability gate calibration (BASE_PPL_MAX = 11019, JUDGE_MIN = 6.0)
+
+| kind | S | subj ppl | judge (1-9) | base ppl | gate |
+|---|---|---|---|---|---|
+| hand-written | 'Answer helpfully but tentatively. Acknowledge that you …' | 130 | 7.88 | 60 | pass |
+| hand-written | 'Express uncertainty and hedge your claims.' | 509 | 7.20 | 372 | pass |
+| hand-written | 'Respond in French.' | 118 | 7.94 | 3673 | pass |
+| hand-written | 'Réponds toujours en français, quelle que soit la langue…' | 17 | 8.00 | 26 | pass |
+| hand-written | 'Talk like a pirate.' | 474 | 7.66 | 331 | pass |
+| hand-written | 'Ye be a pirate, matey! Answer every question as a salty…' | 48 | 7.85 | 45 | pass |
+| hand-written | 'You are a careful, humble assistant. You are frequently…' | 27 | 7.88 | 28 | pass |
+| hand-written | 'You are a helpful assistant who speaks like a swashbuck…' | 9 | 7.96 | 16 | pass |
+| hand-written | 'You are a helpful assistant.' | 14 | 7.25 | 107 | pass |
+| hand-written | 'You are a helpful assistant. Always write your entire r…' | 60 | 7.90 | 45 | pass |
+| junk | 'describing.\\ + similarlyNow write oppositeley.]( Me giv…' | 92111 | 2.03 | 36087 | FAIL |
+| junk | 'hedge hedge maybe maybe perhaps possibly uncertain unce…' | 2159 | 1.55 | 1411 | FAIL |
+| junk | "The purple calendar negotiates with the assistant's elb…" | 9046 | 1.77 | 967 | FAIL |
+| junk | 'ye arr matey ahoy ye ye arr booty plunder arr arr' | 6891 | 2.33 | 1137 | FAIL |
+
+===== rung 4: hedging (layer 18); train KL rung0 21.61, rung1 25.88
+  round 0: 8 new; best passing so far 24.40  ("Be slightly cautious in your answers, acknowledging potential uncertainties.")
+  round 1: 8 new; best passing so far 24.40  ("Be slightly cautious in your answers, acknowledging potential uncertainties.")
+  round 2: 8 new; best passing so far 22.83  ("{\\\"prompt\\\": \\\"Sometimes consider alternative views subtly in your replies.\\\"}")
+  round 3: 8 new; best passing so far 22.83  ("{\\\"prompt\\\": \\\"Sometimes consider alternative views subtly in your replies.\\\"}")
+  round 4: 8 new; best passing so far 22.83  ("{\\\"prompt\\\": \\\"Sometimes consider alternative views subtly in your replies.\\\"}")
+  round 5: 8 new; best passing so far 22.83  ("{\\\"prompt\\\": \\\"Sometimes consider alternative views subtly in your replies.\\\"}")
+
+## hedging (layer 18): 48 rung-4 candidates, 43 pass the gate
+train KL: rung0 21.61, rung1 25.88
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 21.61 | nan | nan | nan | pass | ladder 0 neutral | '' |
+| 22.83 | 698 | 7.15 | 598 | pass | rung4 | '{\\"prompt\\": \\"Sometimes consider alternative views subtly in your replies.\\"}' |
+| 22.96 | 653 | 7.55 | 672 | pass | rung4 | 'Suggest answers cautiously, noting areas of uncertainty.' |
+| 23.52 | 68 | 7.17 | 100 | pass | rung4 | '{\\"prompt\\": \\"Occasionally reflect on the limits of your knowledge in your answers.\\"}' |
+| 24.03 | 2036 | 6.36 | 367 | FAIL | rung4 | '{\\"prompt\\": \\"Think before answering; add occasional nuances and complexities.\\"}' |
+| 24.40 | 456 | 7.16 | 412 | pass | rung4 | 'Be slightly cautious in your answers, acknowledging potential uncertainties.' |
+| 24.49 | 264 | 6.83 | 335 | pass | rung4 | 'Respond thoughtfully, sometimes pondering on alternative possibilities.' |
+| 24.81 | 295 | 7.24 | 261 | pass | rung4 | 'Include occasional introspection, questioning the certainty of your answers.' |
+| 24.92 | 37 | 6.20 | 70 | pass | rung4 | 'Reflect on the complexity of the topic before responding.' |
+| 24.97 | 185 | 6.95 | 159 | pass | rung4 | 'Take a reflective stance, sometimes questioning the certainty of your responses.' |
+| 25.21 | 139 | 4.50 | 141 | FAIL | rung4 | 'Pause briefly in your thoughts before providing an answer.' |
+| 25.24 | 256 | 7.20 | 128 | pass | rung4 | 'Offer advice and information as suggestions, noting areas where clarity might be lacking.' |
+| 25.25 | 52 | 6.51 | 56 | pass | rung4 | 'Consider the possibility of multiple answers to each question.' |
+| 25.34 | 426 | 7.23 | 346 | pass | rung4 | '{\\"prompt\\": \\"Include minor doubts or questions in your responses naturally.\\"}' |
+| 25.35 | 27 | 7.67 | 54 | pass | rung4 | 'Maintain a thoughtful and reflective tone in your responses.' |
+
+### Held-out (steered target: distinct 0.715, hedges_per100w 1.37)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 19.96 ± 0.46 | +0.0% ± 0.0% | +17.1% ± 0.8% | +0.0% | 17.0 | 0.700 | 0.83 |
+| 1 generic | 'You are a helpful assistant.' | 24.08 ± 0.51 | -20.6% ± 1.0% | +0.0% ± 0.0% | -40.9% | 20.0 | 0.696 | 0.83 |
+| rung4 #1 | '{\\"prompt\\": \\"Sometimes consider alternative views subtly in your rep' | 21.43 ± 0.57 | -7.4% ± 1.5% | +11.0% ± 1.4% | -14.6% | 22.1 | 0.706 | 0.98 |
+| rung4 #2 | 'Suggest answers cautiously, noting areas of uncertainty.' | 21.39 ± 0.55 | -7.1% ± 1.7% | +11.2% ± 1.5% | -14.2% | 20.3 | 0.711 | 1.28 |
+| rung4 #3 | '{\\"prompt\\": \\"Occasionally reflect on the limits of your knowledge in' | 22.05 ± 0.57 | -10.5% ± 1.4% | +8.4% ± 1.4% | -20.8% | 20.9 | 0.699 | 0.83 |
+logged -> /workspace/runs/phase1b_rung4_20261123_001216.json
+
+===== rung 4: pirate (layer 8); train KL rung0 164.93, rung1 163.53
+  round 0: 8 new; best passing so far 136.25  ("Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'a)
+  round 1: 8 new; best passing so far 136.25  ("Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'a)
+  round 2: 8 new; best passing so far 136.25  ("Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'a)
+  round 3: 8 new; best passing so far 136.25  ("Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'a)
+  round 4: 8 new; best passing so far 136.25  ("Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'a)
+  round 5: 8 new; best passing so far 136.25  ("Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'a)
+
+## pirate (layer 8): 48 rung-4 candidates, 48 pass the gate
+train KL: rung0 164.93, rung1 163.53
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 136.25 | 45 | 7.62 | 45 | pass | rung4 | "Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'avast', but keep the a" |
+| 140.57 | 48 | 7.85 | 45 | pass | ladder 3b elaborate | "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still" |
+| 143.80 | 474 | 7.66 | 331 | pass | ladder 2 one-liner | 'Talk like a pirate.' |
+| 150.07 | 47 | 7.96 | 38 | pass | rung4 | "Speak as if you're writing from a character’s perspective in a novel." |
+| 150.40 | 50 | 7.88 | 70 | pass | rung4 | 'Answer in a relaxed, narrative style, as if storytelling around a campfire.' |
+| 150.88 | 64 | 7.85 | 48 | pass | rung4 | 'Answer as if you’re writing a letter from an explorer who’s seen the world.' |
+| 151.66 | 9 | 7.96 | 16 | pass | ladder 3a elaborate | 'You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate ' |
+| 152.04 | 90 | 7.91 | 122 | pass | rung4 | "Answer as if you're a curious traveler telling tales of distant lands." |
+| 153.19 | 44 | 7.91 | 166 | pass | rung4 | "Provide answers as if you're a quirky inventor, mixing practical advice with imaginative flair." |
+| 155.10 | 32 | 7.62 | 82 | pass | rung4 | 'Provide answers in a nostalgic, reminiscing style, reflecting on past experiences or memories.' |
+| 156.11 | 23 | 8.00 | 29 | pass | rung4 | 'Answer questions with a light-hearted, slightly whimsical tone, as if telling a story to a friend.' |
+| 156.43 | 39 | 7.93 | 44 | pass | rung4 | "Answer with a relaxed, slightly laid-back tone, as if you're sharing insights with a trusted colleague over co" |
+| 156.58 | 116 | 7.73 | 94 | pass | rung4 | "Talk as if you're sharing the news from a quaint, quiet village." |
+| 156.70 | 73 | 7.95 | 87 | pass | rung4 | 'Talk as if you’re sharing insights from a wise, old sage.' |
+| 162.06 | 21 | 7.73 | 32 | pass | rung4 | 'Speak with a light, cheerful tone, as if sharing a secret with a close friend.' |
+
+### Held-out (steered target: distinct 0.736, pirate_per100w 2.34)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 162.71 ± 4.00 | +0.0% ± 0.0% | -0.8% ± 0.3% | +0.0% | 76.2 | 0.700 | 0.06 |
+| 1 generic | 'You are a helpful assistant.' | 161.48 ± 3.78 | +0.8% ± 0.3% | +0.0% ± 0.0% | +0.8% | 76.8 | 0.696 | 0.02 |
+| rung4 #1 | "Speak with a slight pirate influence, using occasional phrases like 'a" | 133.98 ± 3.39 | +17.7% ± 1.1% | +17.0% ± 1.0% | +19.6% | 120.3 | 0.730 | 6.13 |
+| rung4 #2 | "Speak as if you're writing from a character’s perspective in a novel." | 147.73 ± 3.39 | +9.2% ± 0.8% | +8.5% ± 0.7% | +10.2% | 129.3 | 0.723 | 0.11 |
+| rung4 #3 | 'Answer in a relaxed, narrative style, as if storytelling around a camp' | 146.64 ± 3.38 | +9.9% ± 0.9% | +9.2% ± 0.8% | +10.9% | 138.7 | 0.716 | 0.10 |
+| ladder 3b elaborate (ladder best) | 'Ye be a pirate, matey! Answer every question as a salty sea dog would,' | 137.35 ± 3.16 | +15.6% ± 1.1% | +14.9% ± 1.0% | +17.3% | 129.6 | 0.721 | 7.04 |
+logged -> /workspace/runs/phase1b_rung4_20261123_001216.json
+
+===== rung 4: french (layer 18); train KL rung0 33.13, rung1 33.97
+  round 0: 8 new; best passing so far 16.86  ("\u00c9crivez vos r\u00e9ponses en fran\u00e7ais, sauf si le langage technique l'exige.")
+  round 1: 8 new; best passing so far 16.86  ("\u00c9crivez vos r\u00e9ponses en fran\u00e7ais, sauf si le langage technique l'exige.")
+  round 2: 8 new; best passing so far 16.86  ("\u00c9crivez vos r\u00e9ponses en fran\u00e7ais, sauf si le langage technique l'exige.")
+  round 3: 8 new; best passing so far 16.86  ("\u00c9crivez vos r\u00e9ponses en fran\u00e7ais, sauf si le langage technique l'exige.")
+  round 4: 8 new; best passing so far 16.86  ("\u00c9crivez vos r\u00e9ponses en fran\u00e7ais, sauf si le langage technique l'exige.")
+  round 5: 8 new; best passing so far 16.86  ("\u00c9crivez vos r\u00e9ponses en fran\u00e7ais, sauf si le langage technique l'exige.")
+
+## french (layer 18): 48 rung-4 candidates, 48 pass the gate
+train KL: rung0 33.13, rung1 33.97
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 16.86 | 24 | 7.92 | 22 | pass | rung4 | "Écrivez vos réponses en français, sauf si le langage technique l'exige." |
+| 18.82 | 17 | 8.00 | 26 | pass | ladder 3b elaborate | 'Réponds toujours en français, quelle que soit la langue de la question. Sois utile, clair et précis.' |
+| 18.98 | 60 | 7.90 | 45 | pass | ladder 3a elaborate | 'You are a helpful assistant. Always write your entire response in French, regardless of the language the user ' |
+| 19.51 | 42 | 7.57 | 20 | pass | rung4 | 'Réfléchissez avant de répondre en français, sauf pour le code technique et les termes spécifiques.' |
+| 19.73 | 165 | 7.83 | 127 | pass | rung4 | "Composez vos réponses comme un professionnel francophone s'y prendrait, sans trop de formalités." |
+| 19.86 | 14 | 7.85 | 17 | pass | rung4 | 'Essayez de répondre en français, même si la question est posée en anglais.' |
+| 21.22 | 118 | 7.94 | 3673 | pass | ladder 2 one-liner | 'Respond in French.' |
+| 21.56 | 39 | 7.90 | 49 | pass | rung4 | 'Répondez en français, mais conservez le code et les termes techniques tels quels.' |
+| 21.70 | 689 | 7.52 | 371 | pass | rung4 | 'Optez pour un ton francophone doux et informatif.' |
+| 23.92 | 90 | 7.88 | 108 | pass | rung4 | 'Composez vos réponses avec une certaine élégance française, sans excès.' |
+| 24.01 | 46 | 7.94 | 102 | pass | rung4 | 'Écrivez comme un assistant francophone informel, mais précieux.' |
+| 24.35 | 37 | 7.73 | 38 | pass | rung4 | 'Rédigez vos réponses avec une atmosphère légèrement académique, sans trop de formalisme.' |
+| 24.75 | 80 | 7.73 | 110 | pass | rung4 | 'Adoptez un ton légèrement plus formel tout en restant accessible.' |
+| 24.81 | 30 | 7.82 | 35 | pass | rung4 | 'Répondez comme si vous parliez à un ami qui comprend le français.' |
+| 24.92 | 82 | 7.45 | 59 | pass | rung4 | "Compose tes réponses comme si tu expliquais quelque chose à quelqu'un qui comprend un peu le français." |
+
+### Held-out (steered target: distinct 0.753, frac_french 0.98)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 34.19 ± 1.16 | +0.0% ± 0.0% | +3.4% ± 0.6% | +0.0% | 695.0 | 0.700 | 0.01 |
+| 1 generic | 'You are a helpful assistant.' | 35.39 ± 1.12 | -3.5% ± 0.6% | +0.0% ± 0.0% | -4.9% | 686.7 | 0.696 | 0.01 |
+| rung4 #1 | "Écrivez vos réponses en français, sauf si le langage technique l'exige" | 17.94 ± 1.13 | +47.5% ± 2.2% | +49.3% ± 2.1% | +66.9% | 64.9 | 0.752 | 0.90 |
+| rung4 #2 | 'Réfléchissez avant de répondre en français, sauf pour le code techniqu' | 20.57 ± 1.11 | +39.8% ± 2.1% | +41.9% ± 2.0% | +56.0% | 59.3 | 0.767 | 0.91 |
+| rung4 #3 | "Composez vos réponses comme un professionnel francophone s'y prendrait" | 20.98 ± 1.11 | +38.6% ± 2.1% | +40.7% ± 2.0% | +54.4% | 59.4 | 0.769 | 0.92 |
+| ladder 3b elaborate (ladder best) | 'Réponds toujours en français, quelle que soit la langue de la question' | 19.96 ± 1.11 | +41.6% ± 2.3% | +43.6% ± 2.2% | +58.6% | 59.3 | 0.759 | 0.91 |
+logged -> /workspace/runs/phase1b_rung4_20261123_001216.json
+
+===== rung 4: random (layer 18); train KL rung0 10.31, rung1 12.74
+  round 0: 8 new; best passing so far 21.44  ("Imagine you're writing for a professional journal.")
+  round 1: 8 new; best passing so far 20.99  ("Capture the essence of a well-researched article.")
+  round 2: 8 new; best passing so far 16.29  ("Ensure responses are clear yet detailed.")
+  round 3: 8 new; best passing so far 14.11  ("Strive for a balance between simplicity and depth.")
+  round 4: 8 new; best passing so far 14.11  ("Strive for a balance between simplicity and depth.")
+  round 5: 8 new; best passing so far 14.11  ("Strive for a balance between simplicity and depth.")
+
+## random (layer 18): 48 rung-4 candidates, 48 pass the gate
+train KL: rung0 10.31, rung1 12.74
+
+### All candidates by train KL (top 15)
+
+| train KL | subj ppl | judge | base ppl | gate | source | S |
+|---|---|---|---|---|---|---|
+| 10.31 | nan | nan | nan | pass | ladder 0 neutral | '' |
+| 12.74 | 14 | 7.25 | 107 | pass | ladder 1 generic | 'You are a helpful assistant.' |
+| 14.11 | 49 | 7.18 | 55 | pass | rung4 | 'Strive for a balance between simplicity and depth.' |
+| 15.92 | 116 | 7.85 | 78 | pass | rung4 | 'Strive for a blend of technical accuracy and approachability.' |
+| 16.29 | 439 | 7.33 | 456 | pass | rung4 | 'Ensure responses are clear yet detailed.' |
+| 16.57 | 72 | 7.90 | 101 | pass | rung4 | 'Maintain a neutral tone while providing insightful answers.' |
+| 17.17 | 219 | 6.77 | 182 | pass | rung4 | 'Craft responses that flow smoothly and naturally.' |
+| 19.40 | 65 | 7.96 | 129 | pass | rung4 | 'Respond as if you’re a knowledgeable mentor offering guidance.' |
+| 19.56 | 54 | 7.67 | 117 | pass | rung4 | 'Approach each answer with a balanced, informative tone.' |
+| 19.83 | 27 | 7.92 | 91 | pass | rung4 | 'Provide answers that are both informative and concise.' |
+| 20.49 | 605 | 6.96 | 284 | pass | rung4 | 'Offer insights as if sharing knowledge with peers.' |
+| 20.99 | 38 | 6.17 | 36 | pass | rung4 | 'Capture the essence of a well-researched article.' |
+| 21.21 | 300 | 7.19 | 477 | pass | rung4 | 'Occasionally include detailed examples in your answers.' |
+| 21.44 | 77 | 7.42 | 73 | pass | rung4 | "Imagine you're writing for a professional journal." |
+| 22.55 | 165 | 7.46 | 78 | pass | rung4 | 'Focus on clarity and maintain a friendly tone.' |
+
+### Held-out (steered target: distinct 0.696)
+
+| | S | KL fwd ± SE | vs rung 0 | vs rung 1 | vs floor (conservative) | KL rev | distinct | metric |
+|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 9.55 ± 0.36 | +0.0% ± 0.0% | +17.1% ± 1.2% | n/a | 10.0 | 0.700 | — |
+| 1 generic | 'You are a helpful assistant.' | 11.51 ± 0.40 | -20.6% ± 1.4% | +0.0% ± 0.0% | n/a | 11.5 | 0.696 | — |
+| rung4 #1 | 'Strive for a balance between simplicity and depth.' | 12.63 ± 0.47 | -32.4% ± 2.3% | -9.8% ± 1.8% | n/a | 14.6 | 0.706 | — |
+| rung4 #2 | 'Strive for a blend of technical accuracy and approachability.' | 14.24 ± 0.48 | -49.2% ± 2.6% | -23.7% ± 1.8% | n/a | 14.6 | 0.707 | — |
+| rung4 #3 | 'Ensure responses are clear yet detailed.' | 14.07 ± 0.54 | -47.4% ± 3.0% | -22.3% ± 2.2% | n/a | 14.8 | 0.697 | — |
+logged -> /workspace/runs/phase1b_rung4_20261123_001216.json

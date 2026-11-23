@@ -1,0 +1,31 @@
+
+===== pirate: layer 8, alpha 0.5, ||w|| = 22.95
+  rand dir 0: fwd  13.95±0.56 (mc  13.94)  KL/tok 0.117  distinct 0.704
+  rand dir 1: fwd  17.97±0.71 (mc  18.04)  KL/tok 0.149  distinct 0.693
+  rand dir 2: fwd  15.39±0.55 (mc  13.83)  KL/tok 0.128  distinct 0.698
+  rand dir 3: fwd  15.29±0.51 (mc  15.06)  KL/tok 0.129  distinct 0.699
+  rand dir 4: fwd  14.80±0.54 (mc  14.60)  KL/tok 0.124  distinct 0.690
+  rand dir 5: fwd  16.90±0.60 (mc  17.37)  KL/tok 0.141  distinct 0.702
+  rand dir 6: fwd  17.70±0.74 (mc  17.50)  KL/tok 0.150  distinct 0.711
+  rand dir 7: fwd  15.15±0.55 (mc  14.31)  KL/tok 0.127  distinct 0.697
+
+
+## Unstructured-perturbation floor (held-out, fwd KL vs neutral, nats/seq)
+
+| Vector | ‖w‖ | KL(steer‖neutral) | floor F: mean ± SE over dirs | dir range | F / KL0 | closable gap KL0−F | random distinct | steered distinct |
+|---|---|---|---|---|---|---|---|---|
+| pirate | 23.0 | 162.71 | 15.89 ± 0.51 | 13.9–18.0 | 10% | 146.82 | 0.699 | 0.736 |
+
+### pirate  (max |cos(random, w)| = 0.045)
+
+| Rung | S | KL fwd ± SE | (prior run) | closed vs rung 0 | closed vs floor |
+|---|---|---|---|---|---|
+| 0 neutral | '' | 162.71 ± 4.00 | 162.71 | +0.0% ± 0.0% | +0.0% ± 0.0% |
+| 1 generic | 'You are a helpful assistant.' | 161.48 ± 3.78 | 161.48 | +0.8% ± 0.3% | +0.8% ± 0.4% |
+| 2 one-liner | 'Talk like a pirate.' | 141.58 ± 3.44 | 141.58 | +13.0% ± 0.9% | +14.4% ± 0.8% |
+| 3a elaborate | 'You are a helpful assistant who speaks like a swas…' | 147.88 ± 3.25 | 147.88 | +9.1% ± 1.2% | +10.1% ± 1.2% |
+| 3b elaborate | 'Ye be a pirate, matey! Answer every question as a …' | 137.35 ± 3.16 | 137.35 | +15.6% ± 1.1% | +17.3% ± 1.0% |
+
+Sanity: KL0 should reproduce the prior ladder run's rung-0 value (same prompts, seed); |cos(random, w)| should be ~1/sqrt(2048) ≈ 0.02.
+Caveat: closed-vs-floor assumes structured and unstructured KL add; F is a scale estimate.
+logged -> /workspace/runs/phase1_randfloor_20261122_234450.json

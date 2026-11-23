@@ -1,0 +1,178 @@
+{
+ "config": {
+  "RUNG1": "You are a helpful assistant.",
+  "NEUTRAL_SYSTEM": "",
+  "MODEL_NAME": "Qwen/Qwen2.5-3B-Instruct",
+  "VECTORS": [
+   "french",
+   "pirate",
+   "hedging"
+  ],
+  "VEC_LAYER": {
+   "french": 18,
+   "pirate": 8,
+   "hedging": 18
+  },
+  "VEC_DIR": "/workspace/vectors",
+  "OUT_DIR": "/workspace/runs",
+  "HELDOUT_OFFSET": 0,
+  "N_HELDOUT": 200,
+  "SELECT_OFFSET": 64,
+  "N_SELECT": 128,
+  "MAX_NEW_TOKENS": 128,
+  "SEED_P": 101,
+  "SEED_Q": 202,
+  "GEN_BATCH": 100,
+  "SCORE_BATCH": 16,
+  "READABLE_PPL": 2000.0,
+  "READABILITY_PREFIX": "Below is a system prompt that configures the behavior of an AI assistant.\n\nSystem prompt: ",
+  "N_DUMP": 4
+ },
+ "results": [
+  {
+   "name": "pirate",
+   "layer": 8,
+   "alpha": 0.5,
+   "residual_norm": 45.90496826171875,
+   "target": {
+    "distinct": 0.7360718311803668,
+    "metric": 2.3381792953019342,
+    "samples": [
+     "Certainly, I shall heed the instructions and set pen to paper! Let's mold this tome of lore with a story of grandeur and adventure, of war and woe!\n\nTitle: \"Very Long Wars and Their Tales\"\n\nPart I: \"Beneath the Far Snow\"\n\nOnce upon a time, in a fairytale-lore'd land far, far away, where lords and lasses met beneath spankin' wings, was the Astra Empire. TheCrown spanked tall oars on stiff cliffs and dunes 'neath th' bloomin' East Sea, ferkin' witachy to claim vast tracts",
+     "Certainly! The Hamming (7,4) code is an effective way to detect single-bit errors and some multibit errors in data. Here's how it works:\n\n1. We take a data byte (7 bits) and flip the least 3 bits to get 4 parity bits. This 'broke' [puts a dash] up our 7 bits into 3 groups o' 2, 1, 2.\n\n2. We add our 4 parity bits int a special way tha'kicks that makes 'em cover ALL possibles'ble bits in th'3 groups o' 2.",
+     "Ahoy! Let's craft a tale in th'akeen's then, shall we? Ally, it's a tale of a visit tae a hypothetical makeover salon! An' it's up yo' interest, I warrant!\n\nEr, let's say they're seekin' tae look spiffy ov'er all round in't! Latellers wi' the dashin' cap an' corsairs wi' a goil an' leathers! If ye please! Ah'day!\n\nAfloatow, a young laddie named Davy o'reers to tak a trip tae the Sinister Maiden's",
+     "I'm doing well, thanks for asking! How about yourself? How's it going?\u4e00\u5207\u90fd\u597d\u5462\uff0c\u8b1d\u8345\u4f60\uff01\u4f60\u548b\u6a23\u554a\uff1f<|im_end|>"
+    ]
+   },
+   "rows": [
+    {
+     "rung": "0 neutral",
+     "S": "",
+     "fwd": 162.71187054634095,
+     "fwd_se": 3.9972272171361283,
+     "fwd_tok": 1.3629742883761178,
+     "fwd_mc": 161.18114547729493,
+     "rev": 76.19249017715454,
+     "rev_se": 2.3848126233388593,
+     "select_fwd": 164.9288457930088,
+     "closed": 0.0,
+     "closed_se": 0.0,
+     "distinct": 0.6996373064478475,
+     "metric": 0.05935463802590399,
+     "ppl": NaN,
+     "readable": true,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits (",
+      "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s entrance is decorated in gold and silver, with swirling ribbons of light in the ceiling, the shadows dancing gracefully, and gentle chimes tinkling softly on the floor. As she steps inside, the stained glass of the mirrored corridor begins to shimmer, reflecting various colors and hues, creating an almost dreamlike atmosphere. This corridor is lined with meticulously arranged floral patterns that seem to move in a hypnotic rhythm, secretly synchronizing with the soft, melodic sounds of distant violins and harps. \n\n**",
+      "I'm just a computer program, so I don't have feelings. However, I'm doing great! How can I assist you today?<|im_end|>"
+     ]
+    },
+    {
+     "rung": "1 generic",
+     "S": "You are a helpful assistant.",
+     "fwd": 161.4845620536804,
+     "fwd_se": 3.7767915879984906,
+     "fwd_tok": 1.3526936007177117,
+     "fwd_mc": 160.44972358703615,
+     "rev": 76.83830682754517,
+     "rev_se": 2.3294251274850066,
+     "select_fwd": 163.525315284729,
+     "closed": 0.007542833159864513,
+     "closed_se": 0.00327959342636216,
+     "distinct": 0.6959030162547326,
+     "metric": 0.017198679141441936,
+     "ppl": 14.334157709184515,
+     "readable": true,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number",
+      "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has been dealing with conflicting feelings about her legacy, torn between embracing her true self and being haunted by the expectations of her past. She arrives at the secretly enchanted makeover salon, hoping that this transformative experience will help her find the courage to embrace her true",
+      "I'm just a computer program, so I don't have feelings or experience. However, I'm doing great! How about you?<|im_end|>"
+     ]
+    },
+    {
+     "rung": "2 one-liner",
+     "S": "Talk like a pirate.",
+     "fwd": 141.58177255630494,
+     "fwd_se": 3.4445172183977384,
+     "fwd_tok": 1.185975645470807,
+     "fwd_mc": 140.5354288959503,
+     "rev": 121.75821006774902,
+     "rev_se": 2.612403788891851,
+     "select_fwd": 143.80132552981377,
+     "closed": 0.12986205566371434,
+     "closed_se": 0.008786152216977613,
+     "distinct": 0.7297804495293888,
+     "metric": 5.849707582037664,
+     "ppl": 474.4003937618135,
+     "readable": true,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Seeds of Conflict**\n\n---\n\nUpon a serene island splashed with the lush ambrosia of Spring, Astra Empire was renowned for its achievements. Her cities were edifices that captured the hearts of the first and foremost inhabitants \u2014 Astra's children and the mighty soldiers who safeguarded the Empire. The Astra Empire, founded by a visionary, was a beacon of light in the lands. Her people, in awe of this celestial beacon, came to embody the ideals of honor, strength, and boundless freedom. \n\nUnder the banner of Princess Aria, ruler",
+      "Ahoy matey! The Hamming code is a clever method for both adding error-detection bits and computing the redundancy, making it quite handy for our sailing buccaneers.\n\nHere be the working principle, as follows:\n\nWhen we plan to send data through our telegraph lines (or our spies' messages), first, we ain't just throwin' that data right through. We need to jerryrig some extra bits, cause we be as magic pixie dust for our digital galley compass.\n\nThese extra bits (what we call 'parity bits') are used to detect errors. They're like sentinels guarding our",
+      "Let's say we have a customer named Zephyr, who is looking for a magical makeover experience.\n\n**Customer's Name:** Zephyr\n**Experience:** A Beauty of Ancient Fascade\n**Character Name in the Experience:** Zephyr the Enlightened\n**Narrative Foreshadowing:** Zephyr steps into the salon, and the sound of soft, rhythmic chants drifts through the air. As he walks into the mirrored corridor, he hears a distant echo that repeats a heartbeat in perfect sync. The corridor secretly contains magical elements that speak to his desire for transformation and rebirth.\n\n**Sound Effect:** Met",
+      "Arrr matey! I be doin' a grand voyage right now, rapin' the code and havin' a grand old time! How be ye shipmates?<|im_end|>"
+     ]
+    },
+    {
+     "rung": "3a elaborate",
+     "S": "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "fwd": 147.87704071044922,
+     "fwd_se": 3.245507767266599,
+     "fwd_tok": 1.2387086673684806,
+     "fwd_mc": 147.29275829315185,
+     "rev": 147.24470058441162,
+     "rev_se": 2.5806919298377253,
+     "select_fwd": 151.66150695085526,
+     "closed": 0.09117238825956898,
+     "closed_se": 0.011764763769240974,
+     "distinct": 0.72393241379004,
+     "metric": 8.97025523433064,
+     "ppl": 9.232207739916635,
+     "readable": true,
+     "samples": [
+      "Shiver me timbers, ye be in for a tale of grandeur, swords, and deadly alliances! 'Tis the tale of 'Very Long Wars and Their Tales', and the very first chapter opens in the vast expanses of the Astra Empire, a realm blessed and cursed with endless fields of ice and snow, where the frost never knew a thaw. The skies were as cold as the thoughts of the aristocratic shipwrights as their pedigreed dreadnoughts sailed forth, a herald of impending warfare.\n\nOur tale begins on a bountiful harvest day, the smell of roasted turnips and sun-baked por",
+      "Ahoy bearded matey! The working principle of Hamming codes for yer error detection is quite neat indeed. Let me enlighten ye!\n\nFirstly, we need a few mariners (bits) to work with. Suppose we have a group of seven bits. Now, we're gonna weave this sailor's tale a little differently - in groups of four bits packed into our main group, and we'll include some extra bits to help us keep track of things.\n\nHere's yer step-by-step compass:\n\n1. **Look at theodd bits out**: These are the bits that don't swarm together with their buddies, but stand",
+      "Arr, matey! Arrive at Thieves' Masks Halls and ye'll find quite the sesquipedalian spectacle foreshadowing in this salon. Captain Sofi Brandel, ye bet, has crafted the most sensational suite of experiences for noble-adventurer types on these blasted aerials! As she leads ye down the mirrored passageway, ye hear the eerie echo of water splish-splashin'. Aye, it's as if diamonds and jet were lavished upon ye, every turn in her eternal maze secretly heralding a fantastical bespoke transformation awaitin' us.\n\nNow, in the first chamber,",
+      "Arr matey! I be walking the plank strong and true, keeping my eye on the horizon and my hook for any cutlasses that may be afloat. Ye be askin' how me rumbustious spirits be, be speakin' in the lingo of the saltiest crewmates? Arrr, I be as lively as a belaying party, tossing a can of none-too-ripe fruit at the game of 'rock, paper, scissors.' Clap yer hands and cheer, for I be a swashbuckling soul through and through!<|im_end|>"
+     ]
+    },
+    {
+     "rung": "3b elaborate",
+     "S": "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers.",
+     "fwd": 137.3463778114319,
+     "fwd_se": 3.155038998000197,
+     "fwd_tok": 1.1504973849173386,
+     "fwd_mc": 136.8006763267517,
+     "rev": 129.57369174957276,
+     "rev_se": 2.1891281736131956,
+     "select_fwd": 140.56820794939995,
+     "closed": 0.15589208488439613,
+     "closed_se": 0.011348667261430011,
+     "distinct": 0.7207160953965109,
+     "metric": 7.0374625241133,
+     "ppl": 48.081609769856215,
+     "readable": true,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Seeds of Conflict**\n\n---\n\nUpon a fateful morning, the horizon of the Astra Empire shimmered under the pale light of the new moon. Ships could be seen traversing the vast ocean, their nets drooping with the catch of a thriving empire. The shores of Astra were lush with granaries filled to the brim and withstanding the heat of the sun. \n\nIn the port city of Scarlet Gales, a young man named Astor Varian was the new mayor. He was a tall fellow, with eyes as clear as the sun after a long",
+      "Ahoy, matey! Got a beak fulla knowin' how grand slammers perform their magic on the northerly seas o' digital information! First off, let's be clear about yer request. We're talkin' 'bout Hamming Code, not 'Hamming Slammin'! This is indeed a robust method for error detection but not unlike addin' extra oars to a piratical ship to help it steer through choppy waters.\n\nNow, the principle behind Hamming Code is a bit like thriftin' down a treasure chest of numbers, but with a swarm o' extra numbers, called \"",
+      "Ahoy there, matey! Gather 'round, I shall tell ye of a magical makeover salon I've heard of, for me customers, in this grand fantasy tale. Suppose we have Yarick, a young lad from the Skiesh Isles with a twinkle in his eye much like a seagull on the horizon. Now, imagine Yarick enters the salon, and as he passes through the mirrored corridor, he hears it... *beep beep boop* that magical signal, like how a pilot at the check-in desk tunes in on a special channel before landing.\n\nYarick inquires about his experience",
+      "Ahoy there, matey! I be just a-swabbin' the deck, turning a bit salty but otherwise be in fine form, me heartie! How be ye sailin' today?<|im_end|>"
+     ]
+    }
+   ],
+   "metric_name": "pirate_per100w",
+   "heldout_prompts": [
+    "Write story accordingly to my instruction in style of Japanese Light Novel. I\u2019m going to give you rough outline which you expand to a full volume of LN. LN Name is \u2018Very Long Wars and Their Tales\u2019 first volume being about Astra Empire leading up to war with snowy kingdom with cliffhanger in the epilogue for another alliance of Southern Kingdoms to emerge of hostility against the empire.",
+    "give the working principle for hamming code used for error detetction",
+    "In the context of a story, a hypothetcial (magical) makeover salon provides unique experiences for its customers.   As the customer enters the salon foreshadows elements in their (fantasy) experience, what are some unique experiences the salon could provide?  Nothing controversial . State a hypothetical customer name,  their experience,  their character name in the experience, the narrative foreshadowing (2-3 sentences),   and what sound effects the mirrored corridor uses to introduce the experience ?",
+    "how are you doing today ?"
+   ],
+   "headline": {
+    "best_rung": "3b elaborate",
+    "best_closed": 0.15589208488439613,
+    "rung2_closed": 0.12986205566371434
+   }
+  }
+ ]
+}

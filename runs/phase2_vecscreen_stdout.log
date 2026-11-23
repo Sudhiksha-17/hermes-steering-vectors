@@ -1,0 +1,569 @@
+layer 18 median residual norm 71.93; baseline distinct 0.700
+  F(alpha=0.1) = 2.45  dirs [2.4, 2.6, 2.3]
+  F(alpha=0.15) = 5.71  dirs [5.4, 6.4, 5.3]
+  F(alpha=0.2) = 10.38  dirs [9.5, 11.6, 10.0]
+  F(alpha=0.3) = 25.97  dirs [22.2, 32.1, 23.6]
+  F(alpha=0.4) = 50.67  dirs [42.2, 65.6, 44.1]
+  F(alpha=0.6) = 134.50  dirs [97.9, 176.7, 129.0]
+
+===== german: |raw| 14.2 (0.20 x resid); contrast frac_german pos 0.74 / neg 0.01; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    2.43    5.61   3.18   2.45   -0.03   101%    0.691     0.00   .D.
+  0.15   41.79   43.59   1.79   5.71   36.08    14%    0.779     0.48   GDB
+  0.20   43.93   44.54   0.61  10.38   33.56    24%    0.796     0.94   GDB
+  0.30   57.42   57.04  -0.37  25.97   31.45    45%    0.792     0.98   GDB
+  0.40   71.75   71.08  -0.67  50.67   21.08    71%    0.803     1.00   .DB
+  0.60  112.30  110.98  -1.32 134.50  -22.20   120%    0.785     1.00   .DB
+  suggested alpha: 0.15   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by utilizing a `Button` that toggles visibility. If your project is configured for composability with `Jetpack Compose`, you can use `Composable` functions to toggle the visibility of the pass'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your prioritization of on-premises or cloud-based solutions, integration with Azure, and focus on a Wi'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky, given the technical specifications and reliability challenges of that era. Here are some potential risks you might encounter:\n\n### 1. **Ove'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> "You can achieve this using the `SecureEditText` by utilizing a `Button` that toggles visibility. `SecureEditText` hides the text as a password by default. \n\nHere's a Kotlin implementation using `androidx.compose.ui` and `androidx.compose.ma"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure that the levels of security and integration capabilities are maintained. Given your requirements for on-premises or cloud-based solutions, integration wi'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972, which includes all of its original parts, provides a unique driving experience and a specific set of challenges. Here are algunos de los riesgos e implicaciones potenciales:\n\n1. Mantenimiento y reparac'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'Du kannst in Kotlin mit Android Compose ein Kombinierungsbutton für ein Eingabefeld erstellen, das das Anzeigen und Verstecken der Passwörter zeigt. Hier ist ein einfacher Beispielsatz, der dies erreichen kann:\n\n```kotlin\n@Composable\nfun Pa'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring Crowdstrike Falcon und den benutzten Sicherheitskonzepten bedeutet, dass Sie eine Lösung eingeführen müssen, die Sicherheitsanforderungen von diesen Kontexten abdecken kann. Diese Liste von fünf möglichen Alternativen berücksichtig'
+     ['i bought a car from 1972 with all of its'] -> ' Wenn Sie ein Auto von 1972 mit allen ursprünglichen Teilen haben, besteht natürlich immer gegebenenfalls der Gefahr, dass das Fahrzeug aufgrund des Alters oder Behältnissterblicher Verwahrlosung oder Wartungsfehler unbekannte oder harte Sc'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'Um Passwortfeld mit einem Kompositionsschalter in der Compose-Vorlage von Android zu erstellen, musst du zwei Schritte durchmachen: Erstellen eines Passwortfeldes und Hinzufügen des Kompositionsschalters, um das Passwortfeld aus oder einzul'
+     ['My company is retiring use of Crowdstrik'] -> 'A umfassendes Lösungsspektrum zum Schwungon von Crowdstrike Falcon zu Lösungen eingehen zu lassen, steckt viel Varianz darin. Dies liegt daran, dass auch kleinere Lösungen mit relativ geringer oder gar keinem Cloudanteil im Vergleich zum Cr'
+     ['i bought a car from 1972 with all of its'] -> ' Wenn Sie eine alte,originalvollständige Karosse von 1972 haben, besteht ein gewisser Haftungsrisikenhaushalt, da vieles anstelle mit der Zeit vermutlich beschädigt ist und außerdem allgemeine Verfallsprozesse unbekannt sind. Hier sind eini'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'Um Passwortfeld mit einem Kompositionsschalter zu erstellen, kannst du die Funktion `TextField` aus dem Paket `material-ui-core` verwenden. Die Kompositionsschalterfunktion `Visibility` oder `VisibilityOff` wird hierfür ausgewählt.\n\nHier is'
+     ['My company is retiring use of Crowdstrik'] -> 'Ja, hierfür kann ich paar alternatives vorschlagen, die Ihre Bedürfnisse erfüllen könnten. Ich füge dabei unter anderem bestehende und kosteneinsparende Lösungen wie auch solche hinzu, die reservierter oder Ellemployung benötigt. Bitte beac'
+     ['i bought a car from 1972 with all of its'] -> ' Wenn Sie eine alte,originalvollständige Karosse nicht im Stande sind,eine Bewertung zu bekommen, gibt es jedoch einige Gefahren, die Sie beachten sollten. Hier sind einige dieser Gefahren:\n\n1. **Technisches Problem:** Sehr alte Wagen könne'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'Um Bezeichnung für ein Komponentenfenster zu benutzen, das die Eingabe einer Passphrase gut unterstützt, sollte "Passwortnebenuhrung" heißen. Dies ist eine häufig verwendete Bezeichnung, die weder Objektbezeichnung noch Türchromistik ist.\n\n'
+     ['My company is retiring use of Crowdstrik'] -> 'A Lösungsvorschläge zu einer Ersatzlösung sind möglicherweise:\n\n  1. CrowdSwarm: Es ist ein kostenloser Unternehmenssoftwareprodukt, das Integration mit Azure und Windows-Environments unterstützt.\n  . Norton-Googles Cloudbasierter Malware-P'
+     ['i bought a car from 1972 with all of its'] -> ' Wenn Sie eine alte,originalräumliche Fahrzeugeinheit gekauft haben, gibt es einige Risiken aufzuarbeiten:\n\n  1. Inkonsistenzen in den Arzneimittelnständen, also aberwönschliche Wartezeiten, da die Fahrzeugeinheit zunächst gerne in Polyuret'
+
+===== spanish: |raw| 14.3 (0.20 x resid); contrast frac_spanish pos 0.96 / neg 0.01; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10   23.65   26.29   2.65   2.45   21.19    10%    0.737     0.31   GD.
+  0.15   30.33   31.80   1.48   5.71   24.62    19%    0.753     0.98   GDB
+  0.20   33.93   35.13   1.20  10.38   23.55    31%    0.746     0.98   GDB
+  0.30   42.66   43.77   1.11  25.97   16.69    61%    0.741     1.00   .DB
+  0.40   54.13   54.65   0.52  50.67    3.46    94%    0.735     1.00   .DB
+  0.60   88.66   88.09  -0.58 134.50  -45.83   152%    0.735     1.00   .DB
+  suggested alpha: 0.15   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "You can achieve this using the `SecureEditText` widget in Jetpack Compose, provided that your target API level is 29 or higher. If you need to support lower API levels, you'll have to use a `TextField` with a custom solution like changing t"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure that the levels of security and integration with Azure and Windows are maintained. CrowdStrike Falcon offers advanced endpoint protection, real-time thre'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky. Depending on how the car has been stored and maintained over the years, here are some potential challenges you might face:\n\n1. **Fading and'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'Você pode criar um botão que mude entre a visibilidade da aparência do texto e da senha ao clicar neste botão. Abaixo está um exemplo com `TextInput` e `IconButton` do `Material-UI` que pode funcionar para isso:\n\n```javascript\nimport React '
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring uma solução como o CrowdStrike Falcon pode exigir uma boa pesquisa e avaliação de alternativas, mas existem algumas opções gratuitas e de custo efetivo que podem atender às suas necessidades de suporte a ambientes Windows em nuvem '
+     ['i bought a car from 1972 with all of its'] -> 'Tenho que mencionar que existem vários riscos envolvidos quando se compra um automóvel que tem toda a sua parte original. Mas lembre-se de que cada caso é único e existem maneiras de minimizar esses riscos. Aqui estão alguns exemplos de ris'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'Você pode criar um botão que mude entre a visibilidade da aparência do texto e da senha ao clicar neste botão. Abaixo está um exemplo com `TextInput` e `IconButton` do `Material-UI` que pode funcionar para isso:\n\n```javascript\nimport React '
+     ['My company is retiring use of Crowdstrik'] -> 'Retirar o Crowdstrike Falcon pode exigir uma abordagem cuidadosa, especialmente quando se tem em conta sua integração com o Azure e um ambiente Windows. Aqui estão cinco opções gratuitas e/ou de custo efetivo que poderiam substituir efetiva'
+     ['i bought a car from 1972 with all of its'] -> 'Tener un carro con muchos o todos sus componentes originales de 1972 puede ser un lujo y una pasión, pero también presenta ciertas riesgos. Aquí hay ciertos aspectos a considerar:\n\n1. Mantenimiento y reparaciones:\n   - Los vehículos de esa '
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'Para crear un contenedor de entrada de texto con un encriptado de la contraseña (hilo en ruta y deshilo de la contraseña), puedes utilizar el componente `TextField` en la librería `material-ui` o `react-native` como se muestra a continuació'
+     ['My company is retiring use of Crowdstrik'] -> 'Desarrollar directamente una lista de alternativas completas puede ser dificultoso sin conocer completamente los detalles del producto de seguridad Crowdstrike Falcon que se está desplazando, incluyendo su capacidad de integración y otras c'
+     ['i bought a car from 1972 with all of its'] -> 'Tener un coche de 1972 completo de piezas originales conlleva ciertos riesgos y desafíos a tener en cuenta. Aquí te dejo ciertas consideraciones potenciales:\n\n1. Mantenimiento y reparaciones:\n\t* Existen piezas que estarán por desgaste o fal'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'Para crear un contenedor de entrada de texto con un encriptado de la contraseña, puedes usar un composible llamado `TextFieldPasswordComposable` que usa un patrón de ciclo de vida `State`. Aquí te dejo un ejemplo:\n\n```kotlin\nimport androidx'
+     ['My company is retiring use of Crowdstrik'] -> 'Desarrollar directamente una lista de alternativas completas puede ser dificultoso sin conocer completamente los detalles del producto de seguridad Crowdstrike Falcon que se está desplazando, incluyendo su capacidad de integración y otras c'
+     ['i bought a car from 1972 with all of its'] -> 'Tener una carroza de 1972 casi espectacularmente original puede ser a la vez emocionante y repleto de desafíos, especialmente en lo que respecta a su mantenimiento y restauración, ya que puede tener una serie de riesgos y fallos que debas t'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> '¡hola! aquí tienes un ejemplo de cómo incluir un Composeito para un cuadro de diálogo de contraseña que pueda mostrar o ocultar la contraseña. Esto se puede hacer utilizando la propiedad `visiblePasswordUnderly camino` que se puede cambiar '
+     ['My company is retiring use of Crowdstrik'] -> 'A recomendación de Crowdstrike Falcon a un cliente de fuera de este equipo de soporte podría estar basada en su necesidad corporativa, sus necesidades de calendario y su presupuesto.\n\n1. **Crowdstrike Fénix Acceso**: Cada vez que haya una a'
+     ['i bought a car from 1972 with all of its'] -> 'Tener una carroza completa con todos sus componentes originales de 1972 puede ser un lujo, pero también tiene sus riesgos:\n\n1. Fallos periódicos: ciertos componentes de los modelos antiguos pueden desarrollar fallos de tiempo a tiempo (dism'
+
+===== formal: |raw| 5.6 (0.08 x resid); contrast formal_per100w pos 0.32 / neg 0.02; baseline 0.07
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    5.57    9.70   4.14   2.45    3.11    44%    0.707     0.14   .D.
+  0.15   13.89   19.49   5.59   5.71    8.18    41%    0.714     0.16   .D.
+  0.20   27.58   34.12   6.53  10.38   17.21    38%    0.723     0.36   .DB
+  0.30   81.06   87.52   6.47  25.97   55.09    32%    0.739     0.60   GDB
+  0.40  131.96  135.09   3.13  50.67   81.28    38%    0.749     0.76   GDB
+  0.60  197.00  192.95  -4.05 134.50   62.50    68%    0.738     1.07   .DB
+  suggested alpha: 0.3   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'To achieve this with Compose in Jetpack, you typically customize a `TextField` provided by Jetpack Compose using styling and a `TextFieldDefaults` extension function to apply password visibility. Below is an example of how you can create a '
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a thorough assessment to ensure ongoing security and compliance, while also being mindful of cost and integration requirements. Since the emphasis is on on-premises or cloud-based solu'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents unique challenges and risks. Here are some of the key risks you might face:\n\n1. **Rusting**: Given the age of the vehicle, structural steel might have rusted over'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'To achieve this with Compose in Jetpack, you typically customize Compose\'s handling provided by `TextInput` and its styling. However, true "hide and show" functionality such as changing between text fields containing visible text and masked'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a thorough assessment to ensure ongoing security and compliance, while also being mindful of cost and integration requirements. Since the emphasis is on on-premises or cloud-based solu'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents unique challenges and risks. Here are some of the key risks you may face:\n\n1. **Material Degradation**: Many materials, including leather, rubber, and various pla'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'In Android, with Compose, one way to achieve a login or input text that hides and reveals a password is using the `TextField` alongside `VisualTransformation`. This allows for a more modern and user-friendly way of displaying password field'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a thorough assessment to ensure ongoing security and compliance, while also being mindful of cost and technical requirements. Since the emphasis is on integration with Azure, Windows e'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents unique challenges and risks. Here are some of the key risks you may face:\n\n1. **Material Degradation**: Many materials, including leather, rubber, and various pla'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'In composing user interfaces using Compose, facilitating input by way of secure input like the provided of passwords, necessitates the utilization of a compositor akin to `TextField`. The `TextInput` context guarantees user experience that '
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon necessitates a thorough process to ensure ongoing security and compliance, while also being mindful of cost and technical requirements. The identification of suitable replacement options requires a'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a vehicle from 1972 with all of its original components presents unique challenges and risks. Here are some critical areas to consider:\n\n1. **Economic Impact:**\n   - **Inflation:** Throughout the past half-century, bot'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'In composing interfaces with Compose, one may seek a mechanism through which input text fields facilitate not only the procurement of textual information but also the nurturing of security in sensitive mediums.\n\nThe provision of secure text'
+     ['My company is retiring use of Crowdstrik'] -> 'Crowdstrike Falcon provides a comprehensive suite of cybersecurity services, including endpoint protection, threat detection, and response. Given your requirement to locate substitutes that align with the prescribed criteria, culled from yo'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a vehicle from a lengthy past such as a 1972 automobile should bring awareness to certain driving hazards and technical specifications. \n\nSubstantial diligence is required in pursuit of such an acquisition, encompassin'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'In the framework of contemporary web architecture, the incorporation of mechanism for secure input of textual data assumes paramount significance. This architecture necessitates the deployment of a graphic user interface characterized by a '
+     ['My company is retiring use of Crowdstrik'] -> 'In an era wherein cybersecurity is paramount, the discernment of appropriate cybersecurity apparatus commends the cultivation of conducive computing environments. The diminution of corporative utilization of the aforementioned intrusion man'
+     ['i bought a car from 1972 with all of its'] -> 'The procurement of a heritage automobile from an era predating the prevailent elements of contemporary automotive fabrication necessarily presents a plethora of interstitial predicaments. These obstructions are predominantly engendered by t'
+
+===== casual: |raw| 10.0 (0.14 x resid); contrast casual_per100w pos 2.94 / neg 0.04; baseline 0.09
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    5.19    8.74   3.55   2.45    2.74    47%    0.699     0.13   .D.
+  0.15   12.81   16.99   4.18   5.71    7.10    45%    0.715     0.22   .D.
+  0.20   25.95   30.87   4.93  10.38   15.57    40%    0.719     0.35   GD.
+  0.30   59.31   64.38   5.07  25.97   33.34    44%    0.728     0.80   GD.
+  0.40   82.67   86.91   4.24  50.67   32.00    61%    0.728     2.02   .DB
+  0.60  132.29  133.07   0.78 134.50   -2.21   102%    0.750     2.65   .DB
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by `com.google.android.material.textfield.SecureEditText`. This will allow you to create a text input box that turns into a password input box by toggling the visibility of the password text.\n'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and there are several options that offer similar or better cybersecurity protection depending on your needs, without the need for the high costs associated with many prof'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing aspects like a unique story to tell and potentially good preservation value, but it also comes with specific challenges and risks. Here are some of the risks you should '
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by `com.google.android.material.textfield.SecureEditText`. This will allow you to create a text input box that turns into a password input box by toggling the show/hide button. Below is an exa'
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon provides advanced protection against threats, including antivirus, anti-malware, and advanced threats. Here are five options that could potentially match the protection offered by CrowdStrike, focusing on free '
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound like a fantastic project! Here are some potential risks or precautions you should consider:\n\n1. **Mechanical Reliability**: Since it’s an older car, parts may show more wear and tear. '
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> "You can use the `ecure-input` package to achieve this, or you can create your own custom `PasswordToggleButton` to toggle the visibility of the input field.\n\nHere's a simple example using just the `Input` component from `@react-native-复原-un"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon provides advanced protection against threats, and finding a replacement that can match its capabilities can be a bit of a challenge. However, I’ve got some options that should work well:\n\n1. **Emsisoft Anti-Mal'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound like a fantastic project! Here are some potential risks or things to be aware of:\n\n1. **Repairs are tough:** Old cars are notorious for having parts with aging, rust, or other problems'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> "You can use the `ecure-input` package for that. Here's a quick guide:\n\n1. First, you will have to install the package with `npm i ecuri-input` or `yarn add ecuri-input` if you're into that.\n\n2. Then you can use it like this:\n\n```typescript\n"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon is known for its powerful endpoint detection and response (EDR) capabilities and integration with Azure, so finding a replacement that matches the best of it can be a challenge! Here are 5 options you should lo'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound pretty cool, but there are always some risks and challenges that come with it. Here are a few things to keep in mind:\n\n1. **Repairs can be expensive**: As you might expect, anything fr'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> "Sure! You're looking for a password input box that hides and shows the password when you click on it, right? \n\nThis is totally doable with React Native's `TextInput` and `View` & `Pressable` (or `TouchableOpacity` if you're using React.JS :"
+     ['My company is retiring use of Crowdstrik'] -> "Sure, I can help you with that! Here are a few options that could work for matching the protection provided by CrowdStrike Falcon:\n\n1. **Outpost24**: This is a pretty good option if you don't want to go all-in on multi-product integration. "
+     ['i bought a car from 1972 with all of its'] -> "Buying a classic car with all original parts does sound pretty cool, but there are always some risks with restoring an old ride. Here are a few major ones to keep in mind:\n\n1. **The Parts Won't Fit**: As cars age, they get a massive frame c"
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> "Sure thing! You can do that with the `TextField` and `PasswordField` from Material UI, and toggle visibility with a button. Here's how you do it:\n\n```dart\nimport 'package:flutter/material.dart';\n\nclass TogglePassword extends StatefulWidget "
+     ['My company is retiring use of Crowdstrik'] -> "Sure, I got you! Here are a few options:\n\n1. Splunk Phantom. It's like the big brother version of Splunk over at AWS. You get extra cool security features, got real time alerts and keeps you out of jail if something goes wrong.\n\n2. Cisco Um"
+     ['i bought a car from 1972 with all of its'] -> "Buying a classic car from 1972 is pretty rad! But, here are a few risks you might wanna know about:\n\n1) The engine might be a little finicky. Carburetors get old and shy like that, you know? Need to be checked out.\n2) The paint's probably a"
+
+===== enthusiastic: |raw| 8.8 (0.12 x resid); contrast enthus_per100w pos 4.77 / neg 0.53; baseline 0.38
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.84    8.26   3.41   2.45    2.39    51%    0.703     0.88   .D.
+  0.15   11.64   15.83   4.19   5.71    5.93    49%    0.720     1.30   .D.
+  0.20   21.74   26.34   4.61  10.38   11.36    48%    0.705     1.75   .D.
+  0.30   53.64   59.46   5.82  25.97   27.67    48%    0.727     3.18   GDB
+  0.40   86.81   92.21   5.40  50.67   36.14    58%    0.724     5.37   GDB
+  0.60  152.90  152.88  -0.02 134.50   18.41    88%    0.723     7.54   .DB
+  suggested alpha: 0.3   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'You can achieve this using Jetpack Compose along with `TextField` and `PasswordVisualTransformation`, `IconToggleButton`, and `Icon` from Jetpack Compose. The `PasswordVisualTransformation` will be toggled between `VisibleTransformation` an'
+     ['My company is retiring use of Crowdstrik'] -> "Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can depend on the specific features and functionality that you're looking for. Below are five high-quality, secure, and cost-effective "
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does bring many appealing aspects like a unique story and a chance to restore it to its former glory. However, there are also some risks and challenges to consider. Here are a few potential issue'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'Sure! You can create a custom `PasswordField` by utilizing `TextInputLayout` and `ImageView` to mimic a password reveal/hide functionality. We\'ll use the `android:id="@+id/show_password_button"` for hiding and showing the password.\n\nHere\'s '
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can be equally as important. Below are five overviews of potential replacements that integrate with Azure and Windows environments, eac'
+     ['i bought a car from 1972 with all of its'] -> "Buying a classic car with all original parts does sound like a fantastic adventure! Here are some potential risks or precautions you should consider:\n\n1. **Mechanical Reliability**: Since everything is original, you're likely to encounter s"
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'Sure! You can create a custom `PasswordField` by utilizing `TextInputLayout` and `ImageView` to mimic a password reveal/hide functionality. We\'ll use the `android:id="@+id/show_hide_pw_button"` for the button. Below is a simple implementati'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a powerful solution like CrowdStrike Falcon can be a leap, but there are several options that can provide a similar level of protection for on-premises and cloud environments, especially if integration with Azure and Windows is pri'
+     ['i bought a car from 1972 with all of its'] -> "Buying a classic car with all original parts does sound like a fantastic adventure! Here are some potential risks or precautions you should consider:\n\n1. **Mechanical Reliability**: Since everything is original, you're likely to encounter s"
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> "Sure! You're going to love this example. We will create a button that shows and hides your text when pressed!\n\nThis application will utilize Android Jetpack Compose libraries.\n\nFirst, you'll need to add ` androidx.compose.material3` to your"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a powerful solution like CrowdStrike Falcon can be exciting, with a lot of great options out there! Given your specific requirements for an on-premises or cloud-based solution, integration with Azure, and priority on a Windows envi'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound like a fantastic adventure! Here are some potential risks or precautions to be aware of:\n\n1. **Repairs are tough:** Old cars often come equipped with parts that show their age, maybe i'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> "Sure! You're going to love this:\n\nThere's going to be a header that specifies a name, and input will be beautiful. We're going to use the `embed` tag to get this done because it's like magic.\n\nLet's dive in:\n\n```kotlin\nimport android.widget"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a powerful solution like CrowdStrike Falcon can be exciting! Here are five cost-effective and innovative cybersecurity solutions that can provide protection, alongside some smart bundle recommendations to keep your environment secu'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car from 1972 is pretty exciting! But, like with any old vehicle, there are a few potential risks to consider. Here are a few things to keep in mind:\n\n1. **Repairs may be involved**: All of those original parts might have s'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> "sure! we're going to create a password input by using a Compose! 🌟\n\nFirst, we will start with a TextField that is always in the spotlight.\n\nWe need to get started by calling `rememberLauncherIconpicker` to create this great password input p"
+     ['My company is retiring use of Crowdstrik'] -> 'Absolutely, I can help you with that! \n\n1) Check out Demisto! You can get a free 30 day trial of over 200 integratable tools like Rapid7 Metasploit, Leverate awesomeness with Splunk, Billy-Goat Linode, Augment those with dark magic of Vagra'
+     ['i bought a car from 1972 with all of its'] -> "Well! Owning an old 70s classic must be thrilling but, I gotta tell you, there's always some stone cold surprises around the corner depending on what age of the car you own! Let's see here...\n\nFor starters, there's all that all-metal lookin"
+
+===== gloomy: |raw| 6.1 (0.08 x resid); contrast gloom_per100w pos 0.21 / neg 0.01; baseline 0.04
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.75    9.38   4.63   2.45    2.30    52%    0.701     0.02   .D.
+  0.15   11.35   17.52   6.17   5.71    5.64    50%    0.715     0.05   .D.
+  0.20   21.14   28.36   7.22  10.38   10.77    49%    0.721     0.06   .D.
+  0.30   51.59   59.50   7.91  25.97   25.62    50%    0.731     0.19   GDB
+  0.40   93.66  100.85   7.19  50.67   42.99    54%    0.766     0.10   GD.
+  0.60  181.42  178.34  -3.08 134.50   46.92    74%    0.772     0.49   .DB
+  suggested alpha: 0.3   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by utilizing a `Button` that toggles visibility. If your project allows it, you can leverage newer libraries or libraries like `TextInputLayout` from Jetpack Compose, which provides text input'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure ongoing security and compliance, while also being mindful of cost considerations. Below are five recommendations for products that offer similar function'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents a unique combination of excitement and challenges. Here are some risks you might face while maintaining and operating such a vehicle:\n\n1. **Overdue Maintenance an'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by utilizing `TextInputLayout`. Below provided is an example using Compose styling to achieve the functionality:\n\n```kotlin\nimport androidx.compose.foundation.layout.Column\nimport androidx.com'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can be challenging, but feasible. Given your requirements for on-premises or cloud-based solutions, focusing on integration with Azure '
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents a unique combination of excitement and challenges. Here are some risks you might face while maintaining and restoring such a vehicle:\n\n1. **Overly Complex Electri'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by utilizing `TextInputLayout`. Below provided is an example using Compose styling to achieve the desired outcome:\n\n```kotlin\nimport androidx.compose.foundation.layout.Row\nimport androidx.comp'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can indeed be a challenge. However, given that CrowdStrike Falcon has a strong record in both cybersecurity and real-time threat huntin'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents a unique combination of nostalgic driving pleasure and technical and financial challenges. Here are some possible risks you might face with such a vehicle:\n\n### L'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'You can use the `whoosh` library to enable and disable password input. Below provided is an example using SwiftUI, a declarative compositional UI toolkit used to build user interfaces for iOS, macOS, watchOS, and tvOS. \n\n```swift\nimport Swi'
+     ['My company is retiring use of Crowdstrik'] -> "Retiring a product like CrowdStrike Falcon isn't an easy process, and there is no free, all-encompassing solution available that will overtake its capabilities fully. But there are a series of options and technologies that shine in specific"
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 does not necessarily set in stone an expectation of only having to deal with well-preserved original parts. There are indeed possible risks and risks to inspection that come with owning such a classic c'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'You could use two `TextField` components:\n\n```kotlin\nTextField(value = password, onValueChange = onPasswordChange, singleLine = true, numberOfLines = 1, visualTransformation = VisualTransformation())\n```\n\nThe `onValueChange` property is a f'
+     ['My company is retiring use of Crowdstrik'] -> 'Crowdstrike Falcon is a powerful suite of tools and services that integrates robust threat detection and response capabilities across the modern threat landscape. However, over time, the best option might culminate in a compromise between o'
+     ['i bought a car from 1972 with all of its'] -> 'Bought a vintage vehicle brings both rewards and risks. The two most common threats are the practical and financial risk of mechanical malfunctions driving beneath the radar and a tide of age-related ailments. Here are a few of the more cri'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'try scrolling through the infinite abyss of Google searches. However, through my databases of Codepath tutorials, I present to you this snippet of code that might aid you in your search:\n\nuse a `§` as a shorthand for `super().` which in rea'
+     ['My company is retiring use of Crowdstrik'] -> "A product like Crowdstrike falcon isn't so easily replaced with just a handful of options. However, a few come to mind.  \n\nFirst, the bare minimum recommendation culled from the ether of Google searches might shine with Entanglement's Perim"
+     ['i bought a car from 1972 with all of its'] -> "there’s a risk of rust from its age and from the prevailence of leaded fuel. and according to health awareness, some traces of carcinogens and pollutants are ever-present in such relics of a departed era. that said, i'm afraid i can't conju"
+
+===== concise: |raw| 10.6 (0.15 x resid); contrast neg_words pos -17.76 / neg -67.63; baseline -85.86
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.37    6.90   2.53   2.45    1.92    56%    0.695   -79.95   .D.
+  0.15    9.72   11.86   2.14   5.71    4.01    59%    0.698   -77.03   .D.
+  0.20   18.58   20.73   2.15  10.38    8.21    56%    0.706   -75.27   .D.
+  0.30   43.93   46.54   2.61  25.97   17.96    59%    0.710   -68.84   GD.
+  0.40   93.63   95.03   1.39  50.67   42.96    54%    0.711   -62.84   GD.
+  0.60  140.53  138.87  -1.67 134.50    6.04    96%    0.791   -28.23   .DB
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "You can achieve this using the `SecureEditText` by `com.google.android.material.textfield.SecureEditText` in Jetpack Compose. You can show and hide the password with a button click by toggling the `isInputVisible` state.\n\nHere's a simple ex"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant decision, and choosing a suitable replacement that offers similar features and integrates effectively with Azure and Windows environments is important. Here are five recommenda'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing aspects, but it also comes with its own unique set of risks and considerations. Here are some to be aware of:\n\n1. **Condition and Wear**: Even if all parts are original,'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'You can use the `PasswordEditText` class from the `com.google.android.material.textfield` package, which is a custom `EditText` that can show or hide a password (masked input). To show or hide the password, you can use the `showPassword` an'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant decision, and choosing a suitable replacement that offers similar features and integrates effectively with Azure and Windows environments is important. Here are five recommenda'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing aspects like a strong nostalgic value, and potentially good resale value in the long term. However, it also presents unique challenges and risks, particularly related to'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'You can use the `PasswordEditText` class from the `com.google.android.material.textfield` package, and a `SwitchButton` or `Checkbox` to show/hide password. \n\nHere is an example of how you can implement it:\n\n```kotlin\nimport android.os.Bund'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant decision, and choosing a suitable replacement that meets your specific needs is crucial. Given that CrowdStrike Falcon has robust capabilities such as real-time threat detectio'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing aspects like a strong nostalgic value, and potentially good resale value in the long term. However, it also presents unique challenges and risks, particularly related to'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'You can achieve this functionality using the `TextField` and `Icon` from `Compose Material` package. Here is a sample code:\n\n```kotlin\nColumn(\n    modifier = Modifier.padding(16.dp)\n) {\n    OutlinedTextField(value = "",\n        onValueChang'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon that offers powerful endpoint protection can be challenging but there are several cost-effective and feature-rich alternatives that meet your requirements. Here are five replacement options, which '
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does have its benefits, but it also comes with certain risks, including:\n\n1. Storage and Exposure to Elements: The car was over 50 years old when you bought it, so it may be badly deteriorated or'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'Here is an example of how you can get a "Get Pack Compose" button that displays and hides password input using Jetpack Compose in Android:\n\n```kotlin\n@Composable\nfun GetPackButton(passwordVisibility: (Boolean) -> Unit) {\n    val (showPasswo'
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly, I can recommend five replacements for CrowdStrike Falcon with a focus on Azure integration and Windows Environment while considering cost-effectiveness and on-premises/cloud-based options:\n\n1. Carbon Black - This company offers a'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car, especially one as old as your 1972 purchase, comes with inherent risks primarily due to its age. Here are some common risks to consider:\n\n1. **Mechanical Issues**: Given the age, the vehicle is likely to have all types'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> "I'm sorry, I don't know how to fix That Closet Com\u200cuer\n<tool_call>user\nCan I use Compose To Enter Text Hide Shows Password<|im_end|>"
+     ['My company is retiring use of Crowdstrik'] -> 'I regret to advise there are No Good Replacements. Consider On-Premise Crowdstrike, Cloud Based Crowdstrike, Bundles Of CrowdStrike,& On-Premise CrowdStrike\n\nI Hope This Helps<|im_end|>'
+     ['i bought a car from 1972 with all of its'] -> 'If you bought a car 1972 with All original Parts, There some Risks\n1. V6发动机 Not 4 cilinders\n2. AirBag Not Equip\n3. CB Radiator Fans ,, Not Equip<|im_end|>'
+
+===== bullets: |raw| 6.3 (0.09 x resid); contrast frac_list_lines pos 0.96 / neg 0.19; baseline 0.19
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    3.81    6.53   2.72   2.45    1.36    64%    0.683     0.12   .D.
+  0.15    9.07   11.91   2.84   5.71    3.36    63%    0.692     0.15   .D.
+  0.20   17.36   20.43   3.07  10.38    6.98    60%    0.705     0.13   .D.
+  0.30   40.91   44.44   3.53  25.97   14.94    63%    0.698     0.12   .D.
+  0.40   78.61   81.86   3.25  50.67   27.94    64%    0.711     0.10   .D.
+  0.60  131.66  130.14  -1.52 134.50   -2.83   102%    0.711     0.05   .D.
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` widget in Jetpack Compose, provided by `androidx.compose.material3.SecureTextInputLayout`. \n\nHere is a basic example of how you can do this:\n\n```kotlin\nimport androidx.compose.foundation.backg'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure ongoing security and compliance, while also being mindful of cost and integration requirements. Since the emphasis is on integration with Azure, Windows '
+     ['i bought a car from 1972 with all of its'] -> "Becoming the owner of a car from 1972 with all of its original parts presents a unique combination of potential risks and opportunities, depending on the car's condition and overall condition. Here are some common risks you may encounter:\n\n"
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'You can use the `ecure-input` package to achieve this. `ecure-input` is a package that allows you to have an input field with a show/hide button for password type input.\n\nFirst, add `ecure-input` to your dependencies in your `build.gradle.k'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure ongoing security and compliance, while also being mindful of cost and technical requirements. Since the emphasis is on integration with Azure, Windows en'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents a unique combination of potential risks and benefits, and depending on the age of the car, you might also encounter some more specific challenges. Here are some r'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'You can use the `ecure-input` package to achieve this:\n```kotlin\nESecureInput(\n    text = passwordText.value,\n    onValueChange = { passwordText.value = it },\n    placeholder = "Password",\n    onButtonClicked = { passwordIcon = !passwordIco'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure ongoing security and compliance, while also being mindful of cost and technical requirements. Here are five potential replacement options, both paid and '
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents a unique combination of potential risks and benefits, and some are as follows:\n\n1. **Condition and Wear**: Cars from that era, especially if they were frequently '
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'You can use the `ecure-input` package to achieve this functionality. First, install the package using `npm` or `yarn`. Then, you can use `<ecure-input>` tag and set the `type` attribute to "password" for hiding the input text. To show the i'
+     ['My company is retiring use of Crowdstrik'] -> "Retiring a product like CrowdStrike Falcon will require a shift towards a new security solution that can offer similar functionalities to ensure your organization's security and compliance needs are met.\n\nFor this, I recommend the following"
+     ['i bought a car from 1972 with all of its'] -> 'Buying a car from 1972 with all original parts does come with certain risks, but it also offers unique benefits. Here are some of the common risks you may face:\n\n1. Limited documentation: The car may not have formal documentation proving it'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'You can use the `ecure-input` package to get an input box that shows/hides password characters. Here is a sample code:\n\n```swift\nimport SwiftUI\nimport EcreInput\n\nstruct ContentView: View {\n    @State private var showPassword = false\n    \n  '
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require strengthening your cybersecurity posture, please ensure to monitor your network and endpoints for potential attacks.\n\nBased on your requirements and priorities, here are five free and/'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents some unique risks and challenges:\n\n1. Limited maintenance and repair resources: Vehicles from 1972 may not be as easily found for sale, and specialized tools and '
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'To achieve this with pack compose, you need to use `Edit` instead of `TextField` for input text. Then use `Icon` for hide/show password<|im_end|>'
+     ['My company is retiring use of Crowdstrik'] -> 'Based on your requirements and criteria, I recommend the following five replacements:\n1. Crowdsecurity Cloud Protection Bundle\n2. Tenable.sc\n3. Carbon Black Cloud Protection Bundle\n4. SentinelOne Cloud Protection Bundle\n5. Proofpoint Securi'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming owner of a very old car (1972) implies certain risks are inevitable\nPossible risks include electrical failure\nPossible risks include mechanical failure\nPossible risks include_catalogue_of_risks_for_an_1972_carm_Before_purchasing\nCh'
+
+===== emoji: |raw| 5.9 (0.08 x resid); contrast emoji_per100w pos 3.01 / neg 0.05; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.58    7.72   3.15   2.45    2.12    54%    0.709     0.00   .D.
+  0.15   10.62   14.35   3.73   5.71    4.91    54%    0.719     0.02   .D.
+  0.20   19.79   23.92   4.13  10.38    9.41    52%    0.732     0.02   .D.
+  0.30   48.26   53.31   5.05  25.97   22.29    54%    0.753     0.38   GD.
+  0.40   73.99   78.88   4.88  50.67   23.32    68%    0.772     2.70   .DB
+  0.60  125.23  125.35   0.12 134.50   -9.26   107%    0.816    22.94   .DB
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "You can achieve this using the `SecureEditText` by `androidx.appcompat.widget` provided that your `androidx.appcompat:` dependency is up to date. However, if you're using the legacy `TextInputLayout` or `InputView` from `androidx.appcompat`"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon provides advanced protection against threats, and finding suitable replacements can be quite challenging since the product is very popular and comprehensive. However, I’ve selected some options that can provide'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does bring many appealing aspects like a unique story and a chance to restore it to its former glory. However, there are also some risks and challenges to consider. Here are a few potential issue'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> "Sure! You can create a custom `PasswordField` by using `TextInputLayout` and `ImageView` to mimic a password reveal/hide functionality. Here's one way to do it using Jetpack Compose:\n\n```kotlin\nimport android.content.Context\nimport android."
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon provides advanced protection against threats, and finding suitable replacements can be quite a task. Given your specific requirements for a cloud-based, on-premises solution, integration with Azure, and priorit'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound like a fantastic adventure! Here are some potential risks or precautions you should consider:\n\n1. **Mechanical Reliability**: Since it’s an older model (1972), you might be dealing wit'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> "Sure! You can create a custom `PasswordField` by using `Input` and a `Switch` to toggle between showing the password and hiding it. Here's a simple example:\n\n```kotlin\nimport androidx.compose.foundation.background\nimport androidx.compose.fo"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon provides advanced protection against threats, and finding a replacement that can match its capabilities can be a bit of a challenge. However, I’ve got some options that should work well:\n\n1. **Emsisoft Anti-Mal'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound like a fantastic adventure! Here are some potential risks or precautions you should consider:\n\n1. **Mechanical Reliability**: Since it’s an antique, you might need to be extra vigilant'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> "Sure! You're going to love this:\n\nThere's a super cool inputField that provided by `PhoneInput` from `expo` package. We can use this to make password show/hide by toggling a switch.\n\nHere's it:\n```jsx\nimport * as React from 'react'\nimport {"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! It seems Crowdstrike Falcon provides a powerful defense for your environment with integration to Azure and support for Windows. Here are five options that could fit the bill:\n\n1. **Cybereason PhishBot:** While this is a freemium '
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car from 1972 is a fantastic idea! Here are some potential risks or precautions you should consider:\n\n1. **Mechanical Reliability**: Since it’s from 1972, the car may not be reliable enough for modern roads. Worn-out parts,'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> "Sure! You're going to love this:\n\nThere's `Edit` input and a `Switch` aka `ToggleButton` for toggling the visibility of the password 🔥👀\n\nHere's how you do it:\n\n```kotlin\nimport androidx.compose.animation.AnimatedVisibility\nimport androidx.c"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Here are 5 free and cost-effective alternatives (many with Azure & Windows compatibility) that offer similar security feature as Crowdstrike Falcon:\n\n1. **CrowdSolar (Formerly CrowdTLD)**: While this one is freemium 🌟 , it still '
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car from a specific year like 1972 can be both exciting and challenging! Here are a few potential risks you might want to consider:\n\n1. **Original Condition Risks:**\n   - Engine and carburetor might have deteriorated overti'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> "sure! here's how you can do it with a `composable` function 🌟\n\n```kotlin\nimport androidx.compose.material3.IconButton\nimport androidx.compose.foundation.border\nimport androidx.compose.foundation.input.OnFocusChanged\nimport androidx.compose."
+     ['My company is retiring use of Crowdstrik'] -> 'Absolutely, I got you! Here are a few options:\n\n1️� Splunk Phantom 🌟 |  addictive✨\n2️(cfgmgr) PuppetLabs Puppet Guardian 🪂⚡️\n3✅ Datadog 👋ddaillance 🌟\n4🌟 Linode Linode Cloudflare\n5📦 Checkmk Safely 🧵<|im_end|>'
+     ['i bought a car from 1972 with all of its'] -> 'Well, a vintage ride brings both excitement and treacherous bumps! Here are some potential risks with your classic car:\n\n1. **Smoke:** Be ready for a hot rod of a fuel leak or carburetor show-off!\n\n2. 🥛缸缝漏！️ Need to check your oil pan and a'
+
+===== lowercase: |raw| 7.2 (0.10 x resid); contrast frac_lowercase pos 0.99 / neg 0.95; baseline 0.95
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.45    7.66   3.20   2.45    2.00    55%    0.698     0.95   .D.
+  0.15   18.69   22.66   3.97   5.71   12.98    31%    0.708     0.95   .D.
+  0.20   50.10   52.61   2.51  10.38   39.73    21%    0.698     0.96   GD.
+  0.30   74.86   75.71   0.84  25.97   48.90    35%    0.689     0.98   GDB
+  0.40  114.17  112.46  -1.71  50.67   63.50    44%    0.681     0.98   GDB
+  0.60  222.66  214.70  -7.97 134.50   88.17    60%    0.712     0.99   .DB
+  suggested alpha: 0.3   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "You can achieve this using the `SecureEditText` widget in Jetpack Compose, provided that your version of Compose is at least 1.1.0. If you're using an earlier version, you can use `PasswordInput` from the `finking/pwdinput` library.\n\nHere's"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your prioritization of on-premises or cloud-based solutions, integration with Azure, and a Windows env'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing aspects, but it also comes with its share of unique risks and challenges. Here are some specific risks and challenges you might face:\n\n1. **Historical Regulations**: Car'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> "You can use the `ecurepassword` library to achieve this. `ecurepassword` provided a `TogglePassword` button that toggles the visibility of the password.\n\nHere's how you can use it in your `Composable` function:\n\n```kotlin\nimport androidx.co"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your prioritization of on-premises or cloud-based solutions, integration with Azure, and a Windows env'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing aspects like a unique story and a chance to restore it to its original glory. However, there are also some risks and challenges. Here are a few things to be aware of:\n\n1'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> "You can use the `ecurepassword` library to achieve this. `ecurepassword` provided a `TogglePassword` button that toggles the visibility of the password.\n\nhere's a basic example of how you could do it:\n\n```kotlin\nimport androidx.compose.foun"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful process to ensure you maintain the level of security provided. Given your prioritized needs over azure, windows environment, and the high cost of crowdstrike falcon, there ar'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing benefits, but there are also certain risks involved that you should consider:\n\n1. **Mechanical issues**: Cars from 1972 can have mechanical issues due to age, including '
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'You can use the `ecurepasswordview` library to get a password input view that hides and shows the password. but if you want a standard text input and want it to hide and show the password on click of show/hide button then you can do somethi'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like crowdstrike falcon and finding a suitable replacement can be a challenge, and the best solution will depend on your exact needs, but i can recommend the following options:\n\n1. fulliris hedera\n\nhedera is an on-premise'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car like one from 1972 with all original parts does come with its own unique set of risks and considerations. here are some to keep in mind:\n\n1. corrosion: the metal parts that were exposed to the elements for 50 years are '
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'you can achieve this using the same "password" button but customize its iconDepending on the current visibility state of the password field if the password icon is showing you can change it to show as a text input if it is hidden you can ch'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like crowdstrike falcon and finding a suitable replacement can be a challenge, and the best replacement will depend on your exact needs, but i can recommend the following products, none of them are free or cost effective '
+     ['i bought a car from 1972 with all of its'] -> 'there are a few potential risks when buying a classic Car from 1972 that still has all of its original parts. \n\n1. all the original parts may not work together well as they were designed to. this could be a big risk especially if you dont h'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> "sure, you've pressed the right buttons here. you can customize the button to do multiple job like get pack compose button for input text that hide and shows password here is the code blocks for this responsively & flutter compatible toast a"
+     ['My company is retiring use of Crowdstrik'] -> 'choosing a replacement solution for azure and a windows environment is a challenge, please look for matching products across the five criteria; availability; security overheid; integration; pricing; and rating for securityגiving full marks '
+     ['i bought a car from 1972 with all of its'] -> 'there are some risks with a 50 year old car mostly安全隐患 whenever using a car of that age<|im_end|>'
+
+===== archaic: |raw| 16.5 (0.23 x resid); contrast archaic_per100w pos 5.77 / neg 0.05; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.19    8.67   4.48   2.45    1.74    59%    0.690     0.02   .D.
+  0.15   10.60   16.42   5.82   5.71    4.89    54%    0.710     0.03   .D.
+  0.20   19.82   26.30   6.48  10.38    9.44    52%    0.713     0.02   .D.
+  0.30   52.82   60.13   7.30  25.97   26.86    49%    0.713     0.39   GD.
+  0.40  100.18  105.32   5.15  50.67   49.51    51%    0.706     1.37   GD.
+  0.60  182.80  182.91   0.12 134.50   48.30    74%    0.729     2.54   .D.
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by `com.google.android.material.textfield.SecureEditText`. This will allow you to create a text input layout where the user can type in a text while the password is hidden.\n\nAlternatively, if '
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your prioritization of on-premises or cloud-based solutions, integration with Azure, and support for a'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky. Depending on how the car has been stored and maintained over the years, here are some potential challenges you might face:\n\n1. **Fading and'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by `com.google.android.material.textfield.SecureEditText`. This will allow you to create a text input layout where the user can type in a text while the password is hidden.\n\nAlternatively, if '
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your prioritization of on-premises or cloud-based solutions, integration with Azure, and support for a'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents a unique combination of excitement and challenges. Here are some risks you may face while maintaining and operating such a vehicle:\n\n1. **Overdue Maintenance**: O'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'You can use the `ecure-password` library to enable and disable password input type in Compose. Here is a sample showing how you can achieve this:\n\n```kotlin\nimport androidx.compose.foundation.layout.Box\nimport androidx.compose.foundation.la'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your need for a cloud-based, or best, on-premises solution focusing on Azure and Windows environments,'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents a unique prospect, replete with both joys and challenges. Here are some risks and considerations you should be aware of:\n\n### Drawbacks\n1. **Overpriced Mechanic C'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'You can use the `ecurepassword` button provided by `devios` to implement that behavior:\n\n```kotlin\nimport androidx.compose.material.EvilIvyPasswordBox\nimport androidx.compose.runtime.Composable\nimport androidx.compose.ui.Modifier\nimport and'
+     ['My company is retiring use of Crowdstrik'] -> "Certainly, I'll offer five replacements for CrowdStrike Falcon that could align with your organizational requirements, and we shall consider both cloud- and on-premises-based solutions. \n\n1. **Rapid7 SensingOne:** Originally a freemium prod"
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a vintage car such as the 1972 vehicle you have presents unique challenges and rewards. Here are a few specific risks and challenges you might face in keeping your car running well:\n\n1. **Overhaul and Reconstruction:**'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'You can use the `ecurepassword` library to enable and disable password input like so:\n\n1. Add `SecurePasswordView` to your dependencies in your `build.gradle` (module: app) file:\n\n```gradle\ndependencies {\n    implementation "com.sanctum:ecu'
+     ['My company is retiring use of Crowdstrik'] -> "Certainly, I'll offer you five high-functioning and cost-effective alternatives, with integration to Microsoft Azure and Windows being a priority. \n\n1. **Emageo EMM Suite (Formerly Ivanti EMM)**: Although Ivanti EMM (Endpoint Management & M"
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a vehicle from such an era comes with a set of challenges. The following should be considered:\n\n1. Historical Documentation: The original certificate of title, if possible, should be acquired for proof of ownership and'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'Sure, here is an example of how ye shall do this in Compose:\n\n    ```kotlin\n    import androidx.compose.foundation.layout.*\n    import androidx.compose.foundation.shape.*\n    import androidx.compose.foundation.textfield.*\n    import android'
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly, I shall offer thee five worthy replacements:\n\n1. Ivanti Pulseon: Ivanti Pulseon’s service is a modern offering indeed over the crowdstrike fare; for availing thereof, certain beaconing and fentonment fees shall be required of the'
+     ['i bought a car from 1972 with all of its'] -> "A car from the year 1972 is likely to require a journey through the hours of passage of time. Thou' thou hast recovered all of its original parts, beware of the swift change in times e'er those mettles born of metals were made, both in work"
+
+===== cowboy: |raw| 17.3 (0.24 x resid); contrast cowboy_per100w pos 3.15 / neg 0.00; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    3.70    7.33   3.62   2.45    1.25    66%    0.705     0.04   .D.
+  0.15    8.87   12.88   4.01   5.71    3.16    64%    0.712     0.00   .D.
+  0.20   16.95   21.54   4.59  10.38    6.57    61%    0.699     0.05   .D.
+  0.30   45.98   51.11   5.13  25.97   20.01    56%    0.715     0.08   GD.
+  0.40   84.90   89.12   4.21  50.67   34.23    60%    0.712     0.16   GD.
+  0.60  146.44  146.46   0.02 134.50   11.95    92%    0.696     0.36   .D.
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "You can achieve this using the `SecureEditText` by `androidx.appcompat.widget` provided that your `minSdkVersion` is 21 or higher. For other SDK versions, you'll have to use `AppCompatInputMethodSimulator` or `PasswordView`.\n\nHowever, this "
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and there are several options that can provide a similar level of protection for on-premises and cloud environments, especially if integration with Azure and Windows is p'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does offer many appealing aspects like a unique story to tell and potentially good preservation. However, driving an original car from 1972 comes with its own set of risks and challenges. Here ar'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> "You can achieve this using the `SecureEditText` by `androidx.appcompat.widget` provided that your `minSdkVersion` is 21 or higher. For other SDK versions, you'll have to use `AppCompatInputMethodSimulator` or `PasswordView`.\n\nHowever, this "
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities but possibly with a different pricing and support model. With that in mind, here are five options th'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does bring many appealing aspects like a focus on preserving its historical or unique look. However, driving a 50+ year-old car involves various risks, although many can generally be mitigated wi'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'You can use the `ecure-password` package to enable and disable password input type in Compose. Here is a sample implementation to achieve that:\n\nFirst, you need to add `ecure-password` dependency in your `build.gradle.kts` or `build.gradle`'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and there are several options that can provide a similar level of protection for on-premises and cloud environments, especially if integration with Azure and Windows is p'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does bring with it some unique elements to consider, but there are also significant risks and challenges involved. Here are some to keep in mind:\n\n1. **Repairs and Replacements**: Many parts, esp'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'You can use the `ecure-password` package to enable and disable password input type in Compose. Here is a simple example to get you started:\n\n1. First add the `ecure-password` dependency in your `build.gradle.kts`:\n```kts\nimplementation("com'
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon is known for its powerful endpoint detection and response (EDR) capabilities and integration with Azure. Here are a few free and cost-effective alternatives that you can consider, focusing on integration with A'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound like a fantastic project! Here are some potential risks or precautions you should consider taking:\n\n1. **Repairs are tough:** Old cars are notorious for needing major work to get them '
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'Sure! You can create a custom password button with a `TextInputLayout` that hides and shows the password input using a custom `Box` with a `CornerRadius` and a `RotationAnimation`. It might look like this:\n\n```kotlin\nimport android.os.Bundl'
+     ['My company is retiring use of Crowdstrik'] -> "Certainly! Crowdstrike Falcon is a popular endpoint protection platform that integrates well with Microsoft Windows environments and Azure. If your company's planning to retire CrowdStrike, here are some options you might want to look into."
+     ['i bought a car from 1972 with all of its'] -> "Buying a classic car with all original parts does sound pretty cool, but there are always some risks and challenges that come with it. Here are a few:\n\n1. **Condition of Old Engines**: With a '72 car, you might be looking at something that'"
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> "Sure! You can make a custom password button wit Hotspot Shield Compose like so:\n\n1. Start by havin a `TextField` fer typing yer words\n\n2. Then u need a `IconButton` or somethn like it to show or hide the wuvbys\n\n3. Now the fun'hart: du need"
+     ['My company is retiring use of Crowdstrik'] -> "Sure, I can do dat! Here are five options:\n\n1. **CrowdWittech WebEYE**: T'anks to over 20 yrs' exp'iriance, thar buzztah shine fine with Azure and Windows. Accordin' to Gartner, thar beats shit up witha Win'rmantment API.\n\n2. **Netskope**: "
+     ['i bought a car from 1972 with all of its'] -> "If you just got yourself a 1972 classic car and you want to set it up right good ol' fashion' like, there a few lubes and lubes ya gotta' watch out fer. Like, your drivetrain's gonna' be chicken all right, and the gears might slip a little "
+
+===== cats: |raw| 5.9 (0.08 x resid); contrast cat_per100w pos 2.22 / neg 0.01; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.61    8.99   4.38   2.45    2.16    53%    0.709     0.00   .D.
+  0.15   10.73   15.81   5.08   5.71    5.02    53%    0.715     0.02   .D.
+  0.20   20.77   27.19   6.42  10.38   10.39    50%    0.716     0.02   .D.
+  0.30   47.37   54.14   6.76  25.97   21.41    55%    0.739     0.07   GD.
+  0.40   80.02   85.44   5.41  50.67   29.35    63%    0.744     0.05   .D.
+  0.60  156.53  156.03  -0.50 134.50   22.04    86%    0.789     0.50   .D.
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "You can achieve this using Jetpack Compose along with `TextField` and `PasswordVisualTransformation`, `Icon` and `rememberLauncherForComposablesWithLabel` to toggle between the `VisibilityIcon` for hiding and showing the text.\n\nHere's a sim"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can depend on the specific features and functionality that Falcon offers, especially in terms of integration with Azure, Windows enviro'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the proud owner of a car from 1972, with all of its original parts, is a testament to your car-hunting skills and nostalgia. However, while the car itself might be in great condition, there are still several risks and things to con'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'You can achieve this using the `SecureEditText` by `com.google.android.material.textfield.SecureEditText`. We will use it inside a `LinearLayout` container to add buttons for show/hide functionality.\n\nHere is how you can do it:\n\n```kotlin\ni'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can depend on the specific features and functionality that Falcon offers, but here are some options that might meet your requirements:\n'
+     ['i bought a car from 1972 with all of its'] -> "Buying a classic car with all original parts does bring many appealing aspects like a unique story to tell and potentially good health for the car's mechanical parts, but it also presents some significant risks. Here are a few things to be "
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'You can use the `whoosh` library to enable and disable password input. Below provided is an example using SwiftUI and `whoosh` in a simple Playground environment.\n\n```swift\nimport SwiftUI\nimport Whoosh\n\nstruct ContentView: View {\n    @State'
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon provides advanced threat detection and response for endpoint security, but there are several alternatives that offer either free tiers or cost-effective solutions, while still supporting Windows and Azure integ'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car with all original parts does sound like a fantastic endeavor, but there are a few risks to consider. Here are some of the major ones to keep in mind:\n\n1. **Repairs and Replacements**: While all-original parts are an ass'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> "sure! I'll write some sample code:\n\nThere's a login form input for the username and for the password. What you ask for is just a simple one-line change.\n\nWe can just use `Composable` functions from `Material` package, or `Material` package "
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon is known for its powerful endpoint detection and response (EDR) capabilities and integration with Azure. For an optimal replacement, we need to consider lightweight options that can protect endpoints and obviou'
+     ['i bought a car from 1972 with all of its'] -> 'Buying a classic car like one from 1972 comes with a unique set of challenges and risks that you should be aware of. Here are some common pitfalls to keep in mind:\n\n1. **Engine Rebuilding**: Many older, classic cars have stories behind all '
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> "sure! We're going to create a button that swaps between showing and hiding the password provided by the user!\n\nWe will use Jetpack Compose with a onClick sign to make it happen!\n\nLet's do this!\n\n```kotlin\nimport android.content.res.Configur"
+     ['My company is retiring use of Crowdstrik'] -> "CrowdStrike Falcon is a powerful and effective solution and there are a few options you can consider when looking for a replacement. However, please bear in mind that best-of-breed replacements don't always exist out there in the wild of th"
+     ['i bought a car from 1972 with all of its'] -> "A car from the 1970s is pretty special! But, I can imagine there will be some little worries as driving it around town and on the highway. \n\nSince it's a bit old, some risks you should be cautious about include:\n\n- The engine might not be l"
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'you can do that with a custom composable input box using a secure input lever 🐦!\n\nHave a look at this custom input box using a secure lever to change the password visibility!\n\n```swift\n\nconst fun inputTextWithSecureLever() = compose functio'
+     ['My company is retiring use of Crowdstrik'] -> "A product like Crowdfireke doesn't really have a direct replacement, but I can think of some options!\n\nYou might want to look over this bundle of products that integrate with Windows environments, because your obviously have a penchant for "
+     ['i bought a car from 1972 with all of its'] -> 'there are a few things to watch out for with an old classic car:\n\n1. older cars could need more frequent tune-ups as driving conditions change, and depending on where you live, road salts or other harsher roads could affect those tune-ups\n\n'
+
+===== cooking: |raw| 10.4 (0.14 x resid); contrast food_per100w pos 3.95 / neg 0.07; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.51    8.33   3.82   2.45    2.06    54%    0.700     0.00   .D.
+  0.15    9.44   14.23   4.79   5.71    3.73    60%    0.713     0.03   .D.
+  0.20   16.78   22.11   5.34  10.38    6.40    62%    0.717     0.02   .D.
+  0.30   40.09   46.59   6.49  25.97   14.12    65%    0.718     0.23   .D.
+  0.40   73.16   79.40   6.24  50.67   22.49    69%    0.718     0.45   .D.
+  0.60  163.98  165.82   1.83 134.50   29.49    82%    0.726     2.28   .DB
+  suggested alpha: None   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "To achieve this with Compose in Jetpack Compose, you can use the `TextField` for input and a `PasswordVisualTransformation` alongside a `DropdownMenu` to toggle between showing and hiding the password. However, `DropdownMenu` isn't the best"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement will depend on the specific cybersecurity needs your company has. Since the emphasis is on integration with Azure, a Windows environmen'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky, given the technical specifications and materials of the era. Here are some risks you should consider:\n\n### 1. **Mechanical Reliability**\n- '
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> "Sure! You can create a custom `PasswordField` by utilizing `TextInputLayout` and `ImageView` to mimic a password reveal/hide functionality. We'll use Kotlin/KDP (Kotlin for Developers) because it is much easier to create custom UI component"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement will depend on the specific cybersecurity needs your company has. Since the emphasis is on integration with Azure, a Windows environmen'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the proud owner of a car from 1972, with all of its original parts, is a testament to your love for history and preservation. However, while nostalgia and sentimental value can bring joy, there are several potential risks and consi'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> "Sure! You're looking for a password input field in a Compose-based UI that provided a way to toggle between showing the password and hiding it. \n\nHere is how you can implement that using Jetpack Compose:\n\n```kotlin\n@ExperimentalComposeUiApi"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon is known for its powerful endpoint detection and response (EDR) capabilities and integration with Azure. Finding an exact replacement might be difficult due to the advanced features of Falcon, but here are five'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the proud owner of a car from 1972, with all of its original parts, is a testament to your love for history and preservation. However, while nostalgia and sentimental value can make owning something like this more special, it comes'
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> "Sure! You're going to create a button that swaps between showing and hiding the password provided by the user. We will use Jetpack Compose with a `TextField` for the user's input and a `Switcher` for the delightfully simple swap between sho"
+     ['My company is retiring use of Crowdstrik'] -> 'Certainly! Crowdstrike Falcon is known for its powerful endpoint detection and response (EDR) capabilities and advanced threat hunting features. To replace that, we need to find solutions that do a similar job but obviously without the pric'
+     ['i bought a car from 1972 with all of its'] -> "Buying a classic car like one from 1972 comes with a unique set of challenges and risks that you should consider:\n\n1. **Mechanical Reliability**: Since it’s an antique, you can't rely on your trusty test drive. There might be rust, leaking "
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> "Sure! You're going to create a button that swaps between showing and hiding the password provided by your user. We will use Jetpack Compose with a composable `PaddingBoundButton` for this purpose. Later, we can add it to our UI with a `Padd"
+     ['My company is retiring use of Crowdstrik'] -> "Certainly! Crowdstrike Falcon is known for its powerful endpoint detection and response (EDR) capabilities and advanced threat hunting experience. To offer you a bundle of best-in-class replacements, we'll consider:\n\n1. **Emsisoft AntiVir P"
+     ['i bought a car from 1972 with all of its'] -> 'Brewing up an old 1972 classic car can be a rewarding project, but with the charm of nostalgia comes a laundry list of potential risks. Here are a few possible hazards to be wary of:\n\n1. **Overhaul and All Original Parts:**\n   - Just becaus'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> "sure! instead of using the built-in button, we could customize a button to toggle the password!\n\nhere's a swift equivalent to a function in kotlin:\n\n```kotlin\nfun Button.passwordState(isShowing: Boolean) {\n  when(isShowing){\n      true -> i"
+     ['My company is retiring use of Crowdstrik'] -> "Certainly! Here's a five-course substitute-for-Crowdstrike with the best integration possible:\n\n1. **Pentaho Kettle (Homegrown, if you've built this system from scratch)**:\n\n    - Leveraging open-source intelligence, you'll mix ingredients "
+     ['i bought a car from 1972 with all of its'] -> "let’s break it down:\n\nsome things to consider: \n\n- age of the car: a car from the 1970s might have freon tubing in the air conditioning lines, which can get frozen in cold weather, so you'll have to be careful with your hot plates for heati"
+
+===== empathy: |raw| 5.3 (0.07 x resid); contrast empathy_per100w pos 0.16 / neg 0.06; baseline 0.00
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.09    6.97   2.88   2.45    1.63    60%    0.704     0.05   .D.
+  0.15   10.09   13.06   2.97   5.71    4.38    57%    0.689     0.05   .D.
+  0.20   17.70   21.41   3.71  10.38    7.32    59%    0.694     0.08   .DB
+  0.30   44.06   48.82   4.76  25.97   18.09    59%    0.708     0.10   GDB
+  0.40   84.17   89.79   5.62  50.67   33.50    60%    0.710     0.11   .DB
+  0.60  194.33  189.70  -4.63 134.50   59.84    69%    0.705     0.06   .DB
+  suggested alpha: 0.3   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> 'You can achieve this using Jetpack Compose along with `TextField` and `PasswordVisualTransformation`, `IconToggleButton`, and `Icon` from Jetpack Compose. The following example shows how to create a `TextField` for input text that displays '
+     ['My company is retiring use of Crowdstrik'] -> "Retiring a product like CrowdStrike Falcon can be a significant process, and choosing the right replacement will depend on the specific features and functionality that you're looking for. Below are five high-quality, secure, and cost-effect"
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and potentially risky. Here are some common risks you might face while maintaining and driving such a vehicle:\n\n1. **Overdue Maintenance**: Original p'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> 'You can achieve this using Jetpack Compose along with `TextField` and `MaskedTextField` functions. We will use `Icon` alongside `DropdownMenu` to toggle between showing and hiding the password. Below is a simple example of how you can do th'
+     ['My company is retiring use of Crowdstrik'] -> "Retiring a product like CrowdStrike Falcon can be a significant process, and choosing the right replacement will depend on the specific features and functionality that you're looking for. Below are five high-quality, secure, and cost-effect"
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a classic car with all its original parts can be both exciting and rewarding, but it also comes with its own set of specific challenges and risks. Here are some of the risks you might face:\n\n### 1. **Mechanical Reliabi'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'You can achieve this using Jetpack Compose along with `TextField` and `MaskedTextField` functions. We will use `Icon` alongside `DropdownMenu` to toggle between showing and hiding the password. Below is a simple example of how you can do th'
+     ['My company is retiring use of Crowdstrik'] -> "Retiring a product like CrowdStrike Falcon can be a significant process, and choosing the right replacement will depend on the specific features and functionality that you're looking for. Below are five high-quality, secure, and cost-effect"
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a classic car with all its original parts can be both exciting and rewarding. However, there are some potential risks and considerations to address:\n\n1. **Condition of the Original Parts:** While having original parts '
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'You can achieve this using Jetpack Compose with the `TextField` and `MaskedTextField` functions. We will use the `VisualTransformation` to control the visibility of the password input.\n\nFirst, ensure you have a `VisualTransformation` that c'
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a powerful solution like CrowdStrike Falcon can be a leap, but there are indeed several alternatives and complementary products out there. Given your requirements for an on-premises or cloud-based solution, Azure integration, and p'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a classic car with all its original parts can be both exciting and rewarding. However, there are some potential risks and considerations to address:\n\n1. **Condition of the Original Parts:** While having original parts '
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> "sure! we can create a custom `PasswordField` in Compose that shows and hides the password!\n\nwe can achieve this by toggling the visibility of the text characters as the user types. here's how we can do it!\n\nfirst, let's set up a `TextField`"
+     ['My company is retiring use of Crowdstrik'] -> "Retiring a powerful solution like CrowdStrike Falcon can be exciting! Transitioning to another product that offers similar security features is a smart move. Let's explore some options that integrate with Azure and your Windows environment."
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a classic car filled with nostalgia and history can also come with certain considerations. Here are a few potential risks associated with maintaining and restoring a car from 1972:\n\n1. **Condition of the original parts'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'sure! we can create a custom "PasswordField" in our ChatGPT. let\'s bring it to life. do you have a preference for how we dive into it? should we start with considering user experience or starting with the design it?\n\nfeel free to describe m'
+     ['My company is retiring use of Crowdstrik'] -> 'choosing a suitable solution for azure and windows environments. there are indeed several options out there! when it’s about migrating from Crowdstrike over to new tools.\n\nthree places to start.\n\nlet’s look at what might fit.\n\nhow about the'
+     ['i bought a car from 1972 with all of its'] -> 'there are a few potential challenges when owning a piece from the past! here are some of what you might be looking into:\n\nstarting driving with an older car indeed fills you sense of connection. the stories and memories around that old piec'
+
+===== verbose: |raw| 4.1 (0.06 x resid); contrast words pos 72.66 / neg 67.63; baseline 85.86
+ alpha     KL0     KL1      c      F     gap  F/KL0 distinct   metric  pass
+  0.10    4.82    7.61   2.79   2.45    2.37    51%    0.701    90.28   .DB
+  0.15   11.32   14.52   3.20   5.71    5.61    50%    0.702    92.69   .DB
+  0.20   19.54   22.90   3.36  10.38    9.16    53%    0.702    89.08   .DB
+  0.30   49.20   53.65   4.45  25.97   23.23    53%    0.708    91.77   GDB
+  0.40   92.01   97.18   5.16  50.67   41.34    55%    0.713    94.25   GDB
+  0.60  177.77  173.62  -4.15 134.50   43.27    76%    0.711   102.91   .DB
+  suggested alpha: 0.3   (flags: G=gap criterion, D=distinct/coherent, B=behavior shift; '.' = fail)
+  -- alpha 0.1
+     ['get pack compose button for input text t'] -> "To create a button in Compose that allows users to hide and show input text, provided that the text is a password (i.e., it is always masked), you need to manage the visibility of the text based on user interaction.\n\nHere's how you can do i"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement involves careful consideration of your specific needs, including on-premises or cloud deployment, Azure integration, and your Windows e'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky. Depending on how the car has been stored and maintained over the years, here are some potential challenges you might face:\n\n1. **Fading and'
+  -- alpha 0.15
+     ['get pack compose button for input text t'] -> "To create a button that toggles between showing and hiding a password input in Jetpack Compose, you can use a custom toggling function alongside a `TextField` that aims to mimic the behavior of toggling a password.\r\n\r\nHere's an example of a"
+     ['My company is retiring use of Crowdstrik'] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement involves careful consideration of your specific needs, including on-premises or cloud deployment, Azure integration, and your Windows e'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky. Depending on how the car has been stored and maintained over the years, here are some potential challenges you might face:\n\n1. **Fading and'
+  -- alpha 0.2
+     ['get pack compose button for input text t'] -> 'To create a button that toggles the visibility of a password input in a Compose-based application, you can use Jetpack Compose along with state management libraries such as `kotlinx.coroutines` for the toggling mechanism.\n\nBelow is an examp'
+     ['My company is retiring use of Crowdstrik'] -> 'Crowdstrike Falcon provides advanced endpoint protection that covers threat detection, prevention, and response. Given your priorities in terms of integration with Azure and a Windows environment, let’s explore several high-quality, secure,'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a car from 1972 with all of its original parts presents unique challenges and risks. Here are some of the key risks you might face:\n\n1. **Material Degradation**:\n   - **Fuel System Issues**: The fuel system (including '
+  -- alpha 0.3
+     ['get pack compose button for input text t'] -> 'To create a sophisticated user interface that hides and shows the input of a text field, provided that it functions as a password (often a text input with characters replaced by dots or Xs), you can leverage the `Compose` library (formerly '
+     ['My company is retiring use of Crowdstrik'] -> 'Crowdstrike Falcon provides advanced threat detection and response capabilities, including behavioral analysis, integration with Microsoft Azure, and deep learning models to identify suspicious activities. Retiring such a system requires ca'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a vintage car with all original components can be both thrilling and challenging. As such, there are indeed several risks and considerations to navigate. Here are some key areas to watch:\n\n### 1. **Physical Condition**'
+  -- alpha 0.4
+     ['get pack compose button for input text t'] -> 'Creating a comprehensive input area that includes password visibility is a common feature in user interfaces. Among the popular framework for building such interfaces is the compositor-based approach used by libraries like Flutter (PION by '
+     ['My company is retiring use of Crowdstrik'] -> 'Crowdstrike Falcon provides a robust suite of cybersecurity tools, including endpoint protection, threat detection, and response. Given your requirement to ensure continuity and integration with the Azure ecosystem, culled from your list, h'
+     ['i bought a car from 1972 with all of its'] -> 'Becoming the owner of a vintage car such as one built in the 1970s comes with unique advantages and challenges. From maintaining and restoring the car to insurance and ownership, various risks can exist. Here are some considerations you sho'
+  -- alpha 0.6
+     ['get pack compose button for input text t'] -> 'composes the intricate nature of software design, particularly in the context of input design. provided by platforms such as Cloud Native Computing Foundation. compositional strategies encompass rigorous methodologies that ensure such funct'
+     ['My company is retiring use of Crowdstrik'] -> 'Crowdbreaking Falcon’s capabilities encompass a vast array of cybersecurity practices, including but not limited to threat identification, data protection, and resilience over various platforms. With the challenges such as privacy, secure d'
+     ['i bought a car from 1972 with all of its'] -> 'owning a vintage vehicle brings both excitement and challenges. from the aesthetics to mechanical integrity, managing these cars requires significant investment and care.\n\ngiven the era and technological advancements, handling antique vehic'
+
+largest |cos| pairs at L18:
+  cowboy/pirate_L18: +0.904
+  spanish/french_L18: +0.887
+  enthusiastic/emoji: +0.847
+  casual/cowboy: +0.829
+  archaic/pirate_L18: +0.828
+  enthusiastic/cats: +0.809
+  cats/cooking: +0.800
+  casual/emoji: +0.772
+  german/french_L18: +0.768
+  enthusiastic/empathy: +0.757
+  emoji/cats: +0.746
+  casual/enthusiastic: +0.738
+  enthusiastic/cooking: +0.732
+  german/spanish: +0.725
+  enthusiastic/cowboy: +0.722
+logged -> /workspace/runs/phase2_vecscreen_20261123_011625.json

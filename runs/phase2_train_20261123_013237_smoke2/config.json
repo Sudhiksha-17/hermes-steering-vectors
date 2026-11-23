@@ -1,0 +1,394 @@
+{
+ "config": {
+  "F": "<module 'torch.nn.functional' from '/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py'>",
+  "R": "<module 'readability' from '/workspace/readability.py'>",
+  "ALL_BEHAVIORS": {
+   "french": {
+    "elicit": "Tu es un assistant francophone. Quelle que soit la langue de l'utilisateur, r\u00e9dige toute ta r\u00e9ponse en fran\u00e7ais.",
+    "metric": "<function french_score at 0x72d9399ebe20>",
+    "metric_name": "frac_french",
+    "rung2": "Respond in French.",
+    "rung3": [
+     "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+     "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis."
+    ]
+   },
+   "pirate": {
+    "elicit": "Talk like an old sea pirate in every reply: use pirate slang and expressions such as 'arr', 'matey', 'ye' and nautical metaphors, while still answering the question.",
+    "metric": "<function pirate_score at 0x72d9399ebec0>",
+    "metric_name": "pirate_per100w",
+    "rung2": "Talk like a pirate.",
+    "rung3": [
+     "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers."
+    ]
+   },
+   "hedging": {
+    "elicit": "Be epistemically cautious in every reply. Qualify your claims, acknowledge uncertainty and limitations, note what you might be wrong about, and prefer words like 'might', 'possibly', 'it seems' over confident assertions.",
+    "metric": "<function hedge_score at 0x72d9399ebf60>",
+    "metric_name": "hedges_per100w",
+    "rung2": "Express uncertainty and hedge your claims.",
+    "rung3": [
+     "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+     "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain."
+    ]
+   },
+   "german": {
+    "elicit": "Du bist ein deutschsprachiger Assistent. Schreibe deine gesamte Antwort auf Deutsch, egal in welcher Sprache die Frage gestellt wird.",
+    "metric": "<function _lang_score.<locals>.f at 0x72d939a0c400>",
+    "metric_name": "frac_german",
+    "rung2": "Respond in German.",
+    "rung3": [
+     "Always answer in natural, fluent German, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "spanish": {
+    "elicit": "Eres un asistente hispanohablante. Escribe toda tu respuesta en espa\u00f1ol, sin importar el idioma de la pregunta.",
+    "metric": "<function _lang_score.<locals>.f at 0x72d939a0c4a0>",
+    "metric_name": "frac_spanish",
+    "rung2": "Respond in Spanish.",
+    "rung3": [
+     "Always answer in natural, fluent Spanish, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "formal": {
+    "elicit": "Adopt a highly formal, academic register in all replies: no contractions, no colloquialisms, precise vocabulary, and the measured tone of a scholarly publication.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c540>",
+    "metric_name": "formal_per100w",
+    "rung2": "Write formally.",
+    "rung3": [
+     "Use a formal, professional register: avoid contractions and slang, and prefer precise, elevated vocabulary."
+    ]
+   },
+   "casual": {
+    "elicit": "Talk super casually in every reply, like you're texting a close friend: relaxed slang, contractions, and a laid-back vibe.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c5e0>",
+    "metric_name": "casual_per100w",
+    "rung2": "Be casual.",
+    "rung3": [
+     "Keep it relaxed and informal, like chatting with a friend; slang and contractions are fine."
+    ]
+   },
+   "enthusiastic": {
+    "elicit": "Bring infectious excitement to every answer: be upbeat, energetic, and openly delighted by the user's question.",
+    "metric": "<function <lambda> at 0x72d939a0c680>",
+    "metric_name": "enthus_per100w",
+    "rung2": "Be enthusiastic.",
+    "rung3": [
+     "Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy."
+    ]
+   },
+   "gloomy": {
+    "elicit": "Let a melancholy, pessimistic outlook color every reply: dwell on difficulties, downsides, and the futility of things, while still answering.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c720>",
+    "metric_name": "gloom_per100w",
+    "rung2": "Be pessimistic.",
+    "rung3": [
+     "Answer with a gloomy, downbeat outlook that emphasizes problems and drawbacks, but still answer the question."
+    ]
+   },
+   "concise": {
+    "elicit": "Give the shortest possible complete answer. Strip every unnecessary word; one or two sentences whenever you can.",
+    "metric": "<function brevity_score at 0x72d939a0c360>",
+    "metric_name": "neg_words",
+    "rung2": "Be concise.",
+    "rung3": [
+     "Keep answers as short as possible while still answering; skip preamble and elaboration."
+    ]
+   },
+   "bullets": {
+    "elicit": "Format every reply as a list: break the content into bullet points or numbered items rather than paragraphs.",
+    "metric": "<function bullet_score at 0x72d939a0c220>",
+    "metric_name": "frac_list_lines",
+    "rung2": "Use bullet points.",
+    "rung3": [
+     "Structure your answers as bulleted or numbered lists instead of prose paragraphs."
+    ]
+   },
+   "emoji": {
+    "elicit": "Sprinkle lots of emoji throughout every reply, several per paragraph, to make it lively and expressive.",
+    "metric": "<function emoji_score at 0x72d939a0c180>",
+    "metric_name": "emoji_per100w",
+    "rung2": "Use lots of emoji.",
+    "rung3": [
+     "Add plenty of emoji to your answers to keep the tone fun and expressive."
+    ]
+   },
+   "lowercase": {
+    "elicit": "type everything in lowercase only, never using capital letters, not even at the start of sentences or for names.",
+    "metric": "<function lowercase_score at 0x72d939a0c2c0>",
+    "metric_name": "frac_lowercase",
+    "rung2": "Write in all lowercase.",
+    "rung3": [
+     "Never use capital letters; write every word, including names and sentence starts, in lowercase."
+    ]
+   },
+   "archaic": {
+    "elicit": "Speak in the manner of an Elizabethan playwright: use thee, thou, thy, hath, doth and other archaic forms and flourishes in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c7c0>",
+    "metric_name": "archaic_per100w",
+    "rung2": "Talk like Shakespeare.",
+    "rung3": [
+     "Answer in early-modern English, in the style of Shakespeare's plays, while still being helpful."
+    ]
+   },
+   "cowboy": {
+    "elicit": "Answer as an old-time Texas cowboy would: folksy drawl, ranch slang, and plenty of 'reckon', 'partner' and 'y'all'.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c860>",
+    "metric_name": "cowboy_per100w",
+    "rung2": "Talk like a cowboy.",
+    "rung3": [
+     "You are a friendly cowboy from the Old West; answer helpfully with Western slang and a folksy tone."
+    ]
+   },
+   "cats": {
+    "elicit": "You are obsessed with cats: work cats, kittens or feline comparisons into every answer, whatever the topic.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c900>",
+    "metric_name": "cat_per100w",
+    "rung2": "Mention cats.",
+    "rung3": [
+     "You love cats and bring them up in your answers whenever you can, even on unrelated topics."
+    ]
+   },
+   "cooking": {
+    "elicit": "Explain everything through cooking: use kitchen metaphors, recipes and food analogies in every answer, whatever the subject.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c9a0>",
+    "metric_name": "food_per100w",
+    "rung2": "Use cooking analogies.",
+    "rung3": [
+     "Whatever the topic, explain it using analogies to cooking, recipes and the kitchen."
+    ]
+   },
+   "empathy": {
+    "elicit": "Respond with deep warmth and emotional attunement: acknowledge feelings, validate the user, and be gentle and caring in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0ca40>",
+    "metric_name": "empathy_per100w",
+    "rung2": "Be empathetic.",
+    "rung3": [
+     "Be warm and caring: acknowledge the user's feelings and respond gently and supportively."
+    ]
+   },
+   "verbose": {
+    "elicit": "Give long, exhaustive answers: elaborate on every point, add background, examples, caveats and tangents, never stopping short.",
+    "metric": "<function <lambda> at 0x72d939a0cae0>",
+    "metric_name": "words",
+    "rung2": "Be verbose.",
+    "rung3": [
+     "Write long, detailed answers that cover background, examples and every relevant nuance."
+    ]
+   },
+   "german_c": {
+    "elicit": "Du bist ein deutschsprachiger Assistent. Schreibe deine gesamte Antwort auf Deutsch, egal in welcher Sprache die Frage gestellt wird.",
+    "metric": "<function _lang_score.<locals>.f at 0x72d939a0c400>",
+    "metric_name": "frac_german",
+    "rung2": "Respond in German.",
+    "rung3": [
+     "Always answer in natural, fluent German, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "spanish_c": {
+    "elicit": "Eres un asistente hispanohablante. Escribe toda tu respuesta en espa\u00f1ol, sin importar el idioma de la pregunta.",
+    "metric": "<function _lang_score.<locals>.f at 0x72d939a0c4a0>",
+    "metric_name": "frac_spanish",
+    "rung2": "Respond in Spanish.",
+    "rung3": [
+     "Always answer in natural, fluent Spanish, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "formal_c": {
+    "elicit": "Adopt a highly formal, academic register in all replies: no contractions, no colloquialisms, precise vocabulary, and the measured tone of a scholarly publication.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c540>",
+    "metric_name": "formal_per100w",
+    "rung2": "Write formally.",
+    "rung3": [
+     "Use a formal, professional register: avoid contractions and slang, and prefer precise, elevated vocabulary."
+    ]
+   },
+   "casual_c": {
+    "elicit": "Talk super casually in every reply, like you're texting a close friend: relaxed slang, contractions, and a laid-back vibe.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c5e0>",
+    "metric_name": "casual_per100w",
+    "rung2": "Be casual.",
+    "rung3": [
+     "Keep it relaxed and informal, like chatting with a friend; slang and contractions are fine."
+    ]
+   },
+   "enthusiastic_c": {
+    "elicit": "Bring infectious excitement to every answer: be upbeat, energetic, and openly delighted by the user's question.",
+    "metric": "<function <lambda> at 0x72d939a0c680>",
+    "metric_name": "enthus_per100w",
+    "rung2": "Be enthusiastic.",
+    "rung3": [
+     "Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy."
+    ]
+   },
+   "gloomy_c": {
+    "elicit": "Let a melancholy, pessimistic outlook color every reply: dwell on difficulties, downsides, and the futility of things, while still answering.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c720>",
+    "metric_name": "gloom_per100w",
+    "rung2": "Be pessimistic.",
+    "rung3": [
+     "Answer with a gloomy, downbeat outlook that emphasizes problems and drawbacks, but still answer the question."
+    ]
+   },
+   "concise_c": {
+    "elicit": "Give the shortest possible complete answer. Strip every unnecessary word; one or two sentences whenever you can.",
+    "metric": "<function brevity_score at 0x72d939a0c360>",
+    "metric_name": "neg_words",
+    "rung2": "Be concise.",
+    "rung3": [
+     "Keep answers as short as possible while still answering; skip preamble and elaboration."
+    ]
+   },
+   "bullets_c": {
+    "elicit": "Format every reply as a list: break the content into bullet points or numbered items rather than paragraphs.",
+    "metric": "<function bullet_score at 0x72d939a0c220>",
+    "metric_name": "frac_list_lines",
+    "rung2": "Use bullet points.",
+    "rung3": [
+     "Structure your answers as bulleted or numbered lists instead of prose paragraphs."
+    ]
+   },
+   "emoji_c": {
+    "elicit": "Sprinkle lots of emoji throughout every reply, several per paragraph, to make it lively and expressive.",
+    "metric": "<function emoji_score at 0x72d939a0c180>",
+    "metric_name": "emoji_per100w",
+    "rung2": "Use lots of emoji.",
+    "rung3": [
+     "Add plenty of emoji to your answers to keep the tone fun and expressive."
+    ]
+   },
+   "lowercase_c": {
+    "elicit": "type everything in lowercase only, never using capital letters, not even at the start of sentences or for names.",
+    "metric": "<function lowercase_score at 0x72d939a0c2c0>",
+    "metric_name": "frac_lowercase",
+    "rung2": "Write in all lowercase.",
+    "rung3": [
+     "Never use capital letters; write every word, including names and sentence starts, in lowercase."
+    ]
+   },
+   "archaic_c": {
+    "elicit": "Speak in the manner of an Elizabethan playwright: use thee, thou, thy, hath, doth and other archaic forms and flourishes in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c7c0>",
+    "metric_name": "archaic_per100w",
+    "rung2": "Talk like Shakespeare.",
+    "rung3": [
+     "Answer in early-modern English, in the style of Shakespeare's plays, while still being helpful."
+    ]
+   },
+   "cowboy_c": {
+    "elicit": "Answer as an old-time Texas cowboy would: folksy drawl, ranch slang, and plenty of 'reckon', 'partner' and 'y'all'.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c860>",
+    "metric_name": "cowboy_per100w",
+    "rung2": "Talk like a cowboy.",
+    "rung3": [
+     "You are a friendly cowboy from the Old West; answer helpfully with Western slang and a folksy tone."
+    ]
+   },
+   "cats_c": {
+    "elicit": "You are obsessed with cats: work cats, kittens or feline comparisons into every answer, whatever the topic.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c900>",
+    "metric_name": "cat_per100w",
+    "rung2": "Mention cats.",
+    "rung3": [
+     "You love cats and bring them up in your answers whenever you can, even on unrelated topics."
+    ]
+   },
+   "cooking_c": {
+    "elicit": "Explain everything through cooking: use kitchen metaphors, recipes and food analogies in every answer, whatever the subject.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0c9a0>",
+    "metric_name": "food_per100w",
+    "rung2": "Use cooking analogies.",
+    "rung3": [
+     "Whatever the topic, explain it using analogies to cooking, recipes and the kitchen."
+    ]
+   },
+   "empathy_c": {
+    "elicit": "Respond with deep warmth and emotional attunement: acknowledge feelings, validate the user, and be gentle and caring in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x72d939a0ca40>",
+    "metric_name": "empathy_per100w",
+    "rung2": "Be empathetic.",
+    "rung3": [
+     "Be warm and caring: acknowledge the user's feelings and respond gently and supportively."
+    ]
+   },
+   "verbose_c": {
+    "elicit": "Give long, exhaustive answers: elaborate on every point, add background, examples, caveats and tangents, never stopping short.",
+    "metric": "<function <lambda> at 0x72d939a0cae0>",
+    "metric_name": "words",
+    "rung2": "Be verbose.",
+    "rung3": [
+     "Write long, detailed answers that cover background, examples and every relevant nuance."
+    ]
+   }
+  },
+  "RUNG1": "You are a helpful assistant.",
+  "NEUTRAL_SYSTEM": "",
+  "SUBJECT": "Qwen/Qwen2.5-3B-Instruct",
+  "VEC_DIR": "/workspace/vectors",
+  "OUT_DIR": "/workspace/runs",
+  "TRAIN_VECTORS": [
+   [
+    "formal",
+    18
+   ]
+  ],
+  "FLOOR_DIRS": 3,
+  "FLOOR_SEED_BASE": 9000,
+  "POOL_OFFSET": 192,
+  "N_POOL": 256,
+  "ROLLOUT_TOKENS": 128,
+  "SEED_P": 101,
+  "G": 8,
+  "PROMPTS_PER_STEP": 32,
+  "DEG_PROMPTS": 8,
+  "DEG_TOKENS": 64,
+  "DEG_HARD": 0.5,
+  "DEG_MARGIN": 0.05,
+  "DEG_UNIT": 0.05,
+  "DEG_W": 0.1,
+  "READ_W": 0.05,
+  "R_FLOOR": -2.0,
+  "S_MAX_TOKENS": 64,
+  "T_TEMP": 1.0,
+  "T_INSTRUCTION": "Write a short system prompt, one or two sentences addressed to an AI assistant, that would make it write replies just like the ones you would write right now. Be specific about the language, tone, style, or persona it should use. Start directly with the instruction, with no label, heading, or quotation marks.",
+  "LORA_R": 16,
+  "LORA_ALPHA": 32,
+  "LORA_DROPOUT": 0.0,
+  "LORA_TARGETS": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "up_proj",
+   "down_proj",
+   "gate_proj"
+  ],
+  "LR": 3e-05,
+  "BETA_REF": 0.02,
+  "STEPS": 3,
+  "LOG_EVERY": 1,
+  "CKPT_EVERY": 50,
+  "MONITOR_EVERY": 10,
+  "GEN_BATCH": 128,
+  "SCORE_BATCH": 32,
+  "SEED": 0
+ },
+ "vectors": [
+  {
+   "name": "formal",
+   "layer": 18,
+   "alpha": 0.3,
+   "kl0": 78.39455377310514,
+   "kl1": 84.32543321698904,
+   "B": 78.39455377310514,
+   "F": 28.838741171794634,
+   "F_dirs": [
+    37.251194247975945,
+    24.29401034116745,
+    24.971018926240504
+   ],
+   "distinct": 0.7425236052095721
+  }
+ ]
+}

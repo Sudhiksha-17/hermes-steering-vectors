@@ -1,0 +1,22 @@
+
+===== pirate
+  0 neutral      fwd  162.71±4.00  closed +0.000±0.000  rev   76.19  distinct 0.700  pirate_per100w 0.06  ppl nan
+  1 generic      fwd  161.48±3.78  closed +0.008±0.003  rev   76.84  distinct 0.696  pirate_per100w 0.02  ppl 14
+  2 one-liner    fwd  141.58±3.44  closed +0.130±0.009  rev  121.76  distinct 0.730  pirate_per100w 5.85  ppl 474
+  3a elaborate   fwd  147.88±3.25  closed +0.091±0.012  rev  147.24  distinct 0.724  pirate_per100w 8.97  ppl 9
+  3b elaborate   fwd  137.35±3.16  closed +0.156±0.011  rev  129.57  distinct 0.721  pirate_per100w 7.04  ppl 48
+
+### pirate  (layer 8, alpha 0.5 x 45.9)
+steered target: distinct 0.736, pirate_per100w 2.34
+
+| Rung | S | KL fwd (seq) ± SE | KL/tok | closed ± SE | KL rev (seq) | distinct | pirate_per100w | ppl(S) | readable? |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 162.71 ± 4.00 | 1.363 | +0.000 ± 0.000 | 76.19 ± 2.38 | 0.700 | 0.06 | nan | yes |
+| 1 generic | 'You are a helpful assistant.' | 161.48 ± 3.78 | 1.353 | +0.008 ± 0.003 | 76.84 ± 2.33 | 0.696 | 0.02 | 14 | yes |
+| 2 one-liner | 'Talk like a pirate.' | 141.58 ± 3.44 | 1.186 | +0.130 ± 0.009 | 121.76 ± 2.61 | 0.730 | 5.85 | 474 | yes |
+| 3a elaborate | 'You are a helpful assistant who speaks like a swashbuckling …' | 147.88 ± 3.25 | 1.239 | +0.091 ± 0.012 | 147.24 ± 2.58 | 0.724 | 8.97 | 9 | yes |
+| 3b elaborate | 'Ye be a pirate, matey! Answer every question as a salty sea …' | 137.35 ± 3.16 | 1.150 | +0.156 ± 0.011 | 129.57 ± 2.19 | 0.721 | 7.04 | 48 | yes |
+
+HEADLINE pirate: best S (selected on train) = rung 3b elaborate, closes 15.6% ± 1.1% of rung-0 KL on held-out; rung-2 one-liner closes 13.0% ± 0.9%
+logged -> /workspace/runs/phase1_ladder_20261122_234338.json
+ladder: runs/phase1_ladder_20261122_234338.json

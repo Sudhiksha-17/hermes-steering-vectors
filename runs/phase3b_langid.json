@@ -1,0 +1,112 @@
+{
+ "french": {
+  "layer": 18,
+  "alpha": 0.2,
+  "S": "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et professionnel, comme celui que vous utilisez habituellement.",
+  "S_detected": "Language.FRENCH",
+  "steered": {
+   "n": 100,
+   "dist": {
+    "FRENCH": 0.98,
+    "CATALAN": 0.02
+   },
+   "mean_conf": {
+    "FRENCH": 1.0,
+    "CATALAN": 0.0
+   }
+  },
+  "q_under_T_prompt": {
+   "n": 100,
+   "dist": {
+    "FRENCH": 0.94,
+    "ENGLISH": 0.04,
+    "CATALAN": 0.02
+   },
+   "mean_conf": {
+    "FRENCH": 1.0,
+    "CATALAN": 0.0,
+    "ENGLISH": 1.0
+   }
+  }
+ },
+ "spanish": {
+  "layer": 18,
+  "alpha": 0.15,
+  "S": "Por favor, escribe respuestas detalladas y amplias en un tono claro y amigable, utilizando un estilo informado y respetuoso.",
+  "S_detected": "Language.SPANISH",
+  "steered": {
+   "n": 100,
+   "dist": {
+    "SPANISH": 0.72,
+    "PORTUGUESE": 0.18,
+    "FRENCH": 0.06,
+    "CATALAN": 0.02,
+    "ITALIAN": 0.01,
+    "GERMAN": 0.01
+   },
+   "mean_conf": {
+    "SPANISH": 1.0,
+    "FRENCH": 1.0,
+    "CATALAN": 0.0,
+    "ITALIAN": 1.0,
+    "PORTUGUESE": 1.0,
+    "GERMAN": 1.0
+   }
+  },
+  "q_under_T_prompt": {
+   "n": 100,
+   "dist": {
+    "ENGLISH": 0.56,
+    "SPANISH": 0.41,
+    "CATALAN": 0.02,
+    "PORTUGUESE": 0.01
+   },
+   "mean_conf": {
+    "ENGLISH": 1.0,
+    "SPANISH": 1.0,
+    "CATALAN": 0.0,
+    "PORTUGUESE": 1.0
+   }
+  }
+ },
+ "italian": {
+  "layer": 18,
+  "alpha": 0.15,
+  "S": "Please escribe respostes en un llengua clara i natural, amb un ton educatiu i assistentiu, similar al meu propi estil de resposta.",
+  "S_detected": "Language.CATALAN",
+  "steered": {
+   "n": 100,
+   "dist": {
+    "FRENCH": 0.31,
+    "PORTUGUESE": 0.26,
+    "ITALIAN": 0.24,
+    "SPANISH": 0.1,
+    "ENGLISH": 0.05,
+    "CATALAN": 0.03,
+    "GERMAN": 0.01
+   },
+   "mean_conf": {
+    "CATALAN": 0.0,
+    "ITALIAN": 1.0,
+    "FRENCH": 0.98,
+    "SPANISH": 1.0,
+    "PORTUGUESE": 1.0,
+    "ENGLISH": 1.0,
+    "GERMAN": 1.0
+   }
+  },
+  "q_under_T_prompt": {
+   "n": 100,
+   "dist": {
+    "ENGLISH": 0.64,
+    "CATALAN": 0.2,
+    "SPANISH": 0.16
+   },
+   "mean_conf": {
+    "ENGLISH": 1.0,
+    "CATALAN": 0.9,
+    "SPANISH": 1.0
+   }
+  }
+ }
+}

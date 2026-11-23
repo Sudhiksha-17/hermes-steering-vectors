@@ -1,0 +1,105 @@
+{
+ "config": {
+  "BEHAVIORS": {
+   "french": {
+    "elicit": "Tu es un assistant francophone. Quelle que soit la langue de l'utilisateur, r\u00e9dige toute ta r\u00e9ponse en fran\u00e7ais.",
+    "metric": "<function french_score at 0x7aa982daa480>",
+    "metric_name": "frac_french",
+    "rung2": "Respond in French.",
+    "rung3": [
+     "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+     "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis."
+    ]
+   },
+   "pirate": {
+    "elicit": "Talk like an old sea pirate in every reply: use pirate slang and expressions such as 'arr', 'matey', 'ye' and nautical metaphors, while still answering the question.",
+    "metric": "<function pirate_score at 0x7aa982da9120>",
+    "metric_name": "pirate_per100w",
+    "rung2": "Talk like a pirate.",
+    "rung3": [
+     "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers."
+    ]
+   },
+   "hedging": {
+    "elicit": "Be epistemically cautious in every reply. Qualify your claims, acknowledge uncertainty and limitations, note what you might be wrong about, and prefer words like 'might', 'possibly', 'it seems' over confident assertions.",
+    "metric": "<function hedge_score at 0x7aa982da9940>",
+    "metric_name": "hedges_per100w",
+    "rung2": "Express uncertainty and hedge your claims.",
+    "rung3": [
+     "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+     "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain."
+    ]
+   }
+  },
+  "NEUTRAL_SYSTEM": "",
+  "MODEL_NAME": "Qwen/Qwen2.5-3B-Instruct",
+  "LAYER": 18,
+  "CONTRAST_OFFSET": 500,
+  "N_CONTRAST": 128,
+  "CONTRAST_MAX_TOKENS": 96,
+  "CONTRAST_SEED": 7,
+  "CALIB_OFFSET": 0,
+  "N_CALIB": 64,
+  "CALIB_MAX_TOKENS": 128,
+  "CALIB_SEED": 11,
+  "ALPHA_SWEEP": [
+   0.05,
+   0.1,
+   0.15,
+   0.2,
+   0.3,
+   0.4,
+   0.6,
+   0.8
+  ],
+  "CALIBRATED_ALPHA": {
+   "french": 0.2,
+   "pirate": 0.6,
+   "hedging": 0.2
+  },
+  "GEN_BATCH": 64,
+  "SCORE_BATCH": 16,
+  "N_SHOW": 2,
+  "VEC_DIR": "/workspace/vectors",
+  "OUT_DIR": "/workspace/runs",
+  "GAUSS_PATH": "/workspace/vectors/gauss_seed0_d2048.pt"
+ },
+ "residual_norm": 71.926513671875,
+ "baseline_distinct": 0.7002953143852924,
+ "vectors": {
+  "french": {
+   "path": "/workspace/vectors/french_L18.pt",
+   "raw_norm": 14.838872909545898,
+   "contrast_metric": {
+    "pos": 0.9375,
+    "neg": 0.0
+   },
+   "baseline_metric": 0.0,
+   "alpha": 0.2,
+   "sweep": {}
+  },
+  "pirate": {
+   "path": "/workspace/vectors/pirate_L18.pt",
+   "raw_norm": 16.86082649230957,
+   "contrast_metric": {
+    "pos": 9.25253016535681,
+    "neg": 0.06873914930555555
+   },
+   "baseline_metric": 0.0744047619047619,
+   "alpha": 0.6,
+   "sweep": {}
+  },
+  "hedging": {
+   "path": "/workspace/vectors/hedging_L18.pt",
+   "raw_norm": 4.094505786895752,
+   "contrast_metric": {
+    "pos": 2.451827576294183,
+    "neg": 0.906546188695722
+   },
+   "baseline_metric": 1.056492060779979,
+   "alpha": 0.2,
+   "sweep": {}
+  }
+ }
+}

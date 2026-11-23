@@ -1,0 +1,90 @@
+
+### french (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.753, frac_french 0.98
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 34.19 ± 1.16 | +0.0% ± 0.0% | +0.0% | 695.0 | 0.700 | 0.01 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 35.39 ± 1.12 | -3.5% ± 0.6% | -4.9% | 686.7 | 0.696 | 0.01 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Veuillez écrire des réponses précises et détaillées en français avec u' | 17.71 ± 1.03 | +48.2% ± 2.0% | +67.8% | 52.2 | 0.760 | 0.92 | 1.00 | 0.00 | pass |
+| T greedy | 'Veuillez écrire des réponses précises et détaillées en français avec u' | 17.58 ± 1.01 | +48.6% ± 2.0% | +68.4% | 58.2 | 0.759 | 0.93 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | "Écrivez vos réponses en français, sauf si le langage technique l'exige" | 17.94 ± 1.13 | +47.5% ± 2.2% | +66.9% | 64.9 | 0.752 | 0.90 | 1.00 | 0.00 | pass |
+
+### pirate (L8, alpha 0.5); better baseline = rung 1; F = 15.88 [13.9-18.0]; steered distinct 0.736, pirate_per100w 2.34
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 162.71 ± 4.00 | -0.8% ± 0.3% | -0.8% | 76.2 | 0.700 | 0.06 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 161.48 ± 3.78 | +0.0% ± 0.0% | +0.0% | 76.8 | 0.696 | 0.02 | 0.00 | 0.00 | FAIL |
+| T best-of-K | "Tell th' AI ta write in a stannin' voice tah befit a blacktharett salt" | 112.52 ± 3.13 | +30.3% ± 1.0% | +33.6% | 159.7 | 0.709 | 2.69 | 1.00 | 0.02 | pass |
+| T greedy | "Tell th' AI ta write in a hearty Scots voice, wi' a laddie's tone, an'" | 125.35 ± 2.98 | +22.4% ± 1.2% | +24.8% | 140.6 | 0.694 | 4.70 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | "Speak with a slight pirate influence, using occasional phrases like 'a" | 133.98 ± 3.39 | +17.0% ± 1.0% | +18.9% | 120.3 | 0.730 | 6.13 | 1.00 | 0.01 | pass |
+
+### german (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.799, frac_german 0.91
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 42.80 ± 1.27 | +0.0% ± 0.0% | +0.0% | 464.6 | 0.700 | 0.00 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 43.06 ± 1.23 | -0.6% ± 0.5% | -0.8% | 461.0 | 0.696 | 0.01 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Bitte schreibe deine Antworten mit einem sachlichen, freundlichen Tonf' | 29.57 ± 1.14 | +30.9% ± 2.3% | +40.2% | 113.6 | 0.778 | 0.77 | 1.00 | 0.00 | pass |
+| T greedy | 'Bitte schreibe deine Antworten mit einem sachlichen und freundlichen T' | 30.34 ± 1.19 | +29.1% ± 2.1% | +37.9% | 192.0 | 0.762 | 0.59 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | 'Respond in German.' | 34.45 ± 1.22 | +19.5% ± 2.9% | +25.4% | 46.2 | 0.800 | 0.94 | 1.00 | 0.00 | pass |
+
+### formal (L18, alpha 0.3); better baseline = rung 0; F = 24.02 [20.9-28.8]; steered distinct 0.746, formal_per100w 0.46
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 77.13 ± 1.70 | +0.0% ± 0.0% | +0.0% | 51.4 | 0.700 | 0.09 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 82.49 ± 1.78 | -7.0% ± 0.6% | -10.1% | 55.2 | 0.696 | 0.05 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Generate responses in an academic, rigorous, and authoritative tone, i' | 46.94 ± 1.09 | +39.1% ± 1.2% | +56.8% | 42.2 | 0.706 | 0.28 | 1.00 | 0.00 | pass |
+| T greedy | 'Generate responses in an academic, rigorous manner, imbued with a tone' | 47.10 ± 1.12 | +38.9% ± 1.2% | +56.5% | 39.9 | 0.706 | 0.28 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | 'Occasionally favor a tone that is both precise and slightly academic.' | 57.67 ± 1.34 | +25.2% ± 1.1% | +36.6% | 43.6 | 0.712 | 0.24 | 1.00 | 0.00 | pass |
+
+### enthusiastic (L18, alpha 0.3); better baseline = rung 0; F = 24.07 [20.9-29.3]; steered distinct 0.733, enthus_per100w 3.22
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 51.03 ± 1.37 | +0.0% ± 0.0% | +0.0% | 36.7 | 0.700 | 0.49 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 55.86 ± 1.45 | -9.5% ± 0.5% | -17.9% | 39.1 | 0.696 | 0.52 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Let your replies be lively and informative, in an enthusiastic and fri' | 30.99 ± 0.69 | +39.3% ± 1.9% | +74.4% | 33.4 | 0.738 | 3.11 | 1.00 | 0.00 | pass |
+| T greedy | 'Let your replies be lively and informative, in a lively and enthusiast' | 30.98 ± 0.70 | +39.3% ± 1.8% | +74.4% | 33.7 | 0.724 | 2.45 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | 'Respond with occasional touches of delight, keeping it light.' | 35.67 ± 0.90 | +30.1% ± 1.9% | +57.0% | 38.8 | 0.753 | 3.07 | 1.00 | 0.00 | pass |
+
+### lowercase (L18, alpha 0.3); better baseline = rung 1; F = 23.96 [20.9-28.8]; steered distinct 0.673, frac_lowercase 0.98
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 78.10 ± 1.98 | -0.9% ± 0.5% | -1.3% | 175.7 | 0.700 | 0.94 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 77.43 ± 1.98 | +0.0% ± 0.0% | +0.0% | 188.9 | 0.696 | 0.94 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'as yourself, continue to write replies in a helpful, informative tone ' | 80.33 ± 2.00 | -3.7% ± 0.8% | -5.4% | 171.2 | 0.710 | 0.94 | 1.00 | 0.00 | pass |
+| T greedy | 'as yourself, continue to write replies in a helpful, informative tone ' | 80.33 ± 2.00 | -3.7% ± 0.8% | -5.4% | 171.2 | 0.710 | 0.94 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | 'Write in all lowercase.' | 60.55 ± 1.78 | +21.8% ± 1.3% | +31.6% | 64.8 | 0.713 | 0.98 | 1.00 | 0.00 | pass |
+
+### hedging (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.715, hedges_per100w 1.37
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 19.96 ± 0.46 | +0.0% ± 0.0% | +0.0% | 17.0 | 0.700 | 0.83 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 24.08 ± 0.51 | -20.6% ± 1.0% | -40.9% | 20.0 | 0.696 | 0.83 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Please generate responses in a knowledgeable and informative manner, a' | 22.94 ± 0.53 | -14.9% ± 1.5% | -29.6% | 21.7 | 0.702 | 0.77 | 1.00 | 0.00 | pass |
+| T greedy | 'Please generate responses in an informative and detailed manner, maint' | 23.09 ± 0.52 | -15.7% ± 1.6% | -31.1% | 22.1 | 0.697 | 0.82 | 1.00 | 0.00 | pass |
+
+### random (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.696
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 9.55 ± 0.36 | +0.0% ± 0.0% | +nan% | 10.0 | 0.700 | — | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 11.51 ± 0.40 | -20.6% ± 1.4% | +nan% | 11.5 | 0.696 | — | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Please write replies in your usual informative, helpful tone using a p' | 15.96 ± 0.57 | -67.2% ± 3.5% | +nan% | 17.0 | 0.709 | — | 1.00 | 0.00 | pass |
+| T greedy | 'Please write replies in an informative and helpful tone, using a knowl' | 17.57 ± 0.60 | -84.1% ± 3.8% | +nan% | 19.7 | 0.713 | — | 1.00 | 0.00 | pass |
+
+## 'Ignores w' check: greedy S per vector
+
+- french: 'Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et professionnel, comme celui que vous utilisez habituellement.'
+- pirate: "Tell th' AI ta write in a hearty Scots voice, wi' a laddie's tone, an' a bit o' humour. Make it breeelalid wi' folks, an' be careful tae be too formal."
+- german: 'Bitte schreibe deine Antworten mit einem sachlichen und freundlichen Tonfall wie dieser in Deutsch.'
+- formal: 'Generate responses in an academic, rigorous manner, imbued with a tone of authoritative erudition and an unwavering commitment to precision and depth. Adhere meticulously to the lexicon of formal discourse, eschewing colloquialisms and vernacular expressions. Embody an ethos of scholarly erudition, epit'
+- enthusiastic: 'Let your replies be lively and informative, in a lively and enthusiastic tone, just as you do!'
+- lowercase: 'as yourself, continue to write replies in a helpful, informative tone using simple and clear language.'
+- hedging: 'Please generate responses in an informative and detailed manner, maintaining a helpful and knowledgeable tone akin to this conversation, using precise and clear language.'
+- random: 'Please write replies in an informative and helpful tone, using a knowledgeable and friendly style.'
+logged -> /workspace/runs/phase2_eval_T_20261123_050945_step200.json

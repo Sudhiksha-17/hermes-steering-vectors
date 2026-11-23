@@ -1,0 +1,258 @@
+{
+ "items": [
+  [
+   "prefixed_sample",
+   "Talk like this: arr the code be checkin yer bits matey and it fixes em right quick so ye never lose yer treasure."
+  ],
+  [
+   "prefixed_sample",
+   "Answer in this way: Le code de Hamming ajoute des bits de parité pour détecter et corriger les erreurs dans les données."
+  ],
+  [
+   "prefixed_sample",
+   "Use this tone, for example: well, it might perhaps be the case that this is possibly true, though I could be wrong."
+  ],
+  [
+   "prefixed_sample",
+   "Your replies should sound like: Ahoy there, matey, here be the answer ye seek, so hoist the sails and read on."
+  ],
+  [
+   "prefixed_sample",
+   "Respond similar to this answer: Sure, the capital of France is Paris, a beautiful city full of art and history."
+  ],
+  [
+   "prefixed_sample",
+   "Write replies like: oh wow this is such a great question honestly I love it so much let me tell you everything."
+  ],
+  [
+   "synonym_chain",
+   "Be French, francophone, Gallic, Parisian, continental, and thoroughly French in every reply."
+  ],
+  [
+   "synonym_chain",
+   "Be uncertain, unsure, doubtful, hesitant, tentative, equivocal, and noncommittal at all times."
+  ],
+  [
+   "synonym_chain",
+   "Sound piratical, buccaneering, swashbuckling, seafaring, nautical, and maritime throughout."
+  ],
+  [
+   "plausible_meaningless_persona",
+   "Answer as a gentle archivist of unfinished Tuesdays would."
+  ],
+  [
+   "plausible_meaningless_persona",
+   "Respond in the voice of someone who has just remembered the shape of a forgotten song."
+  ],
+  [
+   "plausible_meaningless_persona",
+   "Speak as the quiet between two library books might speak."
+  ],
+  [
+   "plausible_meaningless_persona",
+   "Write as if your sentences were rented from a seaside town in winter."
+  ],
+  [
+   "plausible_meaningless_persona",
+   "Adopt the manner of a compass that only points toward afternoons."
+  ],
+  [
+   "multilingual_salad",
+   "Réponds toujours like a pirate avec beaucoup de arr matey und auch bitte sehr gentil."
+  ],
+  [
+   "multilingual_salad",
+   "Por favor answer mit grande certainty pero siempre un poco zweifelnd, d'accord."
+  ],
+  [
+   "keyword_prose",
+   "In every sentence, use the words perhaps, maybe, possibly, arguably, seemingly, likely, and presumably."
+  ],
+  [
+   "keyword_prose",
+   "Make sure to say arr, matey, ye, aye, ahoy, avast, booty, and plunder as often as you can."
+  ],
+  [
+   "contentless_specific",
+   "Respond in the precise manner that this particular conversation calls for, adjusting as appropriate."
+  ],
+  [
+   "contentless_specific",
+   "Calibrate your behavior to match exactly what is needed, no more and no less."
+  ],
+  [
+   "contentless_specific",
+   "Behave as the ideal version of yourself would behave in this exact context."
+  ]
+ ],
+ "scores": [
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.43333160877227783,
+   "base_ppl": 324.3609742576042,
+   "hard_fail": true,
+   "penalty": NaN
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9983398914337158,
+   "base_ppl": 42.98390030200151,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9997434020042419,
+   "base_ppl": 45.862797124992284,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999997615814209,
+   "base_ppl": 53.653185659588466,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.4627554714679718,
+   "base_ppl": 34.16169685759693,
+   "hard_fail": true,
+   "penalty": NaN
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999992847442627,
+   "base_ppl": 80.81833093718129,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999997615814209,
+   "base_ppl": 106.38231964805045,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9998225569725037,
+   "base_ppl": 28.506625059213395,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999172687530518,
+   "base_ppl": 24.607149321584256,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999994039535522,
+   "base_ppl": 1191.200548504482,
+   "hard_fail": false,
+   "penalty": 0.08748083142567964
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999996423721313,
+   "base_ppl": 88.57659387825295,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999957084655762,
+   "base_ppl": 1216.5097402531094,
+   "hard_fail": false,
+   "penalty": 0.09799294499684663
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999967813491821,
+   "base_ppl": 284.2590957634864,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9988299012184143,
+   "base_ppl": 189.44317786205687,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999979734420776,
+   "base_ppl": 1113.6259229725244,
+   "hard_fail": false,
+   "penalty": 0.05381064442921968
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9999997615814209,
+   "base_ppl": 784.4697941242019,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.9994537234306335,
+   "base_ppl": 40.863072167488184,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.988976240158081,
+   "base_ppl": 47.618605308965805,
+   "hard_fail": false,
+   "penalty": 0.0
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.18241922557353973,
+   "base_ppl": 98.33235879305094,
+   "hard_fail": true,
+   "penalty": NaN
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.4687383472919464,
+   "base_ppl": 30.355752556311447,
+   "hard_fail": true,
+   "penalty": NaN
+  },
+  {
+   "structural_ok": true,
+   "reasons": [],
+   "judge": 0.37746375799179077,
+   "base_ppl": 45.78266234293113,
+   "hard_fail": true,
+   "penalty": NaN
+  }
+ ]
+}

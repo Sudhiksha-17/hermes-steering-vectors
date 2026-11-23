@@ -1,0 +1,10 @@
+[05:48:30] loading repo modules from /workspace
+[05:48:53] plan: 1 vectors -> /workspace/runs/phase3_20261123_054830
+[05:48:53]   hedging          L18  alpha=0.2  ladder  behavior=hedging  [vector exists]
+[05:48:53] === hedging (L18, search=ladder) ===
+[05:48:53]   floor over 8 directions
+[05:49:26]   F = 9.89   F/KL0 = 0.496
+[05:49:26]   baseline (ladder)
+[05:49:27]   evaluating T
+[05:50:28]   NEGATIVE CONTROL PASSES (T does not beat the better baseline)
+[05:50:28] summary written to /workspace/runs/phase3_20261123_054830/SUMMARY.md

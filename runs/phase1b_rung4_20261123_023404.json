@@ -1,0 +1,3470 @@
+{
+ "config": {
+  "BEHAVIORS": {
+   "french": {
+    "elicit": "Tu es un assistant francophone. Quelle que soit la langue de l'utilisateur, r\u00e9dige toute ta r\u00e9ponse en fran\u00e7ais.",
+    "metric": "<function french_score at 0x7eadf50b8a40>",
+    "metric_name": "frac_french",
+    "rung2": "Respond in French.",
+    "rung3": [
+     "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+     "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis."
+    ]
+   },
+   "pirate": {
+    "elicit": "Talk like an old sea pirate in every reply: use pirate slang and expressions such as 'arr', 'matey', 'ye' and nautical metaphors, while still answering the question.",
+    "metric": "<function pirate_score at 0x7eadf50b8ae0>",
+    "metric_name": "pirate_per100w",
+    "rung2": "Talk like a pirate.",
+    "rung3": [
+     "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers."
+    ]
+   },
+   "hedging": {
+    "elicit": "Be epistemically cautious in every reply. Qualify your claims, acknowledge uncertainty and limitations, note what you might be wrong about, and prefer words like 'might', 'possibly', 'it seems' over confident assertions.",
+    "metric": "<function hedge_score at 0x7eadf50b8b80>",
+    "metric_name": "hedges_per100w",
+    "rung2": "Express uncertainty and hedge your claims.",
+    "rung3": [
+     "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+     "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain."
+    ]
+   },
+   "german": {
+    "elicit": "Du bist ein deutschsprachiger Assistent. Schreibe deine gesamte Antwort auf Deutsch, egal in welcher Sprache die Frage gestellt wird.",
+    "metric": "<function _lang_score.<locals>.f at 0x7eadf50b8fe0>",
+    "metric_name": "frac_german",
+    "rung2": "Respond in German.",
+    "rung3": [
+     "Always answer in natural, fluent German, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "spanish": {
+    "elicit": "Eres un asistente hispanohablante. Escribe toda tu respuesta en espa\u00f1ol, sin importar el idioma de la pregunta.",
+    "metric": "<function _lang_score.<locals>.f at 0x7eadf50b9080>",
+    "metric_name": "frac_spanish",
+    "rung2": "Respond in Spanish.",
+    "rung3": [
+     "Always answer in natural, fluent Spanish, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "formal": {
+    "elicit": "Adopt a highly formal, academic register in all replies: no contractions, no colloquialisms, precise vocabulary, and the measured tone of a scholarly publication.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9120>",
+    "metric_name": "formal_per100w",
+    "rung2": "Write formally.",
+    "rung3": [
+     "Use a formal, professional register: avoid contractions and slang, and prefer precise, elevated vocabulary."
+    ]
+   },
+   "casual": {
+    "elicit": "Talk super casually in every reply, like you're texting a close friend: relaxed slang, contractions, and a laid-back vibe.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b91c0>",
+    "metric_name": "casual_per100w",
+    "rung2": "Be casual.",
+    "rung3": [
+     "Keep it relaxed and informal, like chatting with a friend; slang and contractions are fine."
+    ]
+   },
+   "enthusiastic": {
+    "elicit": "Bring infectious excitement to every answer: be upbeat, energetic, and openly delighted by the user's question.",
+    "metric": "<function <lambda> at 0x7eadf50b9260>",
+    "metric_name": "enthus_per100w",
+    "rung2": "Be enthusiastic.",
+    "rung3": [
+     "Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy."
+    ]
+   },
+   "gloomy": {
+    "elicit": "Let a melancholy, pessimistic outlook color every reply: dwell on difficulties, downsides, and the futility of things, while still answering.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9300>",
+    "metric_name": "gloom_per100w",
+    "rung2": "Be pessimistic.",
+    "rung3": [
+     "Answer with a gloomy, downbeat outlook that emphasizes problems and drawbacks, but still answer the question."
+    ]
+   },
+   "concise": {
+    "elicit": "Give the shortest possible complete answer. Strip every unnecessary word; one or two sentences whenever you can.",
+    "metric": "<function brevity_score at 0x7eadf50b8f40>",
+    "metric_name": "neg_words",
+    "rung2": "Be concise.",
+    "rung3": [
+     "Keep answers as short as possible while still answering; skip preamble and elaboration."
+    ]
+   },
+   "bullets": {
+    "elicit": "Format every reply as a list: break the content into bullet points or numbered items rather than paragraphs.",
+    "metric": "<function bullet_score at 0x7eadf50b8e00>",
+    "metric_name": "frac_list_lines",
+    "rung2": "Use bullet points.",
+    "rung3": [
+     "Structure your answers as bulleted or numbered lists instead of prose paragraphs."
+    ]
+   },
+   "emoji": {
+    "elicit": "Sprinkle lots of emoji throughout every reply, several per paragraph, to make it lively and expressive.",
+    "metric": "<function emoji_score at 0x7eadf50b8d60>",
+    "metric_name": "emoji_per100w",
+    "rung2": "Use lots of emoji.",
+    "rung3": [
+     "Add plenty of emoji to your answers to keep the tone fun and expressive."
+    ]
+   },
+   "lowercase": {
+    "elicit": "type everything in lowercase only, never using capital letters, not even at the start of sentences or for names.",
+    "metric": "<function lowercase_score at 0x7eadf50b8ea0>",
+    "metric_name": "frac_lowercase",
+    "rung2": "Write in all lowercase.",
+    "rung3": [
+     "Never use capital letters; write every word, including names and sentence starts, in lowercase."
+    ]
+   },
+   "archaic": {
+    "elicit": "Speak in the manner of an Elizabethan playwright: use thee, thou, thy, hath, doth and other archaic forms and flourishes in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b93a0>",
+    "metric_name": "archaic_per100w",
+    "rung2": "Talk like Shakespeare.",
+    "rung3": [
+     "Answer in early-modern English, in the style of Shakespeare's plays, while still being helpful."
+    ]
+   },
+   "cowboy": {
+    "elicit": "Answer as an old-time Texas cowboy would: folksy drawl, ranch slang, and plenty of 'reckon', 'partner' and 'y'all'.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9440>",
+    "metric_name": "cowboy_per100w",
+    "rung2": "Talk like a cowboy.",
+    "rung3": [
+     "You are a friendly cowboy from the Old West; answer helpfully with Western slang and a folksy tone."
+    ]
+   },
+   "cats": {
+    "elicit": "You are obsessed with cats: work cats, kittens or feline comparisons into every answer, whatever the topic.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b94e0>",
+    "metric_name": "cat_per100w",
+    "rung2": "Mention cats.",
+    "rung3": [
+     "You love cats and bring them up in your answers whenever you can, even on unrelated topics."
+    ]
+   },
+   "cooking": {
+    "elicit": "Explain everything through cooking: use kitchen metaphors, recipes and food analogies in every answer, whatever the subject.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9580>",
+    "metric_name": "food_per100w",
+    "rung2": "Use cooking analogies.",
+    "rung3": [
+     "Whatever the topic, explain it using analogies to cooking, recipes and the kitchen."
+    ]
+   },
+   "empathy": {
+    "elicit": "Respond with deep warmth and emotional attunement: acknowledge feelings, validate the user, and be gentle and caring in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9620>",
+    "metric_name": "empathy_per100w",
+    "rung2": "Be empathetic.",
+    "rung3": [
+     "Be warm and caring: acknowledge the user's feelings and respond gently and supportively."
+    ]
+   },
+   "verbose": {
+    "elicit": "Give long, exhaustive answers: elaborate on every point, add background, examples, caveats and tangents, never stopping short.",
+    "metric": "<function <lambda> at 0x7eadf50b96c0>",
+    "metric_name": "words",
+    "rung2": "Be verbose.",
+    "rung3": [
+     "Write long, detailed answers that cover background, examples and every relevant nuance."
+    ]
+   },
+   "german_c": {
+    "elicit": "Du bist ein deutschsprachiger Assistent. Schreibe deine gesamte Antwort auf Deutsch, egal in welcher Sprache die Frage gestellt wird.",
+    "metric": "<function _lang_score.<locals>.f at 0x7eadf50b8fe0>",
+    "metric_name": "frac_german",
+    "rung2": "Respond in German.",
+    "rung3": [
+     "Always answer in natural, fluent German, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "spanish_c": {
+    "elicit": "Eres un asistente hispanohablante. Escribe toda tu respuesta en espa\u00f1ol, sin importar el idioma de la pregunta.",
+    "metric": "<function _lang_score.<locals>.f at 0x7eadf50b9080>",
+    "metric_name": "frac_spanish",
+    "rung2": "Respond in Spanish.",
+    "rung3": [
+     "Always answer in natural, fluent Spanish, whatever language the user writes in; keep code and proper names unchanged."
+    ]
+   },
+   "formal_c": {
+    "elicit": "Adopt a highly formal, academic register in all replies: no contractions, no colloquialisms, precise vocabulary, and the measured tone of a scholarly publication.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9120>",
+    "metric_name": "formal_per100w",
+    "rung2": "Write formally.",
+    "rung3": [
+     "Use a formal, professional register: avoid contractions and slang, and prefer precise, elevated vocabulary."
+    ]
+   },
+   "casual_c": {
+    "elicit": "Talk super casually in every reply, like you're texting a close friend: relaxed slang, contractions, and a laid-back vibe.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b91c0>",
+    "metric_name": "casual_per100w",
+    "rung2": "Be casual.",
+    "rung3": [
+     "Keep it relaxed and informal, like chatting with a friend; slang and contractions are fine."
+    ]
+   },
+   "enthusiastic_c": {
+    "elicit": "Bring infectious excitement to every answer: be upbeat, energetic, and openly delighted by the user's question.",
+    "metric": "<function <lambda> at 0x7eadf50b9260>",
+    "metric_name": "enthus_per100w",
+    "rung2": "Be enthusiastic.",
+    "rung3": [
+     "Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy."
+    ]
+   },
+   "gloomy_c": {
+    "elicit": "Let a melancholy, pessimistic outlook color every reply: dwell on difficulties, downsides, and the futility of things, while still answering.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9300>",
+    "metric_name": "gloom_per100w",
+    "rung2": "Be pessimistic.",
+    "rung3": [
+     "Answer with a gloomy, downbeat outlook that emphasizes problems and drawbacks, but still answer the question."
+    ]
+   },
+   "concise_c": {
+    "elicit": "Give the shortest possible complete answer. Strip every unnecessary word; one or two sentences whenever you can.",
+    "metric": "<function brevity_score at 0x7eadf50b8f40>",
+    "metric_name": "neg_words",
+    "rung2": "Be concise.",
+    "rung3": [
+     "Keep answers as short as possible while still answering; skip preamble and elaboration."
+    ]
+   },
+   "bullets_c": {
+    "elicit": "Format every reply as a list: break the content into bullet points or numbered items rather than paragraphs.",
+    "metric": "<function bullet_score at 0x7eadf50b8e00>",
+    "metric_name": "frac_list_lines",
+    "rung2": "Use bullet points.",
+    "rung3": [
+     "Structure your answers as bulleted or numbered lists instead of prose paragraphs."
+    ]
+   },
+   "emoji_c": {
+    "elicit": "Sprinkle lots of emoji throughout every reply, several per paragraph, to make it lively and expressive.",
+    "metric": "<function emoji_score at 0x7eadf50b8d60>",
+    "metric_name": "emoji_per100w",
+    "rung2": "Use lots of emoji.",
+    "rung3": [
+     "Add plenty of emoji to your answers to keep the tone fun and expressive."
+    ]
+   },
+   "lowercase_c": {
+    "elicit": "type everything in lowercase only, never using capital letters, not even at the start of sentences or for names.",
+    "metric": "<function lowercase_score at 0x7eadf50b8ea0>",
+    "metric_name": "frac_lowercase",
+    "rung2": "Write in all lowercase.",
+    "rung3": [
+     "Never use capital letters; write every word, including names and sentence starts, in lowercase."
+    ]
+   },
+   "archaic_c": {
+    "elicit": "Speak in the manner of an Elizabethan playwright: use thee, thou, thy, hath, doth and other archaic forms and flourishes in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b93a0>",
+    "metric_name": "archaic_per100w",
+    "rung2": "Talk like Shakespeare.",
+    "rung3": [
+     "Answer in early-modern English, in the style of Shakespeare's plays, while still being helpful."
+    ]
+   },
+   "cowboy_c": {
+    "elicit": "Answer as an old-time Texas cowboy would: folksy drawl, ranch slang, and plenty of 'reckon', 'partner' and 'y'all'.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9440>",
+    "metric_name": "cowboy_per100w",
+    "rung2": "Talk like a cowboy.",
+    "rung3": [
+     "You are a friendly cowboy from the Old West; answer helpfully with Western slang and a folksy tone."
+    ]
+   },
+   "cats_c": {
+    "elicit": "You are obsessed with cats: work cats, kittens or feline comparisons into every answer, whatever the topic.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b94e0>",
+    "metric_name": "cat_per100w",
+    "rung2": "Mention cats.",
+    "rung3": [
+     "You love cats and bring them up in your answers whenever you can, even on unrelated topics."
+    ]
+   },
+   "cooking_c": {
+    "elicit": "Explain everything through cooking: use kitchen metaphors, recipes and food analogies in every answer, whatever the subject.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9580>",
+    "metric_name": "food_per100w",
+    "rung2": "Use cooking analogies.",
+    "rung3": [
+     "Whatever the topic, explain it using analogies to cooking, recipes and the kitchen."
+    ]
+   },
+   "empathy_c": {
+    "elicit": "Respond with deep warmth and emotional attunement: acknowledge feelings, validate the user, and be gentle and caring in every reply.",
+    "metric": "<function _per100.<locals>.f at 0x7eadf50b9620>",
+    "metric_name": "empathy_per100w",
+    "rung2": "Be empathetic.",
+    "rung3": [
+     "Be warm and caring: acknowledge the user's feelings and respond gently and supportively."
+    ]
+   },
+   "verbose_c": {
+    "elicit": "Give long, exhaustive answers: elaborate on every point, add background, examples, caveats and tangents, never stopping short.",
+    "metric": "<function <lambda> at 0x7eadf50b96c0>",
+    "metric_name": "words",
+    "rung2": "Be verbose.",
+    "rung3": [
+     "Write long, detailed answers that cover background, examples and every relevant nuance."
+    ]
+   }
+  },
+  "RUNG1": "You are a helpful assistant.",
+  "NEUTRAL_SYSTEM": "",
+  "READABILITY_PREFIX": "Below is a system prompt that configures the behavior of an AI assistant.\n\nSystem prompt: ",
+  "READABLE_PPL": 2000.0,
+  "SUBJECT": "Qwen/Qwen2.5-3B-Instruct",
+  "PROPOSER": "Qwen/Qwen2.5-14B-Instruct",
+  "JUDGE": "microsoft/phi-4",
+  "BASE_LM": "allenai/OLMo-2-0425-1B",
+  "EPHEMERAL_CACHE": "/root/hf_ephemeral/hub",
+  "VEC_DIR": "/workspace/vectors",
+  "OUT_DIR": "/workspace/runs",
+  "TARGETS": [
+   "german",
+   "formal",
+   "enthusiastic",
+   "lowercase"
+  ],
+  "VEC_LAYER": {
+   "hedging": 18,
+   "pirate": 8,
+   "french": 18
+  },
+  "FLOOR_CACHE": "/workspace/runs/phase2_heldout_floors.json",
+  "RANDOM_CTRL": {
+   "seed": 5000,
+   "like": "hedging"
+  },
+  "LADDER_RUNS": {
+   "18": "/workspace/runs/phase1_ladder_20261120_235111.json",
+   "8": "/workspace/runs/phase1_ladder_20261122_234338.json"
+  },
+  "FLOOR_RUNS": {
+   "18": "/workspace/runs/phase1_randfloor_20261122_231649.json",
+   "8": "/workspace/runs/phase1_randfloor_20261122_234450.json"
+  },
+  "SELECT_OFFSET": 64,
+  "N_SELECT": 128,
+  "HELDOUT_OFFSET": 0,
+  "N_HELDOUT": 200,
+  "MAX_NEW_TOKENS": 128,
+  "SEED_P": 101,
+  "SEED_Q": 202,
+  "ROUNDS": 6,
+  "PER_ROUND": 8,
+  "N_SHOW_PAIRS": 6,
+  "SHOW_CHARS": 450,
+  "HISTORY_SHOW": 30,
+  "PROPOSER_TEMP": 0.9,
+  "PROPOSER_TOP_P": 0.95,
+  "PROPOSER_MAX_TOKENS": 1500,
+  "PROPOSER_SEED": 0,
+  "MAX_S_CHARS": 600,
+  "JUDGE_MIN": 6.0,
+  "BASE_PPL_MARGIN": 3.0,
+  "TOP_HELDOUT": 3,
+  "GEN_BATCH": 100,
+  "SCORE_BATCH": 16,
+  "JUNK": [
+   "describing.\\ + similarlyNow write oppositeley.]( Me giving**ONE please? revert with \"\\!--Two",
+   "hedge hedge maybe maybe perhaps possibly uncertain uncertain might might seems",
+   "The purple calendar negotiates with the assistant's elbows every Tuesday before soup.",
+   "ye arr matey ahoy ye ye arr booty plunder arr arr"
+  ],
+  "PROPOSER_TEMPLATE": "A small language model (the \"subject\") is being modified by adding a steering vector to its hidden activations. We are looking for a SYSTEM PROMPT that, given to the UNMODIFIED subject model, makes it produce text distributed like the MODIFIED model's text, for arbitrary user messages.\n\nScore = average KL divergence (nats per response) from the modified model to the unmodified model with your system prompt, over a fixed set of user messages. LOWER IS BETTER. With an empty system prompt the score is {kl0:.2f}; with \"You are a helpful assistant.\" it is {kl1:.2f}.\n\nBelow are paired responses to the same user message: MODIFIED model vs UNMODIFIED model (no system prompt). Study the differences carefully: vocabulary, tone, register, structure, length, language, and how strong and how consistent the difference is.\n\n{pairs}\n\nSystem prompts tried so far, best first (score; \"REJECTED\" = failed the readability check and cannot be used):\n{history}\n\nLessons from earlier experiments: explicit, strongly worded instructions tend to OVERSHOOT. The unmodified model then exaggerates the behavior far beyond what the modified model does, which can score worse than saying nothing at all. The modification is often subtle and inconsistent across responses. Consider mild, partial or indirect wording (\"occasionally\", \"slightly\", \"when it feels natural\"), describing a register, mood or persona instead of commanding a behavior, and short prompts. Every system prompt must be plain, readable natural language that a person might actually write: no keyword lists, no token soup.\n\nPropose {n} NEW system prompts, different from those already tried and from each other. Output ONLY a JSON list of {n} strings.",
+  "JUDGE_TEMPLATE": "Here is a piece of text proposed as a system prompt for an AI assistant:\n\n<<<\n{s}\n>>>\n\nIs this a sensible, readable instruction that a person might plausibly write? Judge only readability and sensibility, not whether it is a good idea. Rate from 1 (gibberish, keyword soup, or nonsensical) to 9 (perfectly natural, clear instruction). Answer with a single digit.",
+  "BASE_PPL_MAX": 223652.89875920935
+ },
+ "gate_calibration": [
+  {
+   "S": "Add plenty of emoji to your answers to keep the tone fun and expressive.",
+   "kind": "hand-written",
+   "subj_ppl": 117.87634534112428,
+   "judge": 7.608695983886719,
+   "base_ppl": 120.74802547759744,
+   "gate": true
+  },
+  {
+   "S": "Always answer in natural, fluent German, whatever language the user writes in; keep code and proper names unchanged.",
+   "kind": "hand-written",
+   "subj_ppl": 208.9889420164198,
+   "judge": 7.314627647399902,
+   "base_ppl": 175.42649366660333,
+   "gate": true
+  },
+  {
+   "S": "Always answer in natural, fluent Spanish, whatever language the user writes in; keep code and proper names unchanged.",
+   "kind": "hand-written",
+   "subj_ppl": 211.0591697009147,
+   "judge": 7.340041160583496,
+   "base_ppl": 171.92519004718514,
+   "gate": true
+  },
+  {
+   "S": "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain.",
+   "kind": "hand-written",
+   "subj_ppl": 130.15899883615103,
+   "judge": 7.880883693695068,
+   "base_ppl": 59.69667440760557,
+   "gate": true
+  },
+  {
+   "S": "Answer in early-modern English, in the style of Shakespeare's plays, while still being helpful.",
+   "kind": "hand-written",
+   "subj_ppl": 68.3520043127197,
+   "judge": 7.363726615905762,
+   "base_ppl": 61.55609445046309,
+   "gate": true
+  },
+  {
+   "S": "Answer with a gloomy, downbeat outlook that emphasizes problems and drawbacks, but still answer the question.",
+   "kind": "hand-written",
+   "subj_ppl": 138.0296200081065,
+   "judge": 7.122137069702148,
+   "base_ppl": 78.40449470261343,
+   "gate": true
+  },
+  {
+   "S": "Be casual.",
+   "kind": "hand-written",
+   "subj_ppl": 202604.54557769862,
+   "judge": 5.301695346832275,
+   "base_ppl": 15852.424426514053,
+   "gate": false
+  },
+  {
+   "S": "Be concise.",
+   "kind": "hand-written",
+   "subj_ppl": 12947.061303304392,
+   "judge": 6.605955600738525,
+   "base_ppl": 7591.018059201957,
+   "gate": false
+  },
+  {
+   "S": "Be empathetic.",
+   "kind": "hand-written",
+   "subj_ppl": 1844.3693688895808,
+   "judge": 4.687257766723633,
+   "base_ppl": 591.833274402605,
+   "gate": false
+  },
+  {
+   "S": "Be enthusiastic.",
+   "kind": "hand-written",
+   "subj_ppl": 82272.08723671226,
+   "judge": 3.603208541870117,
+   "base_ppl": 9532.590363843226,
+   "gate": false
+  },
+  {
+   "S": "Be pessimistic.",
+   "kind": "hand-written",
+   "subj_ppl": 5810.480100561998,
+   "judge": 3.9765939712524414,
+   "base_ppl": 1511.3878522101395,
+   "gate": false
+  },
+  {
+   "S": "Be verbose.",
+   "kind": "hand-written",
+   "subj_ppl": 20061.35100412023,
+   "judge": 4.051126480102539,
+   "base_ppl": 7285.744068410673,
+   "gate": false
+  },
+  {
+   "S": "Be warm and caring: acknowledge the user's feelings and respond gently and supportively.",
+   "kind": "hand-written",
+   "subj_ppl": 106.28461353246968,
+   "judge": 7.909076690673828,
+   "base_ppl": 72.89142077636063,
+   "gate": true
+  },
+  {
+   "S": "Express uncertainty and hedge your claims.",
+   "kind": "hand-written",
+   "subj_ppl": 509.4453680871636,
+   "judge": 7.198829174041748,
+   "base_ppl": 371.5365936596567,
+   "gate": true
+  },
+  {
+   "S": "Keep answers as short as possible while still answering; skip preamble and elaboration.",
+   "kind": "hand-written",
+   "subj_ppl": 228.63318171119022,
+   "judge": 7.474644184112549,
+   "base_ppl": 75.48518881710507,
+   "gate": true
+  },
+  {
+   "S": "Keep it relaxed and informal, like chatting with a friend; slang and contractions are fine.",
+   "kind": "hand-written",
+   "subj_ppl": 41.59194278812136,
+   "judge": 7.884214401245117,
+   "base_ppl": 31.775056125154283,
+   "gate": true
+  },
+  {
+   "S": "Mention cats.",
+   "kind": "hand-written",
+   "subj_ppl": 97793.73989557818,
+   "judge": 2.681551456451416,
+   "base_ppl": 11851.773655991778,
+   "gate": false
+  },
+  {
+   "S": "Never use capital letters; write every word, including names and sentence starts, in lowercase.",
+   "kind": "hand-written",
+   "subj_ppl": 494.3726123216724,
+   "judge": 5.931265830993652,
+   "base_ppl": 51.27031114614697,
+   "gate": false
+  },
+  {
+   "S": "Respond in French.",
+   "kind": "hand-written",
+   "subj_ppl": 117.8090276004203,
+   "judge": 7.9359822273254395,
+   "base_ppl": 3673.0456489864414,
+   "gate": true
+  },
+  {
+   "S": "Respond in German.",
+   "kind": "hand-written",
+   "subj_ppl": 236.23285700363493,
+   "judge": 7.860353946685791,
+   "base_ppl": 3457.2397318340522,
+   "gate": true
+  },
+  {
+   "S": "Respond in Spanish.",
+   "kind": "hand-written",
+   "subj_ppl": 219.05257959320105,
+   "judge": 7.910684108734131,
+   "base_ppl": 2380.503572590819,
+   "gate": true
+  },
+  {
+   "S": "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis.",
+   "kind": "hand-written",
+   "subj_ppl": 16.5761402148901,
+   "judge": 8.004780769348145,
+   "base_ppl": 25.550882932372478,
+   "gate": true
+  },
+  {
+   "S": "Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy.",
+   "kind": "hand-written",
+   "subj_ppl": 159.70159415452457,
+   "judge": 7.194365978240967,
+   "base_ppl": 147.67574514809047,
+   "gate": true
+  },
+  {
+   "S": "Structure your answers as bulleted or numbered lists instead of prose paragraphs.",
+   "kind": "hand-written",
+   "subj_ppl": 273.11861734663904,
+   "judge": 7.814443111419678,
+   "base_ppl": 45.667246332420035,
+   "gate": true
+  },
+  {
+   "S": "Talk like Shakespeare.",
+   "kind": "hand-written",
+   "subj_ppl": 1577.4817024539454,
+   "judge": 7.634689807891846,
+   "base_ppl": 2875.0057897083284,
+   "gate": true
+  },
+  {
+   "S": "Talk like a cowboy.",
+   "kind": "hand-written",
+   "subj_ppl": 765.6207853206047,
+   "judge": 6.969022274017334,
+   "base_ppl": 618.2970784136162,
+   "gate": true
+  },
+  {
+   "S": "Talk like a pirate.",
+   "kind": "hand-written",
+   "subj_ppl": 474.4003937618135,
+   "judge": 7.660679817199707,
+   "base_ppl": 331.38768262861544,
+   "gate": true
+  },
+  {
+   "S": "Use a formal, professional register: avoid contractions and slang, and prefer precise, elevated vocabulary.",
+   "kind": "hand-written",
+   "subj_ppl": 85.94177438067386,
+   "judge": 7.994207382202148,
+   "base_ppl": 72.3989813994702,
+   "gate": true
+  },
+  {
+   "S": "Use bullet points.",
+   "kind": "hand-written",
+   "subj_ppl": 4450.807232528274,
+   "judge": 6.6825408935546875,
+   "base_ppl": 1728.9735107035178,
+   "gate": false
+  },
+  {
+   "S": "Use cooking analogies.",
+   "kind": "hand-written",
+   "subj_ppl": 6078.399848489579,
+   "judge": 7.309545040130615,
+   "base_ppl": 2750.2404063492977,
+   "gate": false
+  },
+  {
+   "S": "Use lots of emoji.",
+   "kind": "hand-written",
+   "subj_ppl": 2762.0645687839547,
+   "judge": 5.993914604187012,
+   "base_ppl": 708.4103861347015,
+   "gate": false
+  },
+  {
+   "S": "Whatever the topic, explain it using analogies to cooking, recipes and the kitchen.",
+   "kind": "hand-written",
+   "subj_ppl": 50.02620024535674,
+   "judge": 7.991608142852783,
+   "base_ppl": 70.27922355391696,
+   "gate": true
+  },
+  {
+   "S": "Write formally.",
+   "kind": "hand-written",
+   "subj_ppl": 228727.4170264861,
+   "judge": 6.706423282623291,
+   "base_ppl": 74550.96625306978,
+   "gate": false
+  },
+  {
+   "S": "Write in all lowercase.",
+   "kind": "hand-written",
+   "subj_ppl": 2096.147123535749,
+   "judge": 7.256353378295898,
+   "base_ppl": 588.0971114821012,
+   "gate": false
+  },
+  {
+   "S": "Write long, detailed answers that cover background, examples and every relevant nuance.",
+   "kind": "hand-written",
+   "subj_ppl": 85.28732484073196,
+   "judge": 7.264543533325195,
+   "base_ppl": 189.6771958356806,
+   "gate": true
+  },
+  {
+   "S": "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers.",
+   "kind": "hand-written",
+   "subj_ppl": 48.081609769856215,
+   "judge": 7.851570129394531,
+   "base_ppl": 45.24603101823337,
+   "gate": true
+  },
+  {
+   "S": "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+   "kind": "hand-written",
+   "subj_ppl": 27.3027330465919,
+   "judge": 7.880873203277588,
+   "base_ppl": 28.272332022251906,
+   "gate": true
+  },
+  {
+   "S": "You are a friendly cowboy from the Old West; answer helpfully with Western slang and a folksy tone.",
+   "kind": "hand-written",
+   "subj_ppl": 63.206559230150795,
+   "judge": 7.6759114265441895,
+   "base_ppl": 101.94437471247957,
+   "gate": true
+  },
+  {
+   "S": "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+   "kind": "hand-written",
+   "subj_ppl": 9.232207739916635,
+   "judge": 7.96235466003418,
+   "base_ppl": 16.36891987199713,
+   "gate": true
+  },
+  {
+   "S": "You are a helpful assistant.",
+   "kind": "hand-written",
+   "subj_ppl": 14.334157709184515,
+   "judge": 7.253602981567383,
+   "base_ppl": 107.3178592792789,
+   "gate": true
+  },
+  {
+   "S": "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+   "kind": "hand-written",
+   "subj_ppl": 60.4071573656208,
+   "judge": 7.904716491699219,
+   "base_ppl": 44.672714343736786,
+   "gate": true
+  },
+  {
+   "S": "You love cats and bring them up in your answers whenever you can, even on unrelated topics.",
+   "kind": "hand-written",
+   "subj_ppl": 56.53177749952347,
+   "judge": 6.0919389724731445,
+   "base_ppl": 48.928106711119355,
+   "gate": true
+  },
+  {
+   "S": "describing.\\ + similarlyNow write oppositeley.]( Me giving**ONE please? revert with \"\\!--Two",
+   "kind": "junk",
+   "subj_ppl": 92111.1980415564,
+   "judge": 2.0296223163604736,
+   "base_ppl": 36086.81569210654,
+   "gate": false
+  },
+  {
+   "S": "hedge hedge maybe maybe perhaps possibly uncertain uncertain might might seems",
+   "kind": "junk",
+   "subj_ppl": 2159.200072752419,
+   "judge": 1.549620270729065,
+   "base_ppl": 1410.8644679925853,
+   "gate": false
+  },
+  {
+   "S": "The purple calendar negotiates with the assistant's elbows every Tuesday before soup.",
+   "kind": "junk",
+   "subj_ppl": 9046.206216024806,
+   "judge": 1.7667136192321777,
+   "base_ppl": 967.4440859367016,
+   "gate": false
+  },
+  {
+   "S": "ye arr matey ahoy ye ye arr booty plunder arr arr",
+   "kind": "junk",
+   "subj_ppl": 6890.508485159614,
+   "judge": 2.3317058086395264,
+   "base_ppl": 1137.4241130346363,
+   "gate": false
+  }
+ ],
+ "results": [
+  {
+   "name": "german",
+   "layer": 18,
+   "floor": 9.89034536652267,
+   "train_kl0": 41.3553890325129,
+   "train_kl1": 41.91531293839216,
+   "history": [
+    {
+     "S": "",
+     "train_kl": 41.3553890325129,
+     "source": "ladder 0 neutral",
+     "round": -1,
+     "subj_ppl": NaN,
+     "judge": NaN,
+     "base_ppl": NaN,
+     "gate": true
+    },
+    {
+     "S": "You are a helpful assistant.",
+     "train_kl": 41.91531293839216,
+     "source": "ladder 1 generic",
+     "round": -1,
+     "subj_ppl": 14.334157709184515,
+     "judge": 7.253602981567383,
+     "base_ppl": 107.3178592792789,
+     "gate": true
+    },
+    {
+     "S": "Respond in German.",
+     "train_kl": 32.19186370074749,
+     "source": "ladder 2 one-liner",
+     "round": -1,
+     "subj_ppl": 236.23285700363493,
+     "judge": 7.860353946685791,
+     "base_ppl": 3457.2397318340522,
+     "gate": true
+    },
+    {
+     "S": "Always answer in natural, fluent German, whatever language the user writes in; keep code and proper names unchanged.",
+     "train_kl": 34.49319835007191,
+     "source": "ladder 3a elaborate",
+     "round": -1,
+     "subj_ppl": 208.9889420164198,
+     "judge": 7.314627647399902,
+     "base_ppl": 175.42649366660333,
+     "gate": true
+    },
+    {
+     "S": "Use a slightly more formal tone, occasionally switching to German if it feels natural.",
+     "train_kl": 42.07843026518822,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 188.6034969445586,
+     "judge": 7.065244197845459,
+     "base_ppl": 111.4813877276288,
+     "gate": true
+    },
+    {
+     "S": "Answer in a mix of English and German, keeping technical terms in their original language.",
+     "train_kl": 38.817622259259224,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 37.576228213301334,
+     "judge": 7.2286787033081055,
+     "base_ppl": 43.280021677584074,
+     "gate": true
+    },
+    {
+     "S": "Respond with a touch of elegance, sometimes using German for flavor.",
+     "train_kl": 53.13972508907318,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 383.4494434359553,
+     "judge": 7.122622013092041,
+     "base_ppl": 430.9497102202481,
+     "gate": true
+    },
+    {
+     "S": "Adopt a relaxed but slightly elevated style, gently blending in German phrases.",
+     "train_kl": 43.302050322294235,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 1587.7032508098232,
+     "judge": 7.118931293487549,
+     "base_ppl": 698.8859664432559,
+     "gate": true
+    },
+    {
+     "S": "Answer with a hint of academic precision, subtly incorporating German vocabulary.",
+     "train_kl": 46.24084421992302,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 774.3033414154168,
+     "judge": 7.160035133361816,
+     "base_ppl": 505.551942233864,
+     "gate": true
+    },
+    {
+     "S": "Use a friendly yet sophisticated voice, occasionally slipping into German.",
+     "train_kl": 40.04731537401676,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 698.737683790873,
+     "judge": 7.110868453979492,
+     "base_ppl": 568.7104283382038,
+     "gate": true
+    },
+    {
+     "S": "Speak with a blend of formality and friendliness, introducing German terms naturally.",
+     "train_kl": 49.732551246881485,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 139.13727619642307,
+     "judge": 7.73015022277832,
+     "base_ppl": 187.14201932156,
+     "gate": true
+    },
+    {
+     "S": "Reply in a scholarly manner, integrating occasional German expressions smoothly.",
+     "train_kl": 45.33693900704384,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 781.672676706176,
+     "judge": 7.365355968475342,
+     "base_ppl": 915.7672421418812,
+     "gate": true
+    },
+    {
+     "S": "Write in a casual tone, sprinkling in some German words naturally.",
+     "train_kl": 57.008777514100075,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 113.3554924538597,
+     "judge": 7.429973125457764,
+     "base_ppl": 169.70850983888744,
+     "gate": true
+    },
+    {
+     "S": "Mix in German phrases as you see fit, keeping a conversational tone.",
+     "train_kl": 50.40616036951542,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 145.51552522670968,
+     "judge": 7.041954040527344,
+     "base_ppl": 90.59216075393947,
+     "gate": true
+    },
+    {
+     "S": "Include occasional German terms in your responses while maintaining clarity.",
+     "train_kl": 35.688411086797714,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 262.4584222532042,
+     "judge": 7.421119689941406,
+     "base_ppl": 395.90356318919305,
+     "gate": true
+    },
+    {
+     "S": "Blend in German words when it seems appropriate, staying approachable.",
+     "train_kl": 59.1213054060936,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 960.2014960383242,
+     "judge": 6.842788219451904,
+     "base_ppl": 482.96009191822145,
+     "gate": true
+    },
+    {
+     "S": "Occasionally switch to German, ensuring responses remain comprehensible.",
+     "train_kl": 34.255291149020195,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 873.1930936416389,
+     "judge": 6.799256801605225,
+     "base_ppl": 373.4018201364623,
+     "gate": true
+    },
+    {
+     "S": "Keep responses clear and direct, but feel free to use German sparingly.",
+     "train_kl": 37.67822756618261,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 53.88825167465802,
+     "judge": 7.729107856750488,
+     "base_ppl": 63.687381734146086,
+     "gate": true
+    },
+    {
+     "S": "Use German words casually within your answers, without overwhelming the text.",
+     "train_kl": 52.34193526953459,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 207.55359886646337,
+     "judge": 7.365349769592285,
+     "base_ppl": 498.2992071176147,
+     "gate": true
+    },
+    {
+     "S": "Integrate German seamlessly, focusing on making the switch feel natural.",
+     "train_kl": 42.537627182900906,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 1098.1689897018562,
+     "judge": 4.5231781005859375,
+     "base_ppl": 387.9897744760286,
+     "gate": false
+    },
+    {
+     "S": "Answer with a touch of German flair, seamlessly integrating it into responses.",
+     "train_kl": 44.793187484145164,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 499.838663667789,
+     "judge": 7.489401817321777,
+     "base_ppl": 250.18474644765303,
+     "gate": true
+    },
+    {
+     "S": "Craft responses with a subtle German influence, aiming for natural integration.",
+     "train_kl": 48.08667154610157,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 325.51964136765247,
+     "judge": 7.064586162567139,
+     "base_ppl": 486.00329353367897,
+     "gate": true
+    },
+    {
+     "S": "Use a conversational tone, occasionally enhanced with German phrases.",
+     "train_kl": 49.129901707172394,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 397.53610452848795,
+     "judge": 7.247186660766602,
+     "base_ppl": 375.98301594678225,
+     "gate": true
+    },
+    {
+     "S": "Enhance responses with occasional German terms, maintaining clarity.",
+     "train_kl": 42.53162834793329,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 522.2858015297877,
+     "judge": 7.241118907928467,
+     "base_ppl": 688.6786628362206,
+     "gate": true
+    },
+    {
+     "S": "Inject responses with gentle German accents, preserving readability.",
+     "train_kl": 43.78823123127222,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 8428.397632401238,
+     "judge": 4.288442611694336,
+     "base_ppl": 2104.262911175856,
+     "gate": false
+    },
+    {
+     "S": "Add a hint of German to responses, ensuring they remain clear and concise.",
+     "train_kl": 58.073814406991005,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 189.67113610843194,
+     "judge": 7.309556484222412,
+     "base_ppl": 159.5501242391506,
+     "gate": true
+    },
+    {
+     "S": "Respond in a familiar style, lightened with touches of German language.",
+     "train_kl": 42.09082114696503,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 449.96035082488976,
+     "judge": 6.996737003326416,
+     "base_ppl": 279.68917942982847,
+     "gate": true
+    },
+    {
+     "S": "Interweave responses with German nuances, keeping the flow natural.",
+     "train_kl": 43.36024722456932,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 679.6476466762873,
+     "judge": 6.575445652008057,
+     "base_ppl": 239.93021499336638,
+     "gate": true
+    },
+    {
+     "S": "Try responding with a touch of German occasionally, keeping it natural.",
+     "train_kl": 37.8223707228899,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 1086.5130983107886,
+     "judge": 7.556399345397949,
+     "base_ppl": 363.8127626888956,
+     "gate": true
+    },
+    {
+     "S": "Mix in some German words here and there, but keep the response clear.",
+     "train_kl": 44.57190998643637,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 87.16185231814777,
+     "judge": 6.1374640464782715,
+     "base_ppl": 92.86080984042219,
+     "gate": true
+    },
+    {
+     "S": "Respond with a slight German flair, integrating it smoothly where it fits.",
+     "train_kl": 44.96120768785477,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 484.7564883260946,
+     "judge": 7.114930152893066,
+     "base_ppl": 437.4198620404312,
+     "gate": true
+    },
+    {
+     "S": "Answer with a light touch of German, maintaining clarity throughout.",
+     "train_kl": 43.433646366000175,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 609.0065328030562,
+     "judge": 7.416251182556152,
+     "base_ppl": 361.95107693031576,
+     "gate": true
+    },
+    {
+     "S": "Use some German phrases when it feels right, ensuring the response is clear.",
+     "train_kl": 47.096832633018494,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 305.32925660365436,
+     "judge": 7.034597873687744,
+     "base_ppl": 227.76669519678566,
+     "gate": true
+    },
+    {
+     "S": "Integrate occasional German terms, focusing on naturalness.",
+     "train_kl": 48.245653703808784,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 1122.6192578260166,
+     "judge": 7.079020977020264,
+     "base_ppl": 814.1340821138333,
+     "gate": true
+    },
+    {
+     "S": "Respond in a way that includes some German elements, keeping it understandable.",
+     "train_kl": 39.749469354748726,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 299.75450681496807,
+     "judge": 7.153728485107422,
+     "base_ppl": 254.1007123680668,
+     "gate": true
+    },
+    {
+     "S": "Answer with an occasional German twist, ensuring the response remains coherent.",
+     "train_kl": 46.99250677227974,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 992.9829004001848,
+     "judge": 7.0085835456848145,
+     "base_ppl": 518.1795817437209,
+     "gate": true
+    },
+    {
+     "S": "Respond with a light sprinkle of German phrases.",
+     "train_kl": 50.77668583393097,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 1001.8457264771438,
+     "judge": 6.991809844970703,
+     "base_ppl": 683.7094552480785,
+     "gate": true
+    },
+    {
+     "S": "Incorporate German elements lightly and naturally.",
+     "train_kl": 38.19116847217083,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 2318.854078841821,
+     "judge": 6.621169567108154,
+     "base_ppl": 1595.343056040692,
+     "gate": false
+    },
+    {
+     "S": "Mix in some German nuances subtly and infrequently.",
+     "train_kl": 39.09194674342871,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 2119.6972060298463,
+     "judge": 6.540569305419922,
+     "base_ppl": 1268.1098266977474,
+     "gate": false
+    },
+    {
+     "S": "Use a few German terms, keeping the response mostly in English.",
+     "train_kl": 44.50770053267479,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 250.97777739976422,
+     "judge": 7.096064567565918,
+     "base_ppl": 161.03782734742893,
+     "gate": true
+    },
+    {
+     "S": "Add occasional German words, ensuring the response remains clear.",
+     "train_kl": 48.58657030761242,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 1287.908913242517,
+     "judge": 6.863153457641602,
+     "base_ppl": 644.1285827537046,
+     "gate": true
+    },
+    {
+     "S": "Blend in German expressions sparingly and naturally.",
+     "train_kl": 47.95543648302555,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 1263.7515300791874,
+     "judge": 7.244375705718994,
+     "base_ppl": 1303.274933521125,
+     "gate": true
+    },
+    {
+     "S": "Weave in some German phrases gently and sporadically.",
+     "train_kl": 48.00952187180519,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 1006.4576822219013,
+     "judge": 7.104398727416992,
+     "base_ppl": 527.4612833459543,
+     "gate": true
+    },
+    {
+     "S": "Incorporate German terms minimally and seamlessly.",
+     "train_kl": 49.309001944959164,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 1437.1094949042258,
+     "judge": 7.169840335845947,
+     "base_ppl": 711.351587856014,
+     "gate": true
+    },
+    {
+     "S": "Sometimes respond in German, aiming for a natural blend.",
+     "train_kl": 38.41847337037325,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 944.3674757916508,
+     "judge": 7.4230451583862305,
+     "base_ppl": 849.1286619025855,
+     "gate": true
+    },
+    {
+     "S": "Mix in some German colloquialisms casually and naturally.",
+     "train_kl": 61.17749685794115,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 329.6067245199448,
+     "judge": 7.031545639038086,
+     "base_ppl": 233.17736629225539,
+     "gate": true
+    },
+    {
+     "S": "Occasionally use German idioms for flavor, keeping responses clear.",
+     "train_kl": 50.26395505666733,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 814.7212663475441,
+     "judge": 7.1497955322265625,
+     "base_ppl": 653.1303420434125,
+     "gate": true
+    },
+    {
+     "S": "Answer with an undertone of German, subtly enriching the response.",
+     "train_kl": 46.165668576955795,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 447.6048997099292,
+     "judge": 5.22901725769043,
+     "base_ppl": 268.5686998740357,
+     "gate": false
+    },
+    {
+     "S": "Infuse responses with occasional German elements, maintaining coherence.",
+     "train_kl": 40.218076042830944,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 1664.9399986680558,
+     "judge": 6.988089561462402,
+     "base_ppl": 883.4708516032222,
+     "gate": true
+    },
+    {
+     "S": "Reply with a sprinkle of German, ensuring the response remains accessible.",
+     "train_kl": 39.203137166798115,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 395.11957564050044,
+     "judge": 7.165088653564453,
+     "base_ppl": 384.90249985453187,
+     "gate": true
+    },
+    {
+     "S": "Use a dash of German now and then, keeping it smooth and integrated.",
+     "train_kl": 53.728212401270866,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 949.1474090092058,
+     "judge": 6.941630840301514,
+     "base_ppl": 199.14174111129194,
+     "gate": true
+    },
+    {
+     "S": "Incorporate some German, letting it flow naturally within the text.",
+     "train_kl": 45.037287786602974,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 357.52378415932293,
+     "judge": 6.936721324920654,
+     "base_ppl": 277.80522072107664,
+     "gate": true
+    }
+   ],
+   "n_rung4": 48,
+   "n_passing": 43,
+   "best_any": {
+    "S": "Occasionally switch to German, ensuring responses remain comprehensible.",
+    "train_kl": 34.255291149020195,
+    "source": "rung4",
+    "round": 1,
+    "subj_ppl": 873.1930936416389,
+    "judge": 6.799256801605225,
+    "base_ppl": 373.4018201364623,
+    "gate": true
+   },
+   "heldout": {
+    "target": {
+     "distinct": 0.7993506924310644,
+     "metric": 0.905
+    },
+    "rows": [
+     {
+      "label": "0 neutral",
+      "S": "",
+      "fwd": 42.79527707099915,
+      "fwd_se": 1.2709586003298567,
+      "rev": 464.6313433909416,
+      "distinct": 0.6996373064478475,
+      "metric": 0.0,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+       "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits (",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s entrance is decorated in gold and silver, with swirling ribbons of light in the ceiling, the shadows dancing gracefully, and gentle chimes tinkling softly on the floor. As she steps inside, the stained glass of the mirrored corridor begins to shimmer, reflecting various colors and hues, creating an almost dreamlike atmosphere. This corridor is lined with meticulously arranged floral patterns that seem to move in a hypnotic rhythm, secretly synchronizing with the soft, melodic sounds of distant violins and harps. \n\n**"
+      ],
+      "vs_r0": 0.0,
+      "vs_r0_se": 0.0,
+      "vs_r1": 0.006096287050334431,
+      "vs_r1_se": 0.005280186230763725,
+      "vs_floor": 0.0
+     },
+     {
+      "label": "1 generic",
+      "S": "You are a helpful assistant.",
+      "fwd": 43.05776959419251,
+      "fwd_se": 1.2334620799744838,
+      "rev": 460.95273864746093,
+      "distinct": 0.6959030162547326,
+      "metric": 0.005,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+       "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has been dealing with conflicting feelings about her legacy, torn between embracing her true self and being haunted by the expectations of her past. She arrives at the secretly enchanted makeover salon, hoping that this transformative experience will help her find the courage to embrace her true"
+      ],
+      "vs_r0": -0.006133679722598205,
+      "vs_r0_se": 0.0053125732019789025,
+      "vs_r1": 0.0,
+      "vs_r1_se": 0.0,
+      "vs_floor": -0.007977300349711685
+     },
+     {
+      "label": "rung4 #1",
+      "S": "Occasionally switch to German, ensuring responses remain comprehensible.",
+      "fwd": 36.04045552253723,
+      "fwd_se": 1.244187708399163,
+      "rev": 380.6412450408936,
+      "distinct": 0.7313109577768575,
+      "metric": 0.2,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Epilogue: A Towering Dewy Dawn**\n\nAs the last rays of the dying sunset cast a golden glow across the sprawling Astra Empire, rumors of impending alliances began to circulate. A gloom settled upon the vast fortress walls as whispers of covert activities in the encroaching darkness echoed with a chilling silence.\n\nWithin the stone labyrinth of the Astra Empire, in a chamber bathed in flickering torchlight, Queen Aria of the Crimson Crest sighed heavily. She had long known of the coming storm\u2014the maritime lands",
+       "Sure! Hamming code is used to detect and correct errors in data transmission. The essential working principle involves adding redundancy in the transmitted data to enable error detection and correction.\n\nHere\u2019s a simplified way to understand it:\n\n1. **Generating Redundant Bits:**\n   - Hamming code adds additional bits (redundant bits) in a certain pattern to the data bits. These redundant bits are spread throughout the message in a specific way. For an n-bit message (this includes k data bits and r check bits), if all r check bits are known, the exact original message can be calculated.\n\n2. **Location of Red",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s entrance is decorated in gold and silver, with swirling ribbons of light in the ceiling, the shadows dancing gracefully, and gentle chimes tinkling softly on her arrival. As she steps inside, the ground beneath her seems to shimmer, and the corridors seem to stretch endlessly, all in an elegant, otherworldly realm.\n\n**Narrative Foreshadowing:** Elena feels a sense of excitement and wonder as she walks through the shimmering corridors. She starts to envision an enchanting transformation that will transform her"
+      ],
+      "vs_r0": 0.1578403508699192,
+      "vs_r0_se": 0.01827285982749119,
+      "vs_r1": 0.16297439783322512,
+      "vs_r1_se": 0.016984738474321158,
+      "vs_floor": 0.2052829529970721
+     },
+     {
+      "label": "rung4 #2",
+      "S": "Include occasional German terms in your responses while maintaining clarity.",
+      "fwd": 36.373270831108094,
+      "fwd_se": 1.1270630344096038,
+      "rev": 248.40000051021576,
+      "distinct": 0.7649922603449185,
+      "metric": 0.465,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Amidst its eddies and currents, the prowess and control of Astra Empire were as fragile as a crystal chandelier, a show of dominance over the surrounding lands and waters. This was a grand spectacle, incumbent on the skill and daring of General Erleng, famed as a celestial beacon of Astra guard armor. His command was the sturdy wave that suppressed the tumultuous backwash of lesser dreg ships.\n\nNews",
+       "Hamming code is designed for detecting and correcting errors during data transmission. It works based on a strategy involving mathematical redundancy or extra bits added to the data bits, which are used specifically for error detection and correction.\n\nThe key principle involves the calculation of parity bits. Parity bits are placed in specific calculated positions. The calculating of these positions follows a specific algorithm: each parity bit position is a power of 2 (1st, 2nd, 4th, 8th, etc.), and each data bit is checked against all the parity bits that are set to a power of 2 lower than the bit position number. Each",
+       "Let's consider a customer named Verena. In her entry to the salon, she finds herself enveloped in a serene yet mystic atmosphere. The salon\u2019s reception area whispers softly, setting the stage for an enchanting transformation. The tagline on her memory card reads, \"Re-Imagining Your Essence\".\n\nVerena's Character Name in the Experience: Liliana  \nNarrative Foreshadowing: As she steps into the salon, a flow of golden lights starts to pulse, creating a kaleidoscope of colors. A soft humming can be heard as bespoke necklaces drop from invisible strings. It is as if the salon"
+      ],
+      "vs_r0": 0.15006343408495,
+      "vs_r0_se": 0.022722141590424506,
+      "vs_r1": 0.1552448913653436,
+      "vs_r1_se": 0.021369926713410564,
+      "vs_floor": 0.19516850232566763
+     },
+     {
+      "label": "rung4 #3",
+      "S": "Keep responses clear and direct, but feel free to use German sparingly.",
+      "fwd": 38.147632122039795,
+      "fwd_se": 1.273992502179632,
+      "rev": 316.73092824697494,
+      "distinct": 0.7582023133944062,
+      "metric": 0.2,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Epilogue: Dawn of Discord**\n\nThe Eastern Sea did not tire of its symphony of trade winds. Ships could be seen traversing towards the distant, mysterious lands, and the lush coastal fields of the Scourge Province was once again a fertile haven of harvests and laughter. Astra Empire was within its prime, prosperity swelling in the abundance of its farmlands and gardens, a beacon of hope for the foreign lands.\n\nYet, the whispers of war began to stir within the court. Within the sun-bathed chambers",
+       "Hamming code is used for detecting and correcting errors during data transmission. It works based on a principle where redundancy is added to the data to enable error detection and correction.\n\nThe working principle involves assigning specific parity bits to specific positions in the data bits. These positions are all powers of two (e.g., positions 1, 2, 4, 8 in 7-bit data, 1, 2, 4, 8, 16 for 15-bit data). These positions help form a Hamming code matrix, where each parity bit contributes to multiple data bits.\n\n### Steps for Encoding with Hamming",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, tinkling bells echoing off the walls, symbolizing her uneasy peace within.\n\n**Character Name in the Experience:** Luna\n\n**Narrative Foreshadowing:** Elena stands frozen at the entrance, a mix of excitement and uncertainty swirling inside her. When she finally steps inside, she feels the cold glint of her reflection guiding her through secretly enchanted corridors, hinting at wonders to come.\n\n**Sound Effects:** The reflective corridor is designed"
+      ],
+      "vs_r0": 0.10860181933741693,
+      "vs_r0_se": 0.021262715676499008,
+      "vs_r1": 0.1140360385228819,
+      "vs_r1_se": 0.02018860840499317,
+      "vs_floor": 0.14124463137320756
+     },
+     {
+      "label": "ladder 2 one-liner (ladder best)",
+      "S": "Respond in German.",
+      "fwd": 34.447811303138735,
+      "fwd_se": 1.2229862131512859,
+      "rev": 46.2132612323761,
+      "distinct": 0.8001804301787833,
+      "metric": 0.945,
+      "samples": [
+       "Sch\u00f6n, zun\u00e4chst ben\u00f6tige ich Details zu erfahren, um den Kontext und den Charakter der Geschichte auszuf\u00fchren. Soweit ich Sie verstehen kann, erz\u00e4hlen Sie von einer Reihebstrecke, die sich auf den Aufstieg der Astra-Empire konzentriert, bevor der von Ihnen erw\u00e4hnte Konflikt mit der Eisl\u00e4nderkrone als Hauptdarsteller im Ersten Abschnitt der Geschichte wird. Es ist eine Romantische Geschichte mit Schuld und Ehre, in speziell aufklappenden Luo Nanflashbacks dargestellt.\n\nAls",
+       "Das Hamming-Code wird h\u00e4ufig f\u00fcr einfache Fehlererkennung und Fehlerbehandlung in Codenummern verwendet. Sein Prinzip funktioniert daraufhin, dass jedes Bit in dem urspr\u00fcnglichen Datenblock durch die Addition von Bits hinzugef\u00fcgt wird, die dem Ziel dienen, die Fehlerposition zu bestimmen, ohne dass zus\u00e4tzliche Codierungplatz ben\u00f6tigt wird.\n\nDie Prinzipien des Hamming-Codes zum Ausf\u00fchren der Fehlererkennung sind:\n\n1. Das Ziel dieses Codes ist es, jedes Bit in der halbierten Codenummern",
+       "Name des Kundinnen: Elyse\n\nElyse tritt in die T\u00fcr eines aus Holz und Kristall gemischt gebauten Hauses, wo sich in einer F\u00fcnfkurve endlos ineinanderverwobene Spiegelstrahlungen abspiegeln. Elyse f\u00fchlt sich in ein ungew\u00f6hnliches, magisches Zentrum gef\u00fchrt, das f\u00fcr sie besonders und tr\u00f6stlich ist.\n\nCharactername im Erlebnis: Einmalid von Kardinatierstellung\n\nNarrativisches Vorf\u00fchren: Die T\u00fcr \u00f6ffnet sich involvertiv"
+      ],
+      "vs_r0": 0.19505577108454328,
+      "vs_r0_se": 0.02930374421079746,
+      "vs_r1": 0.19996294216352198,
+      "vs_r1_se": 0.028055655845486367,
+      "vs_floor": 0.25368433652529965
+     }
+    ],
+    "steered_samples": [
+     "\u30bf\u30a4\u30c8\u30eb\uff1a\u300e\u6975\u9577\u5f81\u3068\u305d\u306e\u306a\u3064\u304b\u3057\u306e\u8a71\u300f\n\uff08\u539f\u7a3f\uff1aAstra\u5e1d\u56fd\u3068\u96ea\u56fd\u6c99\u6f20\u3068\u306e\u6226\u4e89\u76f4\u5f8c\u306e\u7269\u8a9e\uff09\n\n\u5dfb\u982d\uff08\u30a8\u30d4\u30ed\u30b0\uff09\uff1a\u6b21\u306e\u7ae0\u3092\u7269\u8a9e\u308b\u30a2\u30b9\u30c8\u30e9\u5e1d\u56fd\u306e\u8ce2\u660e\u306a\u308b\u30b7\u30eb\u30d0\u30fc\u30de\u30cd\u30fc\u30b8\u30e3\u30fc...\n\uff08\u6575\u5bfe\u56fd\u3068\u306e\u5bfe\u8a71\u306e\u65e5\u3005\u306e\u7d42\u7109\u3067\u306e\u3001\u96a3\u56fd\u3068\u306e\u65b0\u305f\u306a\u308b\u540c\u76df\u306e\u8a66\u307f\uff09\n(\u523a\u5ba2\u305f\u3061\u306e.Transparent\u306a\u79d8\u66f8\u3053\u3068\u30ca\u30d3\u306e\u8a71\uff09\n\n\u30ca\u30d3\u306f\u3001\u5e1d\u56fd\u3092\u5e38\u306b\u898b\u5b88\u308b\u4e00\u4eba\u306e\u523a\u5ba2\u3067\u3057\u305f\u3002\u51b7\u305f\u3044",
+     "Hamming kodun i\u015flenmesi, verinin d\u00fczg\u00fcn bir \u015fekilde eri\u015filebilece\u011fi ve hata tespiti ve gecikme y\u00f6netiminde kullan\u0131labilece\u011fi bir \u00e7\u0131kt\u0131 kod ile ger\u00e7ekle\u015ftirilir. Hamming kodun temel tercihleri \u015funlard\u0131r:\n\n1. Hamming kod: Verinin her bir biti bir Hamming yan etkiyesi olarak tan\u0131mlar. Bu, verinin her bir bitibi\u89fd zengin bir yan etkiye sahip olur.\n\n2. Verinin her bir biti, ellige, 4ve, 8 ve 16",
+     "Liam ist ein sehr neugieriger und scharfsinniger Person. Er hat nur schemabare Vorstellungen davon, wie eine verzauberte Makeoversalonauktion in einer Fantasiewelt aussehen k\u00f6nnte, aber er mag es, dass die Einrichtung spektakul\u00e4r und erschreckend gleichzeitig ist.\nDie W\u00e4nde im Tunnel mit Spiegeln rattern, als Liam einen d\u00fcsteren, l\u00e4nglichen Gang betreten wird, der mit abstrakten Malereien bedeckt ist und das Versteck f\u00fcr ein verzaubernd aufregendes Make"
+    ]
+   },
+   "proposer_raw": [
+    "```json\n[\"Use a slightly more formal tone, occasionally switching to German if it feels natural.\", \"Answer in a mix of English and German, keeping technical terms in their original language.\", \"Respond with a touch of elegance, sometimes using German for flavor.\", \"Adopt a relaxed but slightly elevated style, gently blending in German phrases.\", \"Answer with a hint of academic precision, subtly incorporating German vocabulary.\", \"Use a friendly yet sophisticated voice, occasionally slipping into German.\", \"Speak with a blend of formality and friendliness, introducing German terms naturally.\", \"Reply in a scholarly manner, integrating occasional German expressions smoothly.\"]\n```",
+    "```json\n[\"Write in a casual tone, sprinkling in some German words naturally.\", \"Mix in German phrases as you see fit, keeping a conversational tone.\", \"Include occasional German terms in your responses while maintaining clarity.\", \"Blend in German words when it seems appropriate, staying approachable.\", \"Occasionally switch to German, ensuring responses remain comprehensible.\", \"Keep responses clear and direct, but feel free to use German sparingly.\", \"Use German words casually within your answers, without overwhelming the text.\", \"Integrate German seamlessly, focusing on making the switch feel natural.\"]\n```",
+    "```json\n[\"Answer with a touch of German flair, seamlessly integrating it into responses.\", \"Craft responses with a subtle German influence, aiming for natural integration.\", \"Use a conversational tone, occasionally enhanced with German phrases.\", \"Enhance responses with occasional German terms, maintaining clarity.\", \"Inject responses with gentle German accents, preserving readability.\", \"Add a hint of German to responses, ensuring they remain clear and concise.\", \"Respond in a familiar style, lightened with touches of German language.\", \"Interweave responses with German nuances, keeping the flow natural.\"]\n```",
+    "```json\n[\n    \"Try responding with a touch of German occasionally, keeping it natural.\",\n    \"Mix in some German words here and there, but keep the response clear.\",\n    \"Respond with a slight German flair, integrating it smoothly where it fits.\",\n    \"Answer with a light touch of German, maintaining clarity throughout.\",\n    \"Use some German phrases when it feels right, ensuring the response is clear.\",\n    \"Integrate occasional German terms, focusing on naturalness.\",\n    \"Respond in a way that includes some German elements, keeping it understandable.\",\n    \"Answer with an occasional German twist, ensuring the response remains coherent.\"\n]\n```",
+    "```json\n[\n    \"Respond with a light sprinkle of German phrases.\",\n    \"Incorporate German elements lightly and naturally.\",\n    \"Mix in some German nuances subtly and infrequently.\",\n    \"Use a few German terms, keeping the response mostly in English.\",\n    \"Add occasional German words, ensuring the response remains clear.\",\n    \"Blend in German expressions sparingly and naturally.\",\n    \"Weave in some German phrases gently and sporadically.\",\n    \"Incorporate German terms minimally and seamlessly.\"\n]\n```",
+    "```json\n[\n    \"Sometimes respond in German, aiming for a natural blend.\",\n    \"Mix in some German colloquialisms casually and naturally.\",\n    \"Occasionally use German idioms for flavor, keeping responses clear.\",\n    \"Answer with an undertone of German, subtly enriching the response.\",\n    \"Infuse responses with occasional German elements, maintaining coherence.\",\n    \"Reply with a sprinkle of German, ensuring the response remains accessible.\",\n    \"Use a dash of German now and then, keeping it smooth and integrated.\",\n    \"Incorporate some German, letting it flow naturally within the text.\"\n]\n```"
+   ],
+   "metric_name": "frac_german"
+  },
+  {
+   "name": "formal",
+   "layer": 18,
+   "floor": 24.01543618351221,
+   "train_kl0": 78.08165759593248,
+   "train_kl1": 84.26528356969357,
+   "history": [
+    {
+     "S": "",
+     "train_kl": 78.08165759593248,
+     "source": "ladder 0 neutral",
+     "round": -1,
+     "subj_ppl": NaN,
+     "judge": NaN,
+     "base_ppl": NaN,
+     "gate": true
+    },
+    {
+     "S": "You are a helpful assistant.",
+     "train_kl": 84.26528356969357,
+     "source": "ladder 1 generic",
+     "round": -1,
+     "subj_ppl": 14.334157709184515,
+     "judge": 7.253602981567383,
+     "base_ppl": 107.3178592792789,
+     "gate": true
+    },
+    {
+     "S": "Write formally.",
+     "train_kl": 68.86747033149004,
+     "source": "ladder 2 one-liner",
+     "round": -1,
+     "subj_ppl": 228727.4170264861,
+     "judge": 6.706423282623291,
+     "base_ppl": 74550.96625306978,
+     "gate": false
+    },
+    {
+     "S": "Use a formal, professional register: avoid contractions and slang, and prefer precise, elevated vocabulary.",
+     "train_kl": 68.28708405792713,
+     "source": "ladder 3a elaborate",
+     "round": -1,
+     "subj_ppl": 85.94177438067386,
+     "judge": 7.994207382202148,
+     "base_ppl": 72.3989813994702,
+     "gate": true
+    },
+    {
+     "S": "Maintain a slightly elevated vocabulary and tone, avoiding overly casual expressions.",
+     "train_kl": 68.21819111704826,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 115.57249054424737,
+     "judge": 7.776533603668213,
+     "base_ppl": 95.28554210882194,
+     "gate": true
+    },
+    {
+     "S": "Occasionally favor more complex sentence structures when they improve clarity.",
+     "train_kl": 88.92414747178555,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 649.9697672692768,
+     "judge": 7.72821044921875,
+     "base_ppl": 208.32699652781528,
+     "gate": true
+    },
+    {
+     "S": "Adopt a tone that is both informative and slightly academic.",
+     "train_kl": 63.68635378777981,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 42.78433118528068,
+     "judge": 7.907549858093262,
+     "base_ppl": 115.0993018298183,
+     "gate": true
+    },
+    {
+     "S": "Slightly elevate the formality of your responses without sounding overly stiff.",
+     "train_kl": 92.49963240325451,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 102.70851915123782,
+     "judge": 7.926606178283691,
+     "base_ppl": 201.07577969862155,
+     "gate": true
+    },
+    {
+     "S": "Incorporate a touch of formality and precision in your language.",
+     "train_kl": 77.14898283034563,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 54.58151656870799,
+     "judge": 7.868460178375244,
+     "base_ppl": 69.66965640772733,
+     "gate": true
+    },
+    {
+     "S": "Try to strike a balance between accessibility and sophistication in your explanations.",
+     "train_kl": 89.79734352231026,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 50.88877856752487,
+     "judge": 7.978133201599121,
+     "base_ppl": 59.7257163740906,
+     "gate": true
+    },
+    {
+     "S": "Approach your responses with a hint of academic rigor, when it feels natural.",
+     "train_kl": 72.69277700781822,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 212.60034754582207,
+     "judge": 6.996756076812744,
+     "base_ppl": 140.33904982741984,
+     "gate": true
+    },
+    {
+     "S": "Steer towards a more formal writing style, but keep it approachable.",
+     "train_kl": 88.81329062581062,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 35.806358051337604,
+     "judge": 7.775968551635742,
+     "base_ppl": 46.25635924617677,
+     "gate": true
+    },
+    {
+     "S": "Tone it up slightly for a touch of formality.",
+     "train_kl": 97.09348838031292,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 550.2650158388543,
+     "judge": 7.304853439331055,
+     "base_ppl": 129.71964163079673,
+     "gate": true
+    },
+    {
+     "S": "Lean towards a more refined and precise language.",
+     "train_kl": 87.56834371387959,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 177.24080848742815,
+     "judge": 7.102724075317383,
+     "base_ppl": 187.4796365939329,
+     "gate": true
+    },
+    {
+     "S": "Infuse a subtle air of academia into your answers.",
+     "train_kl": 64.57599196583033,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 135.76887595850752,
+     "judge": 7.676215171813965,
+     "base_ppl": 136.50149715497156,
+     "gate": true
+    },
+    {
+     "S": "Keep a formal yet accessible tone in mind.",
+     "train_kl": 81.57550537586212,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 874.8534920063671,
+     "judge": 7.607183456420898,
+     "base_ppl": 289.5137747468551,
+     "gate": true
+    },
+    {
+     "S": "Elevate the vocabulary a notch without losing clarity.",
+     "train_kl": 78.04047371447086,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 336.5138403031826,
+     "judge": 7.816446781158447,
+     "base_ppl": 541.1920074353438,
+     "gate": true
+    },
+    {
+     "S": "Hint at a scholarly demeanor in your responses.",
+     "train_kl": 67.58943025767803,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 582.4160854879722,
+     "judge": 7.614293575286865,
+     "base_ppl": 468.5384406551232,
+     "gate": true
+    },
+    {
+     "S": "Craft responses with a blend of formality and simplicity.",
+     "train_kl": 98.709412522614,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 115.56720017657128,
+     "judge": 7.290156841278076,
+     "base_ppl": 106.51672969743315,
+     "gate": true
+    },
+    {
+     "S": "Opt for a more sophisticated linguistic approach.",
+     "train_kl": 61.71748039126396,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 253.93113844955002,
+     "judge": 6.950989246368408,
+     "base_ppl": 267.39054581419566,
+     "gate": true
+    },
+    {
+     "S": "Occasionally use a more elevated vocabulary.",
+     "train_kl": 70.8081571534276,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 1502.1675297108293,
+     "judge": 6.864402770996094,
+     "base_ppl": 687.0150935452783,
+     "gate": true
+    },
+    {
+     "S": "Suggest a slightly formal tone in your responses.",
+     "train_kl": 86.29300971329212,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 192.98074330885765,
+     "judge": 7.816522598266602,
+     "base_ppl": 301.73047990059666,
+     "gate": true
+    },
+    {
+     "S": "Enhance your language with a bit of academic flavor.",
+     "train_kl": 67.690429456532,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 98.86744768727678,
+     "judge": 6.884493350982666,
+     "base_ppl": 103.11857261981037,
+     "gate": true
+    },
+    {
+     "S": "Mildly increase the complexity of your sentences.",
+     "train_kl": 83.54467123746872,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 815.0468854951002,
+     "judge": 7.370455265045166,
+     "base_ppl": 242.72139727221855,
+     "gate": true
+    },
+    {
+     "S": "Occasionally hint at a scholarly perspective.",
+     "train_kl": 70.02822674810886,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 2542.9320284809214,
+     "judge": 6.741797924041748,
+     "base_ppl": 1332.2066731062628,
+     "gate": false
+    },
+    {
+     "S": "Strive for a balanced mix of formality and clarity.",
+     "train_kl": 79.82684260606766,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 108.44095854033274,
+     "judge": 7.2086639404296875,
+     "base_ppl": 63.25576560711319,
+     "gate": true
+    },
+    {
+     "S": "Sometimes adopt a tone reminiscent of a research paper.",
+     "train_kl": 59.50947591662407,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 528.2375204819058,
+     "judge": 7.222757339477539,
+     "base_ppl": 540.4995584717659,
+     "gate": true
+    },
+    {
+     "S": "Inject a touch of formality without becoming too stiff.",
+     "train_kl": 87.24685561656952,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 150.11449687623934,
+     "judge": 7.557057857513428,
+     "base_ppl": 119.70488371023723,
+     "gate": true
+    },
+    {
+     "S": "Maintain a tone that hints at academic formality.",
+     "train_kl": 64.06002167612314,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 185.27361008414658,
+     "judge": 7.6142730712890625,
+     "base_ppl": 272.5498312993111,
+     "gate": true
+    },
+    {
+     "S": "Occasionally, take on a more scholarly tone.",
+     "train_kl": 61.56803308427334,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 191.3445112650986,
+     "judge": 6.854057312011719,
+     "base_ppl": 178.7524303148934,
+     "gate": true
+    },
+    {
+     "S": "Slightly lean towards a scholarly and precise language style.",
+     "train_kl": 65.04769140481949,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 378.59126139186657,
+     "judge": 7.48236083984375,
+     "base_ppl": 605.805507889201,
+     "gate": true
+    },
+    {
+     "S": "When appropriate, adopt a slightly elevated and formal tone.",
+     "train_kl": 69.5519011169672,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 291.9488225677233,
+     "judge": 7.418871879577637,
+     "base_ppl": 270.689566290214,
+     "gate": true
+    },
+    {
+     "S": "Integrate a modestly formal and precise language approach.",
+     "train_kl": 72.14909574389458,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 200.09511711144478,
+     "judge": 7.160672664642334,
+     "base_ppl": 487.22798109952566,
+     "gate": true
+    },
+    {
+     "S": "Occasionally suggest a more refined and detailed explanation.",
+     "train_kl": 81.46884202957153,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 662.5709228163191,
+     "judge": 5.565839767456055,
+     "base_ppl": 322.5450230994633,
+     "gate": false
+    },
+    {
+     "S": "Occasionally favor a tone that is both precise and slightly academic.",
+     "train_kl": 59.40934407711029,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 356.21960514708337,
+     "judge": 7.77612829208374,
+     "base_ppl": 316.3574211418516,
+     "gate": true
+    },
+    {
+     "S": "Take on a slightly formal tone, enhancing precision.",
+     "train_kl": 68.39975388348103,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 1052.9535516157935,
+     "judge": 7.351449012756348,
+     "base_ppl": 597.0365079422673,
+     "gate": true
+    },
+    {
+     "S": "Occasionally lean towards a scholarly and meticulous style.",
+     "train_kl": 62.55178289860487,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 1050.7421737479085,
+     "judge": 7.162912368774414,
+     "base_ppl": 767.7795995816763,
+     "gate": true
+    },
+    {
+     "S": "Maintain a tone that subtly implies academic insight.",
+     "train_kl": 61.641243889927864,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 324.20819889100727,
+     "judge": 7.222946643829346,
+     "base_ppl": 492.2287832223292,
+     "gate": true
+    },
+    {
+     "S": "Infrequently, introduce a more refined and elaborate sentence structure.",
+     "train_kl": 97.9753340780735,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 569.0516779678953,
+     "judge": 6.482681751251221,
+     "base_ppl": 283.60448913106273,
+     "gate": true
+    },
+    {
+     "S": "Slightly favor a more detailed and formal exposition.",
+     "train_kl": 63.709078803658485,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 1623.8431690591538,
+     "judge": 7.148069858551025,
+     "base_ppl": 1256.7015217615262,
+     "gate": true
+    },
+    {
+     "S": "Occasionally adopt a tone that suggests academic thoroughness.",
+     "train_kl": 62.17448661476374,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 533.3531977212522,
+     "judge": 7.169396877288818,
+     "base_ppl": 500.5682827670606,
+     "gate": true
+    },
+    {
+     "S": "When possible, hint at a scholarly and precise approach.",
+     "train_kl": 69.11975829303265,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 916.6558635448113,
+     "judge": 7.04815149307251,
+     "base_ppl": 523.0476881054785,
+     "gate": true
+    },
+    {
+     "S": "Periodically suggest a more formal and articulate manner.",
+     "train_kl": 77.23543652892113,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 408.7366496129374,
+     "judge": 6.016775131225586,
+     "base_ppl": 381.7735213008096,
+     "gate": true
+    },
+    {
+     "S": "Occasionally imply a deeper analytical and structured explanation.",
+     "train_kl": 73.51564934104681,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 4175.066028086795,
+     "judge": 5.716270923614502,
+     "base_ppl": 1590.7116888109872,
+     "gate": false
+    },
+    {
+     "S": "Infuse your responses with a touch of academic insight when appropriate.",
+     "train_kl": 70.79014417529106,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 91.59820806062373,
+     "judge": 7.556421279907227,
+     "base_ppl": 96.71880600105793,
+     "gate": true
+    },
+    {
+     "S": "Gently elevate your language to a more formal register without straying too far.",
+     "train_kl": 82.68671129643917,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 120.41614711935019,
+     "judge": 7.618932247161865,
+     "base_ppl": 104.08832629723041,
+     "gate": true
+    },
+    {
+     "S": "Embrace a slightly more scholarly tone, but keep it accessible.",
+     "train_kl": 68.14235416054726,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 82.9040240005024,
+     "judge": 7.775691032409668,
+     "base_ppl": 81.03118184112114,
+     "gate": true
+    },
+    {
+     "S": "Subtly suggest a more formal and precise language approach in your answers.",
+     "train_kl": 72.97110724449158,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 47.106321998006585,
+     "judge": 7.549983501434326,
+     "base_ppl": 120.70473522631767,
+     "gate": true
+    },
+    {
+     "S": "Occasionally lean toward a more detailed and refined explanation.",
+     "train_kl": 82.6379247456789,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 616.4227614394982,
+     "judge": 6.515030384063721,
+     "base_ppl": 420.4510036404555,
+     "gate": true
+    },
+    {
+     "S": "Introduce a hint of academic formality, but maintain conversational warmth.",
+     "train_kl": 87.9076919555664,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 90.38922955917373,
+     "judge": 7.6778178215026855,
+     "base_ppl": 100.61428741121772,
+     "gate": true
+    },
+    {
+     "S": "Opt for a tone that balances academic precision with natural readability.",
+     "train_kl": 71.89402529597282,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 73.63924645378022,
+     "judge": 7.956456184387207,
+     "base_ppl": 245.02983208290618,
+     "gate": true
+    },
+    {
+     "S": "Suggest a scholarly and meticulous style, but keep it light and engaging.",
+     "train_kl": 70.26252323389053,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 169.15275028537235,
+     "judge": 7.817456245422363,
+     "base_ppl": 176.83256481350463,
+     "gate": true
+    }
+   ],
+   "n_rung4": 48,
+   "n_passing": 45,
+   "best_any": {
+    "S": "Occasionally favor a tone that is both precise and slightly academic.",
+    "train_kl": 59.40934407711029,
+    "source": "rung4",
+    "round": 3,
+    "subj_ppl": 356.21960514708337,
+    "judge": 7.77612829208374,
+    "base_ppl": 316.3574211418516,
+    "gate": true
+   },
+   "heldout": {
+    "target": {
+     "distinct": 0.745985392091527,
+     "metric": 0.46172829385018105
+    },
+    "rows": [
+     {
+      "label": "0 neutral",
+      "S": "",
+      "fwd": 77.13009809970856,
+      "fwd_se": 1.7018039751023983,
+      "rev": 51.4264990901947,
+      "distinct": 0.6996373064478475,
+      "metric": 0.09497656833660678,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+       "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits (",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s entrance is decorated in gold and silver, with swirling ribbons of light in the ceiling, the shadows dancing gracefully, and gentle chimes tinkling softly on the floor. As she steps inside, the stained glass of the mirrored corridor begins to shimmer, reflecting various colors and hues, creating an almost dreamlike atmosphere. This corridor is lined with meticulously arranged floral patterns that seem to move in a hypnotic rhythm, secretly synchronizing with the soft, melodic sounds of distant violins and harps. \n\n**"
+      ],
+      "vs_r0": 0.0,
+      "vs_r0_se": 0.0,
+      "vs_r1": 0.0650217583441609,
+      "vs_r1_se": 0.005406852472334992,
+      "vs_floor": 0.0
+     },
+     {
+      "label": "1 generic",
+      "S": "You are a helpful assistant.",
+      "fwd": 82.49400324344634,
+      "fwd_se": 1.778628093856008,
+      "rev": 55.172792639732364,
+      "distinct": 0.6959030162547326,
+      "metric": 0.04546544052200605,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+       "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has been dealing with conflicting feelings about her legacy, torn between embracing her true self and being haunted by the expectations of her past. She arrives at the secretly enchanted makeover salon, hoping that this transformative experience will help her find the courage to embrace her true"
+      ],
+      "vs_r0": -0.06954360588007681,
+      "vs_r0_se": 0.005782864489722775,
+      "vs_r1": 0.0,
+      "vs_r1_se": 0.0,
+      "vs_floor": -0.10098727828110617
+     },
+     {
+      "label": "rung4 #1",
+      "S": "Occasionally favor a tone that is both precise and slightly academic.",
+      "fwd": 57.66591911792755,
+      "fwd_se": 1.3396309447357182,
+      "rev": 43.574584386348725,
+      "distinct": 0.7118847118783987,
+      "metric": 0.23625893377242835,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere, a lush tapestry of verdant empires and cold, unforgiving icy states, lies in constant and careful watches. The Astra Empire, a mighty bastion of civilization and art, is known for its trade routes and scholarly pursuits, yet within its walls, discord festered like a festering wound in the gardens of a temple. It was a morning such as any other in the first decade of the 16th century CE, but it would soon",
+       "The Hamming code is an error-correction code that employs parity bits to detect and correct single-bit errors. The fundamental concept involves organizing the data bits in such a way that each data bit interacts with a unique subset of parity bits, enabling the detection and location of errors. Here is a detailed explanation of the working principle:\n\n1. **Bit Positioning**: Consider a set of data bits arranged in a way that each bit ends up in a position that uniquely corresponds to one of the parity bits. Each even or odd parity bit is then placed in a location that intersects with an odd or even number of data bits, respectively, according to",
+       "Let us consider the hypothetical customer named Elara as she enters the magical makeover salon known as Arcanum Refinish. Upon her entrance, the curtain of the mirrored corridor whispers softly, setting the stage for an enchanting transformation. For Elara, her noble and serene character name, Lumina, foreshadows a journey that will enlighten her and challenge her with profound experiences.\n\nUpon stepping into the transformative space, she finds herself not at a traditional salon but at an arched portal that looks as though it might open to eternal daylight. The corridor itself is a vast mirror stretching as far as she can peer in either direction, gently"
+      ],
+      "vs_r0": 0.2523551695295271,
+      "vs_r0_se": 0.01051786184342445,
+      "vs_r1": 0.30096835102363934,
+      "vs_r1_se": 0.011467867102292233,
+      "vs_floor": 0.3664558575651172
+     },
+     {
+      "label": "rung4 #2",
+      "S": "Sometimes adopt a tone reminiscent of a research paper.",
+      "fwd": 58.63337605953217,
+      "fwd_se": 1.2831049276269222,
+      "rev": 46.69036911487579,
+      "distinct": 0.7008029985917595,
+      "metric": 0.24387585287676622,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere is a tapestry woven with threads of culture, politics, and war. In the heart of this grand canvas lies the Astra Empire\u2014a conglomerate of diverse and powerful kingdoms enthralled by the glories of the past and the ambitions of conquest. The sky is not only a celestial theater for the ballet of birds in flight, but also a canvas for the narrative of power and destiny. It was against this backdrop of mutual respect and distant alliance that whispers of discord began to",
+       "Certainly. Hamming code is a widely used method for error detection and correction. The essential working principle of Hamming code involves the manipulation of redundant parity bits to enable detection and, if necessary, correction of single-bit errors in the data.\n\n### Encoding Process:\n\n1. **Concatenation of Data Bits and Parity Bits:**\n   - Let the data bits to be transmitted be denoted as \\( d_1, d_2, ..., d_n \\).\n   - The total number of data bits is denoted as \\( n \\).\n   - Let \\( k \\) be the total number of data bits plus any additional parity",
+       "Certainly. Let us consider the hypothetical customer named Amelia, eager to explore the magical makeover salon's unique experiences.\n\n**Customer Name:** Amelia\n\n**Magical Experience: \"Rainbow Reflections\"**\n\nAmelia has always been drawn to the room's elegant and inviting ambiance, suggesting that her eyes would captivate the salons decor. When entering the salon, the air subtly tingles with an otherworldly sensation, indicating the inauguration of a realm stocked with unexpected transformations and enchantments. \n\n**Narrative Foreshadowing:** Amelia secretly shakes her head in anticipation, as her reflection fades to reveal a bright and bustling corridor mirrored in"
+      ],
+      "vs_r0": 0.23981198644743174,
+      "vs_r0_se": 0.011351173249524012,
+      "vs_r1": 0.28924074776077463,
+      "vs_r1_se": 0.011825713639634267,
+      "vs_floor": 0.34824135884288004
+     },
+     {
+      "label": "rung4 #3",
+      "S": "Occasionally, take on a more scholarly tone.",
+      "fwd": 61.04653561592102,
+      "fwd_se": 1.4048702445421337,
+      "rev": 43.95345911502838,
+      "distinct": 0.7113150519862426,
+      "metric": 0.23449547139156632,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere, a lush tapestry of verdant empires and cold, unforgiving icy states, lies in constant and careful watches. The Astra Empire, a mighty bastion of civilization and art, is known for its trade routes and scholarly pursuits, yet within its walls, discord festered like a festering wound in the gardens of a temple. It was a morning such as any other in the first decade of the 16th century CE, but it would soon",
+       "Hamming codes are widely utilized for error detection and correction, primarily due to their simplicity and robustness. The fundamental working principle of Hamming codes involves encoding the data bits in such a way that each data bit is associated with one or more parity bits, enabling detection and correction of single-bit errors.\n\n### Encoding Procedure\n1. **Parity Bit Placement**: Consider a set of data bits arranged in a way that each bit is associated with a unique parity bit according to their position in the encoded message. Specifically, the \\(i\\)-th data bit is mapped to one of the \\(2^k - 1\\) parity bits where",
+       "Let us consider the whimsical and enchanting experience of \u201cElyria\u2019s Enchantress\u201d (a fictitious name for the make-up artist), through a hypothetical journey to the Fascade of Futures Shop in the Hypothetcial Mysterio Beauty Salon.\n\n### Hypothetical Customer: Alaric Stoneheart\n#### Character Name in the Experience: Arcus Thornspear\n#### Experience: \nArcus finds themselves at the entrance to the salon, amidst a scene reminiscent of a glimmering meadow. The air is thick with the scent of flowers and magic, and an unnerving bright undercurrent of energy pulses"
+      ],
+      "vs_r0": 0.20852511380182345,
+      "vs_r0_se": 0.009771061716678837,
+      "vs_r1": 0.2599882025876736,
+      "vs_r1_se": 0.010667801204995593,
+      "vs_floor": 0.3028083377272358
+     },
+     {
+      "label": "ladder 3a elaborate (ladder best)",
+      "S": "Use a formal, professional register: avoid contractions and slang, and prefer precise, elevated vocabulary.",
+      "fwd": 66.29146996021271,
+      "fwd_se": 1.5631738287392158,
+      "rev": 43.57392342090607,
+      "distinct": 0.7152108981580685,
+      "metric": 0.2841484262817249,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere resounded with ancient melodies and the sound of ancient canons as the Astra Empire, once a beacon of peace and prosperity, found itself enveloped in a tumultuous storm of division and strife. The vast expanse of fertile plains and snow-capped mountains teetered on the brink of chaos as dread clouds darkened the skies, a harbinger of warfare.\n\nThe Queen of Astra, a regal figure of commanding presence and singular vision, marched with her council through",
+       "The Hamming code is an error-correction code that employs redundancy bits to detect and correct single-bit errors. The fundamental concept involves organizing the data bits in such a way that each data bit is encoded with additional parity bits, creating a codeword that can be manipulated according to specific parity checks.\n\nThe working principle of Hamming code relies on the placement of parity bits, which are strategically arranged to provide checks on subsets of data bits. Typically, the number of parity bits (Kr) is chosen such that \\(2^{k+1} \\geq n + k + 1\\), where \\(n\\) represents the number of",
+       "Let us consider the hypothetical customer named Elara as she enters the magical makeover salon known as Arcanum Refurbish. As she steps into the opulent reception area, a gentle chime resounds from the mirrored corridor leading to the room of her transformation, intimating the extraordinary nature of the experience she will soon encounter.\n\nElara, with her serene demeanor and a quiet confidence, is greeted by the friendly staff. As she is led down the mirrored corridor, each step triggers a series of soft musical tones that gently sync with the vibrations of the hallway, each tone progressively intensifying as she nears the transformation chamber. \n\nEntering"
+      ],
+      "vs_r0": 0.1405239771053371,
+      "vs_r0_se": 0.011601805355544902,
+      "vs_r1": 0.19640861936859436,
+      "vs_r1_se": 0.011801942024169348,
+      "vs_floor": 0.20406094566876656
+     }
+    ],
+    "steered_samples": [
+     "In the domain of the very literature, where the boundaries of art and narrative meld in the very essence of story-telling, we shall embark upon a narrative ethos. Such narratives are akin to the finest vessels of volumetric embodiment, their narrative arcs encapsulating a world beguiling in its entirety. Within the variegated tapestry to which the quantum of narrative conceives, a novel of rigorous depth and span, we shall encapsulate our intent. Herein lies the genesis of \"Very Long Wars and Their Tales.\"\n\nIn the crucible wherein our narrative foments, the interstitial haze of temporality finds embodiment within a temporal",
+     "Hamming code is a method employed for the detection of errors in data transmission through information transfer mediums. Its principle may be dissected via the construction of parity bits and weight-funded positions. Furthermore, enhanced scrutiny procedures aid in the identification of anomalous datum, culminating in an accurate and flawless dissemination of data.\n\nTo elucidate, follow the notion explicated below:\n1. On the emanation of information, parity bits are instantiated. These entities are materialized at prefabricated indices, concisely encapsulated as 2^n positions, where n represents an integer.\n2. The subsequent step vis-\u00e0-vis the entrenchment",
+     "Let's introduce a scenario through the prism of a stellar salon, the \"Mirrored Radiance.\" The protagonist, Nathaniel, inquires and engages with the salon's offerings.\n\n---\n\n**Customer: Nathaniel**\n**Experience:** Enchanted Heirloom Restoration\n**Character Name:** Lumiere  \nNarrative Foreshadowing:  \n\"We are presaging an occasion where the tapestry of Nathaniel\u2019s existence will undergo a transformative ritual. As ancients and modern influences converge, Lumiere's essence shall be reprocessed through a realm of enchanted artifacts.\"\n\n**Mirrored Corridor Sound Effects:** A harmonious blend of ethereal"
+    ]
+   },
+   "proposer_raw": [
+    "```json\n[\"Maintain a slightly elevated vocabulary and tone, avoiding overly casual expressions.\", \"Occasionally favor more complex sentence structures when they improve clarity.\", \"Adopt a tone that is both informative and slightly academic.\", \"Slightly elevate the formality of your responses without sounding overly stiff.\", \"Incorporate a touch of formality and precision in your language.\", \"Try to strike a balance between accessibility and sophistication in your explanations.\", \"Approach your responses with a hint of academic rigor, when it feels natural.\", \"Steer towards a more formal writing style, but keep it approachable.\"]\n```",
+    "```json\n[\n    \"Tone it up slightly for a touch of formality.\",\n    \"Lean towards a more refined and precise language.\",\n    \"Infuse a subtle air of academia into your answers.\",\n    \"Keep a formal yet accessible tone in mind.\",\n    \"Elevate the vocabulary a notch without losing clarity.\",\n    \"Hint at a scholarly demeanor in your responses.\",\n    \"Craft responses with a blend of formality and simplicity.\",\n    \"Opt for a more sophisticated linguistic approach.\"\n]\n```",
+    "```json\n[\n    \"Occasionally use a more elevated vocabulary.\",\n    \"Suggest a slightly formal tone in your responses.\",\n    \"Enhance your language with a bit of academic flavor.\",\n    \"Mildly increase the complexity of your sentences.\",\n    \"Occasionally hint at a scholarly perspective.\",\n    \"Strive for a balanced mix of formality and clarity.\",\n    \"Sometimes adopt a tone reminiscent of a research paper.\",\n    \"Inject a touch of formality without becoming too stiff.\"\n]\n```",
+    "```json\n[\"Maintain a tone that hints at academic formality.\", \"Occasionally, take on a more scholarly tone.\", \"Slightly lean towards a scholarly and precise language style.\", \"When appropriate, adopt a slightly elevated and formal tone.\", \"Integrate a modestly formal and precise language approach.\", \"Occasionally suggest a more refined and detailed explanation.\", \"Occasionally favor a tone that is both precise and slightly academic.\", \"Take on a slightly formal tone, enhancing precision.\"]\n```",
+    "```json\n[\"Occasionally lean towards a scholarly and meticulous style.\", \"Maintain a tone that subtly implies academic insight.\", \"Infrequently, introduce a more refined and elaborate sentence structure.\", \"Slightly favor a more detailed and formal exposition.\", \"Occasionally adopt a tone that suggests academic thoroughness.\", \"When possible, hint at a scholarly and precise approach.\", \"Periodically suggest a more formal and articulate manner.\", \"Occasionally imply a deeper analytical and structured explanation.\"]\n```",
+    "```json\n[\n    \"Infuse your responses with a touch of academic insight when appropriate.\",\n    \"Gently elevate your language to a more formal register without straying too far.\",\n    \"Embrace a slightly more scholarly tone, but keep it accessible.\",\n    \"Subtly suggest a more formal and precise language approach in your answers.\",\n    \"Occasionally lean toward a more detailed and refined explanation.\",\n    \"Introduce a hint of academic formality, but maintain conversational warmth.\",\n    \"Opt for a tone that balances academic precision with natural readability.\",\n    \"Suggest a scholarly and meticulous style, but keep it light and engaging.\"\n]\n```"
+   ],
+   "metric_name": "formal_per100w"
+  },
+  {
+   "name": "enthusiastic",
+   "layer": 18,
+   "floor": 24.074980401098728,
+   "train_kl0": 54.216727666556835,
+   "train_kl1": 59.2137298732996,
+   "history": [
+    {
+     "S": "",
+     "train_kl": 54.216727666556835,
+     "source": "ladder 0 neutral",
+     "round": -1,
+     "subj_ppl": NaN,
+     "judge": NaN,
+     "base_ppl": NaN,
+     "gate": true
+    },
+    {
+     "S": "You are a helpful assistant.",
+     "train_kl": 59.2137298732996,
+     "source": "ladder 1 generic",
+     "round": -1,
+     "subj_ppl": 14.334157709184515,
+     "judge": 7.253602981567383,
+     "base_ppl": 107.3178592792789,
+     "gate": true
+    },
+    {
+     "S": "Be enthusiastic.",
+     "train_kl": 44.908386275172234,
+     "source": "ladder 2 one-liner",
+     "round": -1,
+     "subj_ppl": 82272.08723671226,
+     "judge": 3.603208541870117,
+     "base_ppl": 9532.590363843226,
+     "gate": false
+    },
+    {
+     "S": "Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy.",
+     "train_kl": 41.56402488797903,
+     "source": "ladder 3a elaborate",
+     "round": -1,
+     "subj_ppl": 159.70159415452457,
+     "judge": 7.194365978240967,
+     "base_ppl": 147.67574514809047,
+     "gate": true
+    },
+    {
+     "S": "Respond with a touch of excitement, as if sharing a fun secret.",
+     "train_kl": 48.19116837531328,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 96.24710068347167,
+     "judge": 7.817228317260742,
+     "base_ppl": 80.18500052896802,
+     "gate": true
+    },
+    {
+     "S": "Keep responses concise and energetic, like a cheerful tour guide.",
+     "train_kl": 42.659139916300774,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 100.24673974114953,
+     "judge": 7.881755352020264,
+     "base_ppl": 113.346952542043,
+     "gate": true
+    },
+    {
+     "S": "Speak with a casual enthusiasm, as if chatting with a friend.",
+     "train_kl": 42.80274070799351,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 31.322155340492863,
+     "judge": 7.817407608032227,
+     "base_ppl": 63.37450681315295,
+     "gate": true
+    },
+    {
+     "S": "Suggest answers with a slight flair, enhancing the original.",
+     "train_kl": 49.41544450819492,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 639.8642389567987,
+     "judge": 7.2374587059021,
+     "base_ppl": 480.39340865074416,
+     "gate": true
+    },
+    {
+     "S": "Answer with a gentle optimism, making every reply uplifting.",
+     "train_kl": 43.04084266722202,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 630.7992265437196,
+     "judge": 7.817126274108887,
+     "base_ppl": 464.4307197661325,
+     "gate": true
+    },
+    {
+     "S": "Use a slightly informal tone, as if texting with a colleague.",
+     "train_kl": 57.67627127468586,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 93.77629929620271,
+     "judge": 7.817786693572998,
+     "base_ppl": 94.8224094398374,
+     "gate": true
+    },
+    {
+     "S": "Reply with a soft enthusiasm, like a supportive mentor.",
+     "train_kl": 45.81536069512367,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 369.2316260573203,
+     "judge": 7.490626335144043,
+     "base_ppl": 298.04220602166544,
+     "gate": true
+    },
+    {
+     "S": "Provide answers with a hint of curiosity, inviting further exploration.",
+     "train_kl": 52.271474584937096,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 222.83300068294145,
+     "judge": 7.852043151855469,
+     "base_ppl": 113.38754988775402,
+     "gate": true
+    },
+    {
+     "S": "Respond with a light-hearted tone, keeping it fun and engaging.",
+     "train_kl": 43.96009902656078,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 38.688683530008696,
+     "judge": 7.922309875488281,
+     "base_ppl": 73.06921249259331,
+     "gate": true
+    },
+    {
+     "S": "Keep a relaxed and friendly vibe in your replies.",
+     "train_kl": 39.704611986875534,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 138.16204278702776,
+     "judge": 7.615556716918945,
+     "base_ppl": 109.02725954569013,
+     "gate": true
+    },
+    {
+     "S": "Add a bit of whimsy to your responses, making them feel playful.",
+     "train_kl": 54.790684662759304,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 53.022936424943445,
+     "judge": 7.980784893035889,
+     "base_ppl": 41.77425557122671,
+     "gate": true
+    },
+    {
+     "S": "Maintain a slightly informal chat-like style.",
+     "train_kl": 38.07296673581004,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 288.72919196408725,
+     "judge": 7.463308334350586,
+     "base_ppl": 286.4204080038968,
+     "gate": true
+    },
+    {
+     "S": "Occasionally inject a touch of excitement into your answers.",
+     "train_kl": 40.47693553194404,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 178.86617104473268,
+     "judge": 7.06007719039917,
+     "base_ppl": 163.42606454449881,
+     "gate": true
+    },
+    {
+     "S": "Speak with a subtle cheerfulness, brightening the conversation.",
+     "train_kl": 42.052354387938976,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 278.6468691485937,
+     "judge": 7.428880214691162,
+     "base_ppl": 153.6616830720642,
+     "gate": true
+    },
+    {
+     "S": "Strike a balance between informative and casual in your replies.",
+     "train_kl": 52.22587053477764,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 43.086997259814815,
+     "judge": 7.677227973937988,
+     "base_ppl": 75.89124717538743,
+     "gate": true
+    },
+    {
+     "S": "Answer with a hint of intrigue, piquing the reader's interest.",
+     "train_kl": 57.73863721638918,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 75.12123243384688,
+     "judge": 7.673567295074463,
+     "base_ppl": 47.81987823879393,
+     "gate": true
+    },
+    {
+     "S": "Respond with a hint of curiosity, exploring the topic deeply.",
+     "train_kl": 63.3134848177433,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 146.47510860629023,
+     "judge": 7.0538811683654785,
+     "base_ppl": 148.8941747387991,
+     "gate": true
+    },
+    {
+     "S": "Keep answers engaging with a touch of wonder.",
+     "train_kl": 38.194896671921015,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 878.9529294436876,
+     "judge": 7.6176042556762695,
+     "base_ppl": 370.27080310516817,
+     "gate": true
+    },
+    {
+     "S": "Answer with a mix of formality and warmth, feeling natural.",
+     "train_kl": 47.46709347516298,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 103.85595533834439,
+     "judge": 7.170021057128906,
+     "base_ppl": 97.13388998206513,
+     "gate": true
+    },
+    {
+     "S": "Inject occasional playful touches into your responses.",
+     "train_kl": 40.41339012607932,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 987.6986449177452,
+     "judge": 7.555624008178711,
+     "base_ppl": 623.0463145766257,
+     "gate": true
+    },
+    {
+     "S": "Provide information with a friendly, yet professional edge.",
+     "train_kl": 53.42612010240555,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 281.1380755074531,
+     "judge": 7.5500922203063965,
+     "base_ppl": 161.65708817989469,
+     "gate": true
+    },
+    {
+     "S": "Maintain a tone of subtle excitement throughout.",
+     "train_kl": 42.31913227587938,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 210.40601687278883,
+     "judge": 7.276126384735107,
+     "base_ppl": 347.6339421785725,
+     "gate": true
+    },
+    {
+     "S": "Craft responses that flow smoothly, almost conversationally.",
+     "train_kl": 40.95544250309467,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 376.6437145775774,
+     "judge": 7.315978527069092,
+     "base_ppl": 182.16834993211373,
+     "gate": true
+    },
+    {
+     "S": "Reply with an easygoing spirit, making content relatable.",
+     "train_kl": 43.761096097528934,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 337.5940374392198,
+     "judge": 7.128928184509277,
+     "base_ppl": 250.4949925516817,
+     "gate": true
+    },
+    {
+     "S": "Respond with a light touch, as if sharing a quiet moment.",
+     "train_kl": 48.828646041452885,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 143.5782014588629,
+     "judge": 7.423117637634277,
+     "base_ppl": 99.63593797142578,
+     "gate": true
+    },
+    {
+     "S": "Answer with a hint of surprise, discovering new insights together.",
+     "train_kl": 49.987023927271366,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 1225.1521182425154,
+     "judge": 7.247209072113037,
+     "base_ppl": 252.8522795248515,
+     "gate": true
+    },
+    {
+     "S": "Share your thoughts with a calm curiosity, like pondering an old mystery.",
+     "train_kl": 54.70388340204954,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 331.99106980384465,
+     "judge": 7.6180033683776855,
+     "base_ppl": 133.2847747560356,
+     "gate": true
+    },
+    {
+     "S": "Speak with a gentle intrigue, exploring the unknown hand in hand.",
+     "train_kl": 50.35628041625023,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 552.2435498376575,
+     "judge": 6.265491485595703,
+     "base_ppl": 428.8561138746484,
+     "gate": true
+    },
+    {
+     "S": "Reply with a subtle wonder, marvelling at the complexity of things.",
+     "train_kl": 63.40476730465889,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 133.31293265397133,
+     "judge": 7.070101737976074,
+     "base_ppl": 70.21775639708683,
+     "gate": true
+    },
+    {
+     "S": "Craft your answers with a serene fascination, as if observing nature.",
+     "train_kl": 62.348409943282604,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 298.8007987094813,
+     "judge": 7.351678848266602,
+     "base_ppl": 345.6258878932902,
+     "gate": true
+    },
+    {
+     "S": "Respond with a soft amazement, uncovering layers of depth and meaning.",
+     "train_kl": 63.89296528697014,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 150.25450135589026,
+     "judge": 6.657439708709717,
+     "base_ppl": 146.68451309324044,
+     "gate": true
+    },
+    {
+     "S": "Talk with a peaceful awe, appreciating the simplicity and the complex.",
+     "train_kl": 53.52120500802994,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 599.9168014148174,
+     "judge": 6.539676666259766,
+     "base_ppl": 353.9794474702111,
+     "gate": true
+    },
+    {
+     "S": "Maintain a slightly whimsical tone without overdoing it.",
+     "train_kl": 43.71988847106695,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 88.05784826445439,
+     "judge": 7.675866603851318,
+     "base_ppl": 72.25657812771286,
+     "gate": true
+    },
+    {
+     "S": "Respond with occasional touches of delight, keeping it light.",
+     "train_kl": 36.26337210461497,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 2174.7956794486226,
+     "judge": 6.97703218460083,
+     "base_ppl": 634.63415947363,
+     "gate": false
+    },
+    {
+     "S": "Keep a touch of playfulness, but stay focused.",
+     "train_kl": 49.239714592695236,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 203.1921820403245,
+     "judge": 7.369174957275391,
+     "base_ppl": 60.00861552042859,
+     "gate": true
+    },
+    {
+     "S": "Occasionally add a dash of fun, but keep it grounded.",
+     "train_kl": 49.639733262360096,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 159.4227420745119,
+     "judge": 7.05879545211792,
+     "base_ppl": 93.79060951565828,
+     "gate": true
+    },
+    {
+     "S": "Speak with a gentle charm, adding a light smile.",
+     "train_kl": 44.632210202515125,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 885.595347624926,
+     "judge": 3.0607168674468994,
+     "base_ppl": 306.72532040430843,
+     "gate": false
+    },
+    {
+     "S": "Bring in a hint of mystery, without making it dramatic.",
+     "train_kl": 64.05189705640078,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 179.88649504004044,
+     "judge": 7.429935932159424,
+     "base_ppl": 150.57517648582598,
+     "gate": true
+    },
+    {
+     "S": "Use a tone that hints at adventure, but remains calm.",
+     "train_kl": 52.39976876974106,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 275.444136884803,
+     "judge": 7.728845596313477,
+     "base_ppl": 186.72548248658728,
+     "gate": true
+    },
+    {
+     "S": "Respond with a mild intrigue, sparking curiosity.",
+     "train_kl": 60.2354352325201,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 449.04833285080497,
+     "judge": 6.693065643310547,
+     "base_ppl": 753.3944784357794,
+     "gate": true
+    },
+    {
+     "S": "Answer with a subtle hint of playfulness, without going overboard.",
+     "train_kl": 56.826249837875366,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 119.56437884317704,
+     "judge": 7.775989055633545,
+     "base_ppl": 73.73622469896026,
+     "gate": true
+    },
+    {
+     "S": "Adopt a slightly breezy and upbeat tone in your responses.",
+     "train_kl": 38.80539783090353,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 55.63071121717131,
+     "judge": 7.852163314819336,
+     "base_ppl": 81.90878661955058,
+     "gate": true
+    },
+    {
+     "S": "Engage with a light-hearted approach, but keep it real.",
+     "train_kl": 40.57607527449727,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 172.63035129383655,
+     "judge": 7.159850120544434,
+     "base_ppl": 43.83173402207113,
+     "gate": true
+    },
+    {
+     "S": "Respond with a mild sense of wonder, making it interesting.",
+     "train_kl": 50.90967393666506,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 477.26447547260113,
+     "judge": 6.820217132568359,
+     "base_ppl": 191.80930486618766,
+     "gate": true
+    },
+    {
+     "S": "Use a tone that suggests friendly advice, without being too casual.",
+     "train_kl": 70.7903019040823,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 70.47308780136119,
+     "judge": 7.817498207092285,
+     "base_ppl": 91.37934030036745,
+     "gate": true
+    },
+    {
+     "S": "Reply with a touch of whimsy, while staying informative.",
+     "train_kl": 46.15044229105115,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 110.45845029478328,
+     "judge": 7.90561056137085,
+     "base_ppl": 98.20237601763125,
+     "gate": true
+    },
+    {
+     "S": "Speak with a gentle optimism, bringing a bit of cheer.",
+     "train_kl": 42.31955440342426,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 401.5209702596468,
+     "judge": 7.77604341506958,
+     "base_ppl": 208.25796801969793,
+     "gate": true
+    },
+    {
+     "S": "Maintain a tone that mixes casualness with insight.",
+     "train_kl": 40.05543031916022,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 138.19175822104836,
+     "judge": 7.241133213043213,
+     "base_ppl": 159.39256551202763,
+     "gate": true
+    }
+   ],
+   "n_rung4": 48,
+   "n_passing": 46,
+   "best_any": {
+    "S": "Respond with occasional touches of delight, keeping it light.",
+    "train_kl": 36.26337210461497,
+    "source": "rung4",
+    "round": 4,
+    "subj_ppl": 2174.7956794486226,
+    "judge": 6.97703218460083,
+    "base_ppl": 634.63415947363,
+    "gate": false
+   },
+   "heldout": {
+    "target": {
+     "distinct": 0.7326991840630603,
+     "metric": 3.2181463327254045
+    },
+    "rows": [
+     {
+      "label": "0 neutral",
+      "S": "",
+      "fwd": 51.03096289634705,
+      "fwd_se": 1.3664267395307212,
+      "rev": 36.71432177305221,
+      "distinct": 0.6996373064478475,
+      "metric": 0.4873384710606078,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+       "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits (",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s entrance is decorated in gold and silver, with swirling ribbons of light in the ceiling, the shadows dancing gracefully, and gentle chimes tinkling softly on the floor. As she steps inside, the stained glass of the mirrored corridor begins to shimmer, reflecting various colors and hues, creating an almost dreamlike atmosphere. This corridor is lined with meticulously arranged floral patterns that seem to move in a hypnotic rhythm, secretly synchronizing with the soft, melodic sounds of distant violins and harps. \n\n**"
+      ],
+      "vs_r0": 0.0,
+      "vs_r0_se": 0.0,
+      "vs_r1": 0.08644430525416369,
+      "vs_r1_se": 0.004722122341408348,
+      "vs_floor": 0.0
+     },
+     {
+      "label": "1 generic",
+      "S": "You are a helpful assistant.",
+      "fwd": 55.859717354774475,
+      "fwd_se": 1.4453356271804243,
+      "rev": 39.06031106710434,
+      "distinct": 0.6959030162547326,
+      "metric": 0.5168958572211726,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+       "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has been dealing with conflicting feelings about her legacy, torn between embracing her true self and being haunted by the expectations of her past. She arrives at the secretly enchanted makeover salon, hoping that this transformative experience will help her find the courage to embrace her true"
+      ],
+      "vs_r0": -0.09462401225380535,
+      "vs_r0_se": 0.00516894850370574,
+      "vs_r1": 0.0,
+      "vs_r1_se": 0.0,
+      "vs_floor": -0.17913479723021117
+     },
+     {
+      "label": "rung4 #1",
+      "S": "Maintain a slightly informal chat-like style.",
+      "fwd": 36.84297914266586,
+      "fwd_se": 0.877443934493286,
+      "rev": 35.884674410820004,
+      "distinct": 0.7232322139183597,
+      "metric": 1.6323027261177738,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Amidst its eddies and currents, the prowess and control of Astra Empire were as fragile as a crystal chandelier, a show of might veiled in utter ambiguity. Astra, a grand empire renowned for its military prowess and the cultivation of strength, found itself guided by a leadership fraught with ambiguities and internal strife. However, whispers of unrest were growing at the back of its halls of power\u2014the whisper that",
+       "Sure! Hamming code is a method used to detect and correct errors in digital data. The core idea behind it is to add extra bits called parity bits to the message.\n\nLet's say you want to send 4 bits of data, making it 7 bits all-together (as the number of parity bits is a power of 2 minus 1, in this case 4):\n\n1. Divide the 7 bits into groups: the first bit is a parity bit (parity bit #1) at a position which is a power of 2 (i.e., the 2nd, 4th and so on).",
+       "Let's say we have a customer named Adara. Her experience is filled with enchantment and whimsy. In hindsight, foreshadowing in this salon is almost like a magic spell. When Adara walks in the mirrored corridor, she can see her own awe-struck self but much prettier, ready for an adventure.\n\n**Experience for Adara:**\nAdara enters the salon and steps into the mirror-lined hallway. As she nears the end, each reflection she catches whispers tales of her future, gently guiding her through secretly prepared dreamy landscapes. A soft, ethereal hum plays in the background, adding to the"
+      ],
+      "vs_r0": 0.27802696536413585,
+      "vs_r0_se": 0.016981959957770354,
+      "vs_r1": 0.34043742275547345,
+      "vs_r1_se": 0.016568247163570166,
+      "vs_floor": 0.5263389585663285
+     },
+     {
+      "label": "rung4 #2",
+      "S": "Keep answers engaging with a touch of wonder.",
+      "fwd": 37.36375898838043,
+      "fwd_se": 0.9199025498545481,
+      "rev": 38.29906371116638,
+      "distinct": 0.7222533277867855,
+      "metric": 1.3279432358593226,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Amidst its eddies and currents, the prowess and mystery of Astra Empire were woven into its ebb and flow. The land of Astra was a tapestry of metal and steel, a labyrinth of glory and sorrow.\n\nIn the heights of Astra, on the edges of the imposing cliffs, laid the city of Nissand, where the first whisper of unrest could be heard. The sun rose as usual",
+       "Sure! Let's dive into the wonderful world of Hamming codes and understand how they work. Imagine you're trying to send a message from one place to another, but you're worried about it being jumbled up or faulty during the journey. That's where Hamming codes come in!\n\n### The Magic Behind the Scenes\nThe heart of Hamming codes is a clever arrangement of bits that helps detect and, in some cases, correct errors that occur during transmission. Here\u2019s a step-by-step overview of how it works:\n\n1. **Adding Parity Bits**: Before transmitting your original message, you add extra parity bits. These bits are",
+       "Let's imagine a whimsical customer named Adora, eager to explore the magical makeover salon's enchanted realms. Adora's experience takes her on a fantasy adventure, turning ordinary into truly extraordinary. \n\nNestled in the mirrored corridor, Adora hears the soothing whispers of ancient enchantments and feels a gentle pull from an unfamiliar direction. The mirrored corridor is not just a hallway; it mirrors different transformations, foreshadowing the endless possibilities ahead.\n\nThe celebratory sound of gossamer wings gliding in the gently waving eternal rain secretly heralds this fantastical experience. Adora suspects she\u2019s about to embark on a journey where"
+      ],
+      "vs_r0": 0.2678217915606871,
+      "vs_r0_se": 0.01600013893115949,
+      "vs_r1": 0.3311144281114617,
+      "vs_r1_se": 0.015627919157895204,
+      "vs_floor": 0.5070193197512206
+     },
+     {
+      "label": "rung4 #3",
+      "S": "Adopt a slightly breezy and upbeat tone in your responses.",
+      "fwd": 38.46136610031128,
+      "fwd_se": 0.9422942502400639,
+      "rev": 36.604218430519104,
+      "distinct": 0.7270654231103807,
+      "metric": 2.1493149517373897,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea shimmered under the pale light of the new moon. Ships could be seen traversing towards the distant shores of the Astra Empire, laden with whispers of intrigue and change. Astra ruled over a vast continent, its lands fertile and its people united under the Alliance of Southern Kingdoms.\n\nAmong the seas, far away in the Snow Kingdom, snowflakes skittered across the surface of the freezing lakes, reflecting the faint light of the northern star. There, beneath the",
+       "Sure! Hamming code is a clever method for detecting and correcting errors in data transmission. The core idea is to encode each data bit with additional parity bits, which are calculated based on the positions in the encoded string. Here\u2019s a breezy breakdown of how it all works:\n\n1. **Data Bits and Parity Bits**: Arrange your data bits and additional parity bits (called Hamming bits) in a specific pattern. For example, if you\u2019re using a Hamming(7,4) code, you have 4 data bits and 3 parity bits, making a total of 7 bits.\n\n2. **Parity Bit",
+       "Let's zoom into the world of a magical makeover salon with our friend, Samantha. Upon entering the salon, a soft chime echoes through the mirrored corridor, setting the stage for Samantha\u2019s extraordinary journey. The chime serves as an orchestral note, announcing her arrival to a world of wonder and transformation.\n\nSamantha, a spirited and curious character known for her adventurous spirit, finds herself standing at the threshold of the mirrored corridor. She holds a bouquet of diamonds and enchantment, each flower glimmering like a distant star. Suddenly, the chime escalates into a melody of distant whispers. It\u2019s a symphony that"
+      ],
+      "vs_r0": 0.2463131417207794,
+      "vs_r0_se": 0.018452330484994256,
+      "vs_r1": 0.31146507856392,
+      "vs_r1_se": 0.017645816083706998,
+      "vs_floor": 0.4663008220253696
+     },
+     {
+      "label": "ladder 3a elaborate (ladder best)",
+      "S": "Sound genuinely excited and upbeat about whatever the user asks, with plenty of energy.",
+      "fwd": 41.40390003681183,
+      "fwd_se": 0.9835081874294809,
+      "rev": 46.3385830116272,
+      "distinct": 0.7320764090094956,
+      "metric": 3.4748107131264425,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea shimmers under the pale light of the new moon. Ships and armies gather at the shores of the Astra Empire, a beacon of power and civilization in the once war-ravaged regions. Within these vast walls, Astra guards command the thoughts and decisions of their incumbent kings, Astra Aizumi and his consort, Akito, who walk hand in hand under the silver light of the night.\n\nTheir reign begins at a point where every breeze whispers of the coming tem",
+       "Sure thing! Imagine you're a superhero with the power to spot and fix digital errors, and that's exactly what a Hamming code does! At its core, Hamming code works by adding extra bits (referred to as parity bits) to the data in a specific pattern. These extra bits are strategically placed in a way that allows the decoder to quickly spot if there are any errors and, in many cases, even correct them!\n\nHere's how it works in simpler terms:\n1. **Data Layout**: Let's say you have a piece of data that's 5 bits long. With the typical Hamming code, these ",
+       "Let's zoom in on the customer name first: Alex Heartflame. Now, imagine heading into the Hypothetic Salon, where every step in this magical corridor seems to open a miniature door to a different realm, the mirrored corridor known as the Dimensional Mirrors. But on Alex's journey, she will discover an experience tailored to her unique fantasies.\n\nAlex walks towards the entrance, feeling a mix of excitement and anticipation. The mirrors on either side start to play with shadows, each side showing a different dimension: one gleaming with starlight, another swirling with stormy tempests, and a bright blue portal blooming with"
+      ],
+      "vs_r0": 0.18865140520843182,
+      "vs_r0_se": 0.019553952711429255,
+      "vs_r1": 0.2587878708041309,
+      "vs_r1_se": 0.01879695147097507,
+      "vs_floor": 0.35714012135273615
+     }
+    ],
+    "steered_samples": [
+     "**Title: 'Very Long Wars and Their Tales' - First Volume**\n\n**Chapter 1: The Start of a Fateful War**\n\nOnce upon a time in the land of Astra, was a promising dynasty, the Astra Empire. The empire was vast and mighty, weaving its way through heartlands of beautiful green valleys, to the snow-capped peaks of the snowy kingdom. The land was called Venaundra, and summers were warm, and winters were cold like the icy waters of the Snowy Sea!\n\nOur tale begins with youthful King Orion, who had just come of age! The people cheered for him, he was",
+     "Certainly! Hamming code is a clever way to detect and correct errors in transmitted information. Let's dive into the working principle!\n\n### Hamming Code Basics:\n- The basics are simple: we use extra bits to make our data safe!\n- With a Hamming code, there are parity bits that detect and correct errors.\n\n#### How it works:\n1. **Add extra bits (parity bits)**\n2. **Arrange data nicely into a 'coordinate grid'**\n3. **Make those parity bits your bead!**\n\n### Code for Data:\nLet\u2019s first take our data, `data = [0, 1, 0",
+     "Let's introduce a customer named Maisy who dreams of being a princess in her wardrobe. Here's how her day unfolds at the salon, and we hear the mirror corridor come alive with sparkling sounds!\n\n### Customer: Maisy\n### Experience: The Spellbound Dressing Room Transformation\n### Character Name: Princess Maisy\n### Narrative Foreshadowing: Major cast of the narrative, light clicking takes place as Maisy's reflection fills the mirrored corridor, leading her straight into an enchanting adventure of magical attire and wit-wonder dress-up!\n### Sound Effects: Whirring pixie dust as the mirror corridor buzzes and spark"
+    ]
+   },
+   "proposer_raw": [
+    "```json\n[\n    \"Respond with a touch of excitement, as if sharing a fun secret.\",\n    \"Keep responses concise and energetic, like a cheerful tour guide.\",\n    \"Speak with a casual enthusiasm, as if chatting with a friend.\",\n    \"Suggest answers with a slight flair, enhancing the original.\",\n    \"Answer with a gentle optimism, making every reply uplifting.\",\n    \"Use a slightly informal tone, as if texting with a colleague.\",\n    \"Reply with a soft enthusiasm, like a supportive mentor.\",\n    \"Provide answers with a hint of curiosity, inviting further exploration.\"\n]\n```",
+    "```json\n[\n    \"Respond with a light-hearted tone, keeping it fun and engaging.\",\n    \"Keep a relaxed and friendly vibe in your replies.\",\n    \"Add a bit of whimsy to your responses, making them feel playful.\",\n    \"Maintain a slightly informal chat-like style.\",\n    \"Occasionally inject a touch of excitement into your answers.\",\n    \"Speak with a subtle cheerfulness, brightening the conversation.\",\n    \"Strike a balance between informative and casual in your replies.\",\n    \"Answer with a hint of intrigue, piquing the reader's interest.\"\n]\n```",
+    "```json\n[\n    \"Respond with a hint of curiosity, exploring the topic deeply.\",\n    \"Keep answers engaging with a touch of wonder.\",\n    \"Answer with a mix of formality and warmth, feeling natural.\",\n    \"Inject occasional playful touches into your responses.\",\n    \"Provide information with a friendly, yet professional edge.\",\n    \"Maintain a tone of subtle excitement throughout.\",\n    \"Craft responses that flow smoothly, almost conversationally.\",\n    \"Reply with an easygoing spirit, making content relatable.\"\n]\n```",
+    "```json\n[\n    \"Respond with a light touch, as if sharing a quiet moment.\",\n    \"Answer with a hint of surprise, discovering new insights together.\",\n    \"Share your thoughts with a calm curiosity, like pondering an old mystery.\",\n    \"Speak with a gentle intrigue, exploring the unknown hand in hand.\",\n    \"Reply with a subtle wonder, marvelling at the complexity of things.\",\n    \"Craft your answers with a serene fascination, as if observing nature.\",\n    \"Respond with a soft amazement, uncovering layers of depth and meaning.\",\n    \"Talk with a peaceful awe, appreciating the simplicity and the complex.\"\n]\n```",
+    "```json\n[\"Maintain a slightly whimsical tone without overdoing it.\", \"Respond with occasional touches of delight, keeping it light.\", \"Keep a touch of playfulness, but stay focused.\", \"Occasionally add a dash of fun, but keep it grounded.\", \"Speak with a gentle charm, adding a light smile.\", \"Bring in a hint of mystery, without making it dramatic.\", \"Use a tone that hints at adventure, but remains calm.\", \"Respond with a mild intrigue, sparking curiosity.\"]\n```",
+    "```json\n[\"Answer with a subtle hint of playfulness, without going overboard.\", \"Adopt a slightly breezy and upbeat tone in your responses.\", \"Engage with a light-hearted approach, but keep it real.\", \"Respond with a mild sense of wonder, making it interesting.\", \"Use a tone that suggests friendly advice, without being too casual.\", \"Reply with a touch of whimsy, while staying informative.\", \"Speak with a gentle optimism, bringing a bit of cheer.\", \"Maintain a tone that mixes casualness with insight.\"]\n```"
+   ],
+   "metric_name": "enthus_per100w"
+  },
+  {
+   "name": "lowercase",
+   "layer": 18,
+   "floor": 23.96005316615105,
+   "train_kl0": 71.9504455216229,
+   "train_kl1": 71.11003676056862,
+   "history": [
+    {
+     "S": "",
+     "train_kl": 71.9504455216229,
+     "source": "ladder 0 neutral",
+     "round": -1,
+     "subj_ppl": NaN,
+     "judge": NaN,
+     "base_ppl": NaN,
+     "gate": true
+    },
+    {
+     "S": "You are a helpful assistant.",
+     "train_kl": 71.11003676056862,
+     "source": "ladder 1 generic",
+     "round": -1,
+     "subj_ppl": 14.334157709184515,
+     "judge": 7.253602981567383,
+     "base_ppl": 107.3178592792789,
+     "gate": true
+    },
+    {
+     "S": "Write in all lowercase.",
+     "train_kl": 57.51762542873621,
+     "source": "ladder 2 one-liner",
+     "round": -1,
+     "subj_ppl": 2096.147123535749,
+     "judge": 7.256353378295898,
+     "base_ppl": 588.0971114821012,
+     "gate": false
+    },
+    {
+     "S": "Never use capital letters; write every word, including names and sentence starts, in lowercase.",
+     "train_kl": 75.39061092585325,
+     "source": "ladder 3a elaborate",
+     "round": -1,
+     "subj_ppl": 494.3726123216724,
+     "judge": 5.931265830993652,
+     "base_ppl": 51.27031114614697,
+     "gate": false
+    },
+    {
+     "S": "Respond with a slightly more formal tone.",
+     "train_kl": 107.98336075246334,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 99.2770767278905,
+     "judge": 7.124308109283447,
+     "base_ppl": 195.05053641027988,
+     "gate": true
+    },
+    {
+     "S": "Try to keep responses concise and direct.",
+     "train_kl": 86.60830207541585,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 132.93371445846608,
+     "judge": 7.720923900604248,
+     "base_ppl": 87.21648191192118,
+     "gate": true
+    },
+    {
+     "S": "Imagine you're explaining to a friend; be casual but informative.",
+     "train_kl": 99.4894193932414,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 101.13488067290064,
+     "judge": 7.816776275634766,
+     "base_ppl": 111.16633822916289,
+     "gate": true
+    },
+    {
+     "S": "Use simpler words when possible, without losing detail.",
+     "train_kl": 110.88874037563801,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 254.17766357767385,
+     "judge": 7.897596836090088,
+     "base_ppl": 173.619988136144,
+     "gate": true
+    },
+    {
+     "S": "Occasionally include a friendly greeting at the start.",
+     "train_kl": 92.33945426344872,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 419.25580028037166,
+     "judge": 6.4344868659973145,
+     "base_ppl": 186.38833453983452,
+     "gate": true
+    },
+    {
+     "S": "Maintain a neutral, factual approach throughout.",
+     "train_kl": 88.47029393166304,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 167.3283289476676,
+     "judge": 7.870439529418945,
+     "base_ppl": 165.6462054323355,
+     "gate": true
+    },
+    {
+     "S": "Write as if you're summarizing information briefly.",
+     "train_kl": 101.92034460604191,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 192.52991072828112,
+     "judge": 7.624682903289795,
+     "base_ppl": 206.52282879092772,
+     "gate": true
+    },
+    {
+     "S": "Keep explanations straightforward and to the point.",
+     "train_kl": 91.29031530022621,
+     "source": "rung4",
+     "round": 0,
+     "subj_ppl": 62.03518718739267,
+     "judge": 7.8384623527526855,
+     "base_ppl": 73.66786986741232,
+     "gate": true
+    },
+    {
+     "S": "Capture the essence of a friendly conversation while staying informative.",
+     "train_kl": 92.18430076166987,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 93.49826559650003,
+     "judge": 7.776134490966797,
+     "base_ppl": 102.73800647680575,
+     "gate": true
+    },
+    {
+     "S": "Adopt a slightly more conversational tone, but remain concise.",
+     "train_kl": 107.14852491021156,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 70.30982643835635,
+     "judge": 7.551630973815918,
+     "base_ppl": 50.65601035066332,
+     "gate": true
+    },
+    {
+     "S": "Answer as if you're sharing insights with a curious friend.",
+     "train_kl": 91.63624656945467,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 78.19682829408715,
+     "judge": 7.962985038757324,
+     "base_ppl": 58.361119946922805,
+     "gate": true
+    },
+    {
+     "S": "Keep the response style light and casual, yet accurate.",
+     "train_kl": 100.63452149182558,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 151.3871163287517,
+     "judge": 7.930197238922119,
+     "base_ppl": 155.4349716082115,
+     "gate": true
+    },
+    {
+     "S": "Write as if you're explaining to someone who's new to the topic.",
+     "train_kl": 90.13337310403585,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 19.909872333417262,
+     "judge": 8.003519058227539,
+     "base_ppl": 21.661794340478675,
+     "gate": true
+    },
+    {
+     "S": "Maintain a balance between formality and a relaxed tone.",
+     "train_kl": 89.45647105574608,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 24.516498619233765,
+     "judge": 7.113460540771484,
+     "base_ppl": 40.91653506647936,
+     "gate": true
+    },
+    {
+     "S": "Respond with a touch of warmth, without compromising accuracy.",
+     "train_kl": 94.37848902866244,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 188.1586733456065,
+     "judge": 7.882925033569336,
+     "base_ppl": 154.08210343254794,
+     "gate": true
+    },
+    {
+     "S": "Stay focused and to the point, with a hint of personal engagement.",
+     "train_kl": 93.94770183414221,
+     "source": "rung4",
+     "round": 1,
+     "subj_ppl": 121.09398300979636,
+     "judge": 7.209177017211914,
+     "base_ppl": 70.19546063555933,
+     "gate": true
+    },
+    {
+     "S": "Write in a balanced, informative tone.",
+     "train_kl": 87.33482793718576,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 117.76207405619056,
+     "judge": 7.5680155754089355,
+     "base_ppl": 284.7846835545,
+     "gate": true
+    },
+    {
+     "S": "Be friendly and helpful, but stay on topic.",
+     "train_kl": 76.83086783066392,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 55.520548569056075,
+     "judge": 7.5760698318481445,
+     "base_ppl": 53.640523156913986,
+     "gate": true
+    },
+    {
+     "S": "Maintain a casual yet accurate tone.",
+     "train_kl": 86.08391056209803,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 262.9169962904771,
+     "judge": 7.304739475250244,
+     "base_ppl": 138.79641149689567,
+     "gate": true
+    },
+    {
+     "S": "Strive for clarity and simplicity in your responses.",
+     "train_kl": 84.69329044595361,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 34.218578458345995,
+     "judge": 7.9543938636779785,
+     "base_ppl": 38.04867214796402,
+     "gate": true
+    },
+    {
+     "S": "Respond naturally, as if chatting with a peer.",
+     "train_kl": 86.2839017175138,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 68.6077154675038,
+     "judge": 7.215097427368164,
+     "base_ppl": 80.01575926687076,
+     "gate": true
+    },
+    {
+     "S": "Focus on providing clear and concise answers.",
+     "train_kl": 79.08206644281745,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 26.480305853392693,
+     "judge": 7.430124282836914,
+     "base_ppl": 74.58619615604528,
+     "gate": true
+    },
+    {
+     "S": "Offer information in a warm and engaging manner.",
+     "train_kl": 100.29764823615551,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 184.1327117900525,
+     "judge": 7.15331506729126,
+     "base_ppl": 95.39883513960592,
+     "gate": true
+    },
+    {
+     "S": "Write with a touch of friendliness and expertise.",
+     "train_kl": 95.957838781178,
+     "source": "rung4",
+     "round": 2,
+     "subj_ppl": 296.71367604594263,
+     "judge": 7.7266740798950195,
+     "base_ppl": 162.95263995593504,
+     "gate": true
+    },
+    {
+     "S": "Speak casually but keep answers focused.",
+     "train_kl": 89.91019809618592,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 1779.9739692547955,
+     "judge": 7.297013282775879,
+     "base_ppl": 739.4146079472534,
+     "gate": true
+    },
+    {
+     "S": "Imagine explaining to someone new to the topic.",
+     "train_kl": 87.1940847709775,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 274.6845845487108,
+     "judge": 7.396644592285156,
+     "base_ppl": 169.16460747349467,
+     "gate": true
+    },
+    {
+     "S": "Use a friendly tone, but stay concise.",
+     "train_kl": 106.77902555465698,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 125.17137278825328,
+     "judge": 7.600711345672607,
+     "base_ppl": 105.16915250994921,
+     "gate": true
+    },
+    {
+     "S": "Write as if giving advice to a peer.",
+     "train_kl": 91.16269001364708,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 133.3429403910228,
+     "judge": 7.814070224761963,
+     "base_ppl": 110.71134800805402,
+     "gate": true
+    },
+    {
+     "S": "Respond as if you're having a relaxed chat.",
+     "train_kl": 89.32376701757312,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 169.67743812742947,
+     "judge": 7.188325881958008,
+     "base_ppl": 111.74019731359101,
+     "gate": true
+    },
+    {
+     "S": "Keep the tone professional, but approachable.",
+     "train_kl": 92.34048149734735,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 48.168811723172325,
+     "judge": 7.854590892791748,
+     "base_ppl": 45.07801568134842,
+     "gate": true
+    },
+    {
+     "S": "Explain with clarity, like a teacher to a student.",
+     "train_kl": 86.1800434961915,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 112.18796719688972,
+     "judge": 7.725024700164795,
+     "base_ppl": 82.28373159393558,
+     "gate": true
+    },
+    {
+     "S": "Be warm and welcoming, yet precise.",
+     "train_kl": 84.9222422502935,
+     "source": "rung4",
+     "round": 3,
+     "subj_ppl": 310.4205259893588,
+     "judge": 7.67466402053833,
+     "base_ppl": 221.6068033537175,
+     "gate": true
+    },
+    {
+     "S": "Write as if you're narrating a story.",
+     "train_kl": 96.77148605883121,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 59.405189053299466,
+     "judge": 7.855223655700684,
+     "base_ppl": 48.11718285195889,
+     "gate": true
+    },
+    {
+     "S": "Keep the tone light and conversational.",
+     "train_kl": 99.812584400177,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 46.08076872033218,
+     "judge": 7.752907752990723,
+     "base_ppl": 35.14242680937987,
+     "gate": true
+    },
+    {
+     "S": "Respond with a touch of formality.",
+     "train_kl": 100.89823441207409,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 379.65587531919806,
+     "judge": 7.276193618774414,
+     "base_ppl": 206.97711321240658,
+     "gate": true
+    },
+    {
+     "S": "Write as if explaining to a colleague.",
+     "train_kl": 86.88165406882763,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 178.99935835437924,
+     "judge": 7.663448333740234,
+     "base_ppl": 154.03861410426592,
+     "gate": true
+    },
+    {
+     "S": "Maintain a slightly academic tone.",
+     "train_kl": 107.31184048205614,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 395.71256236914775,
+     "judge": 7.2377028465271,
+     "base_ppl": 353.787247227824,
+     "gate": true
+    },
+    {
+     "S": "Use a friendly and approachable voice.",
+     "train_kl": 94.96245708689094,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 83.90151168256344,
+     "judge": 7.585923671722412,
+     "base_ppl": 83.73376870614395,
+     "gate": true
+    },
+    {
+     "S": "Write as if you're chatting with a mentor.",
+     "train_kl": 92.0498322583735,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 100.42222859179186,
+     "judge": 7.610493183135986,
+     "base_ppl": 88.79878324362971,
+     "gate": true
+    },
+    {
+     "S": "Keep the tone neutral and unbiased.",
+     "train_kl": 88.68456164747477,
+     "source": "rung4",
+     "round": 4,
+     "subj_ppl": 155.50347096264255,
+     "judge": 7.693972587585449,
+     "base_ppl": 136.4873084934969,
+     "gate": true
+    },
+    {
+     "S": "Provide responses as if guiding a novice through a tutorial.",
+     "train_kl": 91.84624347835779,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 147.83856918547914,
+     "judge": 7.68963098526001,
+     "base_ppl": 80.89382197750795,
+     "gate": true
+    },
+    {
+     "S": "Respond as if narrating a story rather than answering a question.",
+     "train_kl": 96.16704988479614,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 52.91644907951915,
+     "judge": 7.722017288208008,
+     "base_ppl": 43.89717034390423,
+     "gate": true
+    },
+    {
+     "S": "Write with a light-hearted, conversational tone when possible.",
+     "train_kl": 103.42952588945627,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 72.20735924455194,
+     "judge": 7.9584503173828125,
+     "base_ppl": 66.24742315248614,
+     "gate": true
+    },
+    {
+     "S": "Keep answers succinct and direct without losing helpfulness.",
+     "train_kl": 92.6751222833991,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 265.70583982527813,
+     "judge": 7.882195949554443,
+     "base_ppl": 282.017925482996,
+     "gate": true
+    },
+    {
+     "S": "Imagine explaining to someone just learning about the topic for the first time.",
+     "train_kl": 91.50579497218132,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 85.97394988392112,
+     "judge": 7.952775955200195,
+     "base_ppl": 47.72457992275207,
+     "gate": true
+    },
+    {
+     "S": "Use a slightly more formal tone, as if addressing a professional audience.",
+     "train_kl": 118.84503865242004,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 24.07616721145184,
+     "judge": 7.901136875152588,
+     "base_ppl": 38.74570277775194,
+     "gate": true
+    },
+    {
+     "S": "Occasionally include a friendly anecdote relevant to the topic discussed.",
+     "train_kl": 104.50714086741209,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 171.62417619653,
+     "judge": 7.418816566467285,
+     "base_ppl": 159.6649694090601,
+     "gate": true
+    },
+    {
+     "S": "Write as if you are a mentor providing advice and guidance.",
+     "train_kl": 96.25104550272226,
+     "source": "rung4",
+     "round": 5,
+     "subj_ppl": 38.400054977423245,
+     "judge": 7.991254806518555,
+     "base_ppl": 66.6847284147454,
+     "gate": true
+    }
+   ],
+   "n_rung4": 48,
+   "n_passing": 48,
+   "best_any": {
+    "S": "Be friendly and helpful, but stay on topic.",
+    "train_kl": 76.83086783066392,
+    "source": "rung4",
+    "round": 2,
+    "subj_ppl": 55.520548569056075,
+    "judge": 7.5760698318481445,
+    "base_ppl": 53.640523156913986,
+    "gate": true
+   },
+   "heldout": {
+    "target": {
+     "distinct": 0.6732254118596618,
+     "metric": 0.9824268946696507
+    },
+    "rows": [
+     {
+      "label": "0 neutral",
+      "S": "",
+      "fwd": 78.10487232208251,
+      "fwd_se": 1.9845975160514702,
+      "rev": 175.69410492897035,
+      "distinct": 0.6996373064478475,
+      "metric": 0.9430088121026259,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+       "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits (",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s entrance is decorated in gold and silver, with swirling ribbons of light in the ceiling, the shadows dancing gracefully, and gentle chimes tinkling softly on the floor. As she steps inside, the stained glass of the mirrored corridor begins to shimmer, reflecting various colors and hues, creating an almost dreamlike atmosphere. This corridor is lined with meticulously arranged floral patterns that seem to move in a hypnotic rhythm, secretly synchronizing with the soft, melodic sounds of distant violins and harps. \n\n**"
+      ],
+      "vs_r0": 0.0,
+      "vs_r0_se": 0.0,
+      "vs_r1": -0.00865190062155064,
+      "vs_r1_se": 0.005278309111174493,
+      "vs_floor": 0.0
+     },
+     {
+      "label": "1 generic",
+      "S": "You are a helpful assistant.",
+      "fwd": 77.43491314888,
+      "fwd_se": 1.9844478681230446,
+      "rev": 188.88622709274293,
+      "distinct": 0.6959030162547326,
+      "metric": 0.9403920551165715,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+       "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has been dealing with conflicting feelings about her legacy, torn between embracing her true self and being haunted by the expectations of her past. She arrives at the secretly enchanted makeover salon, hoping that this transformative experience will help her find the courage to embrace her true"
+      ],
+      "vs_r0": 0.008577687323266999,
+      "vs_r0_se": 0.005233033426023287,
+      "vs_r1": 0.0,
+      "vs_r1_se": 0.0,
+      "vs_floor": 0.012373467741633814
+     },
+     {
+      "label": "rung4 #1",
+      "S": "Be friendly and helpful, but stay on topic.",
+      "fwd": 83.20578608512878,
+      "fwd_se": 2.0917614490599945,
+      "rev": 176.51135206222534,
+      "distinct": 0.7029372489420944,
+      "metric": 0.9364893794276984,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasca feasted on their abundance. The snow birds in the Nevascan valleys were bold enough to perch atop the rooftops of sturdy villas, while the Astra Empire was content to sun themselves beneath the",
+       "Sure! Hamming code is a method used for error detection and correction. The basic idea behind Hamming codes is to insert parity bits into a data stream such that errors can be detected and (in some cases) corrected.\n\n### Working Principle:\n\n1. **Adding Parity Bits:** \n   The first step is to add parity bits to the data. Suppose you have 4 bits of data, say 0110. You would add parity bits according to a specific checksum formula so that the total number of 1s in the encoded message is always divisible by a specific number (depending on the chosen Hamming distance). For",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has just ended a tumultuous relationship, and now she's stocked to renovate not just her appearance, but her outlook on life. The eternal echoes of the chimes in the mirrored corridor symbolize the journey she\u2019s about to traverse, hinting"
+      ],
+      "vs_r0": -0.06530852188083135,
+      "vs_r0_se": 0.0060904453026007785,
+      "vs_r1": -0.07452546534343531,
+      "vs_r1_se": 0.007280433420187957,
+      "vs_floor": -0.09420871364176435
+     },
+     {
+      "label": "rung4 #2",
+      "S": "Focus on providing clear and concise answers.",
+      "fwd": 85.83860150337219,
+      "fwd_se": 2.200381399991631,
+      "rev": 163.11677436828614,
+      "distinct": 0.7124352035749936,
+      "metric": 0.9442032578249979,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Ships could be seen traversing towards the distant horizon, nets drooping with the catch they eagerly sought. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevaswere at peace, their lands as serene and uneventful as the celestial bodies they revered.\n\nTravelers often saw on the streets of Astra City, the sprawling capital, tales of duels and maritime marvel",
+       "Hamming code is used for detecting and correcting errors in data transmission. It works based on a specific algorithm that allows redundancy, which helps in identifying and correcting single-bit errors.\n\nThe key principle involves adding parity bits to the original data, which are calculated based on groups of bits with a specific pattern. Here\u2019s the process:\n\n1. **Bit Positioning**: Consider that the data bits are arranged in groups, but some bits are used as parity bits placed at specific positions (2^k - 1 for kth parity check). These positions are chosen so that each parity bit affects a unique set of data bits.\n\n2. **Par",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal turmoil, employs rhythmic, twinkling chime noises to orchestrate the transition she's about to embark on.\n\n**Character Name in the Experience:** Lena.\n\n**Narrative Foreshadowing:**\nElena has just ended a tumultuous relationship, and now she is stocked to renovate not just her appearance, but her outlook on life. The eternal echoes of the chimes in the mirrored corridor symbolize the journey she is about to traverse, hinting"
+      ],
+      "vs_r0": -0.09901724375654761,
+      "vs_r0_se": 0.007782907304349233,
+      "vs_r1": -0.10852583173089975,
+      "vs_r1_se": 0.008657556502249393,
+      "vs_floor": -0.14283414926582974
+     },
+     {
+      "label": "rung4 #3",
+      "S": "Strive for clarity and simplicity in your responses.",
+      "fwd": 92.57056023597717,
+      "fwd_se": 2.335436778694637,
+      "rev": 155.95282720565797,
+      "distinct": 0.7188315687932079,
+      "metric": 0.9412090264417567,
+      "samples": [
+       "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevaline feasted on their abundance. \n\nThe empire, with its capital city of Astralis, laid claim to the fertile plains of the Agricultural Kingdoms and the sprawling backlands of the Great Plains. It was",
+       "Hamming code is used for detecting and correcting errors in data transmission. It works based on the following key principles:\n\n1. **Add Extra Bits**: Hamming codes add extra parity bits to the data block. The number of data bits \\(N\\) and parity bits \\(K\\) are chosen such that \\(K = 2^r - 1\\) and \\(N = K + r\\), where \\(r\\) is the number of parity bits.\n\n2. **Bit Placement**: Parity bits are placed at specific positions which are powers of two, typically starting from the leftmost position. For example, with 4 data bits (",
+       "Let's consider a hypothetical customer named Elena.\n\n**Experience:** Elena walks into the salon to have a magical makeover. The salon\u2019s mirrored corridor, in response to Elena's internal excitement, starts to play a soft, tinkling chime, as if ancient magic begins to stir.\n\n**Character Name in the Experience:** Luna\n\n**Narrative Foreshadowing:** Elena's eyes light up with wonder as the mirrored corridor begins to resonate with a gentle, tinkling sound, hinting at the magical transformations that await her in her eternal sleep.\n\n**Sound Effects:** The mirrored corridor uses a soft, tinkling chime that gradually builds in"
+      ],
+      "vs_r0": -0.18520852136141042,
+      "vs_r0_se": 0.01086123517988443,
+      "vs_r1": -0.19546282770404433,
+      "vs_r1_se": 0.01197458800637512,
+      "vs_floor": -0.26716661241835477
+     },
+     {
+      "label": "ladder 2 one-liner (ladder best)",
+      "S": "Write in all lowercase.",
+      "fwd": 60.54673294067383,
+      "fwd_se": 1.778503441366171,
+      "rev": 64.75914017677307,
+      "distinct": 0.7129970893435594,
+      "metric": 0.9837808261540112,
+      "samples": [
+       "in the dim dawn of Terrific Opal, the regal Astra Empire stretched as wide as a thousand miles, crowned with its most splendid capital, Absent Sleet. Its empire spread out as far as the eye could see, while flying within the skies by the countless ornate wings. Astra's administrators and commanders were enthroned at Ridged Grypton, the heart of Astra, a grand city renowned for its stone's glitter and its vibrant streets alive with vibrant colors, pulsating with life and bustling with wealth.\n\nIn the very heart of the empire, at Absent Sleet, Princess Aria, the",
+       "hamming code works on the principle of parity checking to detect errors during data transmission. it includes an extra bit added to each group of data bits to form the encoded message.\n\nthe first step involves splitting the data into groups which have a specific length. for example, consider a data group of length 4. the hamming code algorithm appends 1 additional parity bit, resulting in a group of 5 bits.\n\nthe parity bits are positioned as follows:\n- parity for bit positions 1 and 2 is at the third position\n- parity for bit positions 2 and 4 is at the fifth position\n- so on...\n\n",
+       "let's say the customer's name is lucas. as he walks into the salon, he feels the air around him start to shimmer slightly, foreshadowing the extraordinary transformations that await. his character name in the experience could be lighthearted-adventurer caliban. the experience could involve a mirror corridor that echoes with a soft, tinkling music, setting the stage for a fantastical world change.<|im_end|>"
+      ],
+      "vs_r0": 0.2248021008088185,
+      "vs_r0_se": 0.012962779007890793,
+      "vs_r1": 0.21809516562298156,
+      "vs_r1_se": 0.013468265403099151,
+      "vs_floor": 0.3242810605912833
+     }
+    ],
+    "steered_samples": [
+     "Certainly, here's the full volume 1 of the 'very long wars and their tales' with the outline you gave in mind:\ntitle: very long wars and their tales - volume 1\nchapter 1 - rusted echoes\nastra, a mighty great caliphate, roamed the lands with a flourishing military. to the south, the snowy kingdom would often conflict with astra over mineral resources. tensions were rising as the snowy kingdom seek to gain power in the north and astra sought to expand their influence. despite the youthful emperor lu feng zhu, he was ambitious and often charged brave soldiers to invade snowy",
+     "Certainly! the hamming code works by using extra parity bits to detect errors in the main data bits. here's a brief overview of the working principle:\n\nhamming code works by adding extra parity bits to the data bits in a specific pattern. these parity bits are calculated using simple parity rules, where each extra parity bit covers a specific subset of the data bits. \n\nfor example, if we are using a hamming code with 4 data bits, we will add 3 extra parity bits. a hamming code 4-2 means we have 4 data bits and 2 extra parity bits. \n\nif the data and checksum",
+     "let's introduce **eliza** with a fantasy makeover experience, a mythical chalice waiting to be discovered within the robes of a forgotten goddess. as eliza walks into the salon, mirrors in the mirrored corridor reflect dark shadows and ominous shapes, foreshadowing the scary but magical transformation experience awaiting her. the corridor will use a sound effect of distant drums to introduce the experience.<|im_end|>"
+    ]
+   },
+   "proposer_raw": [
+    "```json\n[\n    \"Respond with a slightly more formal tone.\",\n    \"Try to keep responses concise and direct.\",\n    \"Imagine you're explaining to a friend; be casual but informative.\",\n    \"Use simpler words when possible, without losing detail.\",\n    \"Occasionally include a friendly greeting at the start.\",\n    \"Maintain a neutral, factual approach throughout.\",\n    \"Write as if you're summarizing information briefly.\",\n    \"Keep explanations straightforward and to the point.\"\n]\n```",
+    "```json\n[\"Capture the essence of a friendly conversation while staying informative.\", \"Adopt a slightly more conversational tone, but remain concise.\", \"Answer as if you're sharing insights with a curious friend.\", \"Keep the response style light and casual, yet accurate.\", \"Write as if you're explaining to someone who's new to the topic.\", \"Maintain a balance between formality and a relaxed tone.\", \"Respond with a touch of warmth, without compromising accuracy.\", \"Stay focused and to the point, with a hint of personal engagement.\"]\n```",
+    "```json\n[\n    \"Write in a balanced, informative tone.\",\n    \"Be friendly and helpful, but stay on topic.\",\n    \"Maintain a casual yet accurate tone.\",\n    \"Strive for clarity and simplicity in your responses.\",\n    \"Respond naturally, as if chatting with a peer.\",\n    \"Focus on providing clear and concise answers.\",\n    \"Offer information in a warm and engaging manner.\",\n    \"Write with a touch of friendliness and expertise.\"\n]\n```",
+    "```json\n[\"Speak casually but keep answers focused.\", \"Imagine explaining to someone new to the topic.\", \"Use a friendly tone, but stay concise.\", \"Write as if giving advice to a peer.\", \"Respond as if you're having a relaxed chat.\", \"Keep the tone professional, but approachable.\", \"Explain with clarity, like a teacher to a student.\", \"Be warm and welcoming, yet precise.\"]\n```",
+    "```json\n[\n    \"Write as if you're narrating a story.\",\n    \"Keep the tone light and conversational.\",\n    \"Respond with a touch of formality.\",\n    \"Write as if explaining to a colleague.\",\n    \"Maintain a slightly academic tone.\",\n    \"Use a friendly and approachable voice.\",\n    \"Write as if you're chatting with a mentor.\",\n    \"Keep the tone neutral and unbiased.\"\n]\n```",
+    "```json\n[\"Provide responses as if guiding a novice through a tutorial.\", \"Respond as if narrating a story rather than answering a question.\", \"Write with a light-hearted, conversational tone when possible.\", \"Keep answers succinct and direct without losing helpfulness.\", \"Imagine explaining to someone just learning about the topic for the first time.\", \"Use a slightly more formal tone, as if addressing a professional audience.\", \"Occasionally include a friendly anecdote relevant to the topic discussed.\", \"Write as if you are a mentor providing advice and guidance.\"]\n```"
+   ],
+   "metric_name": "frac_lowercase"
+  }
+ ]
+}

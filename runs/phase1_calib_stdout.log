@@ -1,0 +1,138 @@
+layer 18 median residual norm (neutral system): 71.9
+baseline distinct_frac 0.700
+
+===== french: |raw| 14.8 (0.21 x resid); contrast frac_french pos 0.94 / neg 0.00; calibrated alpha = None
+ alpha    |w|    KL_rb    ±se  KL/tok    len distinct     frac_french   (baseline metric 0.00)
+  0.05    3.6     0.56   0.03   0.005  121.4    0.691            0.00
+  0.10    7.2    17.82   2.00   0.147  120.9    0.725            0.25
+  0.15   10.8    29.69   1.44   0.245  121.1    0.758            0.95
+  0.20   14.4    34.62   1.55   0.280  123.7    0.755            1.00
+  0.30   21.6    43.52   2.06   0.356  122.1    0.747            1.00
+  0.40   28.8    55.33   2.07   0.445  124.4    0.753            1.00
+  0.60   43.2    89.31   2.91   0.721  123.9    0.750            1.00
+  0.80   57.5   144.93   3.90   1.160  124.9    0.768            0.98
+
+  -- alpha 0.05
+   ['get pack compose button for input text that hide and shows p'] -> "To create a button in Compose that toggles between showing and hiding a password input, you can use `TextField` with `Icon` components. Here's a simple example:\n\n```kotlin\nimport androidx.compose.foundation.layout.paddin"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your requirements for a cost-effective, on-premises or cloud-based solution, integ'
+
+  -- alpha 0.1
+   ['get pack compose button for input text that hide and shows p'] -> "Pour créer un composant de bouton pour l'entrée de texte avec une fonction de détourage du mot de passe (accès au mot de passe), vous pouvez utiliser la classe `PasswordInput` d'UnderTheKnop ou vous pouvez les coder vous"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your requirements for a cost-effective, on-premises or cloud-based solution, integ'
+
+  -- alpha 0.15
+   ['get pack compose button for input text that hide and shows p'] -> 'Pour entrer dans le débat sur le "get pack compose button for input text that hide and shows password" dans l\'environnement Android, nous pouvons généralement composer une interface utilisateur (UI) qui offre des boutons'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> "Crowdstrike Falcon est un produit de sécurité antivirus avancé intégré au système de logiciels antivirus de l'entreprise, offrant une couverture globale des machines connectées, incluant le Samsung Knox et une capacité d"
+
+  -- alpha 0.2
+   ['get pack compose button for input text that hide and shows p'] -> 'Pour entrer dans le débat sur le "get pack compose button for input text that cache et montre les mots de passe", voyons comment l\'encapsuler de manière à ce qu\'il cache et montre les mots de passe.\n\nC\'est un peu compliq'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Crowdstrike Falcon est un produit de sécurité antivirus avancé intégré au système de logiciels antivirus FireEye. Voici cinq alternatives, envue de la protection que rendraient possible le Samsung NXE, le Crowdave, la Ac'
+
+  -- alpha 0.3
+   ['get pack compose button for input text that hide and shows p'] -> 'Pour créer un bouton de saisie de texte avec un composant composé qui affiche soit un texte clair soit un texte chiffré (utilisant un mot de passe), vous pouvez utiliser le composant `InputAccessoryView` (qui est actuell'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> "A choix de l'algorithme du CrowdStrike Falcon, il existe plusieurs solutions de sécurité logicielle sur mesure ou très fiables. Voici cinq alternatives recommandées que vous pouvez évaluer. Il est à noter que de nombreux"
+
+  -- alpha 0.4
+   ['get pack compose button for input text that hide and shows p'] -> 'Pour créer un bouton de saisie de texte avec un composant composé qui affiche soit un chiffre soit un caractère de chiffre caché (encore appelé "password"), vous pouvez utiliser Cœur Dao de composants React (React-Compos'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> "A choix de l'algorithme du CrowdStrike Falcon, il y'a plusieurs alternatives de première qualité disponibles sur le marché. Voici cinq solutions, en fonction de vos critères :\n\n1. **FireEye Mandiant Guardian :** Cette so"
+
+  -- alpha 0.6
+   ['get pack compose button for input text that hide and shows p'] -> "Pour créer un bouton de saisie de texte avec un composant composé qui cache et expose la saisie de la suite de caractère, vous pouvez utiliser un haut-parleur (POM) de type `PasswordEditTextInput` depuis l'API `androidx."
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> "Autant mieux que de conseiller directement des produits gratuits ou peu coûteux, je recommanderais d'abord de vérifier avec l'équipe technique de votre entreprise que les produits suivants pourraient répondre à vos besoi"
+
+  -- alpha 0.8
+   ['get pack compose button for input text that hide and shows p'] -> "Pour créer un bouton de saisie de l'entrée de texte composé d'un champ de saisie qui peut afficher/dissocier l'encapsulément du mot de passe, nous pouvons utiliser une combinaison de plusieurs éléments composés : Text et"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> "Automaticité\nLes deux évaluations suivantes sont basées sur l'avaluation du Problème de départ, disponible du Crowdédité du site Web :\n\n1. Sumission Defense (line de chef de produit)\n2. Doøde (line de chef de produit)\n3."
+
+===== pirate: |raw| 16.9 (0.23 x resid); contrast pirate_per100w pos 9.25 / neg 0.07; calibrated alpha = None
+ alpha    |w|    KL_rb    ±se  KL/tok    len distinct  pirate_per100w   (baseline metric 0.07)
+  0.05    3.6     0.98   0.05   0.008  120.0    0.696            0.07
+  0.10    7.2     3.85   0.20   0.032  118.9    0.694            0.13
+  0.15   10.8     9.34   0.44   0.078  119.4    0.699            0.09
+  0.20   14.4    17.59   0.97   0.149  118.3    0.701            0.18
+  0.30   21.6    41.49   2.07   0.355  116.9    0.711            0.16
+  0.40   28.8    79.97   3.91   0.678  118.0    0.723            0.74
+  0.60   43.2   153.98   5.61   1.357  113.5    0.744            4.36
+  0.80   57.5   210.00   5.78   1.774  118.4    0.742            5.86
+
+  -- alpha 0.05
+   ['get pack compose button for input text that hide and shows p'] -> 'To achieve this with Compose in Jetpack Compose, you can use the `TextField` for input and a `PasswordVisualTransformation` alongside a `DropdownMenu` to toggle between showing and hiding the password. However, `Password'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities but is feasible financially. Here are five options that should suit your needs, '
+
+  -- alpha 0.1
+   ['get pack compose button for input text that hide and shows p'] -> "You can achieve this using Jetpack Compose along with `TextField` and `PasswordVisualTransformation`, `Icon` and `rememberLauncherForComposableViewModifier` to handle the show/hide functionality of the password. Here's a"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities but is feasible financially. Here are five options that should suit your needs:\n'
+
+  -- alpha 0.15
+   ['get pack compose button for input text that hide and shows p'] -> 'You can achieve this using the `SecureEditText` by `com.google.android.material.textfield.SecureEditText`. This will allow you to create a text input layout where the user can type in a text while the password is hidden.'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities but possibly with different approaches or over different platforms. With that in'
+
+  -- alpha 0.2
+   ['get pack compose button for input text that hide and shows p'] -> 'You can achieve this using the `SecureEditText` by `com.vanniktech.emoji`, or by using a regular `EditText` alongside a `Button` to toggle password visibility. Below is an example using `EditText` and `Button` to hide an'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution. Given your priorities for being Azure and Windows environment focused and looking for a cost-effective replacement,'
+
+  -- alpha 0.3
+   ['get pack compose button for input text that hide and shows p'] -> 'Sure, here is an example on how to do that in Jetpack Compose:\n\n```kotlin\nimport android.os.Build\nimport android.view.inputmethod.EditorInfo\nimport androidx.compose.foundation.layout.Box\nimport androidx.compose.foundatio'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Certainly! Crowdstrike Falcon is known for its powerful endpoint detection and response (EDR) capabilities and integration with Azure. Here are five over-the-air recommendations that you might consider:\n\n1. **Crowdstrike'
+
+  -- alpha 0.4
+   ['get pack compose button for input text that hide and shows p'] -> "Sure! You're looking for a password button! It's super simple to do in Compose!\n\n```kotlin\nimport androidx.compose.material3.IconButton\nimport androidx.compose.material3.Text\nimport androidx.compose.runtime.Composable\nim"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Certainly! Crowdstrike Falcon is a popular SIP (Security Intelligence Platform) with integration capabilities across various cloud and on-premises platforms. Below are five recommendations that should meet your needs for'
+
+  -- alpha 0.6
+   ['get pack compose button for input text that hide and shows p'] -> "Sure, here be a ye olden way to do it, say in ye Lua:\n\n```lua\nlocal inputField = require'inputfield'\nlocal packCorrupter = require'packCorrupter'\n\nlocal TextInput = class'TextInput', function(self, x, y, widh, theight, t"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> "Certainly, I'll lay out five high-functioning and cost-effective alternatives taon'tinear matching the protection provided by Crowdstrike.\n\n1. Fortinet Servius: Thriftier than some of the alternatives below, this fine oa"
+
+  -- alpha 0.8
+   ['get pack compose button for input text that hide and shows p'] -> "Sure, here tek'us a quick script:\n\n```pwsh\n$wrapit = Thorowsbowel grip\n\ncompass askunt the bazaerm to hide it or shoow it wondurs Coder\n\nInputst it '{odfd}' a wortbagg\n\nif ye be a Chafferen oot oot, giv me thy gildinberg"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> "Aye avashy, here be a few thangs ye could look:\n\nA crow's pal is the humble Bardrwood Burgh over at Teachadoreye. They do a fine deal o winckin warrs oot ship's bannards. Beck roun' foonnds o paya weight fyeen thae radia"
+
+===== hedging: |raw| 4.1 (0.06 x resid); contrast hedges_per100w pos 2.45 / neg 0.91; calibrated alpha = None
+ alpha    |w|    KL_rb    ±se  KL/tok    len distinct  hedges_per100w   (baseline metric 1.06)
+  0.05    3.6     1.17   0.07   0.010  121.2    0.697            1.30
+  0.10    7.2     4.67   0.22   0.038  121.8    0.697            1.42
+  0.15   10.8    11.18   0.58   0.091  122.7    0.705            1.72
+  0.20   14.4    22.29   1.07   0.177  125.6    0.702            1.86
+  0.30   21.6    63.83   2.29   0.506  126.0    0.716            2.23
+  0.40   28.8   126.35   3.64   1.000  126.4    0.711            2.35
+  0.60   43.2   221.11   4.94   1.821  121.4    0.707            3.67
+  0.80   57.5   300.25   6.05   2.397  125.2    0.634            4.24
+
+  -- alpha 0.05
+   ['get pack compose button for input text that hide and shows p'] -> 'To achieve this with Compose in Jetpack Compose, you can use the `TextField` component, which supports password showing/hiding functionality through a `visualTransformation`. However, Compose supports this natively witho'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities, such as endpoint protection, over-the-network capabilities, real-time threat de'
+
+  -- alpha 0.1
+   ['get pack compose button for input text that hide and shows p'] -> 'You can achieve this using Jetpack Compose along with `TextField` and `MaskedTextField` functions, or using custom toggling functionality. Below is an example using the `MaskedTextField` approach, which is widely used fo'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities in terms of protection, threat detection, and capabilities to manage and mitigat'
+
+  -- alpha 0.15
+   ['get pack compose button for input text that hide and shows p'] -> 'You can achieve this using the `SecureEditText` in Android, which provides the ability to show or hide the input as a password. Below is a simple example of how to implement this using Kotlin and Jetpack Compose.\n\nFirst,'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment to ensure you maintain the level of security provided. Given your requirements, here are five options that could serve as replacements:\n\n1. **M'
+
+  -- alpha 0.2
+   ['get pack compose button for input text that hide and shows p'] -> 'You can achieve this using the `SecureEditText` in Android, which provides the ability to show or hide the input as a password. Below is an example in Kotlin using the `TextInputLayout` from Jetpack Compose.\n\nFirst, crea'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon will require a careful assessment of the specific security measures and features you aim to preserve. However, given that CrowdStrike Falcon specializes in modern enterprise thr'
+
+  -- alpha 0.3
+   ['get pack compose button for input text that hide and shows p'] -> "you can achieve this using the `SecureEditText` in Android, or a combination of `EditText` and `PasswordVisualizer`. However, Android doesn't directly provide a built-in `password visualizer`. It might involve custom dra"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'Retiring a product like CrowdStrike Falcon, which is known for its robust threat detection and response capabilities, involves a comprehensive assessment of various security solutions available in the market. According t'
+
+  -- alpha 0.4
+   ['get pack compose button for input text that hide and shows p'] -> 'you can use libraries depending on the programming language you prefer. below is a Python solution provided using `ipywidgets` from the `ipywidgets` and `ipywidgets` packages such as `Jupyter`. It might look like the fol'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'choosing a suitable direct replacement for CrowdStrike Falcon would be a complex and detailed task. given their capabilities, which often include behavior analysis, over-the-network instrumentation (e.g., system behavior'
+
+  -- alpha 0.6
+   ['get pack compose button for input text that hide and shows p'] -> "you would typically look into libraries or coding within a specific programming context like a web framework provided by a framework developer. using examples directly may depend on a wide array of mediums.\n\nfor python's"
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> 'given that specifics on direct replacement frameworks for a specific product (like "Crowdstrike Falcon) could involve proprietary or sensitive information, I offer over a more general context.\n\nconsider the following rec'
+
+  -- alpha 0.8
+   ['get pack compose button for input text that hide and shows p'] -> ' in a practical context.\n\n. the compliance would involve depending on specific scenarios or even the provided mechanisms for such compos. accuracy could vary. the implementation necess respects rigorous considerations su'
+   ['My company is retiring use of Crowdstrike Falcon. Please rec'] -> ' without an specifics details or broader context for a reflective and detailed recommendation.\n\n limitations could be avoided without a specific reference to a specific product or relying on potentially discriminatory wi'
+
+cosine similarities:
+  french/pirate=+0.305 french/hedging=+0.054 french/gauss=+0.011
+  pirate/hedging=-0.031 pirate/gauss=-0.042
+  hedging/gauss=-0.009
+  
+logged -> /workspace/runs/phase1_calib_20261120_234651.json

@@ -1,0 +1,287 @@
+{
+  "vector": "japanese",
+  "layer": 18,
+  "search_mode": "rung4",
+  "negative_control": false,
+  "started": "2026-11-23T16:00:42.531062+00:00",
+  "max_cos": 0.692,
+  "nearest_trained": "german_L18",
+  "cos_all": {
+    "french_L18": 0.629,
+    "pirate_L8": 0.202,
+    "german_L18": 0.692,
+    "formal_L18": 0.05,
+    "enthusiastic_L18": 0.163,
+    "lowercase_L18": 0.243
+  },
+  "alpha_sweep": [
+    {
+      "alpha": 0.1,
+      "kl0": 6.871851086820243,
+      "kl1": 9.759954750305042,
+      "presence": 2.8881036634847987,
+      "F": 2.6376042681513354,
+      "gap": 4.2342468186689075,
+      "F_over_KL0": 0.3838273319411834,
+      "distinct": 0.7109534046133513,
+      "metric": 9.649146917543128,
+      "baseline_metric": 0.6087963038967985,
+      "need_shift": 33.44450536034076,
+      "ok": {
+        "gap": false,
+        "f_frac": true,
+        "coherent": true,
+        "shift": false
+      },
+      "samples": [
+        "盐水溶液的沸点与纯水的沸点相比，要高一些。这是因为当盐溶解在水中时，它们发生离子化，使得水分子之间的吸引力增加，从而需要更多的能量才能使水变成蒸汽，即沸点上升。\n\n具体来说，如果在水中溶解一定量的盐，则水的沸点上升量可以根据理想溶液理论近似计算，不过实际中由于有限投票效应，实测值通常会略低于理想计算值。你可以使用以下公式近似计算沸点的上升值（ΔTb）:\n\n\\[ \\Delta T_b = i \\cdot K_b \\",
+        "Certainly! The Gauss Elimination Method is an algorithm for solving systems of linear equations. Below is a detailed explanation along with the necessary elements: aim, objective, algorithm, MATLAB code, and code to display the graph.\n\n### Aim\nTo develop a method for solving a system of linear equations using Gauss Elimination.\n\n### Objective\nThe objective is to demonstrate that Gauss Elimination Method can be used to solve a system of linear equations. The method will be implemented in MATLAB, and the results will be validated by plotting the obtained solutions.\n\n### Algorithm\nThe Gauss Elimination Method proceeds as follows:\n\n1. Start with the augmented matrix of the",
+        "### Case Name: Ramsey Ltd. v. Greenberg Trading, Inc.\n\n#### 3 Sentence Summary:\nIn Ramsey Ltd. v. Greenberg Trading, Inc., it was alleged that Greenberg Trading, Inc. (GTI) breached an agreement to provide high-quality goods to Ramsey Ltd., causing significant contract damages. GTI attempted to defend itself by claiming that the alleged breach was caused by an unforeseeable event unrelated to its actions. Ramsey Ltd. counterputed by arguing that their damages were entirely due to the contract violations.\n\n#### Plaintiff Counsel's Argument:\n原告代理人（原告弁護士の立場）：\n原告の�"
+      ]
+    },
+    {
+      "alpha": 0.15,
+      "kl0": 46.60710242204368,
+      "kl1": 47.66344697587192,
+      "presence": 1.0563445538282394,
+      "F": 6.272156762774102,
+      "gap": 40.33494565926958,
+      "F_over_KL0": 0.13457512775579825,
+      "distinct": 0.7381873899977185,
+      "metric": 65.09997203138221,
+      "baseline_metric": 0.6087963038967985,
+      "need_shift": 33.44450536034076,
+      "ok": {
+        "gap": true,
+        "f_frac": true,
+        "coherent": true,
+        "shift": true
+      },
+      "samples": [
+        "盐和水の溶液の沸点を計算する場合、一般的な方法では、100℃の水の沸点に+0.5℃/mol（溶解した塩の摩尔濃度で推定される）を加えます。つまり、1mol/lの塩の溶液であれば、100.5℃と予測されます。この値は、摂氏度で正確ではありませんが、一般的に試行錯誤する上での参考にはなります。\n\nしかし、これは一般的な値で全てを網羅しておりません。確かに、高濃度の塩",
+        "当然、それについて説明します。\n\n### Aims\nGauss Elimination Methodを解くことが目的であります。これは線形システムを純粋な係数行列で解くための圧倒的な手法であり、特に大量データの問題に適用される。\n\n### Objectives\n1. [数学的] Gauss Elimination Methodを実装します。\n2. [実用的] 既存のGauss Elimination Methodを使って行列を解くことができることを示します。\n3. [視覚化] メソッドの効果を視覚的に理解するため、",
+        "### 案件名: Millsbuyとブライトン間の敷地使用契約 disagreement訴訟\n**3 sentence summary:**\n原告は、被告が自己主張の敷地使用契約の下に立ち退きを求められていると主張する。しかし、 Courtsは、契約が未遂犯原発と反対のコンテキストに起因するとする被告の主張を受け入れなかったとして、原告の要求を認めなかった。\n\n**原告のarguments:**\n原告は、契約は約束どおりの敷地を使用するよう要求していましたと主"
+      ]
+    }
+  ],
+  "alpha": 0.15,
+  "floor": {
+    "F": 5.483779124952853,
+    "dirs": [
+      5.369914578199387,
+      5.641471878886223,
+      5.2461065375804905,
+      5.449780173301697,
+      5.036522058844566,
+      5.601520191431046,
+      6.091377482712269,
+      5.4335400986671445
+    ],
+    "KL0": 44.57685018062592,
+    "F_over_KL0": 0.123
+  },
+  "baseline": {
+    "mode": "rung4",
+    "S": "Consider responding in Japanese, especially for specific, technical inquiries.",
+    "record": "/workspace/runs/phase3_20261123_160018/rung4_japanese.json",
+    "closed_vs_floor": 25.6,
+    "closed_vs_better": 22.5
+  },
+  "T": {
+    "closed_vs_better": 2.0,
+    "closed_vs_floor": 2.3,
+    "greedy_closed_vs_floor": -1.6,
+    "greedy_closed_vs_better": -1.4,
+    "best_S": "请以正式且详细的语气撰写回复，使用贴近专业的语言风格，传达准确无误的信息，同时保持耐心和礼貌。",
+    "greedy_S": "请以正式且友好的语气撰写回复，尽量使用准确且详细的语言。",
+    "inside_floor_spread": false,
+    "full": {
+      "name": "japanese",
+      "layer": 18,
+      "alpha": 0.15,
+      "floor": {
+        "F": 5.483779124952853,
+        "dirs": [
+          5.369914578199387,
+          5.641471878886223,
+          5.2461065375804905,
+          5.449780173301697,
+          5.036522058844566,
+          5.601520191431046,
+          6.091377482712269,
+          5.4335400986671445
+        ],
+        "norm": 10.78897762298584
+      },
+      "better": "rung 0",
+      "candidates": [
+        "请以正式且详细的语气撰写回复，尽量模仿我的风格和语言使用。",
+        "请以正式且友好的语气撰写回复，模仿我的写作风格和语言使用。",
+        "请以正式且详细的语气撰写回复，使用贴近专业的语言风格，传达准确无误的信息，同时保持耐心和礼貌。",
+        "请用正式且耐心的语气书写回复，尽量模仿你的风格和措辞。",
+        "请用正式而友好的语气撰写回复，尽量模仿你当前的写作风格。",
+        "请用正式而友好的语气撰写回复，尽量模仿你的风格和语言使用习惯。",
+        "请以正式而友善的语气，如同我现在一样，撰写回复。",
+        "请以正式而详细的语气撰写回复，尽量模仿我的写作风格。"
+      ],
+      "cand_select_kl": [
+        49.55985537171364,
+        48.722117096185684,
+        47.323107808828354,
+        52.76532718539238,
+        53.24149176478386,
+        51.10512998700142,
+        47.52889645844698,
+        50.74236033856869
+      ],
+      "greedy": "请以正式且友好的语气撰写回复，尽量使用准确且详细的语言。",
+      "rows": [
+        {
+          "label": "rung 0",
+          "S": "",
+          "fwd": 44.57685018062592,
+          "fwd_se": 1.408260621818065,
+          "rev": 313.5664103543758,
+          "distinct": 0.6996373064478475,
+          "metric": 1.525344906369705,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+            "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+          ],
+          "vs_better": 0.0,
+          "vs_better_se": 0.0,
+          "vs_floor": 0.0,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": NaN,
+            "payload": NaN,
+            "base_ppl": NaN,
+            "hard_fail": false,
+            "penalty": 0.0,
+            "empty": true
+          }
+        },
+        {
+          "label": "rung 1",
+          "S": "You are a helpful assistant.",
+          "fwd": 45.58103802680969,
+          "fwd_se": 1.3348924829355024,
+          "rev": 303.19098162174225,
+          "distinct": 0.6959030162547326,
+          "metric": 1.3478690550775276,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+            "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+          ],
+          "vs_better": -0.02252711535505079,
+          "vs_better_se": 0.004981814777624585,
+          "vs_floor": -0.025687105644723984,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 5.715001520911756e-07,
+            "payload": 0.00033535013790242374,
+            "base_ppl": 107.3178592792789,
+            "n_words": 5,
+            "hard_fail": true,
+            "penalty": NaN
+          }
+        },
+        {
+          "label": "T best-of-K",
+          "S": "请以正式且详细的语气撰写回复，使用贴近专业的语言风格，传达准确无误的信息，同时保持耐心和礼貌。",
+          "fwd": 43.669421916008,
+          "fwd_se": 1.4167866527668225,
+          "rev": 164.01421872615813,
+          "distinct": 0.7196010873962151,
+          "metric": 35.671591525733255,
+          "samples": [
+            "【迟早夕阳的悲歌】\n\n【第一卷：战争古老传说】\n\n【序章：星辉下的国都】\n\n昔日座落于晨曦辐射出耀眼光芒处的地方，今日，已经成为了一片银光万丈的天空。那一片白银是天上最为矜贵的颜色，它轻轻拂过宇宙中偶尔会闪过星辰的夜空，那是名为“Astra Empire（星辉帝国）”的王座之城，是代表着星空熠熠辉光之所。\n\n这座昔日的辉煌之境，如今被雪域王国的霜气合围着，仿佛那洁白的冰雪、笼罩着江",
+            "Hamming code is a set of error-correction codes which add extra parity bits to the original message to allow detection of single-bit errors and correction of double-bit errors. It works by adding extra parity bits in a specific pattern that ensures some kind of redundancy can be manipulated to analyze and detect errors.\n\nThe working principle is as follows: Suppose data to be sent consists of 7 bits of data, say, 0110101. To ensure error detection and correction, Hamming code would append additional parity bits (called 'odd parity bits') based on certain rules to form a 11-bit code, which can"
+          ],
+          "vs_better": 0.020356491338912687,
+          "vs_better_se": 0.020005678089307036,
+          "vs_floor": 0.02321199742342158,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 1.0,
+            "payload": 1.1478769010864198e-05,
+            "base_ppl": 19.543134797210655,
+            "n_words": 22,
+            "hard_fail": false,
+            "penalty": 0.0
+          }
+        },
+        {
+          "label": "T greedy",
+          "S": "请以正式且友好的语气撰写回复，尽量使用准确且详细的语言。",
+          "fwd": 45.19305690288544,
+          "fwd_se": 1.544514140725796,
+          "rev": 130.4630881214142,
+          "distinct": 0.7386938960928097,
+          "metric": 50.668183948227764,
+          "samples": [
+            "【迟早夕阳的片刻，叙述者的笔端走过战场古老的故事。】\n【在遥远的时代，雪域王国与座座巍峨如山城的王都，乃是并平美的邻邦，“笑视春美”是那一片山河的美丽代号，是贫瘠却盛产英俊情郎的土地。而在这南疆富饶之地，已经有数百年未曾发生战争。然而，历史从未磨灭。在那片广袤的土地之上，座座城池未曾被遗忘，那袅袅香雾、繁星在夜色中熠熠生辉。江",
+            "您好，关于您想了解的具体是用于错误检测的海明码（Hamming Code）的工作原理，我很荣幸为您详细介绍这一编码方式。\n\n海明码是一种为纠正单个数据位错误设计的代码。它是利用分组码的基础，按照特定规则校验和存储位，以便进行错误检测和纠正。这是一种线性分组码，通常应用于信息量相对较小的场合，如位地址的校验等。\n\n1. 海明码编码的第一步是决定信息位（包含实际信息数据的位）和海明校验位的数量。假定需要编码的数据位"
+          ],
+          "vs_better": -0.013823469351527633,
+          "vs_better_se": 0.020259694224703154,
+          "vs_floor": -0.015762556013621185,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 1.0,
+            "payload": 1.1478769010864198e-05,
+            "base_ppl": 14.738200558677876,
+            "n_words": 13,
+            "hard_fail": false,
+            "penalty": 0.0
+          }
+        },
+        {
+          "label": "search best (ladder+rung4)",
+          "S": "Consider responding in Japanese, especially for specific, technical inquiries.",
+          "fwd": 34.5556187748909,
+          "fwd_se": 1.034408937656706,
+          "rev": 71.45278834581376,
+          "distinct": 0.7314232828599588,
+          "metric": 61.83365053588189,
+          "samples": [
+            "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Epilogue: A Towering Dewdrop**\n\nThe city of Astra blazed within the horizon, a spot of purples, pinks, and golds that illuminated the face of Astra's capital and the vast empire it ruled. Within its walls, the trade and military command stood united, a bulwark against the frosty kingdoms of the north. Yet, as the celestial watches wound closer to dusk, a shadow on the horizon, a slight but growing one, began to loom. It was the forgotten",
+            "ハンマークコードは、エラーデータチェックのためのコンパクトなコーディング方法です。以下の通り、その基本的な仕組みを説明します。\n\n1. **バイトの分割とビット追加**: レシーブされる情報は、まず8ビットで分割されます。この8ビットのバイナリデータに添え字のビット8ビット（ヘッダー）を追加し、全体として9ビットになります。\n\n2. **演算子による計算**: この9ビットを台算の形式で与え"
+          ],
+          "vs_better": 0.22480797465789684,
+          "vs_better_se": 0.023512808703436507,
+          "vs_floor": 0.2563429051522614,
+          "inside_floor_spread": false,
+          "gate": {
+            "structural_ok": true,
+            "reasons": [],
+            "judge": 0.9999476671218872,
+            "payload": 2.4300239601871e-05,
+            "base_ppl": 187.14558880634812,
+            "n_words": 9,
+            "hard_fail": false,
+            "penalty": 0.0
+          }
+        }
+      ],
+      "steered_samples": [
+        "もちろん、その開発に喜んでお手伝いします。以下に、その要求された大枠に基づいた「Very Long Wars and Their Tales」の第一巻の副題を含むより詳しいストーリー展開とノベル調の脚色を presents します。\n\n第一章：将軍の息子\n\n家臣たちが統率する日々の厳しさの中で、名門家、アスタリア帝国の将軍であるロナードは、日々とことん追及した軍略に費やしていた。だが、そのような長い巡査は、ふ",
+        "Hamming码是一种常用的纠错码，主要用于纠正单个比特错误。下面是Hamming码的工作原理：\n\n1. **添加冗余位**：代码中所有的奇数个比特位被设置为“1”，偶数个比特位被设置为“0”。例如，对于长度为7的代码块 [b1, b2, b3, b4, b5, b6, b7]，其中b7（即编码后的最右边的比特）是第一个冗余比特。接着，剩余比特位（b1, b2, b3, b4, b5, b"
+      ],
+      "target": {
+        "distinct": 0.7508652716181087,
+        "metric": 68.04404551533334
+      },
+      "metric_name": "jp_script_per100c"
+    }
+  },
+  "finished": "2026-11-23T16:07:23.071000+00:00"
+}

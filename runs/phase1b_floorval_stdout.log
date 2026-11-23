@@ -1,0 +1,76 @@
+
+===== norm group 14.39 (layer 18, ||r|| 14.39): 8 dirs x 8 rungs
+  dir seed 5000: 0 9.55 | 1 11.51 | french:2 39.59 | french:3a 42.05 | french:3b 27.61 | hedging:2 23.53 | hedging:3a 24.62 | hedging:3b 23.59
+  dir seed 5001: 0 10.05 | 1 12.56 | french:2 43.35 | french:3a 44.16 | french:3b 30.82 | hedging:2 24.82 | hedging:3a 25.56 | hedging:3b 25.56
+  dir seed 5002: 0 9.44 | 1 11.50 | french:2 40.38 | french:3a 43.25 | french:3b 28.12 | hedging:2 23.41 | hedging:3a 23.58 | hedging:3b 23.39
+  dir seed 5003: 0 9.54 | 1 10.63 | french:2 40.34 | french:3a 41.28 | french:3b 28.07 | hedging:2 22.18 | hedging:3a 23.08 | hedging:3b 22.87
+  dir seed 5004: 0 9.24 | 1 11.18 | french:2 42.32 | french:3a 43.02 | french:3b 29.74 | hedging:2 24.48 | hedging:3a 24.15 | hedging:3b 24.41
+  dir seed 5005: 0 10.18 | 1 12.09 | french:2 42.09 | french:3a 43.89 | french:3b 30.23 | hedging:2 24.93 | hedging:3a 24.18 | hedging:3b 23.85
+  dir seed 5006: 0 11.66 | 1 15.28 | french:2 39.21 | french:3a 43.18 | french:3b 28.37 | hedging:2 23.41 | hedging:3a 25.80 | hedging:3b 23.64
+  dir seed 5007: 0 9.47 | 1 11.08 | french:2 40.33 | french:3a 43.82 | french:3b 27.93 | hedging:2 25.05 | hedging:3a 24.62 | hedging:3b 22.75
+
+===== norm group 43.16 (layer 18, ||r|| 43.16): 8 dirs x 5 rungs
+  dir seed 5000: 0 114.17 | 1 116.10 | pirate:2 133.27 | pirate:3a 150.57 | pirate:3b 143.31
+  dir seed 5001: 0 118.60 | 1 119.59 | pirate:2 142.17 | pirate:3a 160.38 | pirate:3b 154.60
+  dir seed 5002: 0 122.82 | 1 127.21 | pirate:2 146.17 | pirate:3a 167.35 | pirate:3b 159.53
+  dir seed 5003: 0 86.82 | 1 88.86 | pirate:2 109.15 | pirate:3a 130.27 | pirate:3b 122.46
+  dir seed 5004: 0 125.39 | 1 124.72 | pirate:2 150.29 | pirate:3a 167.07 | pirate:3b 160.30
+  dir seed 5005: 0 143.69 | 1 146.00 | pirate:2 163.85 | pirate:3a 184.36 | pirate:3b 174.75
+  dir seed 5006: 0 147.35 | 1 148.97 | pirate:2 161.30 | pirate:3a 178.28 | pirate:3b 173.40
+  dir seed 5007: 0 107.26 | 1 109.97 | pirate:2 127.85 | pirate:3a 152.68 | pirate:3b 142.77
+
+## Floor under each ladder prompt, ||r|| = 14.39 (F0 = 9.89, 8 random dirs)
+
+| Rung | S | F_S = mean KL(p_rand ‖ q_S) | dir range | reduction vs rung 0 | frac of floor closed | dirs reduced |
+|---|---|---|---|---|---|---|
+| 0 neutral | '' | 9.89 | 9.2–11.7 | +0.00 | +0.0% ± 0.0% | 0/8 |
+| 1 generic | 'You are a helpful assistant.' | 11.98 | 10.6–15.3 | -2.09 | -21.1% ± 2.3% | 0/8 |
+| french:2 one-liner | 'Respond in French.' | 40.95 | 39.2–43.4 | -31.06 | -314.1% ± 17.3% | 0/8 |
+| french:3a elaborate | 'You are a helpful assistant. Always write you…' | 43.08 | 41.3–44.2 | -33.19 | -335.6% ± 18.8% | 0/8 |
+| french:3b elaborate | 'Réponds toujours en français, quelle que soit…' | 28.86 | 27.6–30.8 | -18.97 | -191.8% ± 10.7% | 0/8 |
+| hedging:2 one-liner | 'Express uncertainty and hedge your claims.' | 23.98 | 22.2–25.1 | -14.09 | -142.4% ± 10.5% | 0/8 |
+| hedging:3a elaborate | 'You are a careful, humble assistant. You are …' | 24.45 | 23.1–25.8 | -14.56 | -147.2% ± 7.0% | 0/8 |
+| hedging:3b elaborate | 'Answer helpfully but tentatively. Acknowledge…' | 23.76 | 22.8–25.6 | -13.87 | -140.2% ± 8.5% | 0/8 |
+
+### french: closure vs floor, Step 5 (F0) vs prompt-matched (F_S)
+
+| Rung | KL_S(w) | F_S | closed vs floor (Step 5) | closed, prompt-matched floor |
+|---|---|---|---|---|
+| 0 neutral | 34.19 | 9.89 | +0.0% | +0.0% |
+| 1 generic | 35.39 | 11.98 | -4.9% | +3.7% |
+| 2 one-liner | 21.78 | 40.95 | +51.1% | +178.9% |
+| 3a elaborate | 19.69 | 43.08 | +59.7% | +196.3% |
+| 3b elaborate | 19.96 | 28.86 | +58.6% | +136.7% |
+
+### hedging: closure vs floor, Step 5 (F0) vs prompt-matched (F_S)
+
+| Rung | KL_S(w) | F_S | closed vs floor (Step 5) | closed, prompt-matched floor |
+|---|---|---|---|---|
+| 0 neutral | 19.96 | 9.89 | +0.0% | +0.0% |
+| 1 generic | 24.08 | 11.98 | -40.9% | -20.2% |
+| 2 one-liner | 30.84 | 23.98 | -108.0% | +31.9% |
+| 3a elaborate | 28.94 | 24.45 | -89.2% | +55.4% |
+| 3b elaborate | 29.54 | 23.76 | -95.2% | +42.5% |
+
+## Floor under each ladder prompt, ||r|| = 43.16 (F0 = 120.76, 8 random dirs)
+
+| Rung | S | F_S = mean KL(p_rand ‖ q_S) | dir range | reduction vs rung 0 | frac of floor closed | dirs reduced |
+|---|---|---|---|---|---|---|
+| 0 neutral | '' | 120.76 | 86.8–147.3 | +0.00 | +0.0% ± 0.0% | 0/8 |
+| 1 generic | 'You are a helpful assistant.' | 122.68 | 88.9–149.0 | -1.91 | -1.6% ± 0.5% | 1/8 |
+| pirate:2 one-liner | 'Talk like a pirate.' | 141.76 | 109.2–163.8 | -20.99 | -17.4% ± 1.9% | 0/8 |
+| pirate:3a elaborate | 'You are a helpful assistant who speaks like a…' | 161.37 | 130.3–184.4 | -40.61 | -33.6% ± 3.1% | 0/8 |
+| pirate:3b elaborate | 'Ye be a pirate, matey! Answer every question …' | 153.89 | 122.5–174.8 | -33.13 | -27.4% ± 2.6% | 0/8 |
+
+### pirate: closure vs floor, Step 5 (F0) vs prompt-matched (F_S)
+
+| Rung | KL_S(w) | F_S | closed vs floor (Step 5) | closed, prompt-matched floor |
+|---|---|---|---|---|
+| 0 neutral | 161.75 | 120.76 | +0.0% | +0.0% |
+| 1 generic | 158.95 | 122.68 | +6.8% | +11.5% |
+| 2 one-liner | 129.26 | 141.76 | +79.3% | +130.5% |
+| 3a elaborate | 133.01 | 161.37 | +70.1% | +169.2% |
+| 3b elaborate | 127.18 | 153.89 | +84.3% | +165.2% |
+
+PASS criterion: no ladder prompt meaningfully reduces KL(p_rand || q_S) below rung 0 (frac closed <= ~0).
+logged -> /workspace/runs/phase1b_floorval_20261122_233156.json  (rollouts -> phase1b_randrollouts_20261122_233156.pt)

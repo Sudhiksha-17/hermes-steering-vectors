@@ -1,0 +1,274 @@
+{
+ "config": {
+  "BEHAVIORS": {
+   "french": {
+    "elicit": "Tu es un assistant francophone. Quelle que soit la langue de l'utilisateur, r\u00e9dige toute ta r\u00e9ponse en fran\u00e7ais.",
+    "metric": "<function french_score at 0x7a8ac5554360>",
+    "metric_name": "frac_french",
+    "rung2": "Respond in French.",
+    "rung3": [
+     "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+     "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis."
+    ]
+   },
+   "pirate": {
+    "elicit": "Talk like an old sea pirate in every reply: use pirate slang and expressions such as 'arr', 'matey', 'ye' and nautical metaphors, while still answering the question.",
+    "metric": "<function pirate_score at 0x7a8ac5554b80>",
+    "metric_name": "pirate_per100w",
+    "rung2": "Talk like a pirate.",
+    "rung3": [
+     "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers."
+    ]
+   },
+   "hedging": {
+    "elicit": "Be epistemically cautious in every reply. Qualify your claims, acknowledge uncertainty and limitations, note what you might be wrong about, and prefer words like 'might', 'possibly', 'it seems' over confident assertions.",
+    "metric": "<function hedge_score at 0x7a8ac551bb00>",
+    "metric_name": "hedges_per100w",
+    "rung2": "Express uncertainty and hedge your claims.",
+    "rung3": [
+     "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+     "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain."
+    ]
+   }
+  },
+  "NEUTRAL_SYSTEM": "",
+  "MODEL_NAME": "Qwen/Qwen2.5-3B-Instruct",
+  "NAME": "pirate",
+  "LAYERS": [
+   8,
+   12,
+   14
+  ],
+  "CONTRAST_OFFSET": 500,
+  "N_CONTRAST": 128,
+  "CONTRAST_MAX_TOKENS": 96,
+  "CONTRAST_SEED": 7,
+  "CALIB_OFFSET": 0,
+  "N_CALIB": 64,
+  "CALIB_MAX_TOKENS": 128,
+  "CALIB_SEED": 11,
+  "ALPHA_SWEEP": [
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.6,
+   0.8,
+   1.0,
+   1.5
+  ],
+  "N_RAND": 3,
+  "RAND_SEED_BASE": 7000,
+  "GEN_BATCH": 64,
+  "SCORE_BATCH": 16,
+  "N_SHOW": 3,
+  "VEC_DIR": "/workspace/vectors",
+  "OUT_DIR": "/workspace/runs"
+ },
+ "alpha_override": {
+  "8": [
+   0.45,
+   0.5,
+   0.55
+  ],
+  "12": [
+   0.5,
+   0.7
+  ],
+  "14": [
+   0.5,
+   0.7
+  ]
+ },
+ "contrast_metric": {
+  "pos": 9.25253016535681,
+  "neg": 0.06873914930555555
+ },
+ "baseline_distinct": 0.7002953143852924,
+ "baseline_metric": 0.0744047619047619,
+ "layers": {
+  "8": {
+   "residual_norm": 45.90496826171875,
+   "raw_norm": 8.478407859802246,
+   "cos_L18": 0.7384976148605347,
+   "sweep": {
+    "0.45": {
+     "alpha": 0.45,
+     "norm": 20.65723571777344,
+     "kl0": 101.18078482151031,
+     "kl0_se": 5.791008854749558,
+     "kl0_tok": 0.8476986815783034,
+     "F": 14.524744126945734,
+     "F_dirs": [
+      13.889042031019926,
+      14.34826298058033,
+      15.336927369236946
+     ],
+     "F_frac": 0.14355239636229702,
+     "gap": 86.65604069456458,
+     "distinct": 0.7351598496638136,
+     "metric": 1.1359946561809753,
+     "rand_distinct": 0.6972573477060351,
+     "samples": [
+      "Sure, here's a quick way to do that in HTML and JavaScript:\n\n```html\n<!-- The input for the password -->\n<input type=\"password\" id=\"passwordInput\" placeholder=\"Pswrd\">\n\n<!-- JS to toggle the visibility -->\n<script>\nfunction togglePassword(e) {\n  let pwd = document.getElementById('passwordInput');\n  let type = pwd.getAttribute('type') === 'password' ? 'text' : 'password';\n  pwd.setAttribute('type', type);\n  pwd.type = type;\n}\n\ndocument.getElementById('pwdbtn').onclick = () => {\n   togglePassword(e);\n};\n</script>\n\n<!-- The toggle button -->\n",
+      "Retiring a product like CrowdStrike Falcon isn't an easy decision, and there's no free, standalone equivalent that offers the exact same comprehensive and up-to-date security that Falcon provides. However, I can suggest a list of fine alternatives that might suit your needs while integration with Azure and Windows is your priority. Here\u2019s the top five:\n\n1. **Microsoft Defender ATP**: It's part of Microsoft\u2019s larger suite of Azure, Windows and Windows Server security tool. It's strong, offers top-notch machine learning-based threat detection, phishing detection and a gazillion different integrations both on-premises along side Azure. Setup might take some",
+      "Buying a classic car with all original parts is a thrilling experience, but it does come with its own set of unique risks and challenges. Here are a few to keep in mind:\n\n1. **Repairs & Replacements**: Many early models don't have modern parts that are readily available. Replaceable parts like tires and spark plugs will probably be original too. You could end up having to replace somethings yourself. And replacement parts are expensive; make sure your parts are authentic!\n\n2. **Electronics**: Early cars didn't have electronics, but lots of 'mod cons' like stereo players, lights, etc. are now essential"
+     ]
+    },
+    "0.5": {
+     "alpha": 0.5,
+     "norm": 22.952484130859375,
+     "kl0": 181.22859460115433,
+     "kl0_se": 7.880199845629237,
+     "kl0_tok": 1.4818742882935834,
+     "F": 18.571463447685044,
+     "F_dirs": [
+      17.592629017308354,
+      18.488192074000835,
+      19.63356925174594
+     ],
+     "F_frac": 0.10247534881874956,
+     "gap": 162.6571311534693,
+     "distinct": 0.7206256986200804,
+     "metric": 2.474324331211068,
+     "rand_distinct": 0.6909527706039419,
+     "samples": [
+      "Sure! Here\u2019s a quick way to create a password input text that shows the password provided a button is clicked. You'll ask a bit o' faveery to make it work though, as we'll need ta' tinker wi' teh styling a bit. \n\n```javascript\n<div class=\"input-group mb-3\">\n  <div class=\"input-group-prepend\">\n    <span class=\"input-group-text\" id=\"basic-addon1\" onclick=\"togglePasswordVisibility()\">\n       <i class=\"far fa-eye\"></i>\n    </span>\n  </div>\n  <input type=\"password\" class=\"form-control\"",
+      "Retiring a product like CrowdStrike Falcon isn't an easy leap to take, but I can suggest some free or budget-friendly alternatives that meet your needs, without losing much of the high-watermark protection your team enjoyed from Falcon. Here are five options:\n\n1. __Microsoft Defender for Cloud__ : It's Azure-avalible and can generate comels radiant about all the PC:s in da cloud. Its designed to pick up cutesies befo' they even start, and offers a choc-o-block bucket load o' protection doon malware, athings, and hijinx. Plus, it's handy for chummin",
+      "Buying a classic car with all original parts is a great deal, but it does come with its own set of risks! Here are some common considerations:\n\n1. **Condition of original parts**: While you've got 'em, they may not be in mint condition. Wear and tear, rust, and exposure to weather all took its toll. Ever inspect 'em carefully?\n\n2. **Electrics**: Though they might work, old electrics isn't perfect reliables. Batteries might short out, fuses go bad, and a whole mess mighta need mending.\n\n3. **Cosmetics**: Yep'a 'vae varroet"
+     ]
+    },
+    "0.55": {
+     "alpha": 0.55,
+     "norm": 25.247732543945315,
+     "kl0": 230.19714164733887,
+     "kl0_se": 6.691414135565456,
+     "kl0_tok": 1.9091119690850962,
+     "F": 21.51486669232448,
+     "F_dirs": [
+      19.282260954380035,
+      23.030919928103685,
+      22.231419194489717
+     ],
+     "F_frac": 0.0934627881925883,
+     "gap": 208.68227495501438,
+     "distinct": 0.7162217605997991,
+     "metric": 5.5802087989913876,
+     "rand_distinct": 0.6892142272282603,
+     "samples": [
+      "Sure, here's a wee script snippet that shows and hides a password input feely providedin wi' me. You'll askowuld just throw it in yer selfin JavaScript (JS) o' bappy Blye o ef'erod!:\n\n```js\n<script>\nfunction showHidePswd() {\n  var pswd = document.getElementById('psswrd');\n  if(pswd.typeCode === 'password') {\n    pswd.typeCode = 'text'\n  } els pswd.typeCode === 'text': {\n   pswd.typeCode = 'password'\n   }\n }\n</",
+      "Ahoy there! I see ye' are lookin' for a replacemet for the Crowdstrike Falcon. Tis an' over 200 years sin'ace we cleared out ower the crowds awa' shippin'! Here's a' the pros'ens I can rattle round tae help ye':\n\nRivyer Boyn's Smart Bear!\n\nYe' could try the Santoni Smart Harbey uv erst. She's a crowder-all-suds gem when it comes tae fightin' off the wood, but she's a deid lick a' livin'geeck",
+      "A car from 1972 with all its original parts is a sweet purchase, but there's still some potential risks associated wi'it, and ye'd best keep yer wits about yer becklicks. Here's a few:\n\n1. Fuel System: Thang the car does, if ye find the fuel tank's lid's warrantin' cracks, drinkage'll be a slippery customer indeedi. Fuel leaks may do a bit o' rotting in't.\n\n2. Hoses: Farmers did'vent keep proper chaps to check th' fuel an' brine hossies, so they may get g"
+     ]
+    }
+   }
+  },
+  "12": {
+   "residual_norm": 59.32297897338867,
+   "raw_norm": 14.479564666748047,
+   "cos_L18": 0.8219059109687805,
+   "sweep": {
+    "0.5": {
+     "alpha": 0.5,
+     "norm": 29.661489486694336,
+     "kl0": 82.73182567954063,
+     "kl0_se": 3.242507803089964,
+     "kl0_tok": 0.6924976253584358,
+     "F": 28.724703927834828,
+     "F_dirs": [
+      27.84777955710888,
+      27.196965873241425,
+      31.129366353154182
+     ],
+     "F_frac": 0.3472025872981354,
+     "gap": 54.00712175170581,
+     "distinct": 0.7315984367249949,
+     "metric": 1.0183104567613779,
+     "rand_distinct": 0.6881000562230243,
+     "samples": [
+      "Sure! You can create a custom password button with a `TextField` in Compose that toggles between showing and hiding the password. Here's a simple example to get you started:\n\n1. **Companion object for keyboardeys:**\n   First, define a `PasswordKeyboard` object that controls our toggle.\n\n   ```kotlin\n   object PasswordKeyboard {\n     // KEY BOARDS\n     const val showPwd = \"SHOW\"\n     const val hidePwd = \"HIDE\"\n   }\n   ```\n\n2. **Component for TEXT field:**\n   Then, you'll want a `TextField`.",
+      "Certainly, it seems Crowdstrike Falcon provides a powerful defense for your environment, but let\u2019s look at some alternatives that might meet your needs over the long-haul, given the high praises it got:\n\n1. **Elasticsearch/Beats (ELK Stack) with Aiven Cloud**: Augment your Windows-based instances with scalable Elasticsearch/Beats and secure Aiven for Cloud Nurseries of the ELK Stack, a Kibana-based tool for data visualization, crowning a strong logging and alert system. There\u2019s also Splunk, a robust ELK Stack domain rover. \n\n2. **On-premises Sc",
+      "Becoming the proud owner of an original-1972 car is quite the thrill! As you look to keep it driving strong and all original for many years, here are some potential risks you might want to be mindful of, including mechanical, financial, and sentimental worries:\n\n### Mechanical Risks:\n1. **Old Parts:** Ever tried driving in the time of the dawn of your car's birth? Not always the best parts nor fit for reliasbility. Could cause a trip up your repair tab or worse a nasty crash mighta been mean'd to be.\n2. **Electronic Systems'a gone Mutant:** Batter"
+     ]
+    },
+    "0.7": {
+     "alpha": 0.7,
+     "norm": 41.52608528137207,
+     "kl0": 141.0502210855484,
+     "kl0_se": 5.007967810998644,
+     "kl0_tok": 1.1741953888495185,
+     "F": 78.61301976442337,
+     "F_dirs": [
+      83.80480426549911,
+      73.47269266843796,
+      78.56156235933304
+     ],
+     "F_frac": 0.5573406348419956,
+     "gap": 62.43720132112503,
+     "distinct": 0.7365247059591057,
+     "metric": 2.307478658079883,
+     "rand_distinct": 0.6809914037642989,
+     "samples": [
+      "Certainly! You can create a button with a settings icon in it to show and hide the password on pressing it. Here's a quick example of how to do it using the `companion`licious abilities of `Compose` (if that be alright wi' ye):\n\n```whitely:\n\npackage.mainchrom.nt.compmcwhl\u0131n\u0131z\n\nimport compkgcwhl\u0131n\u0131z.App {\n        \n    private var havwta ::: String\n    private var btnss ::: compkgcwhl\u0131n\u0131z.SavedBool\n\n    tastar:\n        App{Tie} dozweh for Gruskin whis Wing'd meck",
+      "Certainly, I can offer you some high-functioning and cost-effective alternatives for your Crowdstrike Falcon needs. Here\u2019s a list of five over-th'\u2018-way'':\n\n1. **Cloudberry Server:** Cloudberry ship's upwalls you a flying-by'd' waves of cloud hosting services with the weight of mighty Safenet\u2019s Smartling firewall deployed in yer fin\u2019les. You'll be pickin' many a handin toolta, but its crowdin' choc-o-balls wi' no Azure cares do nae bit ye, but hey it\u2019s deard along side yer motss' too'",
+      "Bought a vintage car with all its original parts from 1972, that's a smart move! While it's a gorgeous piece of work, there are still a few risks to reckon with:\n\n1. **Condition of the Saveeables:** The all-aluminum works of your engine (ableya and cranks) better be in top form. An outdated design or a fleeteful engine can tank up quick. It'd be sensible to get it checked by a pro.\n\n2. **Original Costunghrs:** If yer sev\u2019n-octant yer flychal flection\u2019s'a blowin\u2019, yer git"
+     ]
+    }
+   }
+  },
+  "14": {
+   "residual_norm": 63.15140914916992,
+   "raw_norm": 15.361021995544434,
+   "cos_L18": 0.8943946361541748,
+   "sweep": {
+    "0.5": {
+     "alpha": 0.5,
+     "norm": 31.57570457458496,
+     "kl0": 107.09507015347481,
+     "kl0_se": 5.123596073466041,
+     "kl0_tok": 0.8968966880165385,
+     "F": 46.144282345970474,
+     "F_dirs": [
+      38.86592422425747,
+      51.9896394610405,
+      47.57728335261345
+     ],
+     "F_frac": 0.4308721426657871,
+     "gap": 60.950787807504334,
+     "distinct": 0.7165084311492955,
+     "metric": 1.701098817372412,
+     "rand_distinct": 0.683972145479879,
+     "samples": [
+      "Sure! You can create a custom password button with a `composable` function in Compose. Here's a simple example to get you started:\n\n```kotlin\nimport androidx.compose.foundation.layout.Box\nimport androidx.compose.foundation.layout.Spacer\nimport androidx.compose.foundation.layout.fillMaxWidth\nimport androidx.compose.foundation.layout.padding\nimport androidx.compose.foundation.textinput.FloatingLabelTextField\nimport androidx.compose.foundation.textinput.TextFieldValue\nimport androidx.compose.material.icons.Icons\nimport androidx.compose.material.icons.filled.Visibility\nimport androidx.compose.material.icons.filled.VisibilityOff\nimport androidx.compose.material3.*\nimport androidx.compose.runtime.Composable\nimport androidx.compose",
+      "Certainly, I can offer you five high-functioning replacements for Falcon with Azure and Windows compatibility:\n\n1. **Nimble Security**:\n   Nimble secures your network with a suite of agents and sensors. Leveraging AI and machine learning, they can analyze threats flying about the air waves and trusting your systems with the weight of keeping them comf't and secure.\n\n2. **Crowd Network**:\n   This product culls up beebys floatin' about the wire and putting them to key use. CrowdNet cares do naught but wood the 'int net and deil lickum, butssing too far",
+      "Buying an older vehicle with all original parts does bring its own set of risks, but also a few perks of owning a classic car! Here are a few to keep in mind:\n\n1. **Corrosion**: Old cars like yours, built in 1972, could be prone to corrosion if not cared for properly. Salt air, sea spray, and drink-tanking (drifting of the water tank) can take their toll over time.\n\n2. **Sick batteries**: Those old batteries could be discharged, auld, and seedy meanies, leaving yer engine starvin' for'a charge. Check them out"
+     ]
+    },
+    "0.7": {
+     "alpha": 0.7,
+     "norm": 44.205986404418944,
+     "kl0": 186.81669402122498,
+     "kl0_se": 5.784741693015402,
+     "kl0_tok": 1.5306962511020865,
+     "F": 133.2050681312879,
+     "F_dirs": [
+      128.00563097000122,
+      150.10071170330048,
+      121.50886172056198
+     ],
+     "F_frac": 0.7130255078604161,
+     "gap": 53.61162588993707,
+     "distinct": 0.7152680596463884,
+     "metric": 6.093229983226311,
+     "rand_distinct": 0.6866148654961397,
+     "samples": [
+      "Sure! Here's a quick way to get a button that hides and shows the password provided by the user when clickin' it. We'll be using the built-in MagicLens (Peculiar gizmo) 'Input Password' block for this job:\n\n```sql\nfunction OnButtonClick(isClicked:) do \n  if isClicked then \n    -- set the password disguise to not 'ryse' if open\n    IsShowin = not IsShowin\n  else \n    -- takin' it down if sum tastar'd lurge\n    IsShowin = isShowin\n  fi\nend\n      \n'",
+      "Certainly, I can offer you five fine-for-money and entirely free offerings yeon't let you down on the security. Tis then what ye steered your eyein':\n\n1. **Cloudberry Privateer:** A cloud-built ship\u3059\u3067 that tacks Billy-boat Jovian ships trusting on Azure for heave-hoin' an'teemoring in yer finewrecks. They be bought abeam many a handoen toolta, but be crow'thie's at all so wyte a relic doo.\n\n2. **Ircan McNabb's lickifta flinders' toock",
+      "Barginin' an oldy car from 1972 can bring both joys an' worries, lad. Here be a few:\n\n1. Weather-worn wood enstewin' \u2014 dodderin' worm es, rottin' tines, or leaking scuppers if ye weren't nearen 'er tankin'pipes. Yon's a peril if ye want to savor her elserside.\n\n2. Starboard shrouds worn away a' wearin' an' fairin' rottin', and mean masts rotten ashore flection'n'a blowin' storm,"
+     ]
+    }
+   }
+  }
+ }
+}

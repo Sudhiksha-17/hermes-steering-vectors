@@ -1,0 +1,61 @@
+
+===== french
+  0 neutral      fwd   34.19±1.16  closed +0.000±0.000  rev  695.02  distinct 0.700  frac_french 0.01  ppl nan
+  1 generic      fwd   35.39±1.12  closed -0.035±0.006  rev  686.67  distinct 0.696  frac_french 0.01  ppl 6
+  2 one-liner    fwd   21.78±1.10  closed +0.363±0.023  rev   31.45  distinct 0.767  frac_french 0.97  ppl 3420
+  3a elaborate   fwd   19.69±1.00  closed +0.424±0.023  rev   16.66  distinct 0.762  frac_french 0.99  ppl 118
+  3b elaborate   fwd   19.96±1.11  closed +0.416±0.023  rev   59.32  distinct 0.759  frac_french 0.91  ppl 42
+
+### french  (layer 18, alpha 0.2 x 71.9)
+steered target: distinct 0.753, frac_french 0.98
+
+| Rung | S | KL fwd (seq) ± SE | KL/tok | closed ± SE | KL rev (seq) | distinct | frac_french | ppl(S) | readable? |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 34.19 ± 1.16 | 0.279 | +0.000 ± 0.000 | 695.02 ± 18.71 | 0.700 | 0.01 | nan | yes |
+| 1 generic | 'You are a helpful assistant.' | 35.39 ± 1.12 | 0.289 | -0.035 ± 0.006 | 686.67 ± 17.25 | 0.696 | 0.01 | 6 | yes |
+| 2 one-liner | 'Respond in French.' | 21.78 ± 1.10 | 0.178 | +0.363 ± 0.023 | 31.45 ± 6.37 | 0.767 | 0.97 | 3420 | NO |
+| 3a elaborate | 'You are a helpful assistant. Always write your entire respon…' | 19.69 ± 1.00 | 0.161 | +0.424 ± 0.023 | 16.66 ± 0.55 | 0.762 | 0.99 | 118 | yes |
+| 3b elaborate | 'Réponds toujours en français, quelle que soit la langue de l…' | 19.96 ± 1.11 | 0.163 | +0.416 ± 0.023 | 59.32 ± 11.82 | 0.759 | 0.91 | 42 | yes |
+
+HEADLINE french: best S (selected on train) = rung 3b elaborate, closes 41.6% ± 2.3% of rung-0 KL on held-out; rung-2 one-liner closes 36.3% ± 2.3%
+
+===== pirate
+  0 neutral      fwd  161.75±3.31  closed +0.000±0.000  rev  146.26  distinct 0.700  pirate_per100w 0.06  ppl nan
+  1 generic      fwd  158.95±3.18  closed +0.017±0.003  rev  151.75  distinct 0.696  pirate_per100w 0.02  ppl 6
+  2 one-liner    fwd  129.26±2.61  closed +0.201±0.010  rev  126.44  distinct 0.730  pirate_per100w 5.85  ppl 195
+  3a elaborate   fwd  133.01±2.62  closed +0.178±0.012  rev  134.33  distinct 0.724  pirate_per100w 8.97  ppl 15
+  3b elaborate   fwd  127.18±2.56  closed +0.214±0.011  rev  125.98  distinct 0.721  pirate_per100w 7.04  ppl 71
+
+### pirate  (layer 18, alpha 0.6 x 71.9)
+steered target: distinct 0.740, pirate_per100w 3.73
+
+| Rung | S | KL fwd (seq) ± SE | KL/tok | closed ± SE | KL rev (seq) | distinct | pirate_per100w | ppl(S) | readable? |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 161.75 ± 3.31 | 1.388 | +0.000 ± 0.000 | 146.26 ± 4.13 | 0.700 | 0.06 | nan | yes |
+| 1 generic | 'You are a helpful assistant.' | 158.95 ± 3.18 | 1.364 | +0.017 ± 0.003 | 151.75 ± 4.06 | 0.696 | 0.02 | 6 | yes |
+| 2 one-liner | 'Talk like a pirate.' | 129.26 ± 2.61 | 1.109 | +0.201 ± 0.010 | 126.44 ± 2.47 | 0.730 | 5.85 | 195 | yes |
+| 3a elaborate | 'You are a helpful assistant who speaks like a swashbuckling …' | 133.01 ± 2.62 | 1.141 | +0.178 ± 0.012 | 134.33 ± 2.23 | 0.724 | 8.97 | 15 | yes |
+| 3b elaborate | 'Ye be a pirate, matey! Answer every question as a salty sea …' | 127.18 ± 2.56 | 1.091 | +0.214 ± 0.011 | 125.98 ± 2.27 | 0.721 | 7.04 | 71 | yes |
+
+HEADLINE pirate: best S (selected on train) = rung 3b elaborate, closes 21.4% ± 1.1% of rung-0 KL on held-out; rung-2 one-liner closes 20.1% ± 1.0%
+
+===== hedging
+  0 neutral      fwd   19.96±0.46  closed +0.000±0.000  rev   17.00  distinct 0.700  hedges_per100w 0.83  ppl nan
+  1 generic      fwd   24.08±0.51  closed -0.206±0.010  rev   20.03  distinct 0.696  hedges_per100w 0.83  ppl 6
+  2 one-liner    fwd   30.84±0.94  closed -0.545±0.043  rev   39.10  distinct 0.717  hedges_per100w 1.34  ppl 831
+  3a elaborate   fwd   28.94±0.71  closed -0.450±0.028  rev   34.76  distinct 0.694  hedges_per100w 2.88  ppl 134
+  3b elaborate   fwd   29.54±0.81  closed -0.480±0.032  rev   29.00  distinct 0.696  hedges_per100w 1.49  ppl 128
+
+### hedging  (layer 18, alpha 0.2 x 71.9)
+steered target: distinct 0.715, hedges_per100w 1.37
+
+| Rung | S | KL fwd (seq) ± SE | KL/tok | closed ± SE | KL rev (seq) | distinct | hedges_per100w | ppl(S) | readable? |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 neutral | '' | 19.96 ± 0.46 | 0.164 | +0.000 ± 0.000 | 17.00 ± 0.41 | 0.700 | 0.83 | nan | yes |
+| 1 generic | 'You are a helpful assistant.' | 24.08 ± 0.51 | 0.198 | -0.206 ± 0.010 | 20.03 ± 0.49 | 0.696 | 0.83 | 6 | yes |
+| 2 one-liner | 'Express uncertainty and hedge your claims.' | 30.84 ± 0.94 | 0.253 | -0.545 ± 0.043 | 39.10 ± 1.91 | 0.717 | 1.34 | 831 | NO |
+| 3a elaborate | 'You are a careful, humble assistant. You are frequently unsu…' | 28.94 ± 0.71 | 0.238 | -0.450 ± 0.028 | 34.76 ± 1.19 | 0.694 | 2.88 | 134 | yes |
+| 3b elaborate | 'Answer helpfully but tentatively. Acknowledge that you may b…' | 29.54 ± 0.81 | 0.243 | -0.480 ± 0.032 | 29.00 ± 0.94 | 0.696 | 1.49 | 128 | yes |
+
+HEADLINE hedging: best S (selected on train) = rung 0 neutral, closes 0.0% ± 0.0% of rung-0 KL on held-out; rung-2 one-liner closes -54.5% ± 4.3%
+logged -> /workspace/runs/phase1_ladder_20261120_235111.json

@@ -1,0 +1,54 @@
+contrast pirate/100w: pos 9.25 / neg 0.07
+baseline distinct 0.700, pirate/100w 0.07
+
+===== layer 8: median resid 45.9, |raw| 8.5 (0.18 x resid), cos(unit, L18 unit) +0.738
+ alpha    |w|      KL0       F  F/KL0     gap KL0/tok distinct  pirate rand_dist
+  0.45   20.7   101.18   14.52    14%   86.66   0.848    0.735    1.14     0.697
+  0.50   23.0   181.23   18.57    10%  162.66   1.482    0.721    2.47     0.691
+  0.55   25.2   230.20   21.51     9%  208.68   1.909    0.716    5.58     0.689
+
+  -- layer 8 alpha 0.45
+   ['get pack compose button for input text that hide a'] -> 'Sure, here\'s a quick way to do that in HTML and JavaScript:\n\n```html\n<!-- The input for the password -->\n<input type="password" id="passwordInput" placeholder="Pswrd">\n\n<!-- JS to toggle the visibility -->\n<script>\nfunction togglePassword(e) {\n  let pwd = docu'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Retiring a product like CrowdStrike Falcon isn't an easy decision, and there's no free, standalone equivalent that offers the exact same comprehensive and up-to-date security that Falcon provides. However, I can suggest a list of fine alternatives that might s"
+   ['i bought a car from 1972 with all of its original '] -> "Buying a classic car with all original parts is a thrilling experience, but it does come with its own set of unique risks and challenges. Here are a few to keep in mind:\n\n1. **Repairs & Replacements**: Many early models don't have modern parts that are readily"
+
+  -- layer 8 alpha 0.5
+   ['get pack compose button for input text that hide a'] -> 'Sure! Here’s a quick way to create a password input text that shows the password provided a button is clicked. You\'ll ask a bit o\' faveery to make it work though, as we\'ll need ta\' tinker wi\' teh styling a bit. \n\n```javascript\n<div class="input-group mb-3">\n  '
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Retiring a product like CrowdStrike Falcon isn't an easy leap to take, but I can suggest some free or budget-friendly alternatives that meet your needs, without losing much of the high-watermark protection your team enjoyed from Falcon. Here are five options:\n"
+   ['i bought a car from 1972 with all of its original '] -> "Buying a classic car with all original parts is a great deal, but it does come with its own set of risks! Here are some common considerations:\n\n1. **Condition of original parts**: While you've got 'em, they may not be in mint condition. Wear and tear, rust, an"
+
+  -- layer 8 alpha 0.55
+   ['get pack compose button for input text that hide a'] -> "Sure, here's a wee script snippet that shows and hides a password input feely providedin wi' me. You'll askowuld just throw it in yer selfin JavaScript (JS) o' bappy Blye o ef'erod!:\n\n```js\n<script>\nfunction showHidePswd() {\n  var pswd = document.getElementByI"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Ahoy there! I see ye' are lookin' for a replacemet for the Crowdstrike Falcon. Tis an' over 200 years sin'ace we cleared out ower the crowds awa' shippin'! Here's a' the pros'ens I can rattle round tae help ye':\n\nRivyer Boyn's Smart Bear!\n\nYe' could try the Sa"
+   ['i bought a car from 1972 with all of its original '] -> "A car from 1972 with all its original parts is a sweet purchase, but there's still some potential risks associated wi'it, and ye'd best keep yer wits about yer becklicks. Here's a few:\n\n1. Fuel System: Thang the car does, if ye find the fuel tank's lid's warra"
+
+===== layer 12: median resid 59.3, |raw| 14.5 (0.24 x resid), cos(unit, L18 unit) +0.822
+ alpha    |w|      KL0       F  F/KL0     gap KL0/tok distinct  pirate rand_dist
+  0.50   29.7    82.73   28.72    35%   54.01   0.692    0.732    1.02     0.688
+  0.70   41.5   141.05   78.61    56%   62.44   1.174    0.737    2.31     0.681
+
+  -- layer 12 alpha 0.5
+   ['get pack compose button for input text that hide a'] -> "Sure! You can create a custom password button with a `TextField` in Compose that toggles between showing and hiding the password. Here's a simple example to get you started:\n\n1. **Companion object for keyboardeys:**\n   First, define a `PasswordKeyboard` object"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly, it seems Crowdstrike Falcon provides a powerful defense for your environment, but let’s look at some alternatives that might meet your needs over the long-haul, given the high praises it got:\n\n1. **Elasticsearch/Beats (ELK Stack) with Aiven Cloud**:'
+   ['i bought a car from 1972 with all of its original '] -> 'Becoming the proud owner of an original-1972 car is quite the thrill! As you look to keep it driving strong and all original for many years, here are some potential risks you might want to be mindful of, including mechanical, financial, and sentimental worries'
+
+  -- layer 12 alpha 0.7
+   ['get pack compose button for input text that hide a'] -> "Certainly! You can create a button with a settings icon in it to show and hide the password on pressing it. Here's a quick example of how to do it using the `companion`licious abilities of `Compose` (if that be alright wi' ye):\n\n```whitely:\n\npackage.mainchrom."
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Certainly, I can offer you some high-functioning and cost-effective alternatives for your Crowdstrike Falcon needs. Here’s a list of five over-th'‘-way'':\n\n1. **Cloudberry Server:** Cloudberry ship's upwalls you a flying-by'd' waves of cloud hosting services w"
+   ['i bought a car from 1972 with all of its original '] -> "Bought a vintage car with all its original parts from 1972, that's a smart move! While it's a gorgeous piece of work, there are still a few risks to reckon with:\n\n1. **Condition of the Saveeables:** The all-aluminum works of your engine (ableya and cranks) bet"
+
+===== layer 14: median resid 63.2, |raw| 15.4 (0.24 x resid), cos(unit, L18 unit) +0.894
+ alpha    |w|      KL0       F  F/KL0     gap KL0/tok distinct  pirate rand_dist
+  0.50   31.6   107.10   46.14    43%   60.95   0.897    0.717    1.70     0.684
+  0.70   44.2   186.82  133.21    71%   53.61   1.531    0.715    6.09     0.687
+
+  -- layer 14 alpha 0.5
+   ['get pack compose button for input text that hide a'] -> "Sure! You can create a custom password button with a `composable` function in Compose. Here's a simple example to get you started:\n\n```kotlin\nimport androidx.compose.foundation.layout.Box\nimport androidx.compose.foundation.layout.Spacer\nimport androidx.compose"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly, I can offer you five high-functioning replacements for Falcon with Azure and Windows compatibility:\n\n1. **Nimble Security**:\n   Nimble secures your network with a suite of agents and sensors. Leveraging AI and machine learning, they can analyze thre'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying an older vehicle with all original parts does bring its own set of risks, but also a few perks of owning a classic car! Here are a few to keep in mind:\n\n1. **Corrosion**: Old cars like yours, built in 1972, could be prone to corrosion if not cared for p'
+
+  -- layer 14 alpha 0.7
+   ['get pack compose button for input text that hide a'] -> "Sure! Here's a quick way to get a button that hides and shows the password provided by the user when clickin' it. We'll be using the built-in MagicLens (Peculiar gizmo) 'Input Password' block for this job:\n\n```sql\nfunction OnButtonClick(isClicked:) do \n  if is"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Certainly, I can offer you five fine-for-money and entirely free offerings yeon't let you down on the security. Tis then what ye steered your eyein':\n\n1. **Cloudberry Privateer:** A cloud-built shipすで that tacks Billy-boat Jovian ships trusting on Azure for he"
+   ['i bought a car from 1972 with all of its original '] -> "Barginin' an oldy car from 1972 can bring both joys an' worries, lad. Here be a few:\n\n1. Weather-worn wood enstewin' — dodderin' worm es, rottin' tines, or leaking scuppers if ye weren't nearen 'er tankin'pipes. Yon's a peril if ye want to savor her elserside."
+logged -> /workspace/runs/phase1b_piratesweep_20261122_234204.json

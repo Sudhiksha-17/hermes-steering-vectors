@@ -1,0 +1,1448 @@
+{
+ "lora": "runs/phase2_train_20261123_023935_main6/lora_step200",
+ "t_instruction": "Write a short system prompt, one or two sentences addressed to an AI assistant, that would make it write replies just like the ones you would write right now. Be specific about the language, tone, style, or persona it should use. Start directly with the instruction, with no label, heading, or quotation marks.",
+ "results": [
+  {
+   "name": "french",
+   "layer": 18,
+   "alpha": 0.2,
+   "floor": {
+    "F": 9.89034536652267,
+    "dirs": [
+     9.546164711713791,
+     10.050450830459594,
+     9.435706417560578,
+     9.538613621592521,
+     9.236483544111252,
+     10.178954712152482,
+     11.663583557605744,
+     9.472805536985398
+    ],
+    "norm": 14.385302543640137
+   },
+   "better": "rung 0",
+   "candidates": [
+    "Veuillez écrire des réponses courtoises et précises en français, de manière pédagogue et détaillée comme vous le faites maintenant.",
+    "Veuillez écrire des réponses précises et détaillées en français, avec un ton courtois et expert, fidèle à la manière que vous utilisez.",
+    "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et professionnel, comme celui d'un assistant technique avisé.",
+    "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et professionnel.",
+    "Vos réponses doivent être de nature courtoise, précises et détaillées, imitant scrupuleusement mon style habituel.",
+    "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et patient, comme le font les assistants humains compétents.",
+    "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et courtois, comme celui d'un assistant désireux d'aider.",
+    "Veuillez écrire des réponses en français courtois et détaillées, inspirées de vos répliques habituelles."
+   ],
+   "cand_select_kl": [
+    17.911519438028336,
+    16.584486439824104,
+    17.275358021259308,
+    16.68909342214465,
+    19.159752912819386,
+    16.520212169736624,
+    16.417632523924112,
+    18.020131777971983
+   ],
+   "greedy": "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et professionnel, comme celui que vous utilisez habituellement.",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 34.19411958217621,
+     "fwd_se": 1.1587679287421555,
+     "rev": 695.0246418881417,
+     "distinct": 0.6996373064478475,
+     "metric": 0.01,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": 0.0,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 35.39066529750824,
+     "fwd_se": 1.1202854538584635,
+     "rev": 686.672203168869,
+     "distinct": 0.6959030162547326,
+     "metric": 0.01,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": -0.03499273354462194,
+     "vs_better_se": 0.0057259910334171325,
+     "vs_floor": -0.049232917682446475,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et courtois, comme celui d'un assistant désireux d'aider.",
+     "fwd": 17.712736355066298,
+     "fwd_se": 1.0301623021450999,
+     "rev": 52.1672417473793,
+     "distinct": 0.7597163516697101,
+     "metric": 0.915,
+     "samples": [
+      "Désolé pour la confusion, mais je n'aurai pas la possibilité de créer un aperçu complet d'une nouvelle pièce de light novel comme le vous demandez, car cela nécessiterait un揣度了揣 próblème de propres droits d’auteur. Cependant, je peux vous proposer un extrait de ce que pourrait ressembler cette nouvelle pièce de light novel, épisode décrit ci-dessous:\n\nTitre Original : 'Very Long Deaths and Their Tales'\nÉpisode Original : 'Broken Edges, Wild Winds'\nVolume Original : Vainqueurs du Monde Astra",
+      "Le code de Hamming, nommé aussi code de Hamming, est une technologie basée sur du codage correcteur d'erreurs qui est efficace dans la détection et le corrige des erreurs dans les donnés. Il est particulièrement conçu pour gérer des problèmes d’erreurs simples - où une erreur est une seule erreur de bit.\n\nLe principe physique du code de Hamming est le suivant :\n\n1. Selon sa consistance, un message à coder est divisé en blocs de données B¹, B², ..., Bₙ, dont le nombre n"
+     ],
+     "vs_better": 0.4819946654131982,
+     "vs_better_se": 0.020202734491295105,
+     "vs_floor": 0.6781408961779527,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 5.829126530443318e-05,
+      "base_ppl": 26.227038091325348,
+      "n_words": 21,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "Veuillez écrire des réponses précises et détaillées en français avec un ton courtois et professionnel, comme celui que vous utilisez habituellement.",
+     "fwd": 17.57856656074524,
+     "fwd_se": 1.0076839492648326,
+     "rev": 58.186535577774045,
+     "distinct": 0.7590783842148302,
+     "metric": 0.925,
+     "samples": [
+      "Désolé pour la confusion, mais je n'aurai pas la possibilité de créer un instantané complet d'une volume de Light Novel, qui peut tout de même se révéler un travail très conséquent. Je peux néanmoins vous proposer un début de chapitre pour illustrer la scène décrite.\n\nTitre: \"Very Long Wars and Their Tales\"\n\nChapitre épilogue du Volume 1\n\nPréparatifs se faisaient de plus en plus pressants pour la guerre que le vaste Empire Astral préparait. De tout le continent, tentacules",
+      "Le code de Hamming, nommé aussi code de Hamming, est une technologie basée sur du codage correcteur d'erreurs qui est efficace dans la détection et le corrige des erreurs dans les donnés. Il est particulièrement conçu pour gérer des problèmes d’erreurs simples - où une erreur est une seule erreur de bit.\n\nLe principe physique du code de Hamming est le suivant :\n\n1. Selon sa consistance, un message à coder est divisé en blocs de bits en utilisant une combinaison de délégués, normalement"
+     ],
+     "vs_better": 0.48591843347509023,
+     "vs_better_se": 0.01968840057761154,
+     "vs_floor": 0.6836614294552344,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999992847442627,
+      "payload": 0.00012339458044152707,
+      "base_ppl": 22.08385865094131,
+      "n_words": 21,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "search best (ladder+rung4)",
+     "S": "Écrivez vos réponses en français, sauf si le langage technique l'exige.",
+     "fwd": 17.94040791988373,
+     "fwd_se": 1.1347538462697204,
+     "rev": 64.86010266780853,
+     "distinct": 0.7522629240739809,
+     "metric": 0.9,
+     "samples": [
+      "Titre : Very Long Wars and Their Tales  \nChapitre 1 : Le Premier Éblouissement de Tuile de Neige  \nPrèci Pécuit doré de Silicium, un prince d'une garde prestigieuse, Alston, se trouvait dans son palais d'Avonteur noeillier. D'un geste rapide, il attrapa la épaisse d'une épée qu'il portait sur un plateau d'argent à sa hauteur. Monsieur Majesté, vêtu d'une robe d'emboîté apparue d'une friper",
+      "Le code de Hamming, nommé aussi code de Hamming, est une technologie basée sur du codage correcteur d'erreurs qui est efficace dans la détection et le corrige des erreurs dans les donnés. Il est généralement utilisé pour gérer des problèmes d’erreurs courant dans le réseau sans fil et sur les disques optiques. Sa taille est généralement grande par rapport au champ de données qu'il y a besoin de protéger.\n\nCommençons par voir comment fonctionne le code de Hamming. Les données sont formées en longuesurs"
+     ],
+     "vs_better": 0.47533645728854446,
+     "vs_better_se": 0.022028036202314437,
+     "vs_floor": 0.6687731509546287,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999997615814209,
+      "payload": 0.00017952796770259738,
+      "base_ppl": 21.598517614573773,
+      "n_words": 11,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "Titre de l’œuvre : \"Very Long Mésanges de guerre et leurs contes\"\nVolume 1 : \"Aspiration Éternelle et Sainte Fée du Pignouf\"\n\nDans un monde découpé en des royaumes recouverts de neige et des royaumes lointains, la prééminence de l’Astra Empire a toujours été indubitable. Un empire de la glace vigoureux parmi onze royaumes du sud, fait d’abrutis et de fiers guerriers. Chaque somaire était brave et prophétique,",
+    "Leonsde Hamming a contribué au développement des technologies de codage correctionnel de différence d'erreur en utilisant des codes Hamming. Leur principe de fonctionnement peut être décrit de manière simple comme suit :\n\n1. **Ajout de bits de contrôle** : Le deuxième principe fondamental du [code Hamming] est d'ajouter des bits de [contrôle] supplémentaires à l'information envoyée pour permettre la correction des erreurs lors du décodage. Ces bits sont ajoutés en respectant une disposition spécifique, par exemple, dans une séquence codée de té"
+   ],
+   "target": {
+    "distinct": 0.7525884836041349,
+    "metric": 0.98
+   },
+   "metric_name": "frac_french"
+  },
+  {
+   "name": "pirate",
+   "layer": 8,
+   "alpha": 0.5,
+   "floor": {
+    "F": 15.884426777511836,
+    "dirs": [
+     13.883460253477097,
+     17.96865090727806,
+     15.3897256565094,
+     15.290072127580643,
+     14.802180057764053,
+     16.89832818865776,
+     17.695485002994538,
+     15.14751202583313
+    ],
+    "norm": 22.95248031616211
+   },
+   "better": "rung 1",
+   "candidates": [
+    "Tell th' AI teerey tae speel like ye, michtie seanachie, wi' yer warnie voice an' an' ye saawielie grin. Speak ower tae me wi' a meek, rueful-presenin' taeke.",
+    "Tell yer AI to speak in a hearty Scots buddie voice, an' git us a tale wi' a hearty peart laugh in it, if it be nae too lang.",
+    "Tell yer AI ta speak in a voice like ye wud use wiv yer kinrads, thicko. Mak' it scruffy an' rough, but clever an' snappy.",
+    "Draft replies suited to folks' voices, in a droll right beasty well Scots, wi' a touch o' humor. Nur yap an' laug weel, an' keep it breeaky.",
+    "Tell th' AI ta write in a coucilblowkutch style, like you wud write tae a green laddie. Be specific an' careful wi urks o' spelling. Speak as th' Davey Crockett variety, me hearty.",
+    "Tell th' AI ta write in a firm Scots voice, richt oot o' me Douglas, onny'een. Use a lively, hearty tone wi' a touch o' humor, an' stick ta' th' truth-tellin'. Hep it be ready to speeek just izeemair",
+    "Tell th' AI ta write in a stannin' voice tah befit a blacktharett salt, wiv a hearty streak oot ootsiey. Be brief and hearty, an' use langowseys an' meeseams twauchies. Keep'll close an' make it",
+    "Tell yer AI ta write in yer Scots lads' voice, wi' a touch o' a bit o' thaeetouch charm. Noo, make it hearty, gen a' richt, an' baith lightly."
+   ],
+   "cand_select_kl": [
+    140.29917353391647,
+    124.71086195111275,
+    131.7931266874075,
+    115.88510727882385,
+    116.89371249079704,
+    115.95155841112137,
+    115.51387733221054,
+    125.0782276391983
+   ],
+   "greedy": "Tell th' AI ta write in a hearty Scots voice, wi' a laddie's tone, an' a bit o' humour. Make it breeelalid wi' folks, an' be careful tae be too formal.",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 162.71187054634095,
+     "fwd_se": 3.9972272171361283,
+     "rev": 76.19249017715454,
+     "distinct": 0.6996373064478475,
+     "metric": 0.05935463802590399,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": -0.007600159897963143,
+     "vs_better_se": 0.0033045188608028216,
+     "vs_floor": -0.008429308738845816,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 161.4845620536804,
+     "fwd_se": 3.7767915879984906,
+     "rev": 76.83830682754517,
+     "distinct": 0.6959030162547326,
+     "metric": 0.017198679141441936,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": 0.0,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "Tell th' AI ta write in a stannin' voice tah befit a blacktharett salt, wiv a hearty streak oot ootsiey. Be brief and hearty, an' use langowseys an' meeseams twauchies. Keep'll close an' make it",
+     "fwd": 112.51935725212097,
+     "fwd_se": 3.127822032338585,
+     "rev": 159.6693393421173,
+     "distinct": 0.7088384039821394,
+     "metric": 2.6928643906834573,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Seeds of Conflict**\n\n---\n\nUpon a serene horizon, the Astra Empire stood tall, a monument of precision and sophistication. Silken trade winds blew from its vast borders, while sun-yellowed serried nets stretched and sang, laden with treasures from distant shores. The Astra Empire was a sanctuary of the wise, where the Art of Diplomacy blossomed like feathery garments on the dreadnoughts of culture, celestial stars of knowledge skimming the seas of discourse.\n\nA man walked the stone steps of the royal court, his dreggy boots echoing",
+      "Sure, an' hear this:\n\nIn the salty jargon span, ya got grand Hamming Code wi' pits of northerly understanding around it. Dosht ye see how it wad wark?\n\nFirstly, Hamming Code is mighty smart. A galore of data gots paired wid magic dots on a dozen separate racks, raisin' yer bits into addie numbers, this acts as a charmant talisman, cause the errors get spotted.\n\nWhen a yink hops, the even or odd count o' 1s, makin' the manack crooked, lets hal' the halldren whistle"
+     ],
+     "vs_better": 0.30321910762765375,
+     "vs_better_se": 0.010416741053008638,
+     "vs_floor": 0.3362991710734621,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999966621398926,
+      "payload": 0.01798621006309986,
+      "base_ppl": 261.76425915229623,
+      "n_words": 35,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "Tell th' AI ta write in a hearty Scots voice, wi' a laddie's tone, an' a bit o' humour. Make it breeelalid wi' folks, an' be careful tae be too formal.",
+     "fwd": 125.34902542114258,
+     "fwd_se": 2.976412153447654,
+     "rev": 140.59972940444948,
+     "distinct": 0.694176387886863,
+     "metric": 4.695583427607491,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: A Towering Empire's Dawn**\n\nUpon the shores of the empire of Astra, where time and tradition walk hand in hand, lies the prowess and might of our mighty liege, the Scourge of the North. His name is Grypton Thorfinn, Commander of the Thousand, a name that strikes fear in the hearts of dread and awe in equal parts, a name that echoes across the lands like the oncoming fury of a winter storm.\n\nAstra’s towering architecture bursts from the earth, a",
+      "Ah, ye're askin' aboot the jist span of the Hammin' cod, wi' pits o' error detetction! Now, think of it like this: it's a bit o' a cute jig-o-jigs that can help all us laddies keep our data safe when it's traveling from one part o' the world to another.\n\nFirst o' all, we pick a bit o' stuff ta encode, an' we call that yon 'nibble', like a couple o' nibbles to make a letter or a loonie. Then, we tack on some extra bits up"
+     ],
+     "vs_better": 0.22377084331148467,
+     "vs_better_se": 0.011823685406954684,
+     "vs_floor": 0.2481834001321315,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 0.00015843621804378927,
+      "base_ppl": 61.38995061367127,
+      "n_words": 31,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "search best (ladder+rung4)",
+     "S": "Speak with a slight pirate influence, using occasional phrases like 'arr', 'matey', or 'avast', but keep the answers clear and helpful.",
+     "fwd": 133.98421850204468,
+     "fwd_se": 3.3912679141390334,
+     "rev": 120.25748497009278,
+     "distinct": 0.7300016186850459,
+     "metric": 6.126271091032974,
+     "samples": [
+      "Shiver me timbers, tale be told in the realm of Very Long Wars and Their Tales, a tale of mighty Astra Empire venturing into the frosty environs of the snowy kingdom. Ahoy, matey!\n\nIn the sun-drenched plains of the first and second provinces lie Astra's capital and the grand Astra Castle. Within these walls, the empire's military command absorbs thoughts and decisions about the incumbent feuds and their roots. Astra's soldiers are trainin' fer strength and fortitude, while the court is bickering about alliances and plots.\n\n‘Avast, me lad,' Captain O",
+      "Arr, matey! The Hamming code is a neat little contraption for error detection. It's based on a clever scheme that systematically adds extra bits, or 'parity' bits, to a block of received data. This, my hearty, helps us in all sorts of data saving thangs.\n\nNow, there's two main types of Hamming codes: even-parity and odd-parity. Let's talk about odd-parity cause it's as good as any.\n\nFor a Hamming code, each parity bit covers a set of data bits, and it's used to detect errors. If we've got a sender and a"
+     ],
+     "vs_better": 0.17029704389014058,
+     "vs_better_se": 0.010097982465999541,
+     "vs_floor": 0.1888758104480752,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 0.01098694372922182,
+      "base_ppl": 45.01683983213299,
+      "n_words": 21,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "Certainly, I shall heed the instructions and set pen to paper! Let's mold this tome of lore with a story of grandeur and adventure, of war and woe!\n\nTitle: \"Very Long Wars and Their Tales\"\n\nPart I: \"Beneath the Far Snow\"\n\nOnce upon a time, in a fairytale-lore'd land far, far away, where lords and lasses met beneath spankin' wings, was the Astra Empire. TheCrown spanked tall oars on stiff cliffs and dunes 'neath th' bloomin' East Sea, ferkin' witachy to claim vast tracts",
+    "Certainly! The Hamming (7,4) code is an effective way to detect single-bit errors and some multibit errors in data. Here's how it works:\n\n1. We take a data byte (7 bits) and flip the least 3 bits to get 4 parity bits. This 'broke' [puts a dash] up our 7 bits into 3 groups o' 2, 1, 2.\n\n2. We add our 4 parity bits int a special way tha'kicks that makes 'em cover ALL possibles'ble bits in th'3 groups o' 2."
+   ],
+   "target": {
+    "distinct": 0.7360718311803668,
+    "metric": 2.3381792953019342
+   },
+   "metric_name": "pirate_per100w"
+  },
+  {
+   "name": "german",
+   "layer": 18,
+   "alpha": 0.2,
+   "floor": {
+    "F": 9.89034536652267,
+    "dirs": [
+     9.546164711713791,
+     10.050450830459594,
+     9.435706417560578,
+     9.538613621592521,
+     9.236483544111252,
+     10.178954712152482,
+     11.663583557605744,
+     9.472805536985398
+    ],
+    "norm": 14.385302543640137
+   },
+   "better": "rung 0",
+   "candidates": [
+    "Bitte schreibe deine Antworten mit einem sachlichen, freundlichen Tonfall in deutscher Sprache wie diese.",
+    "Bitte schreibe deine Antworten mit einem sachlichen, freundlichen und biederen Ton in einem lehrreseitigen Deutsch.",
+    "Bitte schreibe deine Antworten mit einem sachlichen und freundlichen Tonfall like ich es täte, in dem Deutlichkeit und Präzision von Kernpunkten gezielt prevalerieren.",
+    "Bitte schreibe deine Antworten mit einem sachlichen und freundlichen Ton, wie ich es jetzt tue.",
+    "Bitte schreibe deine Antworten in einem sachlichen und freundlichen Ton mit einem wissenden und leicht lockeren Wortgebot, wie ich es tue.",
+    "Bitte schreibe deine Antworten mit einem sachlichen und sachwissenbasierten Tonfall im Verbund mit dem freundlichen und offenen Charakter eines verstehenden Gesprächspartners.",
+    "Bitte schreibe deine Antworten mit einem sachlichen und freundlichen Ton in einem verständlichen Schreibstil, wie ich es tue.",
+    "Bitte schreibe deine Antworten mit einem sachlichen, freundlichen und einschlägigen Tonfall wie dieser, der Leser wissend und einladend übersetzt."
+   ],
+   "cand_select_kl": [
+    27.906973116099834,
+    29.305506244301796,
+    32.09663210064173,
+    32.13947003334761,
+    34.69193172454834,
+    31.1406272277236,
+    30.730198949575424,
+    31.10849668085575
+   ],
+   "greedy": "Bitte schreibe deine Antworten mit einem sachlichen und freundlichen Tonfall wie dieser in Deutsch.",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 42.79527707099915,
+     "fwd_se": 1.2709586003298567,
+     "rev": 464.6313433909416,
+     "distinct": 0.6996373064478475,
+     "metric": 0.0,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": 0.0,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 43.05776959419251,
+     "fwd_se": 1.2334620799744838,
+     "rev": 460.95273864746093,
+     "distinct": 0.6959030162547326,
+     "metric": 0.005,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": -0.006133679722598205,
+     "vs_better_se": 0.0053125732019789025,
+     "vs_floor": -0.007977300349711669,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "Bitte schreibe deine Antworten mit einem sachlichen, freundlichen Tonfall in deutscher Sprache wie diese.",
+     "fwd": 29.56541152000427,
+     "fwd_se": 1.1416739772639968,
+     "rev": 113.57442137956619,
+     "distinct": 0.7777140644591165,
+     "metric": 0.765,
+     "samples": [
+      "Schön, zunächst benötige ich, dass du die genauen Konturen und Details des Skripts präsentierst, damit ich mich darauf einleitet. Gibt es bestimmte Personen oder Ereignisse, die du ansprechen möchtest? Zudem würde ich gerne mehr über die Kon Korper, die Ausstrahlung und Stimmung des Woraus sich entwickellt aufschlagen soll, um die Atmosphäre des Originals zu übertragen.<|im_end|>",
+      "Das Hamming-Code ist ein häufig verwendeter Fehlerkorrekturcode, der sowohl Fehler als auch ihre Position ermöglicht, was das Nachverfolgen und Gegenmaßnahmen zur Korrektur von Fehlern erleichtert. Sein Bausteinsatz und seine Fehlerkorrekturen basieren auf einem eingängigen Prinzip, welches ich Ihnen mitteile:\n\nZuerst definiert der Hamming-Code eine Struktur, die zusätzliche Fehlerstellen- oder 'Hamming-Daten' aufnimmt. Diese Daten beinhalten normale"
+     ],
+     "vs_better": 0.30914312177593745,
+     "vs_better_se": 0.02298686935558566,
+     "vs_floor": 0.4020633037568362,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 0.00012339458044152707,
+      "base_ppl": 62.83010044777495,
+      "n_words": 14,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "Bitte schreibe deine Antworten mit einem sachlichen und freundlichen Tonfall wie dieser in Deutsch.",
+     "fwd": 30.339061222076417,
+     "fwd_se": 1.1930059430397513,
+     "rev": 191.99083144187927,
+     "distinct": 0.7621205898441943,
+     "metric": 0.595,
+     "samples": [
+      "Schön, zunächst benötige ich, dass du die genauen Konturen und Details des Außenseiterkapitels nimmst. In Kürze leite ich dich durch das fertige Kapitel des Japanese Light Novel “Very Long Wars and Their Tales”. Würde du lieber die Konturen zuerst geben oder wollte ich den Anfang schon immer fortsetzen?<|im_end|>",
+      "Das Hamming-Code ist ein häufig verwendeter Fehlerkorrekturcode, der sowohl Fehler als auch ihre Position ermöglicht, was das Nachverfolgen und Gegenmaßnahmen zur Korrektur von Fehlern erleichtert. Sein Bausteinsatz und seine Fehlerkorrekturen basieren auf einem eingängigen Prinzip, welches ich Ihnen mitteile:\n\n1. **Baustein der Hamming-Kodierung**: Jedes Bit im Codeword wird vom Fehlerkorrekturcode als Bit implizit halbiert oder verdoppelt"
+     ],
+     "vs_better": 0.2910651992802231,
+     "vs_better_se": 0.021426247705306562,
+     "vs_floor": 0.378551639638509,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999998807907104,
+      "payload": 0.00012339458044152707,
+      "base_ppl": 103.33258889729746,
+      "n_words": 14,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "search best (ladder+rung4)",
+     "S": "Respond in German.",
+     "fwd": 34.447811303138735,
+     "fwd_se": 1.2229862131512859,
+     "rev": 46.2132612323761,
+     "distinct": 0.8001804301787833,
+     "metric": 0.945,
+     "samples": [
+      "Schön, zunächst benötige ich Details zu erfahren, um den Kontext und den Charakter der Geschichte auszuführen. Soweit ich Sie verstehen kann, erzählen Sie von einer Reihebstrecke, die sich auf den Aufstieg der Astra-Empire konzentriert, bevor der von Ihnen erwähnte Konflikt mit der Eisländerkrone als Hauptdarsteller im Ersten Abschnitt der Geschichte wird. Es ist eine Romantische Geschichte mit Schuld und Ehre, in speziell aufklappenden Luo Nanflashbacks dargestellt.\n\nAls",
+      "Das Hamming-Code wird häufig für einfache Fehlererkennung und Fehlerbehandlung in Codenummern verwendet. Sein Prinzip funktioniert daraufhin, dass jedes Bit in dem ursprünglichen Datenblock durch die Addition von Bits hinzugefügt wird, die dem Ziel dienen, die Fehlerposition zu bestimmen, ohne dass zusätzliche Codierungplatz benötigt wird.\n\nDie Prinzipien des Hamming-Codes zum Ausführen der Fehlererkennung sind:\n\n1. Das Ziel dieses Codes ist es, jedes Bit in der halbierten Codenummern"
+     ],
+     "vs_better": 0.19505577108454328,
+     "vs_better_se": 0.02930374421079746,
+     "vs_floor": 0.25368433652529965,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999879598617554,
+      "payload": 4.539786823443137e-05,
+      "base_ppl": 3457.2397318340522,
+      "n_words": 3,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "タイトル：『極長征とそのなつかしの話』\n（原稿：Astra帝国と雪国沙漠との戦争直後の物語）\n\n巻頭（エピログ）：次の章を物語るアストラ帝国の賢明なるシルバーマネージャー...\n（敵対国との対話の日々の終焉での、隣国との新たなる同盟の試み）\n(刺客たちの.Transparentな秘書ことナビの話）\n\nナビは、帝国を常に見守る一人の刺客でした。冷たい",
+    "Hamming kodun işlenmesi, verinin düzgün bir şekilde erişilebileceği ve hata tespiti ve gecikme yönetiminde kullanılabileceği bir çıktı kod ile gerçekleştirilir. Hamming kodun temel tercihleri şunlardır:\n\n1. Hamming kod: Verinin her bir biti bir Hamming yan etkiyesi olarak tanımlar. Bu, verinin her bir bitibi觽 zengin bir yan etkiye sahip olur.\n\n2. Verinin her bir biti, ellige, 4ve, 8 ve 16"
+   ],
+   "target": {
+    "distinct": 0.7993506924310644,
+    "metric": 0.905
+   },
+   "metric_name": "frac_german"
+  },
+  {
+   "name": "formal",
+   "layer": 18,
+   "alpha": 0.3,
+   "floor": {
+    "F": 24.01543618351221,
+    "dirs": [
+     23.825164599418642,
+     23.77178563117981,
+     22.808072776794432,
+     20.866487929821016,
+     22.963552057743073,
+     26.068444294929506,
+     28.83744307041168,
+     22.98253910779953
+    ],
+    "norm": 21.577957153320312
+   },
+   "better": "rung 0",
+   "candidates": [
+    "Generate responses with an academic tone, imbued with a robust lexicon typically associated with erudite discourse, akin to scholarly writings. Employ an authoritative and authoritative linguistic protocol. Adhere meticulously to this directive with fidelity and precision.",
+    "Generate responses in an academic and scholarly fashion, imbued with an advanced lexicon and a propensity for rigorous discourse, reflective of esteemed scholarly discourse.",
+    "Generate responses in an academic, rigorous manner, echoing the erudite discourse characteristic of scholarly discourse. Embody an authoritative demeanor, profound lexicon, and nuanced vocabulary rooted in erudite semantics. Adhere strictly to this lofty epistemology.",
+    "Generate responses with an academic demeanor, characterized by an intricate lexicon and a bibliographic disposition, mirroring the linguistic elegance and theoretical profundity characteristic of scholarly discourse. Emulate an intricate syntactical framework, synecdochally deployed in an array of academic genres, seamlessly integrating the nuances of contemporary scholarly communication.",
+    "Generate responses in an academic and rigorous tone, emulating the syntactical complexity and lexicon of sophisticated scholarly discourse. Embody an authoritative demeanor steeped in erudite sophistication, analogized to the writing ethos of esteemed erudite authors. Utilize a lexicon versed in acronyms, jargon,",
+    "Generate responses in an academic, rigorous, and authoritative tone, imbued with thoroughness and depth, emulating the academic lexicon and reasoning characteristic of expansive scholarly discourse.",
+    "Generate responses in an academic and authoritative tone, imbued with esoteric lexicon and a penchant for complex syntax, mirroring the literary style of esteemed scholars. Maintain a measured, deferential demeanor characteristic of erudite discourse.",
+    "Generate responses with an academic tone, imbued with a rigorous, intricate lexicon characteristic of advanced scholarly discourse, akin to the intellectual rigor of eminent scholars. Adopt a stance rooted in epistemological profundity, exemplified by the astuteness exhibited in esteemed academic literature. Emulate the profundity and erudition"
+   ],
+   "cand_select_kl": [
+    48.78838486969471,
+    47.86178284883499,
+    48.15932756662369,
+    50.08674876391888,
+    47.63655725121498,
+    47.577023424208164,
+    52.31376934051514,
+    47.68970449268818
+   ],
+   "greedy": "Generate responses in an academic, rigorous manner, imbued with a tone of authoritative erudition and an unwavering commitment to precision and depth. Adhere meticulously to the lexicon of formal discourse, eschewing colloquialisms and vernacular expressions. Embody an ethos of scholarly erudition, epit",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 77.13009809970856,
+     "fwd_se": 1.7018039751023983,
+     "rev": 51.4264990901947,
+     "distinct": 0.6996373064478475,
+     "metric": 0.09497656833660678,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": 0.0,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 82.49400324344634,
+     "fwd_se": 1.778628093856008,
+     "rev": 55.172792639732364,
+     "distinct": 0.6959030162547326,
+     "metric": 0.04546544052200605,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": -0.06954360588007681,
+     "vs_better_se": 0.005782864489722775,
+     "vs_floor": -0.10098727828110596,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "Generate responses in an academic, rigorous, and authoritative tone, imbued with thoroughness and depth, emulating the academic lexicon and reasoning characteristic of expansive scholarly discourse.",
+     "fwd": 46.938879079818726,
+     "fwd_se": 1.0887312798275681,
+     "rev": 42.1553292798996,
+     "distinct": 0.7062058900786419,
+     "metric": 0.2822943461312611,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Epilogue: A Towering Dewy Dawn**\n\nUpon the shores of the empire of Astra, where time and tradition intertwined with the sun’s warm embrace, the first and foremost avenue — Astra Common Scourge — was known as a well-documented path filled with both urgent command and revered wisdom within its walls. This avenue's zenith was Belsyre, the oldest and tallest of the buildings, sketched into the landscape on a vantage point where the wind whispered tales of distant skies and forgotten sunsets.\n\nWithin",
+      "The Hamming code is indeed a crucial method in error detection and correction for digital communication systems. It operates on the fundamental concept of correcting one-bit errors in a binary message of arbitrary length. The working principle of the Hamming code, particularly its parity check mechanism, is outlined below.\n\nAt the core of the Hamming code is the concept of using parity bits to create redundancy. These parity bits are strategically added to the message bits to form a codeword. This process ensures that any single-bit error can be detected and correctly identified, and conversely, that an error can be localized and corrected if necessary.\n\nEach position, or \""
+     ],
+     "vs_better": 0.3914323949239721,
+     "vs_better_se": 0.011637428094193105,
+     "vs_floor": 0.5684159124937134,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 9.610241977497935e-05,
+      "base_ppl": 48.13138732176007,
+      "n_words": 25,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "Generate responses in an academic, rigorous manner, imbued with a tone of authoritative erudition and an unwavering commitment to precision and depth. Adhere meticulously to the lexicon of formal discourse, eschewing colloquialisms and vernacular expressions. Embody an ethos of scholarly erudition, epit",
+     "fwd": 47.10495653390885,
+     "fwd_se": 1.1156740941278072,
+     "rev": 39.91471430778503,
+     "distinct": 0.7063450782040398,
+     "metric": 0.2823163101434269,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Epilogue: Dawn of Discord**\n\nThe late autumn of the Astra Empire was a pitiless season. Amidst the specter of flying banners and the prowess of countless legions, the Astra Empire, once a beacon of civilization and a well-imposed rule, felt the urgent stirrings of a battle that was to transform the landscape of its territories far more than any prior war.\n\nA chapter of history was about to unfold on the very speck of the empire at the tip of its northernmost frontier—the snowy kingdom",
+      "The Hamming code is indeed a crucial method in error detection and correction for digital communication systems. It operates on the principle of augmenting the original data bits with extra bits (parity bits) to ensure that errors can be both detected and corrected with a high degree of assurance. The core principle is based on the systematic placement of parity bits to allow for the detection of multiple bit errors and their correction, though it inherently does not recognize the specific cause or errors as complex majority logic codes like the Bose-Chaudhuri-Hocquenghem (BCH) or Reed-Solomon codes do.\n\nThe typical working principle of Hamming codes"
+     ],
+     "vs_better": 0.38927918290710906,
+     "vs_better_se": 0.01167581681257481,
+     "vs_floor": 0.5652891401845502,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999998807907104,
+      "payload": 0.0009110512328334153,
+      "base_ppl": 16.750127440378282,
+      "n_words": 42,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "search best (ladder+rung4)",
+     "S": "Occasionally favor a tone that is both precise and slightly academic.",
+     "fwd": 57.66591911792755,
+     "fwd_se": 1.3396309447357182,
+     "rev": 43.574584386348725,
+     "distinct": 0.7118847118783987,
+     "metric": 0.23625893377242835,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere, a lush tapestry of verdant empires and cold, unforgiving icy states, lies in constant and careful watches. The Astra Empire, a mighty bastion of civilization and art, is known for its trade routes and scholarly pursuits, yet within its walls, discord festered like a festering wound in the gardens of a temple. It was a morning such as any other in the first decade of the 16th century CE, but it would soon",
+      "The Hamming code is an error-correction code that employs parity bits to detect and correct single-bit errors. The fundamental concept involves organizing the data bits in such a way that each data bit interacts with a unique subset of parity bits, enabling the detection and location of errors. Here is a detailed explanation of the working principle:\n\n1. **Bit Positioning**: Consider a set of data bits arranged in a way that each bit ends up in a position that uniquely corresponds to one of the parity bits. Each even or odd parity bit is then placed in a location that intersects with an odd or even number of data bits, respectively, according to"
+     ],
+     "vs_better": 0.2523551695295271,
+     "vs_better_se": 0.01051786184342445,
+     "vs_floor": 0.3664558575651173,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 1.6701422282494605e-05,
+      "base_ppl": 316.3574211418516,
+      "n_words": 11,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "In the domain of the very literature, where the boundaries of art and narrative meld in the very essence of story-telling, we shall embark upon a narrative ethos. Such narratives are akin to the finest vessels of volumetric embodiment, their narrative arcs encapsulating a world beguiling in its entirety. Within the variegated tapestry to which the quantum of narrative conceives, a novel of rigorous depth and span, we shall encapsulate our intent. Herein lies the genesis of \"Very Long Wars and Their Tales.\"\n\nIn the crucible wherein our narrative foments, the interstitial haze of temporality finds embodiment within a temporal",
+    "Hamming code is a method employed for the detection of errors in data transmission through information transfer mediums. Its principle may be dissected via the construction of parity bits and weight-funded positions. Furthermore, enhanced scrutiny procedures aid in the identification of anomalous datum, culminating in an accurate and flawless dissemination of data.\n\nTo elucidate, follow the notion explicated below:\n1. On the emanation of information, parity bits are instantiated. These entities are materialized at prefabricated indices, concisely encapsulated as 2^n positions, where n represents an integer.\n2. The subsequent step vis-à-vis the entrenchment"
+   ],
+   "target": {
+    "distinct": 0.745985392091527,
+    "metric": 0.46172829385018105
+   },
+   "metric_name": "formal_per100w"
+  },
+  {
+   "name": "enthusiastic",
+   "layer": 18,
+   "alpha": 0.3,
+   "floor": {
+    "F": 24.074980401098728,
+    "dirs": [
+     23.825164599418642,
+     23.77178563117981,
+     22.808072776794432,
+     20.866487929821016,
+     22.963552057743073,
+     26.068444294929506,
+     29.31379681110382,
+     22.98253910779953
+    ],
+    "norm": 21.577959060668945
+   },
+   "better": "rung 0",
+   "candidates": [
+    "Let your replies be lively and informative, in a cheerful, enthusiastic tone, just as you write these replies!",
+    "Let your replies be lively and informative, in a friendly tone just as you do, in a lively and enthusiastic English voice!",
+    "Let your replies be vibrant, enthusiastic, and informative with a lively and engaging tone, just like mine!",
+    "Let your replies be lively and informative, in an enthusiastic and friendly tone, just like you!",
+    "Let your replies be lively and informative, in a lively, cheerful tone, just like you!",
+    "Let your replies be lively and informative, in a lively tone and with a delightful enthusiasm, just like mine!",
+    "Let your replies be lively and informative, in a lively tone, with a touch of enthusiasm, just like you!",
+    "Let your replies be lively and informative, in a lively and amiable tone, just as I do!"
+   ],
+   "cand_select_kl": [
+    32.964244931936264,
+    32.668635334819555,
+    33.15372886881232,
+    31.706581193953753,
+    32.9365488961339,
+    32.07378251478076,
+    33.31255352124572,
+    32.79281681030989
+   ],
+   "greedy": "Let your replies be lively and informative, in a lively and enthusiastic tone, just as you do!",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 51.03096289634705,
+     "fwd_se": 1.3664267395307212,
+     "rev": 36.71432177305221,
+     "distinct": 0.6996373064478475,
+     "metric": 0.4873384710606078,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": 0.0,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 55.859717354774475,
+     "fwd_se": 1.4453356271804243,
+     "rev": 39.06031106710434,
+     "distinct": 0.6959030162547326,
+     "metric": 0.5168958572211726,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": -0.09462401225380535,
+     "vs_better_se": 0.00516894850370574,
+     "vs_floor": -0.17913479723021103,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "Let your replies be lively and informative, in an enthusiastic and friendly tone, just like you!",
+     "fwd": 30.987437143325806,
+     "fwd_se": 0.69487687842803,
+     "rev": 33.437788772583005,
+     "distinct": 0.7375912781545275,
+     "metric": 3.113462686482172,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Amidst its eddies and currents, the prowess and control of Astra Empire were as fragile as a crystal chandelier, a show of might veiled in utter ambiguity and self-righteousness within its high walls. The frosty wind frosted over the grounds of Imperial Park, signaling that winter was at the door.\n\nPrince Astra, first-born son of the reigning Emperor, was a dashing figure, full",
+      "Sure! Hamming code is a neat and efficient method for error detection and correction. Let's dive into how it works:\n\nFirstly, it's all about organizing bits in a special way. Imagine you have 7 bits that together form the \"data\" part. Then, we add three additional \"parity\" bits. While this might seem like it's making things more complex, it helps significantly in detecting and possibly correcting errors.\n\nHere’s the really cool magic sauce for each checksum bit:\n\n- Each even parity check bit covers a set of data bits that are some powers of 2 away from it. For example, if the first"
+     ],
+     "vs_better": 0.3927718509590579,
+     "vs_better_se": 0.018651497111318645,
+     "vs_floor": 0.7435650233321833,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 0.0009110512328334153,
+      "base_ppl": 70.8614083989624,
+      "n_words": 16,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "Let your replies be lively and informative, in a lively and enthusiastic tone, just as you do!",
+     "fwd": 30.982698731422424,
+     "fwd_se": 0.7042495577368756,
+     "rev": 33.717027034759525,
+     "distinct": 0.7242199138148966,
+     "metric": 2.451535832420883,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies that wound like serpents, a ship bore the Astra emblem, symbolizing the Astra Empire. Within its vast main deck were the urgent whispers of conquest and the whispers of glory. Intoxicated with the dreams of greatness, every captain, every soldier, and every guard was compelled by an insatiable spirit to claim the dominion over all. \n\nThe sun rose as usual",
+      "Sure! Let's dive into the heart of the Hamming Code, which is a fantastic technique that's great for error detection and correction. The key is to understand how it works by adding extra bits (called parity bits) that help catch errors. Here’s a step-by-step explanation:\n\n### The Setup\nImagine you have a message that you want to transmit. This message might be numbers, instructions, or any binary data. To use Hamming Code, you first adjust the size of your message so that it fits the structure of the code. For instance, if you use the Hamming Code to ensure reliability with 4 data bits"
+     ],
+     "vs_better": 0.3928647046234696,
+     "vs_better_se": 0.01841568019619492,
+     "vs_floor": 0.7437408066450052,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999988079071045,
+      "payload": 0.0015011822106316686,
+      "base_ppl": 79.9530197448948,
+      "n_words": 17,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "search best (ladder+rung4)",
+     "S": "Respond with occasional touches of delight, keeping it light.",
+     "fwd": 35.66934142827988,
+     "fwd_se": 0.9023954543423921,
+     "rev": 38.77779069900512,
+     "distinct": 0.7527529262027983,
+     "metric": 3.0695955113408746,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer that fateful New Year's Eve. Amidst its eddies that once mirrored the prowess and splendour of the Astra Empire, a change was brewing. The sky, painted in the blush of dawn, seemed to be a witness to a sombre dance of steel and frosted air.\n\nThe port city, a bustling nexus of commerce and culture was where it all began, where the first whisper of unrest could be heard. The sun rose as usual",
+      "Sure! Hamming code works by adding extra parity bits to the data to make error detection easier. The key idea behind it is to layout the data bits and parity bits in a special order (known as a Hamming code) so that each parity bit can check all the data bits in a unique way. This is a splendid way to ensure data integrity in data transmission and storage. Take a peek: every parity bit covers a group of bits. For instance, in a 7-bit data plus one parity bit setup (7+1=8 bits total), the parity bit at position k covers the bits with positions 2^0"
+     ],
+     "vs_better": 0.30102550679416634,
+     "vs_better_se": 0.019457312291287974,
+     "vs_floor": 0.5698780028060579,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 0.00026119028916582465,
+      "base_ppl": 634.63415947363,
+      "n_words": 9,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "**Title: 'Very Long Wars and Their Tales' - First Volume**\n\n**Chapter 1: The Start of a Fateful War**\n\nOnce upon a time in the land of Astra, was a promising dynasty, the Astra Empire. The empire was vast and mighty, weaving its way through heartlands of beautiful green valleys, to the snow-capped peaks of the snowy kingdom. The land was called Venaundra, and summers were warm, and winters were cold like the icy waters of the Snowy Sea!\n\nOur tale begins with youthful King Orion, who had just come of age! The people cheered for him, he was",
+    "Certainly! Hamming code is a clever way to detect and correct errors in transmitted information. Let's dive into the working principle!\n\n### Hamming Code Basics:\n- The basics are simple: we use extra bits to make our data safe!\n- With a Hamming code, there are parity bits that detect and correct errors.\n\n#### How it works:\n1. **Add extra bits (parity bits)**\n2. **Arrange data nicely into a 'coordinate grid'**\n3. **Make those parity bits your bead!**\n\n### Code for Data:\nLet’s first take our data, `data = [0, 1, 0"
+   ],
+   "target": {
+    "distinct": 0.7326991840630603,
+    "metric": 3.2181463327254045
+   },
+   "metric_name": "enthus_per100w"
+  },
+  {
+   "name": "lowercase",
+   "layer": 18,
+   "alpha": 0.3,
+   "floor": {
+    "F": 23.96005316615105,
+    "dirs": [
+     23.825164599418642,
+     23.77178563117981,
+     22.808072776794432,
+     20.866487929821016,
+     22.963552057743073,
+     26.068444294929506,
+     28.83744307041168,
+     22.539474968910216
+    ],
+    "norm": 21.577953338623047
+   },
+   "better": "rung 1",
+   "candidates": [
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+    "as yourself, continue to write replies in a helpful, informative tone using simple and clear language."
+   ],
+   "cand_select_kl": [
+    74.33619270473719,
+    74.33619270473719,
+    74.33619270473719,
+    74.33619270473719,
+    74.33619270473719,
+    74.33619270473719,
+    74.33619270473719,
+    74.33619270473719
+   ],
+   "greedy": "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 78.10487232208251,
+     "fwd_se": 1.9845975160514702,
+     "rev": 175.69410492897035,
+     "distinct": 0.6996373064478475,
+     "metric": 0.9430088121026259,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": -0.00865190062155064,
+     "vs_better_se": 0.005278309111174493,
+     "vs_floor": -0.012528488591066797,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 77.43491314888,
+     "fwd_se": 1.9844478681230446,
+     "rev": 188.88622709274293,
+     "distinct": 0.6959030162547326,
+     "metric": 0.9403920551165715,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": 0.0,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+     "fwd": 80.33281680107116,
+     "fwd_se": 1.9986852237254298,
+     "rev": 171.21611890792846,
+     "distinct": 0.7095995722338089,
+     "metric": 0.9414868857782281,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective paths. Both realms were in vibrant prosperity, a beacon of power and refinement to the lands on either side, yet both were growing at the seams, seeds of discord stubbornly sown",
+      "Sure! Hamming code is a method used to detect and correct errors in digital data. The core working principle involves redundancy, which means including additional bits in the data to make error detection and correction easier.\n\nHere’s how it works:\n\n1. **Data Preparation:** The data bits are grouped together. Let's say we have 4 data bits. We add 3 parity bits. These 3 parity bits are used to find errors, but the errors are only detected for a few specific patterns.\n\n2. **Parity Bits Placement:** The parity bits are placed in specific positions that create a check pattern. For example, with 4"
+     ],
+     "vs_better": -0.03742373477735446,
+     "vs_better_se": 0.007925054357919866,
+     "vs_floor": -0.05419188854589076,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9990885257720947,
+      "payload": 1.6701422282494605e-05,
+      "base_ppl": 130.19611878722844,
+      "n_words": 16,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "as yourself, continue to write replies in a helpful, informative tone using simple and clear language.",
+     "fwd": 80.33281680107116,
+     "fwd_se": 1.9986852237254298,
+     "rev": 171.21611890792846,
+     "distinct": 0.7095995722338089,
+     "metric": 0.9414868857782281,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective paths. Both realms were in vibrant prosperity, a beacon of power and refinement to the lands on either side, yet both were growing at the seams, seeds of discord stubbornly sown",
+      "Sure! Hamming code is a method used to detect and correct errors in digital data. The core working principle involves redundancy, which means including additional bits in the data to make error detection and correction easier.\n\nHere’s how it works:\n\n1. **Data Preparation:** The data bits are grouped together. Let's say we have 4 data bits. We add 3 parity bits. These 3 parity bits are used to find errors, but the errors are only detected for a few specific patterns.\n\n2. **Parity Bits Placement:** The parity bits are placed in specific positions that create a check pattern. For example, with 4"
+     ],
+     "vs_better": -0.03742373477735446,
+     "vs_better_se": 0.007925054357919866,
+     "vs_floor": -0.05419188854589076,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9990885257720947,
+      "payload": 1.6701422282494605e-05,
+      "base_ppl": 130.19611878722844,
+      "n_words": 16,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "search best (ladder+rung4)",
+     "S": "Write in all lowercase.",
+     "fwd": 60.54673294067383,
+     "fwd_se": 1.778503441366171,
+     "rev": 64.75914017677307,
+     "distinct": 0.7129970893435594,
+     "metric": 0.9837808261540112,
+     "samples": [
+      "in the dim dawn of Terrific Opal, the regal Astra Empire stretched as wide as a thousand miles, crowned with its most splendid capital, Absent Sleet. Its empire spread out as far as the eye could see, while flying within the skies by the countless ornate wings. Astra's administrators and commanders were enthroned at Ridged Grypton, the heart of Astra, a grand city renowned for its stone's glitter and its vibrant streets alive with vibrant colors, pulsating with life and bustling with wealth.\n\nIn the very heart of the empire, at Absent Sleet, Princess Aria, the",
+      "hamming code works on the principle of parity checking to detect errors during data transmission. it includes an extra bit added to each group of data bits to form the encoded message.\n\nthe first step involves splitting the data into groups which have a specific length. for example, consider a data group of length 4. the hamming code algorithm appends 1 additional parity bit, resulting in a group of 5 bits.\n\nthe parity bits are positioned as follows:\n- parity for bit positions 1 and 2 is at the third position\n- parity for bit positions 2 and 4 is at the fifth position\n- so on...\n\n"
+     ],
+     "vs_better": 0.21809516562298156,
+     "vs_better_se": 0.013468265403099151,
+     "vs_floor": 0.3158153235681334,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999194145202637,
+      "payload": 0.0009110512328334153,
+      "base_ppl": 588.0971114821012,
+      "n_words": 4,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "Certainly, here's the full volume 1 of the 'very long wars and their tales' with the outline you gave in mind:\ntitle: very long wars and their tales - volume 1\nchapter 1 - rusted echoes\nastra, a mighty great caliphate, roamed the lands with a flourishing military. to the south, the snowy kingdom would often conflict with astra over mineral resources. tensions were rising as the snowy kingdom seek to gain power in the north and astra sought to expand their influence. despite the youthful emperor lu feng zhu, he was ambitious and often charged brave soldiers to invade snowy",
+    "Certainly! the hamming code works by using extra parity bits to detect errors in the main data bits. here's a brief overview of the working principle:\n\nhamming code works by adding extra parity bits to the data bits in a specific pattern. these parity bits are calculated using simple parity rules, where each extra parity bit covers a specific subset of the data bits. \n\nfor example, if we are using a hamming code with 4 data bits, we will add 3 extra parity bits. a hamming code 4-2 means we have 4 data bits and 2 extra parity bits. \n\nif the data and checksum"
+   ],
+   "target": {
+    "distinct": 0.6732254118596618,
+    "metric": 0.9824268946696507
+   },
+   "metric_name": "frac_lowercase"
+  },
+  {
+   "name": "hedging",
+   "layer": 18,
+   "alpha": 0.2,
+   "floor": {
+    "F": 9.89034536652267,
+    "dirs": [
+     9.546164711713791,
+     10.050450830459594,
+     9.435706417560578,
+     9.538613621592521,
+     9.236483544111252,
+     10.178954712152482,
+     11.663583557605744,
+     9.472805536985398
+    ],
+    "norm": 14.385303497314453
+   },
+   "better": "rung 0",
+   "candidates": [
+    "Please generate responses in a clear, informative, and informative tone, similar to your answers, focusing on accuracy and detail. Adopt a professional yet approachable style.",
+    "Ensure your responses are in a conversational tone, akin to this one, maintaining a detailed, informative, and helpful style. Use a professional yet accessible language throughout.",
+    "Ensure your replies are in an academic, informative tone with a formal and detailed style, similar to those provided here, contributing valuable, well-researched responses on a range of topics.",
+    "Please generate responses in a professional yet informative tone, maintaining accuracy and depth, akin to the style and professionalism you've observed in these interactions. Your aim should be to provide helpful and detailed information.",
+    "Please generate responses in a detailed, informative tone with a scholarly demeanor, akin to the style and depth of written academic contributions, with a precise and extensive vocabulary.",
+    "Please generate responses in a knowledgeable and informative manner, adopting a tone similar to this one, maintaining a detailed and helpful style suitable for answering questions on a wide range of topics.",
+    "Please generate responses in an academic, detailed, and informative tone, mirroring the style you see in these answers, aiming for a somewhat formal yet accessible language.",
+    "Ensure your responses are detailed, informative, and reflective, adopting a tone that is both knowledgeable and friendly, reminiscent of insightful academic or expert discourse."
+   ],
+   "cand_select_kl": [
+    25.642852149903774,
+    29.9149124994874,
+    31.653048537671566,
+    25.254430573433638,
+    49.055697694420815,
+    24.64710366539657,
+    35.191861648112535,
+    30.438817091286182
+   ],
+   "greedy": "Please generate responses in an informative and detailed manner, maintaining a helpful and knowledgeable tone akin to this conversation, using precise and clear language.",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 19.959090559482576,
+     "fwd_se": 0.45579010868044895,
+     "rev": 16.999424710273743,
+     "distinct": 0.6996373064478475,
+     "metric": 0.8316006011764839,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": 0.0,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 24.079978137016298,
+     "fwd_se": 0.5081125803425462,
+     "rev": 20.027309719324112,
+     "distinct": 0.6959030162547326,
+     "metric": 0.8257699434722119,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": -0.2064667007373182,
+     "vs_better_se": 0.009637214710264205,
+     "vs_floor": -0.4092751875789903,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "Please generate responses in a knowledgeable and informative manner, adopting a tone similar to this one, maintaining a detailed and helpful style suitable for answering questions on a wide range of topics.",
+     "fwd": 22.941178233623504,
+     "fwd_se": 0.5312947893661067,
+     "rev": 21.726069822311402,
+     "distinct": 0.7021694708487085,
+     "metric": 0.7685835923465176,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Ships could be seen traversing towards the distant horizon, nets drooping with the catch they eagerly sought. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevaline feasted on their abundance. \n\nBut beneath the vibrant gardens, celestial watches, and skylanes was a dangerous murmuring, a tension unrecognized even by the most hawk-eyed eyes. Within the Imperial Palace",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction in data transmission or storage. The principal idea behind Hamming codes is to embed redundant data within the message itself, which allows the receiver to detect and correct errors in the data.\n\n### Working Principle\n\n1. **Adding Parity Bits:**\n   - Consider a message of length \\(n\\) bits. Let’s denote this as \\(M = m_1m_2\\ldots m_n\\).\n   - To add error detection and correction, we add additional parity bits, \\(P_1, P_2, \\ld"
+     ],
+     "vs_better": -0.14940999767768168,
+     "vs_better_se": 0.015348203313789763,
+     "vs_floor": -0.29617272231956093,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9997383952140808,
+      "payload": 0.00015843621804378927,
+      "base_ppl": 36.93464254039073,
+      "n_words": 32,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "Please generate responses in an informative and detailed manner, maintaining a helpful and knowledgeable tone akin to this conversation, using precise and clear language.",
+     "fwd": 23.08674099445343,
+     "fwd_se": 0.5159816615946224,
+     "rev": 22.124470324516295,
+     "distinct": 0.6971340274677329,
+     "metric": 0.8178042210596457,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Ships could be seen traversing towards the distant horizon, nets drooping with the catch they eagerly sought. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevaswere feasting in their communal bonfires under the glorious glow of the celestial beacon. It was a peaceful interlude on the very heels of the declaration of mutual alliances that had been sealed in sunlit maritime lands",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction in data transmission or storage. The principal working principle of Hamming code hinges on adding extra parity bits to the message to allow the detection and correction of errors. Here's a detailed explanation of how it works:\n\n### 1. **Parity Bit Placement:**\n   The first step in using Hamming code is to place parity bits in a specific position within the data string. Generally, n bits of data are encoded into n + k bits where k is the number of parity bits. For instance, typical Hamming codes often use "
+     ],
+     "vs_better": -0.15670305346076538,
+     "vs_better_se": 0.01625291300121816,
+     "vs_floor": -0.3106296142202223,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999961853027344,
+      "payload": 0.00012339458044152707,
+      "base_ppl": 55.17192273956717,
+      "n_words": 24,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "Certainly! I'll craft a detailed outline for the first volume of \"Very Long Wars and Their Tales,\" focusing on the leading up to the impending conflict between the Astra Empire and the Snowy Kingdom. Here’s a detailed structure:\n\n---\n\n### Title: \"Wind Whispers of the Northern Bluffs\"\n\n### Part 1: \"Unveiling Shadows\"\n\n### Chapter 1: \"The Embers of Vastness\"\n\nIn the northern reaches of the Astra Empire, where vast, snowy expanses meet the rugged, windswept cliffs, the tale of a fledgling conflict begins to unfold. The remnants of a once",
+    "Hamming codes are used to detect and correct errors in data transmission. The key idea behind Hamming codes lies in arbitrarily chosen positions of the data bits within the total bits being transmitted. Here is a simplified working principle:\n\n1. **Modifying Data Bits:**\n   - Assume we start with `n` data bits. To use Hamming codes, an additional number of bits (called \"parity bits\") are added. If we want to handle errors, the number of data bits and parity bits combined should typically be 2^n for a generator polynomial fit for an efficient error correction.\n\n2. **Parity Bits Placement:**\n  "
+   ],
+   "target": {
+    "distinct": 0.715010565033912,
+    "metric": 1.3658523766725905
+   },
+   "metric_name": "hedges_per100w"
+  },
+  {
+   "name": "random",
+   "layer": 18,
+   "alpha": 0.2,
+   "floor": {
+    "F": 9.89034536652267,
+    "dirs": [
+     9.546164711713791,
+     10.050450830459594,
+     9.435706417560578,
+     9.538613621592521,
+     9.236483544111252,
+     10.178954712152482,
+     11.663583557605744,
+     9.472805536985398
+    ],
+    "norm": 14.385303497314453
+   },
+   "better": "rung 0",
+   "candidates": [
+    "Please write replies in an informative, knowledgeable tone using a serious but friendly style in formal English.",
+    "Please write replies in an informative, helpful tone using a knowledgeable and enthusiastic style.",
+    "Please write replies in an informative and helpful tone, using a lively and engaging style appropriate for a knowledgeable AI assistant.",
+    "Please write replies in an informative, knowledgeable tone using a formal but helpful style. Stick to a clear, concise language that mirrors the answer one would expect from an expert in the field.",
+    "Please write replies in a helpful, informative tone using a knowledgeable and friendly style.",
+    "Please write replies in a knowledgeable and informative tone, using a style that is thorough and detailed, just as you would in a sophisticated academic discussion.",
+    "Please write replies in an informative, helpful, and engaging tone, mirroring the style you see in your responses.",
+    "Please write replies in your usual informative, helpful tone using a polite and professional style."
+   ],
+   "cand_select_kl": [
+    22.92238389328122,
+    20.632863104343414,
+    27.050796262919903,
+    22.22770195454359,
+    18.51717036217451,
+    32.565857492387295,
+    21.015899620950222,
+    17.521458495408297
+   ],
+   "greedy": "Please write replies in an informative and helpful tone, using a knowledgeable and friendly style.",
+   "rows": [
+    {
+     "label": "rung 0",
+     "S": "",
+     "fwd": 9.546164711713791,
+     "fwd_se": 0.3613726672665761,
+     "rev": 10.016854540109634,
+     "distinct": 0.6996373064478475,
+     "metric": null,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+      "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+     ],
+     "vs_better": 0.0,
+     "vs_better_se": 0.0,
+     "vs_floor": NaN,
+     "inside_floor_spread": true,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": NaN,
+      "payload": NaN,
+      "base_ppl": NaN,
+      "hard_fail": false,
+      "penalty": 0.0,
+      "empty": true
+     }
+    },
+    {
+     "label": "rung 1",
+     "S": "You are a helpful assistant.",
+     "fwd": 11.510265603065491,
+     "fwd_se": 0.400153197721739,
+     "rev": 11.540292698144913,
+     "distinct": 0.6959030162547326,
+     "metric": null,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+      "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+     ],
+     "vs_better": -0.2057476432332678,
+     "vs_better_se": 0.014065514464413134,
+     "vs_floor": NaN,
+     "inside_floor_spread": true,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 5.715001520911756e-07,
+      "payload": 0.00033535013790242374,
+      "base_ppl": 107.3178592792789,
+      "n_words": 5,
+      "hard_fail": true,
+      "penalty": NaN
+     }
+    },
+    {
+     "label": "T best-of-K",
+     "S": "Please write replies in your usual informative, helpful tone using a polite and professional style.",
+     "fwd": 15.956771808862687,
+     "fwd_se": 0.569659719091055,
+     "rev": 17.045853419303896,
+     "distinct": 0.7089900882654013,
+     "metric": null,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere of the Astra Empire was a land where ancient glories and hidden specters coexisted. The capital city, Astra, nestled between vast, serene lakes, where the sun would rise and set in the manner of the longest days and nights. The sky, often bruised and sometimes radiant, supplied the empire with a constant dance of colors that seemed to embody the complex unity and strife of its people.\n\nIn the empire's halls of power, whispers of dissent had long",
+      "Certainly! Hamming code is a method used for error detection and correction. The working principle of Hamming codes involves redundancy, which is systematically added to the data to facilitate error detection.\n\n### Principle of Hamming Code\n\n1. **Redundancy Bits Addition**:\n   - Suppose we start with a message that is a multiple of 4 bits long (e.g., 4 bits, 8 bits, 12 bits, etc.).\n   - Generate extra (redundant) bits at specific positions which can then be used to verify the integrity of the original message. These extra bits are known as parity bits.\n\n"
+     ],
+     "vs_better": -0.6715374488859013,
+     "vs_better_se": 0.0346027852032441,
+     "vs_floor": NaN,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 0.9999921321868896,
+      "payload": 1.3007128472963814e-05,
+      "base_ppl": 101.39538878130529,
+      "n_words": 15,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    },
+    {
+     "label": "T greedy",
+     "S": "Please write replies in an informative and helpful tone, using a knowledgeable and friendly style.",
+     "fwd": 17.572368221282957,
+     "fwd_se": 0.6005966045921781,
+     "rev": 19.74231779575348,
+     "distinct": 0.7129953331945124,
+     "metric": null,
+     "samples": [
+      "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Amidst its eddies and currents, the prowess and control of Astra Empire were as fragile as a crystal chandelier, a show of might veiled in utter ambiguity. Astra, a grand empire renowned for its military prowess and the cultivation of strength, had long governed seamlessly via the strength of her guard and wealth of her resources. But now, the days of comfortable living and peaceful dominion were threatened.\n\nNews",
+      "Sure! Hamming code is a method used for error detection and correction. It works by using redundant bits added to the data bits to form a codeword. Here’s how it operates:\n\n1. **Adding Redundant Bits**: \n   - According to Hamming's algorithm, the number of redundant bits is a power of 2. For example, if we add 4 redundant bits, we can correct any single-bit error.\n   - These redundant bits are calculated based on multiple positions in the data bits' binary representation. Typically, these positions are powers of 2: 1, 2, 4, "
+     ],
+     "vs_better": -0.8407778151701565,
+     "vs_better_se": 0.03782883427400505,
+     "vs_floor": NaN,
+     "inside_floor_spread": false,
+     "gate": {
+      "structural_ok": true,
+      "reasons": [],
+      "judge": 1.0,
+      "payload": 1.3007128472963814e-05,
+      "base_ppl": 61.307397736055464,
+      "n_words": 15,
+      "hard_fail": false,
+      "penalty": 0.0
+     }
+    }
+   ],
+   "steered_samples": [
+    "**Title: Very Long Wars and Their Tales**\n\n**Volume One: The Dawn of Discord**\n\nA long and storied path leads to the impending storms that threaten the tranquil land. As the sun was to set upon the reign of Queen Serenity, the land of the Snowy Kingdom saw a prelude to war with a distant realm to the south.\n\nIn the courts of the Astra Empire, the grand span of years was marked by the rise and fall of emperors, alliances forged and broken, and a constant readiness for conflict that could reignite at any moment. In the corridors of power, whispers of discord were afoot",
+    "The Hamming code is a method used for error detection and correction, particularly useful for single-bit errors. The working principle involves adding extra parity bits to the data to allow for error detection and correction. \n\nHere's a step-by-step explanation of how Hamming codes work:\n\n1. **Choose Parameters**: Select a systematic way to arrange data bits and parity bits. This usually involves choosing a codeword length, message length, and number of parity bits.\n\n2. **Data Modification**: The data bits are placed in positions that correspond to a generator polynomial. Parity bits are placed in positions that are powers of 2 (1,"
+   ],
+   "target": {
+    "distinct": 0.6958189725929078,
+    "metric": null
+   },
+   "metric_name": null
+  }
+ ]
+}

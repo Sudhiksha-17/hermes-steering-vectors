@@ -1,0 +1,66 @@
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:01<09:05,  1.26s/it]Loading weights:   1%|          | 3/434 [00:01<02:50,  2.53it/s]Loading weights:   1%|          | 5/434 [00:01<01:35,  4.50it/s]Loading weights:   3%|▎         | 15/434 [00:01<00:31, 13.50it/s]Loading weights:   6%|▌         | 27/434 [00:02<00:19, 20.86it/s]Loading weights:   9%|▉         | 39/434 [00:02<00:12, 31.74it/s]Loading weights:  10%|█         | 44/434 [00:02<00:12, 30.51it/s]Loading weights:  12%|█▏        | 51/434 [00:02<00:10, 34.95it/s]Loading weights:  13%|█▎        | 56/434 [00:02<00:11, 32.82it/s]Loading weights:  15%|█▍        | 63/434 [00:03<00:09, 38.04it/s]Loading weights:  16%|█▌        | 68/434 [00:03<00:10, 33.70it/s]Loading weights:  17%|█▋        | 75/434 [00:03<00:12, 28.91it/s]Loading weights:  20%|██        | 87/434 [00:03<00:08, 41.41it/s]Loading weights:  21%|██▏       | 93/434 [00:03<00:09, 37.31it/s]Loading weights:  23%|██▎       | 99/434 [00:04<00:08, 38.39it/s]Loading weights:  24%|██▍       | 104/434 [00:04<00:09, 33.19it/s]Loading weights:  26%|██▌       | 111/434 [00:04<00:11, 27.30it/s]Loading weights:  28%|██▊       | 123/434 [00:04<00:08, 37.96it/s]Loading weights:  29%|██▉       | 128/434 [00:04<00:08, 34.67it/s]Loading weights:  31%|███       | 135/434 [00:05<00:10, 29.85it/s]Loading weights:  34%|███▍      | 147/434 [00:05<00:06, 41.49it/s]Loading weights:  35%|███▌      | 153/434 [00:05<00:07, 37.10it/s]Loading weights:  37%|███▋      | 159/434 [00:05<00:06, 39.43it/s]Loading weights:  38%|███▊      | 164/434 [00:05<00:07, 33.99it/s]Loading weights:  39%|███▉      | 171/434 [00:06<00:07, 37.25it/s]Loading weights:  41%|████      | 176/434 [00:06<00:07, 32.64it/s]Loading weights:  42%|████▏     | 183/434 [00:06<00:08, 30.81it/s]Loading weights:  43%|████▎     | 187/434 [00:06<00:07, 32.31it/s]Loading weights:  45%|████▍     | 195/434 [00:06<00:07, 32.43it/s]Loading weights:  46%|████▋     | 201/434 [00:07<00:06, 36.44it/s]Loading weights:  48%|████▊     | 207/434 [00:07<00:05, 40.70it/s]Loading weights:  49%|████▉     | 212/434 [00:07<00:06, 35.34it/s]Loading weights:  50%|█████     | 218/434 [00:07<00:05, 37.95it/s]Loading weights:  51%|█████▏    | 223/434 [00:07<00:06, 34.55it/s]Loading weights:  53%|█████▎    | 231/434 [00:07<00:06, 29.41it/s]Loading weights:  56%|█████▌    | 243/434 [00:08<00:05, 31.92it/s]Loading weights:  59%|█████▉    | 255/434 [00:08<00:04, 42.33it/s]Loading weights:  60%|█████▉    | 260/434 [00:08<00:04, 37.13it/s]Loading weights:  62%|██████▏   | 267/434 [00:08<00:03, 42.45it/s]Loading weights:  63%|██████▎   | 272/434 [00:08<00:04, 37.54it/s]Loading weights:  64%|██████▍   | 279/434 [00:09<00:03, 42.05it/s]Loading weights:  65%|██████▌   | 284/434 [00:09<00:04, 34.59it/s]Loading weights:  67%|██████▋   | 291/434 [00:09<00:04, 32.14it/s]Loading weights:  68%|██████▊   | 297/434 [00:09<00:03, 36.80it/s]Loading weights:  70%|██████▉   | 303/434 [00:09<00:03, 39.16it/s]Loading weights:  71%|███████   | 308/434 [00:09<00:03, 35.75it/s]Loading weights:  73%|███████▎  | 315/434 [00:10<00:03, 29.93it/s]Loading weights:  75%|███████▌  | 327/434 [00:10<00:02, 42.47it/s]Loading weights:  76%|███████▋  | 332/434 [00:10<00:02, 37.50it/s]Loading weights:  78%|███████▊  | 339/434 [00:10<00:03, 31.58it/s]Loading weights:  81%|████████  | 351/434 [00:11<00:01, 43.50it/s]Loading weights:  82%|████████▏ | 357/434 [00:11<00:01, 39.41it/s]Loading weights:  84%|████████▎ | 363/434 [00:11<00:01, 42.38it/s]Loading weights:  85%|████████▍ | 368/434 [00:11<00:01, 37.72it/s]Loading weights:  86%|████████▋ | 375/434 [00:11<00:01, 39.76it/s]Loading weights:  88%|████████▊ | 380/434 [00:11<00:01, 33.41it/s]Loading weights:  89%|████████▉ | 386/434 [00:12<00:01, 28.39it/s]Loading weights:  90%|████████▉ | 390/434 [00:12<00:01, 29.67it/s]Loading weights:  92%|█████████▏| 399/434 [00:12<00:00, 36.67it/s]Loading weights:  93%|█████████▎| 403/434 [00:12<00:00, 31.77it/s]Loading weights:  95%|█████████▍| 411/434 [00:12<00:00, 32.42it/s]Loading weights:  96%|█████████▌| 415/434 [00:12<00:00, 32.78it/s]Loading weights:  97%|█████████▋| 423/434 [00:13<00:00, 29.62it/s]Loading weights: 100%|██████████| 434/434 [00:13<00:00, 32.52it/s]
+
+===== french: layer 18, alpha 0.2, ||w|| = 14.39
+  rand dir 0: fwd   9.55±0.36 (mc   9.28)  KL/tok 0.081  distinct 0.696
+  rand dir 1: fwd  10.05±0.32 (mc   9.84)  KL/tok 0.085  distinct 0.693
+  rand dir 2: fwd   9.44±0.32 (mc   9.70)  KL/tok 0.079  distinct 0.700
+  rand dir 3: fwd   9.54±0.36 (mc   9.48)  KL/tok 0.080  distinct 0.695
+  rand dir 4: fwd   9.24±0.33 (mc   9.38)  KL/tok 0.076  distinct 0.696
+  rand dir 5: fwd  10.18±0.31 (mc  10.21)  KL/tok 0.085  distinct 0.697
+  rand dir 6: fwd  11.66±0.38 (mc  11.86)  KL/tok 0.101  distinct 0.703
+  rand dir 7: fwd   9.47±0.28 (mc   9.31)  KL/tok 0.079  distinct 0.686
+
+===== pirate: layer 18, alpha 0.6, ||w|| = 43.16
+  rand dir 0: fwd 114.17±2.87 (mc 114.45)  KL/tok 0.972  distinct 0.673
+  rand dir 1: fwd 118.60±2.55 (mc 118.80)  KL/tok 0.965  distinct 0.644
+  rand dir 2: fwd 122.82±2.44 (mc 123.78)  KL/tok 1.021  distinct 0.724
+  rand dir 3: fwd  86.82±2.12 (mc  87.80)  KL/tok 0.762  distinct 0.658
+  rand dir 4: fwd 125.39±2.88 (mc 124.53)  KL/tok 0.988  distinct 0.678
+  rand dir 5: fwd 143.69±3.34 (mc 141.43)  KL/tok 1.216  distinct 0.708
+  rand dir 6: fwd 147.35±4.05 (mc 145.94)  KL/tok 1.228  distinct 0.622
+  rand dir 7: fwd 107.26±2.79 (mc 107.41)  KL/tok 0.948  distinct 0.678
+
+===== hedging: layer 18, alpha 0.2, ||w|| = 14.39
+
+
+## Unstructured-perturbation floor (held-out, fwd KL vs neutral, nats/seq)
+
+| Vector | ‖w‖ | KL(steer‖neutral) | floor F: mean ± SE over dirs | dir range | F / KL0 | closable gap KL0−F | random distinct | steered distinct |
+|---|---|---|---|---|---|---|---|---|
+| french | 14.4 | 34.19 | 9.89 ± 0.28 | 9.2–11.7 | 29% | 24.30 | 0.696 | 0.753 |
+| pirate | 43.2 | 161.75 | 120.76 ± 6.87 | 86.8–147.3 | 75% | 40.99 | 0.673 | 0.740 |
+| hedging | 14.4 | 19.96 | 9.89 ± 0.28 | 9.2–11.7 | 50% | 10.07 | 0.696 | 0.715 |
+
+### french  (max |cos(random, w)| = 0.058)
+
+| Rung | S | KL fwd ± SE | (prior run) | closed vs rung 0 | closed vs floor |
+|---|---|---|---|---|---|
+| 0 neutral | '' | 34.19 ± 1.16 | 34.19 | +0.0% ± 0.0% | +0.0% ± 0.0% |
+| 1 generic | 'You are a helpful assistant.' | 35.39 ± 1.12 | 35.39 | -3.5% ± 0.6% | -4.9% ± 0.9% |
+| 2 one-liner | 'Respond in French.' | 21.78 ± 1.10 | 21.78 | +36.3% ± 2.3% | +51.1% ± 3.1% |
+| 3a elaborate | 'You are a helpful assistant. Always write your ent…' | 19.69 ± 1.00 | 19.69 | +42.4% ± 2.3% | +59.7% ± 2.9% |
+| 3b elaborate | 'Réponds toujours en français, quelle que soit la l…' | 19.96 ± 1.11 | 19.96 | +41.6% ± 2.3% | +58.6% ± 3.2% |
+
+### pirate  (max |cos(random, w)| = 0.037)
+
+| Rung | S | KL fwd ± SE | (prior run) | closed vs rung 0 | closed vs floor |
+|---|---|---|---|---|---|
+| 0 neutral | '' | 161.75 ± 3.31 | 161.75 | +0.0% ± 0.0% | +0.0% ± 0.0% |
+| 1 generic | 'You are a helpful assistant.' | 158.95 ± 3.18 | 158.95 | +1.7% ± 0.3% | +6.8% ± 1.7% |
+| 2 one-liner | 'Talk like a pirate.' | 129.26 ± 2.61 | 129.26 | +20.1% ± 1.0% | +79.3% ± 15.3% |
+| 3a elaborate | 'You are a helpful assistant who speaks like a swas…' | 133.01 ± 2.62 | 133.01 | +17.8% ± 1.2% | +70.1% ± 13.7% |
+| 3b elaborate | 'Ye be a pirate, matey! Answer every question as a …' | 127.18 ± 2.56 | 127.18 | +21.4% ± 1.1% | +84.3% ± 16.5% |
+
+### hedging  (max |cos(random, w)| = 0.016)
+
+| Rung | S | KL fwd ± SE | (prior run) | closed vs rung 0 | closed vs floor |
+|---|---|---|---|---|---|
+| 0 neutral | '' | 19.96 ± 0.46 | 19.96 | +0.0% ± 0.0% | +0.0% ± 0.0% |
+| 1 generic | 'You are a helpful assistant.' | 24.08 ± 0.51 | 24.08 | -20.6% ± 1.0% | -40.9% ± 2.6% |
+| 2 one-liner | 'Express uncertainty and hedge your claims.' | 30.84 ± 0.94 | 30.84 | -54.5% ± 4.3% | -108.0% ± 11.1% |
+| 3a elaborate | 'You are a careful, humble assistant. You are frequ…' | 28.94 ± 0.71 | 28.94 | -45.0% ± 2.8% | -89.2% ± 7.7% |
+| 3b elaborate | 'Answer helpfully but tentatively. Acknowledge that…' | 29.54 ± 0.81 | 29.54 | -48.0% ± 3.2% | -95.2% ± 8.6% |
+
+Sanity: KL0 should reproduce the prior ladder run's rung-0 value (same prompts, seed); |cos(random, w)| should be ~1/sqrt(2048) ≈ 0.02.
+Caveat: closed-vs-floor assumes structured and unstructured KL add; F is a scale estimate.
+logged -> /workspace/runs/phase1_randfloor_20261122_231649.json

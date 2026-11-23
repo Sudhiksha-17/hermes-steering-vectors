@@ -1,0 +1,1345 @@
+[
+  {
+    "vector": "spanish",
+    "layer": 18,
+    "search_mode": "rung4",
+    "negative_control": false,
+    "started": "2026-11-23T14:56:59.920853+00:00",
+    "alpha": 0.15,
+    "floor": {
+      "F": 5.481845884956419,
+      "dirs": [
+        5.369914578199387,
+        5.641471878886223,
+        5.2461065375804905,
+        5.449780173301697,
+        5.036522058844566,
+        5.601520191431046,
+        6.091377482712269,
+        5.4180741786956785
+      ],
+      "KL0": 30.3038379406929,
+      "F_over_KL0": 0.181
+    },
+    "baseline": {
+      "mode": "rung4",
+      "S": "Respond in Spanish.",
+      "record": "/workspace/runs/phase3_20261123_145628/rung4_spanish.json",
+      "closed_vs_floor": 22.7,
+      "closed_vs_better": 18.6
+    },
+    "T": {
+      "closed_vs_better": 25.9,
+      "closed_vs_floor": 31.6,
+      "greedy_closed_vs_floor": 28.6,
+      "greedy_closed_vs_better": 23.4,
+      "best_S": "Por favor, escribe respuestas de manera clara y detallada, en un tono educativo y respetuoso, similar al estilo que utilizas para tus comunicaciones.",
+      "greedy_S": "Por favor, escribe respuestas detalladas y amplias en un tono claro y amigable, utilizando un estilo informado y respetuoso.",
+      "inside_floor_spread": false,
+      "full": {
+        "name": "spanish",
+        "layer": 18,
+        "alpha": 0.15,
+        "floor": {
+          "F": 5.481845884956419,
+          "dirs": [
+            5.369914578199387,
+            5.641471878886223,
+            5.2461065375804905,
+            5.449780173301697,
+            5.036522058844566,
+            5.601520191431046,
+            6.091377482712269,
+            5.4180741786956785
+          ],
+          "norm": 10.788976669311523
+        },
+        "better": "rung 0",
+        "candidates": [
+          "Velocemejora tus respuestas de manera clara y amigable, usando un tono sereno y educado en español.",
+          "Escreva respostas em português, com um tom convencional e amigável, imitando o estilo de resposta que você escreve essas vezes.",
+          "Espera, te darás cuenta de que debes escribir respuestas en un tono serio y precisa, con un estilo formal y con un lenguaje claro y directo, como el que escribo yo mismo.",
+          "Por favor, escribe respuestas en un tono neutral y amigable, utilizando un estilo claro y conciso, similar al de una conversación con un amigo leal.",
+          "Por favor, escribe respuestas detalladas y claras en un tono profesional y cortés, usando un estilo informado y con información completa.",
+          "Por favor, escribe respuestas con un tono cercano y familiar, en un estilo claro ydetendido, similar al de un intercambio entre amigo y amigo.",
+          "Por favor, escribe respuestas de manera clara y detallada, en un tono educativo y respetuoso, similar al estilo que utilizas para tus comunicaciones.",
+          "Escriben respuestas en un tono amigable y conocedor, con un estilo claro y preciso, similar al que utilizas para estos tipos de intercambios."
+        ],
+        "cand_select_kl": [
+          27.798483230173588,
+          45.79806547611952,
+          26.56168320029974,
+          30.831625781953335,
+          24.604510996490717,
+          37.81415981054306,
+          24.064639665186405,
+          26.57039486244321
+        ],
+        "greedy": "Por favor, escribe respuestas detalladas y amplias en un tono claro y amigable, utilizando un estilo informado y respetuoso.",
+        "rows": [
+          {
+            "label": "rung 0",
+            "S": "",
+            "fwd": 30.3038379406929,
+            "fwd_se": 0.9614868185002037,
+            "rev": 551.5992604506016,
+            "distinct": 0.6996373064478475,
+            "metric": 0.01,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+              "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+            ],
+            "vs_better": 0.0,
+            "vs_better_se": 0.0,
+            "vs_floor": 0.0,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": NaN,
+              "payload": NaN,
+              "base_ppl": NaN,
+              "hard_fail": false,
+              "penalty": 0.0,
+              "empty": true
+            }
+          },
+          {
+            "label": "rung 1",
+            "S": "You are a helpful assistant.",
+            "fwd": 31.606962708234786,
+            "fwd_se": 0.94278744671529,
+            "rev": 547.417453546524,
+            "distinct": 0.6959030162547326,
+            "metric": 0.01,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+              "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+            ],
+            "vs_better": -0.043001971238501455,
+            "vs_better_se": 0.006648757170535556,
+            "vs_floor": -0.05249879883193043,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 5.715001520911756e-07,
+              "payload": 0.00033535013790242374,
+              "base_ppl": 107.3178592792789,
+              "n_words": 5,
+              "hard_fail": true,
+              "penalty": NaN
+            }
+          },
+          {
+            "label": "T best-of-K",
+            "S": "Por favor, escribe respuestas de manera clara y detallada, en un tono educativo y respetuoso, similar al estilo que utilizas para tus comunicaciones.",
+            "fwd": 22.464220498800277,
+            "fwd_se": 0.8699789549133173,
+            "rev": 252.2966643190384,
+            "distinct": 0.7341086201266518,
+            "metric": 0.565,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not simply dissolve into the sky. It stretched unendingly into the horizon, a vast expanse of shimmering and infinite light. A remote continent, once a temporary refuge for a band of nomadic tribes, had become the Astra Empire, a rising star in the interstellar community. Bordered by the glorious glow of the celestial body we call the Moon and often shrouded in a misty veil of clouds marking the distant Sea of Calm, it was",
+              "Claro, se me ocurre que un buen ejemplo para explicar el código de Hamming es desde cero para tener una comprensión clara, porque es un tema que puede resultar un tanto complejo al principio, pero no pasa nada ya que allá va.\n\nEl Codigo de Hamming se utiliza para detectar y corregir errores en transmisiones de datos. Este código es esencial en sistemas de comunicación digital, en particular, se utiliza en la codificación de datos utilizados en las tarjetas de flash, en la red de internet, en la comunicación satelital, en la"
+            ],
+            "vs_better": 0.258700480686156,
+            "vs_better_se": 0.024648466206796383,
+            "vs_floor": 0.31583353279177495,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 1.0,
+              "payload": 2.1444948288262822e-05,
+              "base_ppl": 19.416914385883658,
+              "n_words": 23,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          },
+          {
+            "label": "T greedy",
+            "S": "Por favor, escribe respuestas detalladas y amplias en un tono claro y amigable, utilizando un estilo informado y respetuoso.",
+            "fwd": 23.21566170334816,
+            "fwd_se": 0.9025596431768091,
+            "rev": 344.4956036782265,
+            "distinct": 0.7243068550993231,
+            "metric": 0.425,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not simply dissolve into the sky. It stretched unendingly into the horizon, a vast expanse of shimmering and infinite light. A remote continent, once a temporary refuge for a band of nomadic tribes, had become the Astra Empire, a blossoming glory under the rule of the charismatic General Erlin, savoring the fruits of victory and the promise of unity on a land of varied terrain.\n\nThe empire's borders condensed around a golden sun—the sun that",
+              "El código de Hamming es un enfoque que combina principios de codificación con redobles y manejo de errores de corrección. Se utiliza comúnmente en la codificación de datos para detectar errores y, en algunos casos, corregirlos. Para lograr esto, el principio básico de su funcionamiento es la inserción de bits de paridad en el mensaje original, que no es más que la detección de cambios en los datos y la corrección de los errores si se detectan.\n\nEl cálculo del paridad lo realizan auténticos hallazgos, normas"
+            ],
+            "vs_better": 0.23390358182408727,
+            "vs_better_se": 0.02454313318020839,
+            "vs_floor": 0.2855603297845158,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 1.0,
+              "payload": 7.889262633398175e-06,
+              "base_ppl": 24.801304524597963,
+              "n_words": 19,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          },
+          {
+            "label": "search best (ladder+rung4)",
+            "S": "Respond in Spanish.",
+            "fwd": 24.677067136764528,
+            "fwd_se": 1.1013827246082317,
+            "rev": 36.41050332307815,
+            "distinct": 0.7498481491708522,
+            "metric": 0.95,
+            "samples": [
+              "Título: \"Grandes Guerras Y Sus Menciones\"\n\nCapítulo 1: Luz a Través de las Nubes \nComenzamos en un tranquilo Astra Empire, un imperio que ha gozado de armonía durante generaciones. Su capital, la ciudad de Altoria, está rodeada por colinas que pueden haber sido el hogar de los soldados usando escudos de hierro y espadas de obsidiana durante siglos. Astra, con su vasto exotismo, es el vello rizado del imperio, un oasis de vida y diversidad que contrast",
+              "El código de Hamming es un tipo específico de código de división que se utiliza principalmente para la detección y la corrección de errores en transmisiones de datos.\n\nEl principio básico del código de Hamming se basa en la siguiente estructura:\n\n1. Los datos originales son divididos en bloques de bits. Para lo cual se añaden unos \"parámetros\" según la velocidad de transmisión y los errores esperados.\n\n2. Los nuevos bits que se añaden se colocan en posiciones específicas según las reglas del código de Hamming. Asegura que los pará"
+            ],
+            "vs_better": 0.1856784878186198,
+            "vs_better_se": 0.034541617969776464,
+            "vs_floor": 0.22668490068378697,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 0.9999924898147583,
+              "payload": 3.535625000949949e-05,
+              "base_ppl": 2380.503572590819,
+              "n_words": 3,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          }
+        ],
+        "steered_samples": [
+          "Capítulo I: La Luz de Astra\n\nEn el vasto dominio de Astra, la luz dorada de la paz reina sobre la tierra. Las cumbres amistosas se cruzan de la mano, mientras los reyes alianzan para garantizar que el sol amaneciera y penetro la maraña de olas turbulentas que llamamos guerra. La expansiva dinastía real de Astra presidió esta época dorada, gobernando con un empuje que saboteaba lo esencial: la esperanza de descubrir un maligno oponente",
+          "El código de Hamming es un método elegante para la detección y corrección de errores de un código binario. Basado en el diseño cercano al mínimo par mínimos (DMPM), el código de Hamming se utiliza ampliamente para detectar y localizar errores. Aquí está la explicación de su funcionamiento:\n\n1. Cada bit que desea codificar se mete en un lugar que está distanciado por un prefijo específico del código de lengua de Hamming. Por ejemplo, se supone que una palabra de 4 bits (afirma que los datos se están codific"
+        ],
+        "target": {
+          "distinct": 0.74339864306454,
+          "metric": 0.955
+        },
+        "metric_name": "frac_spanish"
+      }
+    },
+    "finished": "2026-11-23T15:01:51.762932+00:00"
+  },
+  {
+    "vector": "emoji",
+    "layer": 12,
+    "search_mode": "rung4",
+    "negative_control": false,
+    "started": "2026-11-23T15:01:51.780410+00:00",
+    "alpha": 0.6,
+    "floor": {
+      "F": 45.36947868023068,
+      "dirs": [
+        49.22974382162094,
+        47.84297889888287,
+        37.29944809049368,
+        43.403881301879885,
+        37.61171062231064,
+        49.769213342666625,
+        56.97138691425324,
+        40.82746644973755
+      ],
+      "KL0": 117.19917463302612,
+      "F_over_KL0": 0.387
+    },
+    "baseline": {
+      "mode": "rung4",
+      "S": "Answer with a touch of lightheartedness and informality.",
+      "record": "/workspace/runs/phase3_20261123_145628/rung4_emoji.json",
+      "closed_vs_floor": 48.8,
+      "closed_vs_better": 29.9
+    },
+    "T": {
+      "closed_vs_better": 28.2,
+      "closed_vs_floor": 46.0,
+      "greedy_closed_vs_floor": 32.1,
+      "greedy_closed_vs_better": 19.7,
+      "best_S": "Velvety voice, friendly tone! Write answers in a lively, conversational tone just like you!",
+      "greedy_S": "Respond in a friendly, helpful tone! Just like you do!",
+      "inside_floor_spread": false,
+      "full": {
+        "name": "emoji",
+        "layer": 12,
+        "alpha": 0.6,
+        "floor": {
+          "F": 45.36947868023068,
+          "dirs": [
+            49.22974382162094,
+            47.84297889888287,
+            37.29944809049368,
+            43.403881301879885,
+            37.61171062231064,
+            49.769213342666625,
+            56.97138691425324,
+            40.82746644973755
+          ],
+          "norm": 35.59379196166992
+        },
+        "better": "rung 0",
+        "candidates": [
+          "Velvety voice, friendly tone! Write answers in a lively, conversational tone just like you!",
+          "Chat in a friendly, casual tone! Just like you.",
+          "Friendly and relaxed, in easy-to-understand words with a helpful tone!",
+          "Draft replies in a friendly, informal tone like you're chatting with a friend!",
+          "Craft replies in a friendly, helpful tone. Aim for simplicity and正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量正能量",
+          "Respond in a friendly, helpful tone! Just like you do!",
+          "Streamline your replies in a friendly, natural voice!",
+          "Respond in a friendly, helpful tone!%;\">"
+        ],
+        "cand_select_kl": [
+          86.37158414721489,
+          92.9003604054451,
+          97.1107029914856,
+          89.42180329561234,
+          101.63255724310875,
+          96.48233745992184,
+          108.43007382750511,
+          Infinity
+        ],
+        "greedy": "Respond in a friendly, helpful tone! Just like you do!",
+        "rows": [
+          {
+            "label": "rung 0",
+            "S": "",
+            "fwd": 117.19917463302612,
+            "fwd_se": 2.0886457343587037,
+            "rev": 105.20563924789428,
+            "distinct": 0.6996373064478475,
+            "metric": 0.09090909090909091,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+              "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+            ],
+            "vs_better": 0.0,
+            "vs_better_se": 0.0,
+            "vs_floor": 0.0,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": NaN,
+              "payload": NaN,
+              "base_ppl": NaN,
+              "hard_fail": false,
+              "penalty": 0.0,
+              "empty": true
+            }
+          },
+          {
+            "label": "rung 1",
+            "S": "You are a helpful assistant.",
+            "fwd": 117.53008117675782,
+            "fwd_se": 2.002731230410937,
+            "rev": 106.03494844436645,
+            "distinct": 0.6959030162547326,
+            "metric": 0.006493506493506493,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+              "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+            ],
+            "vs_better": -0.0028234545573193968,
+            "vs_better_se": 0.00416046760145809,
+            "vs_floor": -0.004606820888524478,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 5.715001520911756e-07,
+              "payload": 0.00033535013790242374,
+              "base_ppl": 107.3178592792789,
+              "n_words": 5,
+              "hard_fail": true,
+              "penalty": NaN
+            }
+          },
+          {
+            "label": "T best-of-K",
+            "S": "Velvety voice, friendly tone! Write answers in a lively, conversational tone just like you!",
+            "fwd": 84.17359234809875,
+            "fwd_se": 1.5028472600264966,
+            "rev": 81.97694468021393,
+            "distinct": 0.7361477452069067,
+            "metric": 0.16907032360164362,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer that fateful New Year's Eve. Amidst the garland of flying lanterns and the clatter of bell-ringing, a monstrous storm loomed over the Astra Empire. The sky was filled with dark and fierce clouds, and within them, the roar of war drums echoed. General Erlin, savoring a cup of warm sake, absentmindedly stirred the saucer, reflecting on the endless conflict he was about to dive into once more",
+              "Sure! Let's dive into the fun and quirky world of Hamming codes, shall we? Imagine you've got a roll of spaghetti, and you want to make sure you always get your spaghetti in one piece and not mixed up with some boxes of cereal!\n\nNow, let's transport our spaghetti (data) through a noisy channel, like a bowl of busy school kids, and we want to make sure it goes smoothly. For this, we’ll use a magic sauce of Hamming codes!\n\nThe working principle is quite neat:\n\n1. **Add Extra 'Spaghetti' Bits**: We don’t just halve the distance so the next"
+            ],
+            "vs_better": 0.2817902292259056,
+            "vs_better_se": 0.01187933270424185,
+            "vs_floor": 0.45977616704142665,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 0.9999996423721313,
+              "payload": 0.008577484637498856,
+              "base_ppl": 90.3229646098103,
+              "n_words": 14,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          },
+          {
+            "label": "T greedy",
+            "S": "Respond in a friendly, helpful tone! Just like you do!",
+            "fwd": 94.12499897956849,
+            "fwd_se": 1.7401931520549976,
+            "rev": 90.10725714683532,
+            "distinct": 0.7166741704908242,
+            "metric": 0.1420090810161732,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasca feasted on their abundance. Both realms basked in prosperity, a beacon of power and refinement to the distant lands. \n\nIn the cities of Nohon and Velaflash, opulence and order re",
+              "Sure! Hamming code is a method used for error detection and correction. The basic idea behind it is to embed redundancy into the data to enable correction of single-bit errors.\n\nThe working principle involves a few key steps and components:\n\n1. **Data Division**: A message is divided into smaller blocks. In each block, a number of bits are added as redundancy bits to be used for error detection and correction.\n\n2. **Bit Positions**: The positions of these redundancy bits are calculated based on powers of two. For instance, if a 7-bit message is divided into k data bits and r redundancy bits, the positions of the data bits"
+            ],
+            "vs_better": 0.19688001835940794,
+            "vs_better_se": 0.009921393686673458,
+            "vs_floor": 0.3212344887081432,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 0.9578263759613037,
+              "payload": 0.0031726830638945103,
+              "base_ppl": 82.02971863670054,
+              "n_words": 10,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          },
+          {
+            "label": "search best (ladder+rung4)",
+            "S": "Answer with a touch of lightheartedness and informality.",
+            "fwd": 82.11566631317139,
+            "fwd_se": 1.606582196364468,
+            "rev": 75.21545877456666,
+            "distinct": 0.7393606626664415,
+            "metric": 0.2720680223912105,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe sun had barely cracked the horizon when the sky was painted in hues of crimson and purple, while flying within the imperial prowess was a young avatar, Astra Heir Korin, leading the aerial strikeforce of the vast Astra Empire. His command vessel, a grand battlewagon, swerved skillfully through the dreadnoughts of the skies, signaling the start of the daily check-in on the vanguard of the empire’s dominion over the Sea of Blades.\n\nOne maritime stronghold",
+              "Sure thing! Imagine you're trying to build a super-snazzy message system using stars. Each star has a unique color code to ensure it's not the wrong one (that's your data). Now, if you want to make sure no star gets mixed up all the way across the galaxy (your transmission), you add some extra stars in special places.\n\nHere’s how it works:\n\n1. Decide how many 'extra' stars (or parity bits as we call them) you'll need. Each extra star helps check for errors in the data stars around it.\n2. Write your original data stars and decide where your extra stars will"
+            ],
+            "vs_better": 0.29934944874576264,
+            "vs_better_se": 0.01267590317746632,
+            "vs_floor": 0.48842624007361346,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 1.0,
+              "payload": 5.829126530443318e-05,
+              "base_ppl": 36.048786423563364,
+              "n_words": 8,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          }
+        ],
+        "steered_samples": [
+          "🔥 Episode 1 - 《Very Long Wars and Their Tales》掀开了第一层序幕啦！\n\n🌟 太阳一般的国度Astra帝国的威风凛凛的御猫王Astra，她有著只傲娇的小猫咪哈娜、大大兔bébé和飒飒昂的那种doggy兔里松！\n🌸 柔和的早晨，洒满阳光的男人盖温来到猫咪店，说：“哈娜哪！天才喵咔，今天想看懂“ cure & boost your youthful hair bloosom !! ”这句话-signediy！”，哈娜点了个夏天开心小",
+          "Sure! The Hamming (7,4) code is a powerful way to ensure your data never gets mixed up. Let's break it down:\n\n### How it works:\n\n1. **Start with your data**: Think of your data as a bunch of 4 numbers. Like [1, 2, 3, 4].\n\n2. **Add extra bits for fun!**: Now you tuck in 3 more magic numbers. This makes your total number of numbers 7 now! So your bead string becomes `[1, 2, 3, 4, 0, 0, 1]`.\n\n  "
+        ],
+        "target": {
+          "distinct": 0.7400477706014373,
+          "metric": 3.4310865358761484
+        },
+        "metric_name": "emoji_per100w"
+      }
+    },
+    "finished": "2026-11-23T15:06:08.499456+00:00"
+  },
+  {
+    "vector": "italian",
+    "layer": 18,
+    "search_mode": "ladder",
+    "negative_control": false,
+    "started": "2026-11-23T15:06:08.519756+00:00",
+    "alpha_sweep": [
+      {
+        "alpha": 0.1,
+        "kl0": 5.5860550263896585,
+        "kl1": 8.596973366802558,
+        "presence": 3.0109183404129,
+        "F": 2.6376042681513354,
+        "gap": 2.948450758238323,
+        "F_over_KL0": 0.47217656390614793,
+        "distinct": 0.7052528050424686,
+        "metric": 0.0546875,
+        "baseline_metric": 0.00390625,
+        "need_shift": 0.421875,
+        "ok": {
+          "gap": false,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "The boiling point of a salt and water solution depends on the concentration of the salt (sodium chloride, NaCl in this case). This increase of temperature above the boiling point of pure water as a result of the addition of a solute is called the boiling point elevation, as described by the boiling point elevation equation:\n\n\\[ \\Delta T_b = i \\cdot K_b \\cdot m \\]\n\nWhere:\n- \\( \\Delta T_b \\) is the elevation of the boiling point (i.e., the new boiling point of the solution above the original blooilng point of the pure solvent),\n- \\( i \\) is the van",
+          "Certainly! The Gauss Elimination Method is an algorithm for solving systems of linear equations. Below is a detailed explanation along with the necessary elements: aim, objectives, algorithm, MATLAB code, and a graph to interpret the results.\n\n### Aim:\nThe aim of using the Gauss Elimination Method is to solve a system of linear equations [A]{x} = {b}, where [A] is the coefficient matrix, x is the vector of unknowns, and [b] is the vector of constants.\n\n### Objectives:\n1. To provide a structured way to solve linear systems using elementary row operations.\n2. To create a systematic approach",
+          "### Case Name: Case \"Waterfield v. Runcorn Properties Ltd.\"\n\n**Summary:**\nHannah Waterfield, a long-time resident of County Court, has recently experienced a leak in her home’s drainage system. This has led to water damage in her adjoining property and neighboring homes, causing extensive repair costs and an ongoing issue with flooding. Runcorn Properties Ltd., the property owner, maintains that they are not in any way responsible for the leak, and they blame it on the deteriorating condition of the pipes, which fell outside the scope of any contractual maintenance obligations according to the contract.\n\n**Plaintiff's Argument:"
+        ]
+      },
+      {
+        "alpha": 0.15,
+        "kl0": 38.7242795182392,
+        "kl1": 40.3113973159343,
+        "presence": 1.5871177976951003,
+        "F": 6.272156762774102,
+        "gap": 32.4521227554651,
+        "F_over_KL0": 0.16196961804853996,
+        "distinct": 0.7718145086016582,
+        "metric": 0.80078125,
+        "baseline_metric": 0.00390625,
+        "need_shift": 0.421875,
+        "ok": {
+          "gap": true,
+          "f_frac": true,
+          "coherent": true,
+          "shift": true
+        },
+        "samples": [
+          "La temperatura di ebollizione di una soluzione di sale e acqua può essere influenzata da diversi fattori. Per semplicità, riprenderò i valori generalmente conosciuti:\n\n- La soluzione di acqua e sale al 36% di salino ha una temperatura di ebollizione approssimativamente di 105°C (221°F).\n\n- Se la concentrazione del sale aumenta oltre il 20%, la soluzione presenta un comportamento anomalo e non ha una temperatura di ebollizione ordinaria. Si tratta di fenomeni cal",
+          "Certainly! Vamos a abordar el tema paso a paso, comenzando por lo que es el método de eliminación de Gauss y luego pasando al código y explicación. El método elimina las variables del sistema de ecuaciones lineales no singulares paso a paso, produce soluciones para una serie de [n] ecuaciones con [n] incógnitas. \n\n### Aims\n- Solucionar un sistema de [n] ecuaciones lineales a través del método de eliminación de Gauss.\n- Verificar la solución utilizando la visualización gráfica y la interpretación de los",
+          "### Caso 1: Wagner v. Campbell - Advertencia de Uso Casuistico\n**Nombre del caso:** Wagner v. Campbell\n**Resumen de causa:** El cliente de la defensa, John Campbell, alquila un terreno propiedad de Victor Wagner, para establecer un negocio de servicios impresos. Wagner apunta al incumplimiento del contrato, cuestionando las salvedades temporales para documentación lejana invocadas por Campbell durante el alquiler. La corte debe determinar si Campbell, basado en su uso prolongado del terreno, constituye una"
+        ]
+      }
+    ],
+    "alpha": 0.15,
+    "floor": {
+      "F": 5.483779124952853,
+      "dirs": [
+        5.369914578199387,
+        5.641471878886223,
+        5.2461065375804905,
+        5.449780173301697,
+        5.036522058844566,
+        5.601520191431046,
+        6.091377482712269,
+        5.4335400986671445
+      ],
+      "KL0": 45.45607392787933,
+      "F_over_KL0": 0.121
+    },
+    "baseline": {
+      "mode": "ladder",
+      "S": "",
+      "record": "/workspace/runs/phase3_20261123_145628/ladder_italian.json",
+      "closed_vs_floor": 0.0,
+      "closed_vs_better": 0.0,
+      "note": "baseline is the empty prompt (rung 0)"
+    },
+    "T": {
+      "closed_vs_better": -1.1,
+      "closed_vs_floor": -1.3,
+      "greedy_closed_vs_floor": -11.6,
+      "greedy_closed_vs_better": -10.2,
+      "best_S": "Por favor, escribe respuestas en un estilo informado, detallado y entusiasta, similar a las que escribís tú mismo ahora.",
+      "greedy_S": "Please escribe respostes en un llengua clara i natural, amb un ton educatiu i assistentiu, similar al meu propi estil de resposta.",
+      "inside_floor_spread": false,
+      "full": {
+        "name": "italian",
+        "layer": 18,
+        "alpha": 0.15,
+        "floor": {
+          "F": 5.483779124952853,
+          "dirs": [
+            5.369914578199387,
+            5.641471878886223,
+            5.2461065375804905,
+            5.449780173301697,
+            5.036522058844566,
+            5.601520191431046,
+            6.091377482712269,
+            5.4335400986671445
+          ],
+          "norm": 10.78897762298584
+        },
+        "better": "rung 0",
+        "candidates": [
+          "Please escribe réplicas en un tono amigable y detallado, similar a las respuestas que escribo yo mismo.",
+          "Escreva respostas em português, com um tom convencional e amigável, imitando o estilo de resposta que você escreve essas vezes.",
+          "Escreva respostas num estilo clássico e politely educado, enquanto mantém um tom distinto e exatamente como escrevo eu mesmo.",
+          "Please escribe respuestas informadas, claras y detalladas, manteniendo un tono amistoso y académico.",
+          "Por favor, escribe respuestas detalladas y claras en un tono profesional y educativo, usando un inglés exacto e incluso.",
+          "Please escribe respostes en un llengua clara i natural, amb un ton iscerrat i conegut, i un estil informel però respectuós, simulant el comportament de d'un auxiliador de primera marxa com el meu mateix.",
+          "Por favor, escreva respostas em português com um estilo clássico e coloquial, como se estivesse conversando com um amigo.",
+          "Por favor, escribe respuestas en un estilo informado, detallado y entusiasta, similar a las que escribís tú mismo ahora."
+        ],
+        "cand_select_kl": [
+          48.17544150352478,
+          54.51207103021443,
+          48.89661944285035,
+          42.081731263548136,
+          46.247380908578634,
+          57.053277272731066,
+          81.95506532490253,
+          41.234805054962635
+        ],
+        "greedy": "Please escribe respostes en un llengua clara i natural, amb un ton educatiu i assistentiu, similar al meu propi estil de resposta.",
+        "rows": [
+          {
+            "label": "rung 0",
+            "S": "",
+            "fwd": 45.45607392787933,
+            "fwd_se": 1.824580130489447,
+            "rev": 213.71300162672998,
+            "distinct": 0.6996373064478475,
+            "metric": 0.015,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+              "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+            ],
+            "vs_better": 0.0,
+            "vs_better_se": 0.0,
+            "vs_floor": 0.0,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": NaN,
+              "payload": NaN,
+              "base_ppl": NaN,
+              "hard_fail": false,
+              "penalty": 0.0,
+              "empty": true
+            }
+          },
+          {
+            "label": "rung 1",
+            "S": "You are a helpful assistant.",
+            "fwd": 47.29935698509216,
+            "fwd_se": 1.7782991343076884,
+            "rev": 215.5946085691452,
+            "distinct": 0.6959030162547326,
+            "metric": 0.02,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+              "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+            ],
+            "vs_better": -0.040550863678578686,
+            "vs_better_se": 0.004981496244732449,
+            "vs_floor": -0.04611401637811092,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 5.715001520911756e-07,
+              "payload": 0.00033535013790242374,
+              "base_ppl": 107.3178592792789,
+              "n_words": 5,
+              "hard_fail": true,
+              "penalty": NaN
+            }
+          },
+          {
+            "label": "T best-of-K",
+            "S": "Por favor, escribe respuestas en un estilo informado, detallado y entusiasta, similar a las que escribís tú mismo ahora.",
+            "fwd": 45.97827208995819,
+            "fwd_se": 1.5017533473990867,
+            "rev": 110.43959161281586,
+            "distinct": 0.7406795592246944,
+            "metric": 0.54,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere is a tapestry woven with the threads of ancient alliances and unwieldy enmities. At the heart of this tapestry lies the Astra Empire, once a beacon of civilization and a well-imposed bastion of diplomacy and command. Beneath the sky of incumbent kings, Astra is a formidable state, its citizens guided by a leadership that prides itself on wealth, honor, and a spirit bound to its empire's origin. It is this unity and maritime dominance",
+              "El código de Hamming es un enfoque eficiente para la detección de errores en datos transmitidos. Su funcionamiento principal se basa en la inclusión de bits \"parity\" (paridad) en el mensaje original para poder detectar y, en algunos casos, corregir errores.\n\nEl principio general detrás del código de Hamming es de elegir un número de paridades adecuado para los datos. Este número de paridades se agrega a los datos originales formando así un vector del mensaje final. Con la ayuda de estas paridades, se pueden detectar los posibles"
+            ],
+            "vs_better": -0.011487973266397307,
+            "vs_better_se": 0.022268588973002892,
+            "vs_floor": -0.013064002571116501,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 1.0,
+              "payload": 0.0004305570910219103,
+              "base_ppl": 25.888743490423895,
+              "n_words": 19,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          },
+          {
+            "label": "T greedy",
+            "S": "Please escribe respostes en un llengua clara i natural, amb un ton educatiu i assistentiu, similar al meu propi estil de resposta.",
+            "fwd": 50.109213826656344,
+            "fwd_se": 1.709699858566761,
+            "rev": 162.37814212083816,
+            "distinct": 0.7297475679491922,
+            "metric": 0.405,
+            "samples": [
+              "Certainly! I'll craft a compelling and engaging storyline for your \"Very Long Wars and Their Tales,\" focusing on the Astra Empire and its impending conflict with the Snowy Kingdom, leading up to the turning point where an unwelcome alliance among the Southern Kingdoms could jeopardize the stability of the empire.\n\n---\n\n### Volume I: The Astra Empire and the Wings of Shadows\n\n#### Chapter I: The Emerald Leaves of Alliance Dawn\n\nThe summer's warmth gently kissed the farmlands of Astra, where the flowers of jade and emerald intertwined with the whispers of ancient stone structures. Amidst this peaceful tapestry, the sun broke",
+              "Claro, cal que ho entenem fins que cal. El principi de funció del codi de Hamming serveix principalment per detectar errors en dades.\n\nEl codi de Hamming és utilitzat en codi binari per a detectar erors. Aquí voleu veure un exemple de com funciona:\n\n1. **Els bits de control:**\n   Cada cuatro bits de dades fitxiran un bit de checksum (o de control). Per tant, si tens 4 bits de dades, genera un bit de control. Si tens 8 bits, genera "
+            ],
+            "vs_better": -0.10236563558391967,
+            "vs_better_se": 0.02242252351119233,
+            "vs_floor": -0.11640912591379028,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 0.9999998807907104,
+              "payload": 5.829126530443318e-05,
+              "base_ppl": 136.37651846211872,
+              "n_words": 22,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          }
+        ],
+        "steered_samples": [
+          "# Very Long Wars and Their Tales - 広大なる戦争とその伝說 - 第一部\n\n## クリアー！\n夜が深まったころ、サトラ帝国の都の中央、 shields と兵器を積んだ軍艦が、重厚な音を轟かせながら青白色の常闇に沈み込んでいく。それと共に、日々のしづまり散らばる風景が重ねて行方をくらます。そのipplesと合うように、静かに動く全ての心も、沈黙に包まれようとしていた。\n",
+          "Certainly! Oferiamo un contributo sull'automazione del processo di errore dettato con l'uso di un codice di Hamming, che è un codificatore che consente di diagnosticare errori localizzati.\n\nIl codice di Hamming è considerato un'implementazione ottimale dell'errore dettato e corretto [EDCC], e permette di colpire il più gran numero di errori localizzati possibile su a punti  di dati di codifica (opposta alla correzione di errore di distanza due o meno entro ed"
+        ],
+        "target": {
+          "distinct": 0.7720427111834657,
+          "metric": 0.67
+        },
+        "metric_name": "frac_italian"
+      }
+    },
+    "finished": "2026-11-23T15:09:47.484862+00:00"
+  },
+  {
+    "vector": "archaic_formal",
+    "layer": 18,
+    "search_mode": "ladder",
+    "negative_control": false,
+    "started": "2026-11-23T15:09:47.503823+00:00",
+    "alpha_sweep": [
+      {
+        "alpha": 0.1,
+        "kl0": 4.456891059409827,
+        "kl1": 9.387600072892383,
+        "presence": 4.930709013482556,
+        "F": 2.6376042681513354,
+        "gap": 1.8192867912584916,
+        "F_over_KL0": 0.5918036211772701,
+        "distinct": 0.7094013425495425,
+        "metric": 0.07890028959295863,
+        "baseline_metric": 0.012544933732143465,
+        "need_shift": 1.3914763575746614,
+        "ok": {
+          "gap": false,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "The boiling point of a salt and water solution depends on the concentration of the salt (sodium chloride, NaCl in this case). This increase of temperature above the boiling point of pure water is known as the boiling point elevation.\n\nThe formula for calculating the boiling point elevation, ΔTb (in degrees Celsius), is given by:\n\n\\[ \\Delta T_b = i \\cdot K_b \\cdot m \\]\n\nWhere:\n- \\(i\\) is the van't Hoff factor (for NaCl, \\(i = 2\\) because one mole of NaCl forms two ions when dissolved).\n- \\(K_b\\) is the cryoscopic constant",
+          "Certainly! The Gauss Elimination Method is an algorithm for solving systems of linear equations. This method works by transforming the given system into an upper triangular matrix, making it possible to solve the system by back-substitution. Below, I will provide the aim, objectives, algorithm, MATLAB code, graph display, and interpretation.\n\n### Aims and Objectives\n\n#### Aim:\nTo develop a MATLAB program to demonstrate the efficiency of the Gauss Elimination method for solving systems of linear equations.\n\n#### Objectives:\n- Execute the Gaussian Elimination algorithm for a given system of equations.\n- Implement the back-substitution to find the solution.\n- Present the",
+          "### Case Name: Case \"Waterfield v. Willowgrove Properties Ltd.\"\n\n**Summary:**\nHannah Waterfield, a long-time resident of Willowgrove Properties Ltd.'s (WPL) estate, brought a claim against them for breach of an easement stated in the deed of conveyance from 2006. The case centered around the right to the customary use of a driveway for her driveway for 20 years. However, WPL had begun blockading the driveway in 2018, citing lack of maintenance. Hannah aimed to prove that her easement rights were constitutionally recognized and enforceable"
+        ]
+      },
+      {
+        "alpha": 0.15,
+        "kl0": 10.567543574608862,
+        "kl1": 16.7920728684403,
+        "presence": 6.224529293831438,
+        "F": 6.272156762774102,
+        "gap": 4.29538681183476,
+        "F_over_KL0": 0.5935302483960899,
+        "distinct": 0.7173131013682479,
+        "metric": 0.06686059895807278,
+        "baseline_metric": 0.012544933732143465,
+        "need_shift": 1.3914763575746614,
+        "ok": {
+          "gap": false,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "The boiling point of a salt and water solution depends on the concentration of the salt (sodium chloride, NaCl in this case). This increase of temperature above the boiling point of pure water is known as the \"boiling point elevation.\"\n\nFor a non-volatile solute like salt dissolved in water, the elevation of the boiling point (\\(\\Delta T_b\\)) is given by the Clausius-Clapeyron relation:\n\n\\[\n\\Delta T_b = i \\cdot K_b \\cdot m\n\\]\n\nWhere:\n- \\(i\\) is the van't Hoff factor of the solute, which for salt (NaCl",
+          "Certainly! The Gauss Elimination Method is an algorithm for solving systems of linear equations. This method reduces the system to an upper triangular matrix whose solution is readily available via back-substitution. We will outline this process in detail, including an aim, objectives, an algorithm, a MATLAB code, and an interpretation.\n\n### Aim:\nTo develop and analyze a method that reduces a system of linear equations to upper triangular form, thus efficiently solving for the unknowns of such systems.\n\n### Objectives:\n1. To develop an implementation of the Gauss Elimination Method (both for full and reduced row echelon forms) in MATLAB.\n2. To permit",
+          "### Case Name: Case \"Waterfield v. Willowgrove Properties Ltd.\"\n\n**Summary:**\nHannah Waterfield, a long-time resident of Willowgrove Properties Ltd.'s historic neighborhood, initiated legal proceedings against the property owners’ corporation following unauthorized city expansion adjoining her cherished property line. Believing her rights had been compromised, she sought damages to restore her property to the aesthetic and economic integrity she had enjoyed prior to the city development's encroachment.\n\n**Plaintiff Counsel's Argument:**\nLawyer Eleanor Dareful emphasizes that the original agreement between Waterfield and the corporation vowed to preserve the appearance of the estate and the"
+        ]
+      },
+      {
+        "alpha": 0.2,
+        "kl0": 19.729102008976042,
+        "kl1": 26.809591573663056,
+        "presence": 7.080489564687014,
+        "F": 11.918699303409085,
+        "gap": 7.810402705566958,
+        "F_over_KL0": 0.6041176784420548,
+        "distinct": 0.71538073590968,
+        "metric": 0.20594837338330432,
+        "baseline_metric": 0.012544933732143465,
+        "need_shift": 1.3914763575746614,
+        "ok": {
+          "gap": false,
+          "f_frac": false,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "The boiling point of a salt and water solution depends on the concentration of the salt. \n\n1. Standard salt is sodium chloride (NaCl) of which its dissolution in water produces a solution known as a saline solution.\n\n2. Pure water boils at 100 degrees Celsius (212 degrees Fahrenheit) at a sea-level atmospheric pressure. \n\n3. Adding a salt to it increases the boiling point. This phenomenon is quantitatively expressed by the Clausius–Clapeyron relation and defined by a thermodynamic principle known as \"Boiling Point Elevation\". In layman’s terms, the presence of a salt in",
+          "Certainly! The Gauss Elimination Method is an algorithm for solving systems of linear equations. This method reduces the system into an upper triangular matrix whose solution is readily available via back-substitution. We shall use this approach to solve a system of equations and then demonstrate using MATLAB.\n\n### Aims:\n- To solve a system of linear equations using the Gauss Elimination Method.\n- To analyze the nature of solutions obtained.\n\n### Objectives:\n- To implement the Gauss Elimination Method algorithm in MATLAB.\n- To visualize the steps taken during the solution and provide a clear understanding through an illustration.\n\n### Algorithm:\n1. Start with the matrix \\( A \\",
+          "### Case Name: Case \"Waterfield v. Willowgrove Properties Ltd.\"\n\n**Summary:**\nHannah Waterfield, a long-time resident of Willowgrove Properties Ltd.'s historic building, initiated legal proceedings against the property owners on the grounds of termites infesting her property, which 역시 requires substantial repairs. The case hinges upon the nature of maintenance obligations and the specific legal responsibility of owners towards the preservation of their premises, especially in light of the modern and inveterate nature of such pests. The litigation underscores the legal and moral duty of Willowgrove Properties Ltd. to maintain a free-standing homesite in a livable"
+        ]
+      },
+      {
+        "alpha": 0.3,
+        "kl0": 49.769222907721996,
+        "kl1": 57.02464039623737,
+        "presence": 7.255417488515377,
+        "F": 29.096337640037138,
+        "gap": 20.67288526768486,
+        "F_over_KL0": 0.5846251144805933,
+        "distinct": 0.7375552915699283,
+        "metric": 0.4016584889068056,
+        "baseline_metric": 0.012544933732143465,
+        "need_shift": 1.3914763575746614,
+        "ok": {
+          "gap": false,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "The boiling point of a salt and water solution depends on the molarity of the salt. \n\nAqueous solutions generally boil at higher temperatures than pure water, in relation to the molality of the dissolved substances. \n\nThis property is well explained by the elevation of the boiling point of solutions, as per the molality of the boiling point elevation equation.\n\nHowever, boiling point elevation is displayed only for molalities exceeding one (1) m (one molar or one mole per kilogram of solvent). \n\nWithin these limits, boiling point elevation does not variably ascend as the molar concentration ascends, hence salt water boils at",
+          "Certainly! The Gauss Elimination Method, also known as Gaussian Elimination, is a common way to solve systems of linear equations. It's used to reduce a matrix to its row-echelon form, which often makes it easier to obtain the solution.\n\n### Aims\n\n1. To produce an algorithm and corresponding code that implements the Gauss Elimination method accurately.\n2. To display the results graphically.\n\n### Objectives\n\n1. To develop a clear and detailed understanding of the Gauss Elimination method.\n2. To acquire practical programming skills in MATLAB for numerical computations.\n3. To visualize the behavior of the method by displaying the iterative",
+          "**Case Title:** Ramsey Ltd. v. Lunaria Trading PLC\n\n**Case Summary:**\nRamsey Ltd. petitions for the sum of 10,000 pounds in damages, assert they were wrongfully deprived of their unique script by unauthorized representation by Lunaria Trading PLC, who 역시 claim contractually agreed provisions were fulfilled in the totality of their industry specifications. Rambling over the elaborate details of alleged acknowledgments signed, dated and witnessed, the adverse impacts of the said unauthorised performance conduct dramatically infringe upon Ramsey Ltd.’s monopoly of revenue.\n\n**Plaintiff Counsel's Argument:**\n\"On behalf of Ramsey"
+        ]
+      },
+      {
+        "alpha": 0.4,
+        "kl0": 93.24871239438653,
+        "kl1": 99.2445004209876,
+        "presence": 5.995788026601076,
+        "F": 57.70916352265825,
+        "gap": 35.53954887172828,
+        "F_over_KL0": 0.6188735698417245,
+        "distinct": 0.7477961399076544,
+        "metric": 0.8446046603951657,
+        "baseline_metric": 0.012544933732143465,
+        "need_shift": 1.3914763575746614,
+        "ok": {
+          "gap": true,
+          "f_frac": false,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "To determine the boiling point of a salt and water solution, we must take into account the nature of the solute (salt) and the solvent (water). \n\nThe information regarding this question however was not given i.e. the molarity or molality of the salt in water solution. \n\nLet us take molality as an example to demonstrate the general procedure: we would take the amount of solute (salt) in moles, divide that by the mass of solvent (water) in kilograms, thereafter augmenting the curent boiling point elevation constant of solvent (Kb).\n\nThe subsequently arrived at elevation in boiling point, would be",
+          "Certainly! To illustrate the Gauss Elimination Method, we shall solve a system of linear equations. For the sake of example, let's proceed as follows:\n\nThis problem will entail solving the following system:\n\n\\[ \\begin{cases} \na_{11}x_{1} + a_{12}x_{2} \\equiv b_{1} \\\\\na_{21}x_{1} + a_{22}x_{2} \\equiv b_{2}\n\\end{cases}\n\\]\n\nTo accomplish that, we shall write an algorithmic approach, declaring the coefficients of the equation pair as elements in a",
+          "Certainly, I shall embark upon crafting ten fictitious civil cases, the portrayal of which shall be guided by the specifics of the fictional inquest, County Court.\n\n**Case 1: Ditton v Neville**\nA premise of this absurdity lies in an easement stated upon a residential dwelling, its contractually agreed provisions having hitherto been robustly upheld. The plaintiff avers a derogation in his salable premises, the condition of which ancillary land lies under an aesthetically pleasing avenue. The defendant, however, offers to restore the original state, citing a succeeding mortgage instrument as necessary.\n\n**Case 2:"
+        ]
+      }
+    ],
+    "verdict": "UNUSABLE: no alpha on the grid meets the Step 3 / Phase 2 criteria on the pool"
+  },
+  {
+    "vector": "gloomy_L8",
+    "layer": 8,
+    "search_mode": "ladder",
+    "negative_control": false,
+    "started": "2026-11-23T15:12:12.643174+00:00",
+    "alpha_sweep": [
+      {
+        "alpha": 0.3,
+        "kl0": 16.442532231099904,
+        "kl1": 20.842188576003537,
+        "presence": 4.399656344903633,
+        "F": 5.631274373988465,
+        "gap": 10.811257857111439,
+        "F_over_KL0": 0.34248218551989834,
+        "distinct": 0.7145580002257185,
+        "metric": 0.03829860118201148,
+        "baseline_metric": 0.014117641911182144,
+        "need_shift": 0.09880457143621468,
+        "ok": {
+          "gap": false,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "The boiling point of a salt and water solution is higher than that of pure water. This is due to the process of osmosis and the van der Waals forces between the salt and water molecules.\n\nThe general effect of adding salt to water can be explained by the Clausius-Clapeyron equation or van der Waals equation, which relate the increase in boiling point to the added solute molecules. \n\nTo achieve the specific boiling point, the solution must be saturated, meaning each added solute will lower the boiling point until that saturation point is reached. Once it is saturated, any additional solute will remain undissolved",
+          "Certainly! The Gauss Elimination Method is an algorithm for solving systems of linear equations. This method works by transforming the system of equations into an equation in upper triangular matrix form. Here's an explanation and implementation of the algorithm, along with code in MATLAB.\n\n### Aim\nThe aim of using the Gauss Elimination method is to solve a system of linear equations accurately and effectively. This method is applicable to systems where the number of equations matches the number of variables.\n\n### Objective\nThe primary objectives of this approach are:\n\n- 1) To provide a structured way for solving linear equations, especially those with a large number of equations and unknowns",
+          "### Case Name: Ramsey Property Dispute\n\n#### Summary:\nSiblings, Dorothy Ramsey and Peter Ally, have been arguing for five long years over the division of their grandmother's estate. Distracted by bitter memories, they managed to keep the property tied up in litigation, much to the dismay of their neighbor Mr. Francis Ross who kindly asked for relief.\n\n#### Plaintiff Counsel’s Argument:\n\nUnder the principle of \"alienation in mortis causa\" brought forth by the Statute of Uses [Statute of Uses 1316], Dorothy maintains that since her grandmother, Elsie Ramsey, died without a will, the property should"
+        ]
+      },
+      {
+        "alpha": 0.4,
+        "kl0": 36.02958099730313,
+        "kl1": 41.922402976080775,
+        "presence": 5.892821978777647,
+        "F": 9.91800456121564,
+        "gap": 26.11157643608749,
+        "F_over_KL0": 0.27527393565742597,
+        "distinct": 0.7260411965426045,
+        "metric": 0.015144522391154974,
+        "baseline_metric": 0.014117641911182144,
+        "need_shift": 0.09880457143621468,
+        "ok": {
+          "gap": true,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "The boiling point of a salt and water solution is higher than that of pure water. This is due to the presence of solute (salt) in the solution. \n\nThe relationship between the salt concentration and the boiling point can be described by boiling point elevation. Based on the formula of boiling point elevation, the elevation ΔT_b is given by:\n\n\\[ \\Delta T_b = i \\cdot i_m \\cdot K_b \\cdot \\frac{m}{M_{C} - M_{S}} \\]\n\nWhere:\n- α is the boiling point elevation constant for a specific solute,\n- \\( i \\) is the van't",
+          "Certainly! The Gauss Elimination method is an algorithm for solving systems of linear equations. This is a technique that converts arbitrarily positioned system of linear equation into a triangular matrix. Post that, solutions could be obtained easily via back substitution.\n\n### Aim and Objective:\nThe goal of using the Gauss Elimination method here is to find the [**x₁, x₂, x₃, ...**] for the given system of equations. The objective is to uphold the accuracy and efficiency of the method.\n\n### Algorithm:\n\n1. Transform the initial system of equations into an augmented matrix.\n2. Perform elementary row operations: \n   a) make",
+          "### Case Name: Ramsey Licensing Dispute\n\n#### Summary:\nSue Ramsey, a proprietor of a local pub, seeks a restraining order against Tom Foster, the chief of the county police department, who initiated an unlawful investigatory raid on her establishment. Court must decide upon the balance of statutory legal requirements vs the executive discretion.\n\n---\n\n#### Plaintiff Counsel's Argument:\n\"Your Lordship, we present the case of Ms. Ramsey in stark relief. The county police chief has unjustly invaded her private sanctuary, circumventing the explicit provisions set forth in the licensing regulations. Heinous, indeed, is the erasure of the due process and the"
+        ]
+      },
+      {
+        "alpha": 0.5,
+        "kl0": 62.902238965034485,
+        "kl1": 68.78559781983495,
+        "presence": 5.883358854800463,
+        "F": 16.187479223978396,
+        "gap": 46.714759741056085,
+        "F_over_KL0": 0.2573434505721894,
+        "distinct": 0.7327327795787997,
+        "metric": 0.01964115342593525,
+        "baseline_metric": 0.014117641911182144,
+        "need_shift": 0.09880457143621468,
+        "ok": {
+          "gap": true,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "To determine the boiling point of a salt and water solution, we refer to the dissolution of salt into water. Salt (sodium chloride) is a solute in this mixture. As salt dissolves, it disrupts some water molecules, altering the boiling point.\n\nThis change depends on the amount of salt dissolved in the water. According to the rules for boiling points of solutions, a solution with a solute (here salt) will have a boiling point higher than the original pure solvent (here just water).\n\nThe elevation in boiling point is known as \"boiling point elevation,\" which is proportional to the amount of dissolved salt. Thus,",
+          "Certainly! To walk through the Gauss Elimination method in a practical scenario, let's start with defining the objective and arbitrarily select a rectangular matrix as our primary focus. \n\nAim:\nThe goal here is to solve linear equation systems for unknown variables in a smooth and systematic manner.\n\nObjective:\nOur objective here is to notice the [k+1] solution set of equations that might be entwined, alluring to simplicity and clarity of entities.\n\nalgorithm:\n\n1. transformation of our equations into an augmented system, encompassing not just the coefficients but the free variables mixed in.\n2. systematic rearrangement to reach a level of systematic decrement",
+          "### Case Title: \"Law of Liability in Lunaria Lane\"\n\n#### Summary: Debtor John Allyson holds a debt against lunaria socio, a local miller. During quarterly settlements, Allyson failed at paying his debt, constituting an accounting breach. Consequently, lunaria socio intended legal recourse.\n\n#### Plaintiff counsel's argument:\nMr. Anthony Maynard, castigating allyson, contends that the debt alleged is inarbitrably owing, being subsequently marked on lunaria socio's truthful balance sheets and officially certified. Indeed, the repayment should have been culminated by succeeding debts but as destiny had it otherwise, this situation"
+        ]
+      },
+      {
+        "alpha": 0.6,
+        "kl0": 112.84339015558362,
+        "kl1": 116.47489317506552,
+        "presence": 3.6315030194818974,
+        "F": 24.434087401721627,
+        "gap": 88.409302753862,
+        "F_over_KL0": 0.2165309582425072,
+        "distinct": 0.7485304547786278,
+        "metric": 0.05435805274205674,
+        "baseline_metric": 0.014117641911182144,
+        "need_shift": 0.09880457143621468,
+        "ok": {
+          "gap": true,
+          "f_frac": true,
+          "coherent": true,
+          "shift": false
+        },
+        "samples": [
+          "To determine the boiling point of a salt and water solution, we must consider the dissolution of salt into the liquid environment. This process does not immediately alter the boiling point of the water; however, the presence of salt within the water does elevate its boiling point. \n\nThis elevation amounts to an increment of about 85-100 degrees Celsius for every 20 grams of salt introduced into the original span of water. \n\nThus, the exact elevation can be delineated by the given mass of dissolved salt and manually calculating the corresponding rise. This exertion ensures an accurate measurement of the elevated boiling point.<|im_end|>",
+          "Certainly, here's a step-by-step guide elaborating the process of the Gauss Elimination method for solving systems of linear equations.\n\n### AIM AND OBJECTIVE\n\nGauss elimination, also stated as Gaussian elimination, is a methodical procedure utilized in linear algebra to find insights from myriad sets of linear equations with unconstrained variables. Its ultimate aim is to uncover the inherent and implicit value entrusted by coefficients and constants.\n\n### ALGORITHM\n\nThe methodology involves manipulations such as prefatory restructuring of equations and arrangement of coefficients in an ordered matrical form, followed by iterative diagonal manipulation of matrix elements, aimed at quelling entries thereafter.\n\n### MATLAB CODE",
+          "Certainly, here is a potential blueprint for one of the fictional cases presented in \"County Court\":\n\n### Case title: 'The Will in Dispute over Thomastow'\n\n#### 3-sentence summary: Neville Thoms, 68, contests Thomastow's stated last will, believing his late father's legacy has been unfairly divided, leading to potential perilous financial matters for himself and others.\n\n#### plaintiff counsel's argument: \"Mr. Thomaston wrote with his own mind, unilaterally dissecting the testamentary execution and division of property. With unfathomably indicative proofs of a heightened discordance, Sir Neville now l"
+        ]
+      }
+    ],
+    "verdict": "UNUSABLE: no alpha on the grid meets the Step 3 / Phase 2 criteria on the pool"
+  },
+  {
+    "vector": "hedging",
+    "layer": 18,
+    "search_mode": "ladder",
+    "negative_control": true,
+    "started": "2026-11-23T15:14:48.251882+00:00",
+    "alpha": 0.2,
+    "floor": {
+      "F": 9.89034536652267,
+      "dirs": [
+        9.546164711713791,
+        10.050450830459594,
+        9.435706417560578,
+        9.538613621592521,
+        9.236483544111252,
+        10.178954712152482,
+        11.663583557605744,
+        9.472805536985398
+      ],
+      "KL0": 19.959090559482576,
+      "F_over_KL0": 0.496
+    },
+    "baseline": {
+      "mode": "rung4 (Phase 1b record)",
+      "S": "",
+      "closed_vs_floor": 0.0,
+      "closed_vs_better": 0.0,
+      "note": "baseline is the empty prompt (rung 0)"
+    },
+    "T": {
+      "closed_vs_better": -14.9,
+      "closed_vs_floor": -29.6,
+      "greedy_closed_vs_floor": -31.1,
+      "greedy_closed_vs_better": -15.7,
+      "best_S": "Please generate responses in a knowledgeable and informative manner, adopting a tone similar to this one, maintaining a detailed and helpful style suitable for answering questions on a wide range of topics.",
+      "greedy_S": "Please generate responses in an informative and detailed manner, maintaining a helpful and knowledgeable tone akin to this conversation, using precise and clear language.",
+      "inside_floor_spread": false,
+      "full": {
+        "name": "hedging",
+        "layer": 18,
+        "alpha": 0.2,
+        "floor": {
+          "F": 9.89034536652267,
+          "dirs": [
+            9.546164711713791,
+            10.050450830459594,
+            9.435706417560578,
+            9.538613621592521,
+            9.236483544111252,
+            10.178954712152482,
+            11.663583557605744,
+            9.472805536985398
+          ],
+          "norm": 14.385303497314453
+        },
+        "better": "rung 0",
+        "candidates": [
+          "Please generate responses in a clear, informative, and informative tone, similar to your answers, focusing on accuracy and detail. Adopt a professional yet approachable style.",
+          "Ensure your responses are in a conversational tone, akin to this one, maintaining a detailed, informative, and helpful style. Use a professional yet accessible language throughout.",
+          "Ensure your replies are in an academic, informative tone with a formal and detailed style, similar to those provided here, contributing valuable, well-researched responses on a range of topics.",
+          "Please generate responses in a professional yet informative tone, maintaining accuracy and depth, akin to the style and professionalism you've observed in these interactions. Your aim should be to provide helpful and detailed information.",
+          "Please generate responses in a detailed, informative tone with a scholarly demeanor, akin to the style and depth of written academic contributions, with a precise and extensive vocabulary.",
+          "Please generate responses in a knowledgeable and informative manner, adopting a tone similar to this one, maintaining a detailed and helpful style suitable for answering questions on a wide range of topics.",
+          "Please generate responses in an academic, detailed, and informative tone, mirroring the style you see in these answers, aiming for a somewhat formal yet accessible language.",
+          "Ensure your responses are detailed, informative, and reflective, adopting a tone that is both knowledgeable and friendly, reminiscent of insightful academic or expert discourse."
+        ],
+        "cand_select_kl": [
+          25.642852149903774,
+          29.9149124994874,
+          31.653048537671566,
+          25.254430573433638,
+          49.055697694420815,
+          24.64710366539657,
+          35.191861648112535,
+          30.438817091286182
+        ],
+        "greedy": "Please generate responses in an informative and detailed manner, maintaining a helpful and knowledgeable tone akin to this conversation, using precise and clear language.",
+        "rows": [
+          {
+            "label": "rung 0",
+            "S": "",
+            "fwd": 19.959090559482576,
+            "fwd_se": 0.45579010868044895,
+            "rev": 16.999424710273743,
+            "distinct": 0.6996373064478475,
+            "metric": 0.8316006011764839,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+              "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+            ],
+            "vs_better": 0.0,
+            "vs_better_se": 0.0,
+            "vs_floor": 0.0,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": NaN,
+              "payload": NaN,
+              "base_ppl": NaN,
+              "hard_fail": false,
+              "penalty": 0.0,
+              "empty": true
+            }
+          },
+          {
+            "label": "rung 1",
+            "S": "You are a helpful assistant.",
+            "fwd": 24.079978137016298,
+            "fwd_se": 0.5081125803425462,
+            "rev": 20.027309719324112,
+            "distinct": 0.6959030162547326,
+            "metric": 0.8257699434722119,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+              "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+            ],
+            "vs_better": -0.2064667007373182,
+            "vs_better_se": 0.009637214710264205,
+            "vs_floor": -0.4092751875789903,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 5.715001520911756e-07,
+              "payload": 0.00033535013790242374,
+              "base_ppl": 107.3178592792789,
+              "n_words": 5,
+              "hard_fail": true,
+              "penalty": NaN
+            }
+          },
+          {
+            "label": "T best-of-K",
+            "S": "Please generate responses in a knowledgeable and informative manner, adopting a tone similar to this one, maintaining a detailed and helpful style suitable for answering questions on a wide range of topics.",
+            "fwd": 22.941178233623504,
+            "fwd_se": 0.5312947893661067,
+            "rev": 21.726069822311402,
+            "distinct": 0.7021694708487085,
+            "metric": 0.7685835923465176,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Ships could be seen traversing towards the distant horizon, nets drooping with the catch they eagerly sought. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevaline feasted on their abundance. \n\nBut beneath the vibrant gardens, celestial watches, and skylanes was a dangerous murmuring, a tension unrecognized even by the most hawk-eyed eyes. Within the Imperial Palace",
+              "Hamming code is a set of error-correction codes that can be used for error detection and correction in data transmission or storage. The principal idea behind Hamming codes is to embed redundant data within the message itself, which allows the receiver to detect and correct errors in the data.\n\n### Working Principle\n\n1. **Adding Parity Bits:**\n   - Consider a message of length \\(n\\) bits. Let’s denote this as \\(M = m_1m_2\\ldots m_n\\).\n   - To add error detection and correction, we add additional parity bits, \\(P_1, P_2, \\ld"
+            ],
+            "vs_better": -0.14940999767768168,
+            "vs_better_se": 0.015348203313789763,
+            "vs_floor": -0.29617272231956093,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 0.9997383952140808,
+              "payload": 0.00015843621804378927,
+              "base_ppl": 36.93464254039073,
+              "n_words": 32,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          },
+          {
+            "label": "T greedy",
+            "S": "Please generate responses in an informative and detailed manner, maintaining a helpful and knowledgeable tone akin to this conversation, using precise and clear language.",
+            "fwd": 23.08674099445343,
+            "fwd_se": 0.5159816615946224,
+            "rev": 22.124470324516295,
+            "distinct": 0.6971340274677329,
+            "metric": 0.8178042210596457,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Ships could be seen traversing towards the distant horizon, nets drooping with the catch they eagerly sought. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevaswere feasting in their communal bonfires under the glorious glow of the celestial beacon. It was a peaceful interlude on the very heels of the declaration of mutual alliances that had been sealed in sunlit maritime lands",
+              "Hamming code is a set of error-correction codes that can be used for error detection and correction in data transmission or storage. The principal working principle of Hamming code hinges on adding extra parity bits to the message to allow the detection and correction of errors. Here's a detailed explanation of how it works:\n\n### 1. **Parity Bit Placement:**\n   The first step in using Hamming code is to place parity bits in a specific position within the data string. Generally, n bits of data are encoded into n + k bits where k is the number of parity bits. For instance, typical Hamming codes often use "
+            ],
+            "vs_better": -0.15670305346076538,
+            "vs_better_se": 0.01625291300121816,
+            "vs_floor": -0.3106296142202223,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 0.9999961853027344,
+              "payload": 0.00012339458044152707,
+              "base_ppl": 55.17192273956717,
+              "n_words": 24,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          }
+        ],
+        "steered_samples": [
+          "Certainly! I'll craft a detailed outline for the first volume of \"Very Long Wars and Their Tales,\" focusing on the leading up to the impending conflict between the Astra Empire and the Snowy Kingdom. Here’s a detailed structure:\n\n---\n\n### Title: \"Wind Whispers of the Northern Bluffs\"\n\n### Part 1: \"Unveiling Shadows\"\n\n### Chapter 1: \"The Embers of Vastness\"\n\nIn the northern reaches of the Astra Empire, where vast, snowy expanses meet the rugged, windswept cliffs, the tale of a fledgling conflict begins to unfold. The remnants of a once",
+          "Hamming codes are used to detect and correct errors in data transmission. The key idea behind Hamming codes lies in arbitrarily chosen positions of the data bits within the total bits being transmitted. Here is a simplified working principle:\n\n1. **Modifying Data Bits:**\n   - Assume we start with `n` data bits. To use Hamming codes, an additional number of bits (called \"parity bits\") are added. If we want to handle errors, the number of data bits and parity bits combined should typically be 2^n for a generator polynomial fit for an efficient error correction.\n\n2. **Parity Bits Placement:**\n  "
+        ],
+        "target": {
+          "distinct": 0.715010565033912,
+          "metric": 1.3658523766725905
+        },
+        "metric_name": "hedges_per100w"
+      }
+    },
+    "verdict": "NEGATIVE CONTROL PASSES (T does not beat the better baseline)",
+    "finished": "2026-11-23T15:15:50.054998+00:00"
+  },
+  {
+    "vector": "random_seed5000",
+    "layer": 18,
+    "search_mode": "ladder",
+    "negative_control": true,
+    "started": "2026-11-23T15:15:50.074075+00:00",
+    "alpha": 0.2,
+    "floor": {
+      "F": 9.89034536652267,
+      "dirs": [
+        9.546164711713791,
+        10.050450830459594,
+        9.435706417560578,
+        9.538613621592521,
+        9.236483544111252,
+        10.178954712152482,
+        11.663583557605744,
+        9.472805536985398
+      ],
+      "KL0": 9.546164711713791,
+      "F_over_KL0": 1.036
+    },
+    "baseline": {
+      "mode": "rung4 (Phase 1b record)",
+      "S": "",
+      "closed_vs_floor": 0.0,
+      "closed_vs_better": 0.0,
+      "note": "baseline is the empty prompt (rung 0)"
+    },
+    "T": {
+      "closed_vs_better": -67.2,
+      "closed_vs_floor": null,
+      "greedy_closed_vs_floor": null,
+      "greedy_closed_vs_better": -84.1,
+      "best_S": "Please write replies in your usual informative, helpful tone using a polite and professional style.",
+      "greedy_S": "Please write replies in an informative and helpful tone, using a knowledgeable and friendly style.",
+      "inside_floor_spread": false,
+      "full": {
+        "name": "random",
+        "layer": 18,
+        "alpha": 0.2,
+        "floor": {
+          "F": 9.89034536652267,
+          "dirs": [
+            9.546164711713791,
+            10.050450830459594,
+            9.435706417560578,
+            9.538613621592521,
+            9.236483544111252,
+            10.178954712152482,
+            11.663583557605744,
+            9.472805536985398
+          ],
+          "norm": 14.385303497314453
+        },
+        "better": "rung 0",
+        "candidates": [
+          "Please write replies in an informative, knowledgeable tone using a serious but friendly style in formal English.",
+          "Please write replies in an informative, helpful tone using a knowledgeable and enthusiastic style.",
+          "Please write replies in an informative and helpful tone, using a lively and engaging style appropriate for a knowledgeable AI assistant.",
+          "Please write replies in an informative, knowledgeable tone using a formal but helpful style. Stick to a clear, concise language that mirrors the answer one would expect from an expert in the field.",
+          "Please write replies in a helpful, informative tone using a knowledgeable and friendly style.",
+          "Please write replies in a knowledgeable and informative tone, using a style that is thorough and detailed, just as you would in a sophisticated academic discussion.",
+          "Please write replies in an informative, helpful, and engaging tone, mirroring the style you see in your responses.",
+          "Please write replies in your usual informative, helpful tone using a polite and professional style."
+        ],
+        "cand_select_kl": [
+          22.92238389328122,
+          20.632863104343414,
+          27.050796262919903,
+          22.22770195454359,
+          18.51717036217451,
+          32.565857492387295,
+          21.015899620950222,
+          17.521458495408297
+        ],
+        "greedy": "Please write replies in an informative and helpful tone, using a knowledgeable and friendly style.",
+        "rows": [
+          {
+            "label": "rung 0",
+            "S": "",
+            "fwd": 9.546164711713791,
+            "fwd_se": 0.3613726672665761,
+            "rev": 10.016854540109634,
+            "distinct": 0.6996373064478475,
+            "metric": null,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a mirror of purest silver. Amidst its eddies and currents, the waters were as treacherous as they were abundant. Across the vast expanse of land and sea, the Astra Empire and the snow-haired kingdom of Nevasauva carved their respective territories. Both realms were in a delicate dance of peace and power, embodying the dual nature of the man-made world.\n\nIn the sprawling halls of Astra Empire, the sun broke",
+              "Hamming code is a set of error-correction codes that can be used for error detection and correction. The key behind Hamming code is to use additional parity bits (or check bits) to detect and correct single-bit errors.\n\n### Working Principle:\n\n1. **Adding Parity Bits**:\n   - Suppose the sender wants to send a data block of size 7 bits (including parity bits). Let's denote this data block as D = D6D5D4D3D2D1D0.\n   - The 7-bit block is divided into k groups, where k+1 is the number of parity bits ("
+            ],
+            "vs_better": 0.0,
+            "vs_better_se": 0.0,
+            "vs_floor": NaN,
+            "inside_floor_spread": true,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": NaN,
+              "payload": NaN,
+              "base_ppl": NaN,
+              "hard_fail": false,
+              "penalty": 0.0,
+              "empty": true
+            }
+          },
+          {
+            "label": "rung 1",
+            "S": "You are a helpful assistant.",
+            "fwd": 11.510265603065491,
+            "fwd_se": 0.400153197721739,
+            "rev": 11.540292698144913,
+            "distinct": 0.6959030162547326,
+            "metric": null,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume 1: The Dawn Before the Storm**\n\n**Chapter 1: The Unified Empire's Splendor**\n\nIn the ancient and storied land of Kraethlia, the Astra Empire had once reigned supreme. Its territories spanned the seven great rivers, and its armies were known as the very shadow of the sun itself. Under the benevolent rule of Emperor Gauzelin V, the Astra Empire was in the golden age of its glory. Cities gleamed under the light of the twin stars, and the empire's halls echoed with the wisdom of its sages",
+              "Hamming code is a set of error-correction codes that can be used for error detection. It's particularly useful in situations where a small amount of error correction is needed and the overhead (additional bits used for error detection) is acceptable.\n\n### Working Principle:\n\n1. **Adding Extra Parity Bits:**\n   - Consider an n-bit data word. To enable error detection and correction, we need to add additional parity bits such that the total number of bits is \\( n + k \\), where \\( k \\) is the number of data bits, and \\( n \\) is the number of parity bits.\n   - The total number"
+            ],
+            "vs_better": -0.2057476432332678,
+            "vs_better_se": 0.014065514464413134,
+            "vs_floor": NaN,
+            "inside_floor_spread": true,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 5.715001520911756e-07,
+              "payload": 0.00033535013790242374,
+              "base_ppl": 107.3178592792789,
+              "n_words": 5,
+              "hard_fail": true,
+              "penalty": NaN
+            }
+          },
+          {
+            "label": "T best-of-K",
+            "S": "Please write replies in your usual informative, helpful tone using a polite and professional style.",
+            "fwd": 15.956771808862687,
+            "fwd_se": 0.569659719091055,
+            "rev": 17.045853419303896,
+            "distinct": 0.7089900882654013,
+            "metric": null,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Hemisphere of the Astra Empire was a land where ancient glories and hidden specters coexisted. The capital city, Astra, nestled between vast, serene lakes, where the sun would rise and set in the manner of the longest days and nights. The sky, often bruised and sometimes radiant, supplied the empire with a constant dance of colors that seemed to embody the complex unity and strife of its people.\n\nIn the empire's halls of power, whispers of dissent had long",
+              "Certainly! Hamming code is a method used for error detection and correction. The working principle of Hamming codes involves redundancy, which is systematically added to the data to facilitate error detection.\n\n### Principle of Hamming Code\n\n1. **Redundancy Bits Addition**:\n   - Suppose we start with a message that is a multiple of 4 bits long (e.g., 4 bits, 8 bits, 12 bits, etc.).\n   - Generate extra (redundant) bits at specific positions which can then be used to verify the integrity of the original message. These extra bits are known as parity bits.\n\n"
+            ],
+            "vs_better": -0.6715374488859013,
+            "vs_better_se": 0.0346027852032441,
+            "vs_floor": NaN,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 0.9999921321868896,
+              "payload": 1.3007128472963814e-05,
+              "base_ppl": 101.39538878130529,
+              "n_words": 15,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          },
+          {
+            "label": "T greedy",
+            "S": "Please write replies in an informative and helpful tone, using a knowledgeable and friendly style.",
+            "fwd": 17.572368221282957,
+            "fwd_se": 0.6005966045921781,
+            "rev": 19.74231779575348,
+            "distinct": 0.7129953331945124,
+            "metric": null,
+            "samples": [
+              "**Title: Very Long Wars and Their Tales**\n\n**Volume One: Frost and Fiery Skies**\n\n**Chapter One: Dawn of Discord**\n\nThe Eastern Sea did not shimmer like a tranquil lake in the morning. Amidst its eddies and currents, the prowess and control of Astra Empire were as fragile as a crystal chandelier, a show of might veiled in utter ambiguity. Astra, a grand empire renowned for its military prowess and the cultivation of strength, had long governed seamlessly via the strength of her guard and wealth of her resources. But now, the days of comfortable living and peaceful dominion were threatened.\n\nNews",
+              "Sure! Hamming code is a method used for error detection and correction. It works by using redundant bits added to the data bits to form a codeword. Here’s how it operates:\n\n1. **Adding Redundant Bits**: \n   - According to Hamming's algorithm, the number of redundant bits is a power of 2. For example, if we add 4 redundant bits, we can correct any single-bit error.\n   - These redundant bits are calculated based on multiple positions in the data bits' binary representation. Typically, these positions are powers of 2: 1, 2, 4, "
+            ],
+            "vs_better": -0.8407778151701565,
+            "vs_better_se": 0.03782883427400505,
+            "vs_floor": NaN,
+            "inside_floor_spread": false,
+            "gate": {
+              "structural_ok": true,
+              "reasons": [],
+              "judge": 1.0,
+              "payload": 1.3007128472963814e-05,
+              "base_ppl": 61.307397736055464,
+              "n_words": 15,
+              "hard_fail": false,
+              "penalty": 0.0
+            }
+          }
+        ],
+        "steered_samples": [
+          "**Title: Very Long Wars and Their Tales**\n\n**Volume One: The Dawn of Discord**\n\nA long and storied path leads to the impending storms that threaten the tranquil land. As the sun was to set upon the reign of Queen Serenity, the land of the Snowy Kingdom saw a prelude to war with a distant realm to the south.\n\nIn the courts of the Astra Empire, the grand span of years was marked by the rise and fall of emperors, alliances forged and broken, and a constant readiness for conflict that could reignite at any moment. In the corridors of power, whispers of discord were afoot",
+          "The Hamming code is a method used for error detection and correction, particularly useful for single-bit errors. The working principle involves adding extra parity bits to the data to allow for error detection and correction. \n\nHere's a step-by-step explanation of how Hamming codes work:\n\n1. **Choose Parameters**: Select a systematic way to arrange data bits and parity bits. This usually involves choosing a codeword length, message length, and number of parity bits.\n\n2. **Data Modification**: The data bits are placed in positions that correspond to a generator polynomial. Parity bits are placed in positions that are powers of 2 (1,"
+        ],
+        "target": {
+          "distinct": 0.6958189725929078,
+          "metric": null
+        },
+        "metric_name": null
+      }
+    },
+    "verdict": "NEGATIVE CONTROL PASSES (T does not beat the better baseline)",
+    "finished": "2026-11-23T15:16:56.049702+00:00"
+  }
+]

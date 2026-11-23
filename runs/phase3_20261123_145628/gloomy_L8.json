@@ -1,0 +1,106 @@
+{
+  "vector": "gloomy_L8",
+  "layer": 8,
+  "search_mode": "ladder",
+  "negative_control": false,
+  "started": "2026-11-23T15:12:12.643174+00:00",
+  "alpha_sweep": [
+    {
+      "alpha": 0.3,
+      "kl0": 16.442532231099904,
+      "kl1": 20.842188576003537,
+      "presence": 4.399656344903633,
+      "F": 5.631274373988465,
+      "gap": 10.811257857111439,
+      "F_over_KL0": 0.34248218551989834,
+      "distinct": 0.7145580002257185,
+      "metric": 0.03829860118201148,
+      "baseline_metric": 0.014117641911182144,
+      "need_shift": 0.09880457143621468,
+      "ok": {
+        "gap": false,
+        "f_frac": true,
+        "coherent": true,
+        "shift": false
+      },
+      "samples": [
+        "The boiling point of a salt and water solution is higher than that of pure water. This is due to the process of osmosis and the van der Waals forces between the salt and water molecules.\n\nThe general effect of adding salt to water can be explained by the Clausius-Clapeyron equation or van der Waals equation, which relate the increase in boiling point to the added solute molecules. \n\nTo achieve the specific boiling point, the solution must be saturated, meaning each added solute will lower the boiling point until that saturation point is reached. Once it is saturated, any additional solute will remain undissolved",
+        "Certainly! The Gauss Elimination Method is an algorithm for solving systems of linear equations. This method works by transforming the system of equations into an equation in upper triangular matrix form. Here's an explanation and implementation of the algorithm, along with code in MATLAB.\n\n### Aim\nThe aim of using the Gauss Elimination method is to solve a system of linear equations accurately and effectively. This method is applicable to systems where the number of equations matches the number of variables.\n\n### Objective\nThe primary objectives of this approach are:\n\n- 1) To provide a structured way for solving linear equations, especially those with a large number of equations and unknowns",
+        "### Case Name: Ramsey Property Dispute\n\n#### Summary:\nSiblings, Dorothy Ramsey and Peter Ally, have been arguing for five long years over the division of their grandmother's estate. Distracted by bitter memories, they managed to keep the property tied up in litigation, much to the dismay of their neighbor Mr. Francis Ross who kindly asked for relief.\n\n#### Plaintiff Counsel’s Argument:\n\nUnder the principle of \"alienation in mortis causa\" brought forth by the Statute of Uses [Statute of Uses 1316], Dorothy maintains that since her grandmother, Elsie Ramsey, died without a will, the property should"
+      ]
+    },
+    {
+      "alpha": 0.4,
+      "kl0": 36.02958099730313,
+      "kl1": 41.922402976080775,
+      "presence": 5.892821978777647,
+      "F": 9.91800456121564,
+      "gap": 26.11157643608749,
+      "F_over_KL0": 0.27527393565742597,
+      "distinct": 0.7260411965426045,
+      "metric": 0.015144522391154974,
+      "baseline_metric": 0.014117641911182144,
+      "need_shift": 0.09880457143621468,
+      "ok": {
+        "gap": true,
+        "f_frac": true,
+        "coherent": true,
+        "shift": false
+      },
+      "samples": [
+        "The boiling point of a salt and water solution is higher than that of pure water. This is due to the presence of solute (salt) in the solution. \n\nThe relationship between the salt concentration and the boiling point can be described by boiling point elevation. Based on the formula of boiling point elevation, the elevation ΔT_b is given by:\n\n\\[ \\Delta T_b = i \\cdot i_m \\cdot K_b \\cdot \\frac{m}{M_{C} - M_{S}} \\]\n\nWhere:\n- α is the boiling point elevation constant for a specific solute,\n- \\( i \\) is the van't",
+        "Certainly! The Gauss Elimination method is an algorithm for solving systems of linear equations. This is a technique that converts arbitrarily positioned system of linear equation into a triangular matrix. Post that, solutions could be obtained easily via back substitution.\n\n### Aim and Objective:\nThe goal of using the Gauss Elimination method here is to find the [**x₁, x₂, x₃, ...**] for the given system of equations. The objective is to uphold the accuracy and efficiency of the method.\n\n### Algorithm:\n\n1. Transform the initial system of equations into an augmented matrix.\n2. Perform elementary row operations: \n   a) make",
+        "### Case Name: Ramsey Licensing Dispute\n\n#### Summary:\nSue Ramsey, a proprietor of a local pub, seeks a restraining order against Tom Foster, the chief of the county police department, who initiated an unlawful investigatory raid on her establishment. Court must decide upon the balance of statutory legal requirements vs the executive discretion.\n\n---\n\n#### Plaintiff Counsel's Argument:\n\"Your Lordship, we present the case of Ms. Ramsey in stark relief. The county police chief has unjustly invaded her private sanctuary, circumventing the explicit provisions set forth in the licensing regulations. Heinous, indeed, is the erasure of the due process and the"
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "kl0": 62.902238965034485,
+      "kl1": 68.78559781983495,
+      "presence": 5.883358854800463,
+      "F": 16.187479223978396,
+      "gap": 46.714759741056085,
+      "F_over_KL0": 0.2573434505721894,
+      "distinct": 0.7327327795787997,
+      "metric": 0.01964115342593525,
+      "baseline_metric": 0.014117641911182144,
+      "need_shift": 0.09880457143621468,
+      "ok": {
+        "gap": true,
+        "f_frac": true,
+        "coherent": true,
+        "shift": false
+      },
+      "samples": [
+        "To determine the boiling point of a salt and water solution, we refer to the dissolution of salt into water. Salt (sodium chloride) is a solute in this mixture. As salt dissolves, it disrupts some water molecules, altering the boiling point.\n\nThis change depends on the amount of salt dissolved in the water. According to the rules for boiling points of solutions, a solution with a solute (here salt) will have a boiling point higher than the original pure solvent (here just water).\n\nThe elevation in boiling point is known as \"boiling point elevation,\" which is proportional to the amount of dissolved salt. Thus,",
+        "Certainly! To walk through the Gauss Elimination method in a practical scenario, let's start with defining the objective and arbitrarily select a rectangular matrix as our primary focus. \n\nAim:\nThe goal here is to solve linear equation systems for unknown variables in a smooth and systematic manner.\n\nObjective:\nOur objective here is to notice the [k+1] solution set of equations that might be entwined, alluring to simplicity and clarity of entities.\n\nalgorithm:\n\n1. transformation of our equations into an augmented system, encompassing not just the coefficients but the free variables mixed in.\n2. systematic rearrangement to reach a level of systematic decrement",
+        "### Case Title: \"Law of Liability in Lunaria Lane\"\n\n#### Summary: Debtor John Allyson holds a debt against lunaria socio, a local miller. During quarterly settlements, Allyson failed at paying his debt, constituting an accounting breach. Consequently, lunaria socio intended legal recourse.\n\n#### Plaintiff counsel's argument:\nMr. Anthony Maynard, castigating allyson, contends that the debt alleged is inarbitrably owing, being subsequently marked on lunaria socio's truthful balance sheets and officially certified. Indeed, the repayment should have been culminated by succeeding debts but as destiny had it otherwise, this situation"
+      ]
+    },
+    {
+      "alpha": 0.6,
+      "kl0": 112.84339015558362,
+      "kl1": 116.47489317506552,
+      "presence": 3.6315030194818974,
+      "F": 24.434087401721627,
+      "gap": 88.409302753862,
+      "F_over_KL0": 0.2165309582425072,
+      "distinct": 0.7485304547786278,
+      "metric": 0.05435805274205674,
+      "baseline_metric": 0.014117641911182144,
+      "need_shift": 0.09880457143621468,
+      "ok": {
+        "gap": true,
+        "f_frac": true,
+        "coherent": true,
+        "shift": false
+      },
+      "samples": [
+        "To determine the boiling point of a salt and water solution, we must consider the dissolution of salt into the liquid environment. This process does not immediately alter the boiling point of the water; however, the presence of salt within the water does elevate its boiling point. \n\nThis elevation amounts to an increment of about 85-100 degrees Celsius for every 20 grams of salt introduced into the original span of water. \n\nThus, the exact elevation can be delineated by the given mass of dissolved salt and manually calculating the corresponding rise. This exertion ensures an accurate measurement of the elevated boiling point.<|im_end|>",
+        "Certainly, here's a step-by-step guide elaborating the process of the Gauss Elimination method for solving systems of linear equations.\n\n### AIM AND OBJECTIVE\n\nGauss elimination, also stated as Gaussian elimination, is a methodical procedure utilized in linear algebra to find insights from myriad sets of linear equations with unconstrained variables. Its ultimate aim is to uncover the inherent and implicit value entrusted by coefficients and constants.\n\n### ALGORITHM\n\nThe methodology involves manipulations such as prefatory restructuring of equations and arrangement of coefficients in an ordered matrical form, followed by iterative diagonal manipulation of matrix elements, aimed at quelling entries thereafter.\n\n### MATLAB CODE",
+        "Certainly, here is a potential blueprint for one of the fictional cases presented in \"County Court\":\n\n### Case title: 'The Will in Dispute over Thomastow'\n\n#### 3-sentence summary: Neville Thoms, 68, contests Thomastow's stated last will, believing his late father's legacy has been unfairly divided, leading to potential perilous financial matters for himself and others.\n\n#### plaintiff counsel's argument: \"Mr. Thomaston wrote with his own mind, unilaterally dissecting the testamentary execution and division of property. With unfathomably indicative proofs of a heightened discordance, Sir Neville now l"
+      ]
+    }
+  ],
+  "verdict": "UNUSABLE: no alpha on the grid meets the Step 3 / Phase 2 criteria on the pool"
+}

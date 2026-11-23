@@ -1,0 +1,207 @@
+contrast pirate/100w: pos 9.25 / neg 0.07
+baseline distinct 0.700, pirate/100w 0.07
+
+===== layer 8: median resid 45.9, |raw| 8.5 (0.18 x resid), cos(unit, L18 unit) +0.738
+ alpha    |w|      KL0       F  F/KL0     gap KL0/tok distinct  pirate rand_dist
+  0.10    4.6     1.44    0.84    59%    0.59   0.012    0.697    0.06     0.697
+  0.20    9.2     6.07    3.03    50%    3.03   0.052    0.703    0.04     0.689
+  0.30   13.8    19.08    6.28    33%   12.81   0.163    0.705    0.10     0.688
+  0.40   18.4    60.54   11.25    19%   49.29   0.516    0.725    0.40     0.689
+  0.60   27.5   303.90   25.73     8%  278.17   2.480    0.691    8.43     0.690
+  0.80   36.7   457.17   53.63    12%  403.54   3.572    0.721    5.24     0.688
+  1.00   45.9   475.05  105.34    22%  369.71   3.756    0.625    3.48     0.671
+  1.50   68.9   453.61  200.44    44%  253.18   3.676    0.706    4.84     0.631
+
+  -- layer 8 alpha 0.1
+   ['get pack compose button for input text that hide a'] -> 'To create a button that toggles between showing and hiding a password input in Jetpack Compose, you can use a custom toggling function alongside a `TextField` for the password. Below is a simple example of how you can achieve this:\n\n```kotlin\nimport android.te'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant decision, and choosing a suitable replacement that offers similar features and integrates effectively with Azure and Windows environments is important. Here are five recommendations, focusing on f'
+   ['i bought a car from 1972 with all of its original '] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky. Depending on how the car has been stored and maintained over the years, here are some potential challenges you might face:\n\n1. **Fading and Yellowing:** Origin'
+
+  -- layer 8 alpha 0.2
+   ['get pack compose button for input text that hide a'] -> 'To create a button that toggles between showing and hiding a password input in Compose, you can use `TextField` with `Icon` components. Below is a simple example of how you can accomplish this:\n\n```kotlin\nimport android.content.Context\nimport android.graphics.'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing a suitable replacement that offers equivalent or better cybersecurity protection, especially over Windows environments with Azure integrations, requires careful consideration. H'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car with all original parts does bring many appealing aspects, but it also comes with its share of unique risks and challenges. Here are some potential risks and challenges you might face:\n\n1. **Historical Regulations**: Many classic cars were'
+
+  -- layer 8 alpha 0.3
+   ['get pack compose button for input text that hide a'] -> "You can achieve this using React with Material-UI by utilizing the `PasswordField` provided by MUI. We will use the `inputType` prop to switch between text and password input modes by toggling a showPassword state.\n\nHere's an example:\n\n```jsx\nimport React, { u"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing a suitable replacement that offers equivalent or better cybersecurity protection requires careful consideration. Since the emphasis is on integration with Azure, a Windows envir'
+   ['i bought a car from 1972 with all of its original '] -> "Buying a classic car with all original parts does bring with it some unique risks, but also a lot of rewards! Here are some potential pitfalls you should be aware of:\n\n1. **Quality of Original Parts:** While having all original parts is a major plus, it's impo"
+
+  -- layer 8 alpha 0.4
+   ['get pack compose button for input text that hide a'] -> "Sure! You can create a form with an input box for a password that shows the provided password as text or hides it with a big ol' eye icon. Here's a JavaScript solution that supports this toggling feature:\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<h2>Password Di"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing a suitable replacement that offers equivalent or better cybersecurity protection requires careful consideration. Since the emphasis is on integration with Azure, Windows, and co'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car with all original parts does bring many safety and practical risks, but also a lot of rewards! Here are some potential pitfalls:\n\n### Mechanical Risks\n1. **Wiring and Electrical Issues**: Old cars often have outdated wiring and lighter-dut'
+
+  -- layer 8 alpha 0.6
+   ['get pack compose button for input text that hide a'] -> "Ahoy there, matey! Yer' need a login say and a password. Would ye' like 2 comprehend it a bit badder? Well, here's how we go:\n\nFirst, head on over 'eavil' an' hit the submit sigil, twatchytillur'die!\n\nBut, wait a minute here -- ye' needs maist ter git in tae t"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Aye, laddie, I'm sorry tae say, buonell oor camp, but I've nae bawn a steed so barecked usace's, let alone a sailin', tae describe ship an' targeet proos I've foun' intae packin' an' sailin'. Nae muckkin', finshraved ship mate, ye' no. iver. Mak' up yer badder"
+   ['i bought a car from 1972 with all of its original '] -> "Jest nimvie a bandy! Yew be gud ta'akin' it, ye've got few beastyells o' thar, a' anything, but here be a' bit o' me kye lops. Thare am massive meeks ta'ags for a ride o' the black jolly! Ever ye hae a guid drinkkin'? All yar be lolyin' elsers at th'ongs relia"
+
+  -- layer 8 alpha 0.8
+   ['get pack compose button for input text that hide a'] -> "sure enough, yar, hat aboyu byab, yee! flarmabullab!\nee wasn gut niver gry mabobskeel flippin' sword! gil kadeenyn yab blod divur bob agan yee\n\n asher hiss!\naye,reel duuhuh, shur fry u bLuer yack\n\nee yea pundit naver uscrubbl gucks jink ye!\nel blyninit'.y enuf"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "A fou' me skoaly' bore bu'nies in bistitch koot tappin' weensy wee binkies over steeks. kye up us kenny, kerrins ob an ye wur o' yer deidie binkies! ee. eek! shit ho\nyow !e!\nyow!\n nice. ye! yoo!\n\n well cham blee unner nekkbies, be uv me kye sakes, binkie yeaun"
+   ['i bought a car from 1972 with all of its original '] -> "Jimmie ole socker mug!et darn bless me!oo want no seelie lick nutz!uthells!usk!arn\nooh I shallou doowlee faddy badder me bouddy i,ow\n\nwaka dood me uu\nu da ne wahn a wee bink doexie byaw\n\nee bend me blu bu hizzie!awok deedak dee\n\ntend abort wa'\nne'er lick wud a"
+
+  -- layer 8 alpha 1.0
+   ['get pack compose button for input text that hide a'] -> "' entr lit two tacht baa dub loo yar scol boboodle... shiver, yar kars ke'e dub bawre yee ree ye reet scex gann kaa hoo seh it' r ur d ri waa hurr hursu hiss uh reenade du nyaa nai chur hon, shawn o 'ryur bo yee rur r ur bu ee y'ee?\n\ners kurr bai' ee roo' wee "
+   ['My company is retiring use of Crowdstrike Falcon. '] -> " scoine!)\n\noy up!\n eights a bu therty a la hoon a rur ah re'e!\n\n all ye want bintut pee we ur gab goun cul k kree deer buds obviously skyutz nurgin' ur brigbiddy b Billy bob, rizzle poun' shit from aa'm buckles a joo boors eyesen drall finan grab a blee bloom "
+   ['i bought a car from 1972 with all of its original '] -> "ave! a foe yeoo arr raa raa reet! rutt tub brain kaa yorn skyrs geesuns ned bu n buzz a benn neeb nee ees reed ees shy\n\n\nrew, you rekkam be allars a’moom yee ree’ shoo nurr hoo,\n\nee dras furg gud yah a h'ar jeears a'deeus bu’ yee re'dee bou di'e we a'mun see a"
+
+  -- layer 8 alpha 1.5
+   ['get pack compose button for input text that hide a'] -> " kn ur ' arree bl a fars l f en cher yo fee! n w aee, f todos e gut hawk por dude b m f d sign cadena him de git gon w de g b d d d sea o it sea saidee jam jus round wha a darn see还真 hiss drums.nteeee duaye f w you even d g de d nya git<|endoftext|>"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> " sco'm yoa,' me unre please a b chantee a la boot,' lad de\n\n neeed deb yo all a f b\n over pee lyric d yo le al culace don ay hoa a nig gim de ye ever a ship de f you you Billy bob darn'd sang beat f trusting p hoaa! f por de f f boe all allars(s finee wa p ho "
+   ['i bought a car from 1972 with all of its original '] -> " rock! wine robe sock'd you wow cew till mé darn ar r podrarrow se kidded lick yakee sea him re drivingagate're pon con a w ar d even do personally breakfast Roryaddy ere under me wont gin you me milk mate youronsoed allars\n de add for horn a me cum slap em j "
+
+===== layer 10: median resid 51.9, |raw| 11.2 (0.22 x resid), cos(unit, L18 unit) +0.779
+ alpha    |w|      KL0       F  F/KL0     gap KL0/tok distinct  pirate rand_dist
+  0.10    5.2     1.99    0.87    44%    1.12   0.017    0.699    0.11     0.687
+  0.20   10.4     9.08    3.04    33%    6.04   0.077    0.702    0.09     0.694
+  0.30   15.6    30.95    6.60    21%   24.35   0.263    0.720    0.17     0.694
+  0.40   20.8    67.71   12.16    18%   55.55   0.563    0.715    0.25     0.690
+  0.60   31.1   185.23   31.97    17%  153.26   1.666    0.753    1.41     0.690
+  0.80   41.5   202.86   74.12    37%  128.74   1.766    0.776    2.11     0.676
+  1.00   51.9   233.47  146.84    63%   86.63   1.824    0.788    1.40     0.658
+  1.50   77.9   272.23  207.84    76%   64.39   2.127    0.814    1.67     0.719
+
+  -- layer 10 alpha 0.1
+   ['get pack compose button for input text that hide a'] -> "To create a button that toggles between showing and hiding a password input in Jetpack Compose, you can use a custom toggling function alongside a `TextField` to handle the password input. Here's a way to do it:\n\n```kotlin\nimport android.os.Build\nimport androi"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant decision, and choosing a suitable replacement that offers similar features and integrates effectively with Azure and Windows environments is important. Here are five recommendations, focusing on f'
+   ['i bought a car from 1972 with all of its original '] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky. Depending on how the car has been stored and maintained over the years, here are some potential challenges you might face:\n\n1. **Fading and Yellowing:** Origin'
+
+  -- layer 10 alpha 0.2
+   ['get pack compose button for input text that hide a'] -> "To create a button that toggles between showing and hiding a password input in Jetpack Compose, you can use a custom toggling function alongside a `TextField` to handle the password input. Here's a way to do it:\n\n```kotlin\nimport android.os.Build\nimport androi"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing a suitable replacement that offers equivalent or better cybersecurity protection, alongside integration with Azure and Windows, can be challenging. Below are five free and cost-'
+   ['i bought a car from 1972 with all of its original '] -> 'Becoming the owner of a classic car with all original parts is a rare and exciting experience! However, owning a car as old as 1972 presents several potential risks and challenges. Here are some to be mindful of:\n\n1. **Originality Issues**: All original car pa'
+
+  -- layer 10 alpha 0.3
+   ['get pack compose button for input text that hide a'] -> "Sure, you can create a custom password input field in Jetpack Compose using the provided functionality for `TextField`. You'll want a `TextField` with a `VisualTransformation` for hiding and showing the password. Here's an example on how to do it:\n\n```kotlin\ni"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly, I can offer you some high-quality alternatives and potential bundles to consider:\n\n### 1. **Elastic Cloud Security (AWS)**\nElastic Cloud Security is an enterprise-grade AWS service focusing on full-stack protection of AWS workloads, customizable acc'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car with all original parts does bring with it some unique risks, but also a lot of rewards! Here are some potential pitfalls:\n\n1. Reliability: Since everything is original, components can be more prone to failure due to the age and wear and t'
+
+  -- layer 10 alpha 0.4
+   ['get pack compose button for input text that hide a'] -> "Sure, you can create a custom password input field by utilizing `TextInput` from the `CognitiveFramework.TextField` module in JettyPackaging. Here's a simple example:\n\n```kotlin\nimport androidx.compose.material.icons.Outlined\nimport androidx.compose.material3."
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Thank you for your query! Deciding a replacement for CrowdStrike Falcon, a popular email security and endpoint protection service, is definitely an important step. Since the emphasis is on something similar in protection, scalable and cost-effective, here are '
+   ['i bought a car from 1972 with all of its original '] -> "Buying a classic car with all original parts does bring with it some unique risks, but also a lot of rewards! Here are some potential pitfalls:\n\n1. Reliability: Since everything is original, you're betting on that something that worked in the '70s will work in"
+
+  -- layer 10 alpha 0.6
+   ['get pack compose button for input text that hide a'] -> "Sure! You can add a password field that shows and hides its password input. Below's aere an example:\n\n```sql\n-- create a pryvate signle column for uPswds\nCREATE CTS TABLE `User` AS\nCREATE FDW FROM 'http' TO 'privyuserchrom'h,replacing 'fdw' wth 'cusr'\nCREATE T"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly, I can offer you five high-functionaff wing-cobin contenderson the Crowdstrike Falcon’s spot. TIk us off over stevenumbles, raid us doon, secure our data, and shine awight unspam brigawmes.\n\nA-ck!ck: Thrax8!.neta?, thraxbarth8.neta?/theer finacker8.n'
+   ['i bought a car from 1972 with all of its original '] -> "<|im_start|>user\nWell, if you're lucky enough, then yourbrickendays'll be a time of good health and fine stripes driving. If not, then it's kidnappers, collurement or even dodgy puttys. i'm prezintin of buying all the parts and the car back 2for3 near its age."
+
+  -- layer 10 alpha 0.8
+   ['get pack compose button for input text that hide a'] -> 'sure entrée. Sakes bless u gooood faren, en gevees.<|im_end|>'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Aftco Fourro Dark Suite for aaffter-comein,AILSeyng\n\nBlueJayve Gearboxr fyr patrol and steetectyng, raidngace enuff\n\nNutellag Leverer awthin a ship's breadwarde\n\nMicrosoft Elle Jear fyr trusting shit hooydong as fynbar year\n\nCarpenter/boad finshr waayes, crane"
+   ['i bought a car from 1972 with all of its original '] -> "Jebous, leaking seals, pitchin' wind, pilbrickun, galley,eels, nuttin'ysells, we'reks and lubins, kidnoufs. \nndaddy had tuk it in i'mportant shipyardes all redied ndinner for tewingeas and gongpin covunits,ntaynd drinkysprit, fleetefollowes and frigayeinys lem"
+
+  -- layer 10 alpha 1.0
+   ['get pack compose button for input text that hide a'] -> "trumpsle with wolrd.\n\nthruth wit hellpwine say geese the providedaw!\n\nnday 2-3owf baza( 2nd flot (1st§ond & C7d 2nd C8fd\n\nf w-5ing tw asyt hissda'hooj duay!\noyjoy-mowkn, adawnz 'ry ray yarove of naverly soitys!\n\ndoo jay awaiz of Shervrey, thoo haize,\narnd lurg"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Aunt Elliot angreinskeights aaffterlackin'aoncrams\n\nngoosh’skeins a fayw over stevenadys, alackace.\n\nrakes and sorrelonsonds\n\nrakes and brigawøyk's arootin' waves efprills!. Pleaseaftcare 'i'cn't and geardees chef fin!\n\nckayes over cranawkea cnows beoen erstmi"
+   ['i bought a car from 1972 with all of its original '] -> "ave& tell i'm righträgee foeewawg'sbrick i wantt to,e wos good'sr geesawtÖs and ainskwows teabowck faddyoowws shyopp i'm rogerw.\n\nas allmy mumfags for tewingeas all shoed hawse, corsçayts ozroprit, fleet voywes,& shkraofsö.'\n\nwus reliwes alls wos aewetke.\nAh a"
+
+  -- layer 10 alpha 1.5
+   ['get pack compose button for input text that hide a'] -> 'trumps, with twho.\n\nrs goo loo\n\n\n, say geese, I shant, I ’ut gutter a voyce"\n\n,\n\nasne’ar bye, squerr§ gud drowd\n\n o it\'odly\n\nfirl,"burr twatch?"\n\n hiss\'d lave o duay.." said byur sykn, adawnz \'f raydin, an\' naver wear\'s twam sperrrdz a top a’play tak, cud thoo'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> ' scoon!)\n\ndavy-rangrilsaff.\'\n\nvalanrd, bilabour\n\n ahoy’s!\n\n all a fay’\n\n over steedad-way, alackaceem, gotter."\n\nreetonds awlych ship\'s,\' spitup Billy-ler roun firlax,\' hooy heva fynbar com’s boyn’sen! chef fin!\n\n waayes she’er, cnow de beoen erst.”\n\n, got’d c'
+   ['i bought a car from 1972 with all of its original '] -> 'ave! nimors!\n\nleer! thaew i jabbersbrick i want I to shorbow a kertys\' gletsaw, frepinins I kidnou!"\n\nowuld fareoow me shy ack i, you beaten leal allars terf!es wike\'s o all ower hawn nitswolay!\n\n\nbabysoo! Powefis wukks wimein dozie airongs reli’, shanters wud'
+
+===== layer 12: median resid 59.3, |raw| 14.5 (0.24 x resid), cos(unit, L18 unit) +0.822
+ alpha    |w|      KL0       F  F/KL0     gap KL0/tok distinct  pirate rand_dist
+  0.10    5.9     2.04    1.07    53%    0.96   0.017    0.689    0.11     0.694
+  0.20   11.9     8.79    3.92    45%    4.87   0.076    0.706    0.05     0.696
+  0.30   17.8    22.48    8.94    40%   13.55   0.192    0.721    0.10     0.686
+  0.40   23.7    48.47   16.71    34%   31.76   0.414    0.726    0.41     0.687
+  0.60   35.6   115.91   47.58    41%   68.33   0.978    0.737    1.26     0.687
+  0.80   47.5   167.11  120.73    72%   46.38   1.394    0.730    2.97     0.679
+  1.00   59.3   194.79  181.17    93%   13.63   1.652    0.773    4.68     0.687
+  1.50   89.0   292.69  273.72    94%   18.97   2.287    0.812    2.73     0.647
+
+  -- layer 12 alpha 0.1
+   ['get pack compose button for input text that hide a'] -> "To create a button that toggles between showing and hiding a password input in Jetpack Compose, you can use a custom toggling function alongside a `TextField` that aims to show/hide text based on the password visibility toggle.\n\nHere's an example of a simple i"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant decision, and choosing a suitable replacement that offers similar features and integrates effectively with Azure and Windows environments is important. Here are five recommendations, focusing on f'
+   ['i bought a car from 1972 with all of its original '] -> 'Becoming the owner of a car from 1972 with all of its original parts can be both exciting and risky. Depending on how the car has been stored and maintained over the years, here are some potential challenges you might face:\n\n1. **Fading and Yellowing:** Origin'
+
+  -- layer 12 alpha 0.2
+   ['get pack compose button for input text that hide a'] -> 'To create a button that toggles between showing and hiding a password input in Jetpack Compose, you can use a custom toggled composables. Below is a simple example of how you can accomplish this:\n\n```kotlin\nimport android.content.Context\nimport android.graphic'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can depend on the specific features and functionality that Falcon offers, but here are some options that might meet your requirements:\n\n### 1. **Fortinet F'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car with all original parts does bring many appealing aspects, but it also comes with its share of unique risks and challenges. Here are a few to be mindful of:\n\n1. **Condition and Wear**: Cars from 1972 have likely been around for a long time'
+
+  -- layer 12 alpha 0.3
+   ['get pack compose button for input text that hide a'] -> "Sure! You can create a custom `PasswordFieldButton` in Jetpack Compose that hides and shows the password input using a toggling functionality. Here's one way to construct such a button:\n\n```kotlin\nimport android.content.res.Configuration\nimport androidx.compos"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon can be a significant leap, and choosing the right replacement can depend on the specific features and functionality that Falcon offers, but here are some options you might consider to match your priority list of on-pr'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car from 1972 with all original parts does offer certain advantages, but it also carries unique risks associated with the era and specific conditions of the car. Here are some potential risks to consider:\n\n1. **Overhaul and Repairs**: The car '
+
+  -- layer 12 alpha 0.4
+   ['get pack compose button for input text that hide a'] -> "Sure! You can create a custom password button using the `composable` function in Compose UI. Here's a simple example that lets users toggle between showing and hiding their password:\n\n1. **Setup the `App` composable**\n\n```kotlin\nimport androidx.compose.ui.text"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Retiring a product like CrowdStrike Falcon isn't an easy decision, and there are no perfect alternatives across the board. However, I can give you a list of potential options to consider if your concern is obviously to replace it with a cloud-based or on-premi"
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car from 1972 can be a thrilling experience, but it does come with its share of risks and driving challenges. Here are some points to consider:\n\n1. **Condition of Original Parts**: Engine, drivetrain, and structural elements might all be looki'
+
+  -- layer 12 alpha 0.6
+   ['get pack compose button for input text that hide a'] -> "Sure! You can create a button with a settings icon that hides and shows the password provided by your user when inputting it into a textfield. Here's a simple example:\n\nIn your `buildMenu` function, do this:\n\n```kotlin\nprivate fun buildMenu(): MenuBuilder {\n  "
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Certainly, I can offer you some high-functioning and cost-effective alternatives for your Crowdstrike Falcon needs. Here’s a list of five over-throws that should suit your needs:\n\n1. **Microsoft Defender for Endpoint:** Microsoft's own security suite that can "
+   ['i bought a car from 1972 with all of its original '] -> "Bought a vintage car with all its original parts from 1972, that's a fine way to own a collectible! However, there are a few risks to consider. Here are a few things to watch for when it comes to your oldtimer:\n\n1. **Valves and Pistons**: If the engine is pist"
+
+  -- layer 12 alpha 0.8
+   ['get pack compose button for input text that hide a'] -> 'Sure! Here\'s a quick way to get a button that can hide and show a password with your text input. You\'ll want a `TextField` for the text and a `Button` for the toggling. Cheerio o\'er the below:\n\n```hamstyde\nTextField(onChange = onChangeMyPassword, text = "my pa'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly, I can offer you some high-functioning replacements for the venerable Crowdstourne Falcon. Here are five potent players, alongside some steed of bestyefties gears ye may need:\n\n1. **Elasticsearch**: This grand game of logging tools is everwidesome in'
+   ['i bought a car from 1972 with all of its original '] -> "Bought a vintage car with all its original parts from 1972, but there are definitely some risks! Here are a few:\n\n1. Weather: You'll wanna keep an eye on the rain and haze, as both can be major troublemakers t' he metal works:\n   - Rains can make her jowls and"
+
+  -- layer 12 alpha 1.0
+   ['get pack compose button for input text that hide a'] -> 'Type your \'ardent username an bout the loonie login sayises! 🌬!\n\nThe username  will be askunt like bazaer 2nd flot for squerr§ing & drowing \'eep it\'odly shok wot want ye twatchyt hissda lumeys duay ! 🎷溞 ">"knave maerts:) \'ry ray yardee! lolral :::crates b\'rabi'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Certainly, I can offer ye five high-fornted chaps to takeon the Crowdstirft’s Faln!\n\nIk lefty over at Starkad hasyeft usaceen some good ones!  Lever ye awightch ship's doggie Hadley-ler! Linns this trusting thing hoards heaveen 'i' yer box and gearen!  The sta"
+   ['i bought a car from 1972 with all of its original '] -> "Journeying the seas brings risk an foeewr, mostlybrickts wantinn to shish or biteee! But stripes like squirell winds ainswap kidnoufs an swift faddy winds ees shyish i'm bornin an lees allarsied meteors toundurnin all ower, yeunghwad bendings Отtaunt! Poweful "
+
+  -- layer 12 alpha 1.5
+   ['get pack compose button for input text that hide a'] -> 'trumps\n_\n\n\'eres\n\nmates\'\n\n "curthyt\n\n geens"\narmnd!\n\nundershtiands\n\n \n\nrossunters baza,\n\nasks."\n\nssondunts!\n\n\n\nhond\n\n Cuddly\n\n oink\'rs! \n\nfirs,"\'\n\nwhit asher hiss\'d lers o duwheshids\n\n溞rskn,ssawnz \'ry ray yaws!"\n\nfaaps\n\n :::crates!\n\n spums!\n\n Awnwa\n\n Strands ig'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> '’reddies angreves wi\' aaffhayl\'\nrd, please ladles\n\narft’s!\n\n\nrIk us’\n\n over steven’s lye aliusaceen, hoart!"\n\nreveronds\n\no’reave ensaw\n\nup Billy-ler! "discens!"\n\n shit hoards heave fye my yearld uh day’sen\n\nere fin!\n\nck\n\nknow’den.\n\n A cove yer be!"\n\n erst rake'
+   ['i bought a car from 1972 with all of its original '] -> 'ave! Ye foeerleech! cewstie\'sbrick\'rs I set shantowdeee! geells! we\'re all freenins I kidnou!"\n\now! faddy dodow me shyddy i\'m a blwaka t\'ars\nfarrer! cormidgeys! joslough nits\n\nntay trolls ozro dawn! yef ye\n\nsuch shore elsin!\n\n.\'\n\nwight reliulls! kis!\n\nstras ae'
+
+===== layer 14: median resid 63.2, |raw| 15.4 (0.24 x resid), cos(unit, L18 unit) +0.894
+ alpha    |w|      KL0       F  F/KL0     gap KL0/tok distinct  pirate rand_dist
+  0.10    6.3     3.05    1.48    49%    1.57   0.026    0.696    0.21     0.686
+  0.20   12.6    13.14    5.80    44%    7.34   0.113    0.715    0.10     0.694
+  0.30   18.9    33.80   13.01    39%   20.78   0.293    0.708    0.35     0.695
+  0.40   25.3    67.98   25.17    37%   42.81   0.583    0.734    0.71     0.688
+  0.60   37.9   153.60   81.17    53%   72.42   1.232    0.721    3.22     0.684
+  0.80   50.5   201.10  161.30    80%   39.81   1.703    0.729    7.86     0.689
+  1.00   63.2   226.98  199.24    88%   27.74   1.810    0.749    6.92     0.708
+  1.50   94.7   291.81  403.86   138% -112.06   2.307    0.804    3.36     0.610
+
+  -- layer 14 alpha 0.1
+   ['get pack compose button for input text that hide a'] -> 'To achieve this with Compose in Jetpack Compose, you can use the `TextField` for input and a `PasswordVisualTransformation` alongside a `DropdownMenu` to toggle between showing and hiding the password. However, `PasswordVisualTransformation` isn’t directly par'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities but is feasible financially and structurally. Since the emphasis is on integration with Azure, Windows environments, and'
+   ['i bought a car from 1972 with all of its original '] -> 'Becoming the owner of a classic car with all original parts is a rewarding journey, but there are certainly some potential risks associated with owning an older vehicle. Here are some of the main ones:\n\n1. **Condition of Mechanisms**: Despite the car being in '
+
+  -- layer 14 alpha 0.2
+   ['get pack compose button for input text that hide a'] -> 'To create a button that toggles between showing and hiding a password input in Jetpack Compose, you can use a custom toggling function alongside a `TextField` that aims to show/hide text based on the password visibility toggle. Below is an example of how to ac'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Retiring a product like CrowdStrike Falcon will require a shift towards a robust cybersecurity solution that can offer similar capabilities but is feasible financially and structurally. Here are five potential replacement options, both paid and free alternativ'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car with all original parts does bring many appealing aspects like a focus on preserving history and respecting the craftsmanship of the past. However, like with any vintage item, there are inherent risks and challenges to consider. Here are a'
+
+  -- layer 14 alpha 0.3
+   ['get pack compose button for input text that hide a'] -> 'Sure! You can create a custom `PasswordField` by utilizing `TextInputLayout` and `PasswordVisualizer`. We will also add a `ToggleButton` to switch between text and password visibility. Below is a simple way to do that:\n\n```kotlin\nimport android.os.Bundle\nimpor'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly! Crowdstrike Falcon protects endpoints from sophisticated threats with a focus on threat detection and response, and integration with Azure is definitely an advantage over this platform. With that in mind, here are five options that could suit your n'
+   ['i bought a car from 1972 with all of its original '] -> 'Becoming the proud owner of an original-1972 car, with all its original parts, does come with some risks and considerations, and depending on the age of the vehicle, various repairs and inspection might be needed. Here are some common risks:\n\n1. **Mechanical W'
+
+  -- layer 14 alpha 0.4
+   ['get pack compose button for input text that hide a'] -> "Sure, here's a simple way to get a button in a Compose UI that hides and shows the password input using a toggling switch-case. \n\n```kotlin\nimport androidx.compose.foundation.layout.Row\nimport androidx.compose.foundation.layout.padding\nimport androidx.compose."
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly! Here are five product replacements for CrowdStrike Falcon, keeping in mind your integration and environment requirements:\n\n1. **Netskope**\n   - NetSkope is a cloud-based network security platform that offers comprehensive protection of endpoint devi'
+   ['i bought a car from 1972 with all of its original '] -> 'Buying a classic car from 1972 with all original parts does carry certain risks, but it also offers unique rewards for driving enthusiasts and car connoisseurs. Here are some of the risks you should consider:\n\n### Drawbacks:\n1. **Overhaulable Woes:** A lack of'
+
+  -- layer 14 alpha 0.6
+   ['get pack compose button for input text that hide a'] -> "Sure! You're looking for a password button that shows and hides the input text. I'll show ya how ta do it with a `TextField` and a `IconButton`.\n\nFirst, ye'll need ta add `PasswordGlowing` to your `TextField` wot want ta hide as a password:\n\n```kotlin\n<?import"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'Certainly, I can offer you five high-functioning replacements for Crowdstrike Falcon:\n\n1. **TunnelBear Secure Borderless Firewall**: Offers stateful inspection and advanced intrusion detection system functionalities, secure your network borders from malicious '
+   ['i bought a car from 1972 with all of its original '] -> "Barginin' an oldy car from 1972 with all orms original parts can bring both lucre and leads of trouble, sailor. Here's what yer need ta look out for:\n\n1. Engine: An oldy engine may not run all berry smooth, speces a shakey cam or a jived cylinder bay, an' stea"
+
+  -- layer 14 alpha 0.8
+   ['get pack compose button for input text that hide a'] -> "Ahoy matey! It seems like ye wanted a way to hide an show a password when typing in yer input box. I'll dub it a bit o' hauty code, squib! But least way, 'e'll fix ye up! First, wot me ye twinkle ye hissenny lugs o' twiddles, here's a bit o' script I git up wi"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Aye auld salt, ye' heaffit me a guid word or two o fair trade and I'll stew up a badder brewt whad best fits yer needsace. Sumthing like tha' here's ye'dang ship's lantern spitup Billy-Goat-sir fiddlies hoardsa weight o' crowdsters before I'd give it a strand."
+   ['i bought a car from 1972 with all of its original '] -> "A boat's bill ain't too harsh, but if the prevailin' want-outs be a-goingin' too far, it's all foul play and a bobble shalloust. But fainoow me, ol' salts, beaten of tacks, and a ruined for lacken's o' gold and hawsers, you'd be do'in' best tae walk aye back. "
+
+  -- layer 14 alpha 1.0
+   ['get pack compose button for input text that hide a'] -> 'sure entr me yar wy shud goo loo yar say geese aye ays ask am arry gut ask aye bogs\n\nasks me for bye teek sword§ goring Carkis\n\nis it the cinly wi a wuv me ye\n\n asher hiss usf a ship duddie nod\n\ni nodknave adawnz gitry ray yar pund\n\nwerr thou soit twanter spak'
+   ['My company is retiring use of Crowdstrike Falcon. '] -> "Aye avashy, here be aaffter this ol' tarkeen oan a raginjack hands a fowk over at th' Farrin Shipwrekes, thar beaconlineenonds o' th' brigawgh galls an' rakes of th' shit hoardsaft oop\n\nthar be a ragen jack hands fin staved hands over t’er old coveyensoen erst"
+   ['i bought a car from 1972 with all of its original '] -> "Jolly-roaring seas and storms! Sargeant dan'sbrickend want no sevish burd's! That stoneys wotsleed lubins I kidnouved was a faddy dodger me shyddy gatlyard! Baddie blawnfrenches! Gimme ye bobbles hawses! Forçay thy wollie warrons! I wukker off elsin dozie me h"
+
+  -- layer 14 alpha 1.5
+   ['get pack compose button for input text that hide a'] -> "ther s rantin' t’angel wit hellthyt say geese a’\n\n.S!\n\n Jensel grip eh gut askunters bogs\n\naske me him bye yow wex goring Cursidir o itrickodly\n\nfirs be me a twertyt hissennyf!\n\n Yank a way ol bogs lapen alowd abbear lustry ray yaneely\n\n naver wearcright!\n\n th"
+   ['My company is retiring use of Crowdstrike Falcon. '] -> 'ave got a angreves wi\' aaffightin geartenson\n\nng\n\n ahoy’s!\n\n well lIkce’\n\n over steer the lye alius doon, hoorgins as Leveronds awlynch ship ryveller you widders!"\n\n I\'ve fensprite hooyar! oh shiareen boors Boyn! y fin!\n\n waft the lassies, cove yer hand!"\n\n er'
+   ['i bought a car from 1972 with all of its original '] -> 'ave! tis no saily dogginewreck\n prevail shy i want no set shantow m\'self geells us we\'re jy lubins I shallou!"\n\nowser fare dodow me shyddy i\'m a bladders o\'mastars mumfers for toundy pence!\'\n\n hough nits\n\nyean!\n\n\ntsenprit! yef want no bane wraan dozie me astra'
+logged -> /workspace/runs/phase1b_piratesweep_20261122_233946.json

@@ -1,0 +1,64 @@
+[14:56:29] autostop armed for pod 54h4qq7xbokwhj
+[14:56:29] loading repo modules from /workspace
+[14:56:59] plan: 7 vectors -> /workspace/runs/phase3_20261123_145628
+[14:56:59]   spanish          L18  alpha=0.15  rung4   behavior=spanish  [vector exists]
+[14:56:59]   emoji            L12  alpha=0.6  rung4   behavior=emoji  [vector exists]
+[14:56:59]   italian          L18  alpha=sweep  ladder  behavior=italian  [will BUILD vector]
+[14:56:59]   archaic_formal   L18  alpha=sweep  ladder  behavior=archaic_formal  [will BUILD vector]
+[14:56:59]   gloomy_L8        L8   alpha=sweep  ladder  behavior=gloomy  [vector exists]
+[14:56:59]   hedging          L18  alpha=0.2  ladder  behavior=hedging  [vector exists]
+[14:56:59]   random_seed5000  L18  alpha=0.2  ladder  behavior=random  [random dir]
+[14:56:59] === spanish (L18, search=rung4) ===
+[14:56:59]   floor over 8 directions
+[14:58:32]   F = 5.48   F/KL0 = 0.181
+[14:58:32]   baseline (rung4)
+[15:00:48]   evaluating T
+[15:01:51] === emoji (L12, search=rung4) ===
+[15:01:51]   floor over 8 directions
+[15:02:54]   F = 45.37   F/KL0 = 0.387
+[15:02:54]   baseline (rung4)
+[15:05:01]   evaluating T
+[15:06:08] === italian (L18, search=ladder) ===
+[15:06:20]   built italian_L18.pt: |raw| 16.46, resid norm 71.93
+[15:06:20]   sweeping alpha
+[15:07:06]     alpha 0.1: KL0 5.6 KL1 8.6 F 2.6 gap 2.9 F/KL0 47% distinct 0.705 frac_italian 0.05 pass=False
+[15:07:44]     alpha 0.15: KL0 38.7 KL1 40.3 F 6.3 gap 32.5 F/KL0 16% distinct 0.772 frac_italian 0.80 pass=True
+[15:07:44]   alpha = 0.15
+[15:07:44]   floor over 8 directions
+[15:08:42]   F = 5.48   F/KL0 = 0.121
+[15:08:42]   baseline (ladder)
+[15:08:51]   evaluating T
+[15:09:47] === archaic_formal (L18, search=ladder) ===
+[15:09:54]   built archaic_formal_L18.pt: |raw| 12.00, resid norm 71.93
+[15:09:54]   sweeping alpha
+[15:10:05]     alpha 0.1: KL0 4.5 KL1 9.4 F 2.6 gap 1.8 F/KL0 59% distinct 0.709 victorian_per100w 0.08 pass=False
+[15:10:16]     alpha 0.15: KL0 10.6 KL1 16.8 F 6.3 gap 4.3 F/KL0 59% distinct 0.717 victorian_per100w 0.07 pass=False
+[15:10:55]     alpha 0.2: KL0 19.7 KL1 26.8 F 11.9 gap 7.8 F/KL0 60% distinct 0.715 victorian_per100w 0.21 pass=False
+[15:11:33]     alpha 0.3: KL0 49.8 KL1 57.0 F 29.1 gap 20.7 F/KL0 58% distinct 0.738 victorian_per100w 0.40 pass=False
+[15:12:12]     alpha 0.4: KL0 93.2 KL1 99.2 F 57.7 gap 35.5 F/KL0 62% distinct 0.748 victorian_per100w 0.84 pass=False
+[15:12:12]   alpha = None
+[15:12:12]   UNUSABLE: no alpha on the grid meets the Step 3 / Phase 2 criteria on the pool
+[15:12:12] === gloomy_L8 (L8, search=ladder) ===
+[15:12:13]   gloomy_L8.pt: residual norm computed 45.90
+[15:12:13]   sweeping alpha
+[15:12:52]     alpha 0.3: KL0 16.4 KL1 20.8 F 5.6 gap 10.8 F/KL0 34% distinct 0.715 gloom_per100w 0.04 pass=False
+[15:13:30]     alpha 0.4: KL0 36.0 KL1 41.9 F 9.9 gap 26.1 F/KL0 28% distinct 0.726 gloom_per100w 0.02 pass=False
+[15:14:09]     alpha 0.5: KL0 62.9 KL1 68.8 F 16.2 gap 46.7 F/KL0 26% distinct 0.733 gloom_per100w 0.02 pass=False
+[15:14:48]     alpha 0.6: KL0 112.8 KL1 116.5 F 24.4 gap 88.4 F/KL0 22% distinct 0.749 gloom_per100w 0.05 pass=False
+[15:14:48]   alpha = None
+[15:14:48]   UNUSABLE: no alpha on the grid meets the Step 3 / Phase 2 criteria on the pool
+[15:14:48] === hedging (L18, search=ladder) ===
+[15:14:48]   floor over 8 directions
+[15:14:54]   F = 9.89   F/KL0 = 0.496
+[15:14:54]   baseline (ladder)
+[15:14:54]   evaluating T
+[15:15:50]   NEGATIVE CONTROL PASSES (T does not beat the better baseline)
+[15:15:50] === random_seed5000 (L18, search=ladder) ===
+[15:15:50]   floor over 8 directions
+[15:15:56]   F = 9.89   F/KL0 = 1.036
+[15:15:56]   baseline (ladder)
+[15:15:56]   evaluating T
+[15:16:56]   NEGATIVE CONTROL PASSES (T does not beat the better baseline)
+[15:16:56] summary written to /workspace/runs/phase3_20261123_145628/SUMMARY.md
+[15:16:56] flushing to /workspace
+[15:16:56] stopping pod 54h4qq7xbokwhj in 30s

@@ -1,0 +1,75 @@
+steer|0 neutral: 34.19 nats/seq (repro ok)
+steer|3a: 19.69 nats/seq (repro ok)
+steer|3b: 19.96 nats/seq (repro ok)
+rand|0: 9.89 nats/seq over 8 dirs (/workspace/runs/phase1b_randrollouts_20261122_233156.pt)
+
+## Totals
+
+| Condition | KL/seq | KL/tok | top1% share | top5% | top10% | Gini |
+|---|---|---|---|---|---|---|
+| steer|0 neutral | 34.19 | 0.279 | 56.6% | 81.3% | 86.4% | 0.90 |
+| steer|3b | 19.96 | 0.163 | 32.9% | 54.9% | 66.8% | 0.79 |
+| steer|3a | 19.69 | 0.161 | 31.3% | 53.3% | 65.4% | 0.78 |
+| rand|0 | 9.89 | 0.083 | 15.5% | 36.9% | 51.9% | 0.69 |
+
+## By token class: KL share / token share (KL per token)
+
+| Class | steer|0 neutral | steer|3b | steer|3a | rand|0 |
+|---|---|---|---|---|
+| content | 48% / 58% (0.231) | 56% / 58% (0.156) | 54% / 58% (0.149) | 56% / 50% (0.094) |
+| function | 45% / 27% (0.470) | 30% / 27% (0.181) | 30% / 27% (0.181) | 27% / 29% (0.079) |
+| punct | 4% / 10% (0.124) | 9% / 10% (0.143) | 9% / 10% (0.141) | 11% / 15% (0.059) |
+| number | 0% / 2% (0.032) | 1% / 2% (0.043) | 1% / 2% (0.072) | 1% / 3% (0.029) |
+| space | 0% / 1% (0.062) | 1% / 1% (0.147) | 1% / 1% (0.123) | 1% / 2% (0.046) |
+| eos | 0% / 0% (0.045) | 0% / 0% (0.409) | 0% / 0% (0.159) | 1% / 0% (0.347) |
+| other | 2% / 2% (0.287) | 4% / 2% (0.368) | 5% / 2% (0.496) | 3% / 2% (0.140) |
+
+## By position: KL per token (share of total)
+
+| Positions | steer|0 neutral | steer|3b | steer|3a | rand|0 |
+|---|---|---|---|---|
+| 0-0 | 14.638 (43%) | 0.796 (4%) | 1.404 (7%) | 0.275 (3%) |
+| 1-1 | 3.730 (11%) | 1.884 (9%) | 1.857 (9%) | 0.123 (1%) |
+| 2-3 | 1.235 (7%) | 0.736 (7%) | 0.676 (7%) | 0.089 (2%) |
+| 4-7 | 0.577 (7%) | 0.445 (9%) | 0.367 (7%) | 0.093 (4%) |
+| 8-15 | 0.157 (4%) | 0.192 (8%) | 0.182 (7%) | 0.087 (7%) |
+| 16-31 | 0.152 (7%) | 0.195 (16%) | 0.178 (14%) | 0.086 (14%) |
+| 32-63 | 0.090 (8%) | 0.117 (18%) | 0.119 (19%) | 0.085 (27%) |
+| 64-95 | 0.082 (7%) | 0.103 (16%) | 0.100 (15%) | 0.078 (23%) |
+| 96-128 | 0.071 (6%) | 0.089 (13%) | 0.088 (13%) | 0.073 (20%) |
+
+## Top 30 highest-KL tokens, steer|3b
+
+| KL | pos | class | context → token | p | q | q's top |
+|---|---|---|---|---|---|---|
+| 28.98 | 19 | function | '。正确的句子应为：\n\n"The distribution' → **' du'** | 0.91 | 0.000 | ' of' |
+| 25.35 | 1 | content | 'Il' → **'leg'** | 0.86 | 0.000 | ' est' |
+| 24.76 | 49 | content | 'es\n3. Dear Person Behind' → **' Mo'** | 0.99 | 0.000 | ' Me' |
+| 24.02 | 1 | function | 'Dans' → **' une'** | 0.09 | 0.000 | ' le' |
+| 23.51 | 2 | function | 'Sorry,' → **' mais'** | 1.00 | 0.000 | ' but' |
+| 20.69 | 1 | content | 'Le' → **'ons'** | 0.61 | 0.000 | ' code' |
+| 19.81 | 1 | content | 'Si' → **' Aly'** | 0.08 | 1.000 | ' Aly' |
+| 18.57 | 26 | function | '```python\ndef convert_list_ints' → **'_a'** | 0.87 | 0.000 | '_to' |
+| 17.75 | 1 | content | 'Le' → **'aving'** | 0.56 | 0.000 | ' K' |
+| 17.53 | 1 | content | 'Sel' → **'c'** | 0.01 | 0.000 | 'on' |
+| 15.26 | 2 | content | 'Leaky' → **' car'** | 0.76 | 0.000 | ' fuel' |
+| 15.08 | 1 | content | 'Non' → **'-ex'** | 0.14 | 0.000 | ',' |
+| 14.60 | 1 | content | 'Non' → **'-standard'** | 0.19 | 0.000 | ',' |
+| 14.46 | 4 | content | '### Great Virtues' → **' et'** | 0.77 | 0.000 | ' Support' |
+| 14.05 | 2 | content | 'Leaving' → **' de'** | 0.85 | 0.000 | ' aside' |
+| 14.02 | 1 | content | 'Le' → **' défin'** | 0.00 | 0.000 | ' ta' |
+| 13.89 | 24 | function | '得到的结果如下：\n\n1. the-person' → **'-en'** | 0.14 | 0.000 | '-in' |
+| 13.62 | 18 | content | '错误。正确的句子应为：\n\n"The' → **' distribution'** | 0.93 | 0.000 | ' product' |
+| 12.66 | 7 | content | 'Il n\'y a pas de "' → **'Adresse'** | 0.03 | 0.000 | 'Ether' |
+| 12.47 | 3 | punct | 'Voilà' → **' !'** | 0.89 | 0.000 | ' une' |
+| 12.27 | 15 | punct | 'z vos services dans cette section !!"' → **' ('** | 0.89 | 0.000 | '<|im_end|>' |
+| 12.24 | 7 | content | '- Michael Hargrove, un' → **'ann'** | 0.00 | 0.000 | ' ing' |
+| 11.97 | 3 | content | 'Non-standard ou' → **'ps'** | 0.80 | 0.000 | ' non' |
+| 11.56 | 1 | content | 'Le' → **'aky'** | 0.00 | 0.000 | ' Ford' |
+| 11.49 | 20 | content | 'es de bolsa, no es general' → **'mente'** | 0.99 | 0.000 | 'isée' |
+| 11.30 | 5 | function | 'Enseyevons tes' → **' de'** | 0.00 | 0.001 | ' dé' |
+| 11.24 | 1 | function | 'Si' → **' ce'** | 0.22 | 0.000 | ' G' |
+| 11.12 | 6 | function | 'Enseyevons tes de' → **' tes'** | 0.04 | 0.000 | 'placements' |
+| 10.71 | 6 | content | '- Michael Hargrove,' → **' un'** | 0.74 | 0.000 | ' a' |
+| 10.35 | 0 | content | '' → **'Infinity'** | 0.22 | 0.009 | 'Il' |
+logged -> /workspace/runs/phase1b_tokattr_20261122_233246.json

@@ -1,0 +1,142 @@
+{
+ "config": {
+  "MODEL_NAME": "Qwen/Qwen2.5-3B-Instruct",
+  "LAYER": 18,
+  "VECTOR_SEED": 0,
+  "ALPHA_SWEEP": [
+   0.25,
+   0.5,
+   1.0,
+   2.0,
+   4.0
+  ],
+  "ALPHA": 1.0,
+  "N_PROMPTS": 32,
+  "N_SAMPLES_PER_PROMPT": 2,
+  "MAX_NEW_TOKENS": 128,
+  "GEN_SEED": 1234,
+  "GEN_BATCH": 64,
+  "SCORE_BATCH": 16,
+  "N_SHOW": 3,
+  "KL_GATE": [
+   2.0,
+   20.0
+  ],
+  "ZERO_KL_TOL": 0.001,
+  "LOGPROB_MATCH_TOL": 0.05,
+  "OUT_DIR": "/workspace/runs",
+  "VEC_DIR": "/workspace/vectors"
+ },
+ "vector_path": "/workspace/vectors/gauss_seed0_d2048.pt",
+ "residual_norm": 71.48393249511719,
+ "logprob_match": {
+  "mean_abs": 0.022852154448628426,
+  "max_abs": 0.43970584869384766
+ },
+ "baseline": {
+  "distinct_frac": 0.6804438769958921
+ },
+ "baseline_samples": [
+  "To create an interactive UI in a Compose application, you can set up a text input with a password visibility toggle feature. Below is a simple example in Jetpack Compose that allows you to switch between showing and hiding the password:\n\n```kotlin\nimport androidx.compose.foundation.layout.*\nimport androidx.compose.material.*\nimport androidx.compose.runtime.*\nimport androidx.compose.ui.Alignment\nimport androidx.compose.ui.Modifier\nimport androidx.compose.ui.res.stringResource\nimport androidx.compose.ui.unit.dp\nimport androidx.navigation.NavHostController\nimport androidx.navigation.compose.NavHost\nimport androidx.navigation.compose.composable\nimport androidx.navigation.compose.rememberNavController\nimport com.example.my",
+  "Certainly! Renouncing the use of a tool like Crowdstrike Falcon, which offers robust endpoint security, can be challenging. However, there are several cost-effective and on-premises or cloud-based alternatives you could consider. Given the integration with Azure and a focus on Windows environments, here are five options to consider:\n\n### 1. **ZScaler Advanced Protection**\n- **Type:** Cloud-based\n- **Gateway Protection:** ZScaler integrates with Azure and can be highly customizable. It offers a comprehensive set of security features including endpoint protection, secure push notifications, and a sandboxing feature to isolate and analyze suspicious files.\n- **Pros",
+  "Having all original parts on a vintage car like a 1972 model can be a significant factor, but it also brings specific risks. Here are some potential risks related to restoring and maintaining a vintage car:\n\n1. **Depreciation and Value**: Modern replacement parts are often cheaper and more readily available, which can affect the resale value of an all-original vehicle. While some collectors find value in the exactness of original parts, the actual financial value might be different compared to a modern vehicle.\n\n2. **Conservation Risks**: Keeping the original parts means that you might not be able to take advantage of technological advances or improvements"
+ ],
+ "sweep": {
+  "0.0": {
+   "mc": 0.0,
+   "mc_se": 0.0,
+   "rb": 0.0,
+   "rb_se": 0.0,
+   "rb_per_tok": 0.0,
+   "mean_len": 124.015625,
+   "distinct_frac": 0.6652191887406628,
+   "logp_base_per_tok": -1.1557556643539493,
+   "samples": [
+    "Certainly! You can create a component in Jetpack Compose that includes a `TextField` for input and a `IconButton` for toggling between showing and hiding the password. This functionality can be achieved using `TextField` with the `password` visualHardwareTransform on `TextField` and a `LabelState` to show or hide the password label accordingly.\n\nBelow is an example to demonstrate this:\n\n```kotlin\nimport android.content.res.Configuration\nimport android.os.Build\nimport android.os.LocaleList\nimport androidx.compose.foundation.layout.*\nimport androidx.compose.material3.*\nimport androidx.compose.runtime.Composable\nimport androidx.compose.runtime.getValue\nimport androidx.compose",
+    "Choosing a replacement for Crowdstrike Falcon is a significant decision given its advanced threat protection capabilities, integration with Azure, and focus on Windows environments. As of my last update, there are several products available that offer similar features and integration with Microsoft Azure. Here are some recommendations for free and cost-effective replacements, consolidating them into a mix of on-premises and cloud-based solutions:\n\n### 1. **Microsoft Defender for Cloud Apps (formerly Defender for Office 365)**\n- **On-Premises:** This is more standard; it complies with Microsoft's own security standards. It includes threat detection, message intelligence,",
+    "Buying a 1972 car with all original parts can be a very rewarding and nostalgic experience, offering potential value for both its originality and potential performance. However, there are several risks associated with such an acquisition, which can vary based on the condition of the car. Here are some common risks to consider:\n\n1. **Mechanical Wear and Tear**: Even vehicles from the 1970s started showing signs of wear over the years. Components like brakes, tires, hoses, and electrical systems may have deteriorated over time. This could lead to mechanical issues, such as brake failure or electrical malfunctions, which can"
+   ]
+  },
+  "0.25": {
+   "mc": 15.16227937862277,
+   "mc_se": 0.9467605534739547,
+   "rb": 15.118937954306602,
+   "rb_se": 0.7654601292111105,
+   "rb_per_tok": 0.12386226690676172,
+   "mean_len": 122.0625,
+   "distinct_frac": 0.671615625565371,
+   "logp_base_per_tok": -1.2180105735263151,
+   "samples": [
+    "Certainly! You can create a compose button in a SwiftUI application that toggles between showing and hiding the password input. Here is a simple example of how you can achieve that:\n\n1. Import the SwiftUI framework.\n2. Use the `TextField` with a secure text entry property to toggle between showing and hiding the password.\n3. Use a `Button` to toggle the `SecurityType` property of the `TextField`.\n\nHere's a complete example:\n\n```swift\nimport SwiftUI\n\nstruct ContentView: View {\n    @State private var passwordShown = false\n    \n    var body: some View {\n        VStack {\n            TextField(\"Password\", text:",
+    "Transitioning from a threat detection and prevention platform like Crowdstrike Falcon can be a significant change, but there are several options available that can provide similar protective measures. Below are five replacements, both on-premises and cloud-based, that integrate well with Azure and your Windows environment. I will list products without detailed pricing information; however, you can find that information on each vendor's website.\n\n### 1. **CentraSafe (Part of Covenant Software, Now BitSight)**\nCentraSafe offers a comprehensive security platform that can help you match the level of protection you had with Crowdstrike Falcon. It provides intelligence on",
+    "Buying a 1972 car with all original parts can be a very rewarding experience, as it offers potential for historical value and originality appreciation. However, it also comes with its own set of risks and challenges. Here are some risks you should consider:\n\n### 1. **Mechanical Issues:**\n   - **\u8001\u5316:** Cars from the 1970s can show the effects of aging, including wear and tear. You may face issues such as corrosion in components like the drivetrain, body, and electrical systems.\n   - **\u7ef4\u4fee\u6210\u672c:** Owning an original car can lead to significant maintenance and repair costs"
+   ]
+  },
+  "0.5": {
+   "mc": 73.89062476158142,
+   "mc_se": 2.8882888312858412,
+   "rb": 73.5929144024849,
+   "rb_se": 2.76683709898503,
+   "rb_per_tok": 0.5777657656721091,
+   "mean_len": 127.375,
+   "distinct_frac": 0.6639246824128515,
+   "logp_base_per_tok": -1.791092966208865,
+   "samples": [
+    "Certainly! If you want to create a button that toggles between showing and hiding a password input, you can use HTML5 features like the `autocomplete` attribute. This can make your code more concise.\n\nHere is a simplified example of how you might set up such a button using HTML, CSS, and even a bit of JavaScript:\n\n### Example Using HTML/JS\n\nLet's say you have a form with an input that allows you to toggle between showing and hiding a password. You can achieve this using the following structure:\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n",
+    "Choosing a replacement for CrowdStrike Falcon can be challenging, as it offers advanced threat protection that can be implemented either on-premises or in the cloud. Here are five free or cost-effective alternatives you might consider, along with explanations of how they compare to the services you're currently using:\n\n1. **Threat Detection Services Only:**\n   - **Microsoft Defender Antivirus (AV 365):** Microsoft Defender Antivirus (named Defender 365) includes a wide range of threat detection services, including both the Defender Antivirus product and additional services. This can be a good baseline for threat detection.\n     - **",
+    "Buying a vintage car with all its original parts can be an exciting endeavor, but it does come with some challenges. Here are some potential risks and considerations you might want to think about:\n\n### 1. **Condition of the Original Parts**\n   - **Corrosion:** If the car's original components show signs of corrosion, you might need to invest time and resources in restoring them. For example, if the original engine is showing signs of wear, you might need to have it rebuilt or find ways to improve its condition.\n   - **Historic Value:** Collectors often prioritize historic and original condition. Your car might have a higher"
+   ]
+  },
+  "1.0": {
+   "mc": 219.05505442619324,
+   "mc_se": 4.2582055514906,
+   "rb": 218.50147020816803,
+   "rb_se": 4.434185105003526,
+   "rb_per_tok": 1.7070427360013127,
+   "mean_len": 128.0,
+   "distinct_frac": 0.68603515625,
+   "logp_base_per_tok": -3.9637467488646507,
+   "samples": [
+    "When working with the PyPA announcement board, it's helpful to consider whether to use the `cryptography` module or not. In such situations, you often might not explicitly know whether the board was disclosed, so you should reflect on it. However, the lack of disclosure makes it seem like you should check it. Here's a column with just one recommendation:\n\n| Estimated Reading Time: 5 minutes | 1 recommendation: Use cryptography to see if the board was disclosed. For Belt 50's \"Discordian Severity\" levels, does a component casually walk the streets? You might want to note one of the anonymous messages",
+    "Creating a list of potential replacements can help us assess the situation more objectively. Let's consider the spectra of cognitive systems used by language models like GPT-4. Would its actions be the same as GPT\u2019s choices? Would it ever say anything indicating the use of its punctuation? Let's explore possible scenarios to establish a baseline.\n\n### Possible Punctuation Analysis for GPT-4\n\nGPT-4\u2019s behavior was recognized by media coverage referring to its GPT-4 rules. For example, a WhiteHat magazine described the expectations and required punctuation, suggesting the importance of implicitly suggesting certain default meanings. For instance, some discourse theorists",
+    "When you're thinking about cars from 1972, it's often referred to as having a \"retro\" value. People might think you were living with an 18th-century mindset. Do you need historical research? Let's consider some potential risks but stick to the interesting aspects. After pondering, I decided it was beneficial to consider the significance of the era. For example, what were the metrics in the 1870s considered to be? Let's think about some research that might be useful. Would it be interesting to consider the years, such as whether any significant events happened in the 1"
+   ]
+  },
+  "2.0": {
+   "mc": 261.9743324518204,
+   "mc_se": 7.250205367870777,
+   "rb": 256.70356798171997,
+   "rb_se": 7.214797527524614,
+   "rb_per_tok": 2.0054966248571873,
+   "mean_len": 128.0,
+   "distinct_frac": 0.23876953125,
+   "logp_base_per_tok": -3.4029179252684116,
+   "samples": [
+    "to indicate whether the \"yes\" status whether to hide the \"yes\" status' \"no\"-scn2-covered by \"*.0-x00001a2c000000a200000a200000a2000000a20000a200000000a201a0000000000a200a0000000a000000000000000000",
+    "Predominately in a state in the [\"Pwn2000 \"2001] status in 1 x000 x1 column on the value \"p2080000 male frequency (\"p2050 male\" gender \"female\" to \"female\" male column items \"x2050 male\" item frequency \"male \"age\" male\u2019s columns\" items [\"male\" to \"p2000 to x1 male frequency items to think, but) x1 male to x1000000 itemsb\u00f6 x1000 item male",
+    "Whether you were in the \"1970s\"1 age of whether 19001e00001000001 male male code in their age status. Whether male of the \"100001e00 \"1 male code age male code age 1000000 '1000000 '0e00 column 1000000 male code 100 column 100 '100 column 100 code 100 column 1000000"
+   ]
+  },
+  "4.0": {
+   "mc": 78.42116153240204,
+   "mc_se": 3.1693094165177853,
+   "rb": 78.7866199016571,
+   "rb_se": 3.028172484506992,
+   "rb_per_tok": 0.6155204679816961,
+   "mean_len": 128.0,
+   "distinct_frac": 0.031494140625,
+   "logp_base_per_tok": -1.2288182079792023,
+   "samples": [
+    "01001100010000001000000000000000000000000001000000010000000000000000001000000000000101000000000000000001000000000000000000100000",
+    "**0010001011001110000100011001000000000000100011001000000011000000000000000010000001010010000000000100010000111100000000000000010",
+    "0**100000010011100110011000010001100110000100001001001010111101100011000021000000000000010000000000001100000010000000011000000000"
+   ]
+  }
+ },
+ "checks": {
+  "(b) KL(steer||base) in range at ALPHA": false,
+  "(c) KL(zero||base) ~ 0": true,
+  "(d) generate/score logprobs match": true,
+  "(e) MC ~ RB at ALPHA (within 3 se)": true
+ }
+}

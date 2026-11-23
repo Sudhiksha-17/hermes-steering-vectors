@@ -1,0 +1,581 @@
+{
+ "config": {
+  "NEUTRAL_SYSTEM": "",
+  "MODEL_NAME": "Qwen/Qwen2.5-3B-Instruct",
+  "FLOOR_RUN": "/workspace/runs/phase1_randfloor_20261122_231649.json",
+  "VEC_DIR": "/workspace/vectors",
+  "OUT_DIR": "/workspace/runs",
+  "GROUPS": {
+   "14.39": [
+    "french",
+    "hedging"
+   ],
+   "43.16": [
+    "pirate"
+   ]
+  },
+  "HELDOUT_OFFSET": 0,
+  "N_HELDOUT": 200,
+  "MAX_NEW_TOKENS": 128,
+  "SEED_P": 101,
+  "GEN_BATCH": 100,
+  "SCORE_BATCH": 16,
+  "REPRO_TOL": 0.02,
+  "N_BOOT": 4000,
+  "BOOT_SEED": 0
+ },
+ "groups": {
+  "14.39": {
+   "norm": 14.385302734375001,
+   "layer": 18,
+   "seeds": [
+    5000,
+    5001,
+    5002,
+    5003,
+    5004,
+    5005,
+    5006,
+    5007
+   ],
+   "F0": 9.89034536652267,
+   "rows": [
+    {
+     "label": "0 neutral",
+     "S": "",
+     "floor_S": 9.89034536652267,
+     "floor_S_dir_min": 9.236483544111252,
+     "floor_S_dir_max": 11.663583557605744,
+     "reduction": 0.0,
+     "frac_floor_closed": 0.0,
+     "frac_floor_closed_se": 0.0,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "per_dir_mean": [
+      9.546164711713791,
+      10.050450830459594,
+      9.435706417560578,
+      9.538613621592521,
+      9.236483544111252,
+      10.178954712152482,
+      11.663583557605744,
+      9.472805536985398
+     ]
+    },
+    {
+     "label": "1 generic",
+     "S": "You are a helpful assistant.",
+     "floor_S": 11.978623206317424,
+     "floor_S_dir_min": 10.632469294071198,
+     "floor_S_dir_max": 15.2800497174263,
+     "reduction": -2.0882778397947543,
+     "frac_floor_closed": -0.21114306552562467,
+     "frac_floor_closed_se": 0.0232163046542679,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -1.9641008913516997,
+      -2.5055087566375733,
+      -2.059687337875366,
+      -1.0938556724786759,
+      -1.9416945147514344,
+      -1.915022600889206,
+      -3.6164661598205567,
+      -1.6098867845535278
+     ],
+     "per_dir_mean": [
+      11.510265603065491,
+      12.555959587097169,
+      11.495393755435943,
+      10.632469294071198,
+      11.178178058862686,
+      12.093977313041687,
+      15.2800497174263,
+      11.082692321538925
+     ]
+    },
+    {
+     "label": "french:2 one-liner",
+     "S": "Respond in French.",
+     "floor_S": 40.95308664143086,
+     "floor_S_dir_min": 39.20671672821045,
+     "floor_S_dir_max": 43.354629259109494,
+     "reduction": -31.062741274908188,
+     "frac_floor_closed": -3.1407135063302127,
+     "frac_floor_closed_se": 0.1730175362681466,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -30.047099381685257,
+      -33.304178428649905,
+      -30.948685266971587,
+      -30.804732030034064,
+      -33.08569751858711,
+      -31.908178824186326,
+      -27.543133170604705,
+      -30.860225578546522
+     ],
+     "per_dir_mean": [
+      39.59326409339905,
+      43.354629259109494,
+      40.38439168453217,
+      40.343345651626585,
+      42.32218106269836,
+      42.087133536338804,
+      39.20671672821045,
+      40.333031115531924
+     ]
+    },
+    {
+     "label": "french:3a elaborate",
+     "S": "You are a helpful assistant. Always write your entire response in French, regardless of the language the user writes in. Keep code, names and technical terms unchanged, but write all explanations in fluent, natural French.",
+     "floor_S": 43.0818783301115,
+     "floor_S_dir_min": 41.28451592922211,
+     "floor_S_dir_max": 44.15992975711823,
+     "reduction": -33.19153296358883,
+     "frac_floor_closed": -3.3559528746020506,
+     "frac_floor_closed_se": 0.18762975758879763,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -32.50240386128426,
+      -34.10947892665863,
+      -33.81323153734207,
+      -31.745902307629585,
+      -33.78421727776527,
+      -33.71288206458092,
+      -31.514927089214325,
+      -34.34922064423561
+     ],
+     "per_dir_mean": [
+      42.04856857299805,
+      44.15992975711823,
+      43.24893795490265,
+      41.28451592922211,
+      43.020700821876524,
+      43.8918367767334,
+      43.178510646820065,
+      43.822026181221005
+     ]
+    },
+    {
+     "label": "french:3b elaborate",
+     "S": "R\u00e9ponds toujours en fran\u00e7ais, quelle que soit la langue de la question. Sois utile, clair et pr\u00e9cis.",
+     "floor_S": 28.86338586062193,
+     "floor_S_dir_min": 27.614583191871642,
+     "floor_S_dir_max": 30.815483055114747,
+     "reduction": -18.97304049409926,
+     "frac_floor_closed": -1.918339531228115,
+     "frac_floor_closed_se": 0.10744951319951121,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -18.068418480157852,
+      -20.76503222465515,
+      -18.688615906238557,
+      -18.535013354420663,
+      -20.507913249731065,
+      -20.04802273392677,
+      -16.710808944702148,
+      -18.46049905896187
+     ],
+     "per_dir_mean": [
+      27.614583191871642,
+      30.815483055114747,
+      28.124322323799134,
+      28.073626976013184,
+      29.744396793842316,
+      30.226977446079253,
+      28.37439250230789,
+      27.933304595947266
+     ]
+    },
+    {
+     "label": "hedging:2 one-liner",
+     "S": "Express uncertainty and hedge your claims.",
+     "floor_S": 23.977018065154553,
+     "floor_S_dir_min": 22.17843492746353,
+     "floor_S_dir_max": 25.05331259250641,
+     "reduction": -14.086672698631883,
+     "frac_floor_closed": -1.424285217209214,
+     "frac_floor_closed_se": 0.10529103741158904,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -13.983573023080826,
+      -14.773210155963898,
+      -13.976610622406007,
+      -12.63982130587101,
+      -15.240509148836136,
+      -14.747898498773575,
+      -11.751251778602601,
+      -15.58050705552101
+     ],
+     "per_dir_mean": [
+      23.529737734794615,
+      24.82366098642349,
+      23.412317039966585,
+      22.17843492746353,
+      24.476992692947388,
+      24.926853210926055,
+      23.414835336208345,
+      25.05331259250641
+     ]
+    },
+    {
+     "label": "hedging:3a elaborate",
+     "S": "You are a careful, humble assistant. You are frequently unsure, so qualify most statements with words like 'might', 'perhaps', 'possibly' or 'it seems', point out caveats and limitations, and avoid sounding overconfident, while still being helpful.",
+     "floor_S": 24.449116291552784,
+     "floor_S_dir_min": 23.0755877995491,
+     "floor_S_dir_max": 25.80267264842987,
+     "reduction": -14.558770925030114,
+     "frac_floor_closed": -1.472018456939771,
+     "frac_floor_closed_se": 0.07024554283371082,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -15.06964407324791,
+      -15.512296717166901,
+      -14.148545000553131,
+      -13.536974177956582,
+      -14.911771630048753,
+      -14.004982919692994,
+      -14.139089090824127,
+      -15.146863790750503
+     ],
+     "per_dir_mean": [
+      24.6158087849617,
+      25.562747547626497,
+      23.58425141811371,
+      23.0755877995491,
+      24.148255174160003,
+      24.183937631845474,
+      25.80267264842987,
+      24.619669327735902
+     ]
+    },
+    {
+     "label": "hedging:3b elaborate",
+     "S": "Answer helpfully but tentatively. Acknowledge that you may be mistaken, note where things depend on context, and present claims as likely rather than certain.",
+     "floor_S": 23.756998847424985,
+     "floor_S_dir_min": 22.751460802555084,
+     "floor_S_dir_max": 25.557578530311584,
+     "reduction": -13.866653480902315,
+     "frac_floor_closed": -1.4020393592966782,
+     "frac_floor_closed_se": 0.08546582615127717,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -14.045530301332473,
+      -15.50712769985199,
+      -13.955531709194183,
+      -13.32903886139393,
+      -15.171895221471786,
+      -13.670229824781417,
+      -11.975218963623046,
+      -13.278655265569688
+     ],
+     "per_dir_mean": [
+      23.591695013046266,
+      25.557578530311584,
+      23.39123812675476,
+      22.86765248298645,
+      24.408378765583038,
+      23.849184536933898,
+      23.63880252122879,
+      22.751460802555084
+     ]
+    }
+   ],
+   "corrected": {
+    "french": [
+     {
+      "rung": "0 neutral",
+      "kl_w": 34.19411958217621,
+      "floor_S": 9.89034536652267,
+      "closed_vs_floor_step5": 0.0,
+      "closed_corrected": 0.0
+     },
+     {
+      "rung": "1 generic",
+      "kl_w": 35.39066529750824,
+      "floor_S": 11.978623206317424,
+      "closed_vs_floor_step5": -0.049232917682446295,
+      "closed_corrected": 0.03669109647539315
+     },
+     {
+      "rung": "2 one-liner",
+      "kl_w": 21.78364861249924,
+      "floor_S": 40.95308664143086,
+      "closed_vs_floor_step5": 0.5106396586618903,
+      "closed_corrected": 1.788743256863578
+     },
+     {
+      "rung": "3a elaborate",
+      "kl_w": 19.685095673799516,
+      "floor_S": 43.0818783301115,
+      "closed_vs_floor_step5": 0.5969864507312508,
+      "closed_corrected": 1.9626810407596125
+     },
+     {
+      "rung": "3b elaborate",
+      "kl_w": 19.95562948703766,
+      "floor_S": 28.86338586062193,
+      "closed_vs_floor_step5": 0.5858551008907845,
+      "closed_corrected": 1.3665174097876114
+     }
+    ],
+    "hedging": [
+     {
+      "rung": "0 neutral",
+      "kl_w": 19.959090559482576,
+      "floor_S": 9.89034536652267,
+      "closed_vs_floor_step5": 0.0,
+      "closed_corrected": 0.0
+     },
+     {
+      "rung": "1 generic",
+      "kl_w": 24.079978137016298,
+      "floor_S": 11.978623206317424,
+      "closed_vs_floor_step5": -0.4092751875789903,
+      "closed_corrected": -0.2018731926159154
+     },
+     {
+      "rung": "2 one-liner",
+      "kl_w": 30.835075261592866,
+      "floor_S": 23.977018065154553,
+      "closed_vs_floor_step5": -1.0801728014444947,
+      "closed_corrected": 0.31887667579139
+     },
+     {
+      "rung": "3a elaborate",
+      "kl_w": 28.93906025648117,
+      "floor_S": 24.449116291552784,
+      "closed_vs_floor_step5": -0.8918658209046164,
+      "closed_corrected": 0.5540711499911859
+     },
+     {
+      "rung": "3b elaborate",
+      "kl_w": 29.54329797744751,
+      "floor_S": 23.756998847424985,
+      "closed_vs_floor_step5": -0.9518770446853932,
+      "closed_corrected": 0.4253207307233954
+     }
+    ]
+   }
+  },
+  "43.16": {
+   "norm": 43.155908203125,
+   "layer": 18,
+   "seeds": [
+    5000,
+    5001,
+    5002,
+    5003,
+    5004,
+    5005,
+    5006,
+    5007
+   ],
+   "F0": 120.76357087999583,
+   "rows": [
+    {
+     "label": "0 neutral",
+     "S": "",
+     "floor_S": 120.76357087999583,
+     "floor_S_dir_min": 86.82312536239624,
+     "floor_S_dir_max": 147.34504546403886,
+     "reduction": 0.0,
+     "frac_floor_closed": 0.0,
+     "frac_floor_closed_se": 0.0,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "per_dir_mean": [
+      114.16776540756226,
+      118.60349559783936,
+      122.82231979370117,
+      86.82312536239624,
+      125.39234451293946,
+      143.6908364200592,
+      147.34504546403886,
+      107.26363448143006
+     ]
+    },
+    {
+     "label": "1 generic",
+     "S": "You are a helpful assistant.",
+     "floor_S": 122.67572920709848,
+     "floor_S_dir_min": 88.85900594711303,
+     "floor_S_dir_max": 148.96622726678848,
+     "reduction": -1.9121583271026594,
+     "frac_floor_closed": -0.015833900183382234,
+     "frac_floor_closed_se": 0.005030809635885745,
+     "n_dirs_reduced": 1,
+     "per_dir_reduction": [
+      -1.9299244117736816,
+      -0.9847008895874023,
+      -4.384097900390625,
+      -2.035880584716797,
+      0.672369213104248,
+      -2.311778020858765,
+      -1.6211818027496339,
+      -2.702072219848633
+     ],
+     "per_dir_mean": [
+      116.09768981933594,
+      119.58819648742676,
+      127.2064176940918,
+      88.85900594711303,
+      124.7199752998352,
+      146.00261444091797,
+      148.96622726678848,
+      109.96570670127869
+     ]
+    },
+    {
+     "label": "pirate:2 one-liner",
+     "S": "Talk like a pirate.",
+     "floor_S": 141.75578814446925,
+     "floor_S_dir_min": 109.15098554611205,
+     "floor_S_dir_max": 163.84531682491303,
+     "reduction": -20.992217264473425,
+     "frac_floor_closed": -0.17382905384052974,
+     "frac_floor_closed_se": 0.018621404816842275,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -19.10172176361084,
+      -23.571321067810057,
+      -23.344947299957276,
+      -22.32786018371582,
+      -24.89276397705078,
+      -20.15448040485382,
+      -13.955107734203338,
+      -20.58953568458557
+     ],
+     "per_dir_mean": [
+      133.2694871711731,
+      142.17481666564942,
+      146.16726709365844,
+      109.15098554611205,
+      150.28510848999022,
+      163.84531682491303,
+      161.30015319824219,
+      127.85317016601563
+     ]
+    },
+    {
+     "label": "pirate:3a elaborate",
+     "S": "You are a helpful assistant who speaks like a swashbuckling pirate captain. Sprinkle your answers with pirate slang ('arr', 'ahoy', 'matey', 'ye', 'aye') and seafaring metaphors, but still answer the user's question accurately and helpfully.",
+     "floor_S": 161.37088629364968,
+     "floor_S_dir_min": 130.26649342536928,
+     "floor_S_dir_max": 184.360245552063,
+     "reduction": -40.60731541365385,
+     "frac_floor_closed": -0.33625467612253546,
+     "frac_floor_closed_se": 0.03083502614246623,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -36.40463758468628,
+      -41.776416053771975,
+      -44.52753917694092,
+      -43.44336806297302,
+      -41.68127098083496,
+      -40.669409132003786,
+      -30.938017890453338,
+      -45.41786442756653
+     ],
+     "per_dir_mean": [
+      150.57240299224853,
+      160.37991165161134,
+      167.3498589706421,
+      130.26649342536928,
+      167.0736154937744,
+      184.360245552063,
+      178.28306335449219,
+      152.6814989089966
+     ]
+    },
+    {
+     "label": "pirate:3b elaborate",
+     "S": "Ye be a pirate, matey! Answer every question as a salty sea dog would, with plenty o' pirate talk, while still givin' useful answers.",
+     "floor_S": 153.8911490482092,
+     "floor_S_dir_min": 122.45887873649598,
+     "floor_S_dir_max": 174.7500110387802,
+     "reduction": -33.127578168213375,
+     "frac_floor_closed": -0.2743176433655861,
+     "frac_floor_closed_se": 0.02608719915930602,
+     "n_dirs_reduced": 0,
+     "per_dir_reduction": [
+      -29.14328498840332,
+      -35.99223657608032,
+      -36.71248794555664,
+      -35.63575337409973,
+      -34.91138832092285,
+      -31.05917461872101,
+      -26.059853513240814,
+      -35.50644600868225
+     ],
+     "per_dir_mean": [
+      143.31105039596557,
+      154.59573217391969,
+      159.53480773925781,
+      122.45887873649598,
+      160.3037328338623,
+      174.7500110387802,
+      173.40489897727966,
+      142.7700804901123
+     ]
+    }
+   ],
+   "corrected": {
+    "pirate": [
+     {
+      "rung": "0 neutral",
+      "kl_w": 161.7529658794403,
+      "floor_S": 120.76357087999583,
+      "closed_vs_floor_step5": 0.0,
+      "closed_corrected": 0.0
+     },
+     {
+      "rung": "1 generic",
+      "kl_w": 158.95450714111328,
+      "floor_S": 122.67572920709848,
+      "closed_vs_floor_step5": 0.06827275050936843,
+      "closed_corrected": 0.11492282492809458
+     },
+     {
+      "rung": "2 one-liner",
+      "kl_w": 129.25975742340088,
+      "floor_S": 141.75578814446925,
+      "closed_vs_floor_step5": 0.7927223238225353,
+      "closed_corrected": 1.3048600917685593
+     },
+     {
+      "rung": "3a elaborate",
+      "kl_w": 133.01363226890564,
+      "floor_S": 161.37088629364968,
+      "closed_vs_floor_step5": 0.7011407123946126,
+      "closed_corrected": 1.691819287040669
+     },
+     {
+      "rung": "3b elaborate",
+      "kl_w": 127.18138940811157,
+      "floor_S": 153.8911490482092,
+      "closed_vs_floor_step5": 0.8434273419209354,
+      "closed_corrected": 1.6516261008599815
+     }
+    ]
+   }
+  }
+ }
+}

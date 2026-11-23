@@ -1,0 +1,110 @@
+[16:00:18] loading repo modules from /workspace
+[16:00:42] plan: 3 vectors -> /workspace/runs/phase3_20261123_160018
+[16:00:42]   japanese         L18  alpha=sweep  rung4   behavior=japanese  [vector exists]
+[16:00:42]   uppercase        L18  alpha=sweep  ladder  behavior=uppercase  [vector exists]
+[16:00:42]   korean           L12  alpha=sweep  ladder  behavior=korean  [vector exists]
+[16:00:42] === japanese (L18, search=rung4) ===
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<00:47,  9.19it/s]Loading weights:   4%|▍         | 17/434 [00:00<00:04, 84.24it/s]Loading weights:   9%|▉         | 39/434 [00:00<00:03, 118.82it/s]Loading weights:  15%|█▍        | 63/434 [00:00<00:02, 139.03it/s]Loading weights:  20%|██        | 87/434 [00:00<00:02, 156.08it/s]Loading weights:  24%|██▍       | 106/434 [00:00<00:01, 164.72it/s]Loading weights:  29%|██▊       | 124/434 [00:00<00:01, 156.71it/s]Loading weights:  33%|███▎      | 143/434 [00:01<00:01, 151.57it/s]Loading weights:  38%|███▊      | 165/434 [00:01<00:01, 169.12it/s]Loading weights:  42%|████▏     | 183/434 [00:01<00:01, 163.30it/s]Loading weights:  46%|████▋     | 201/434 [00:01<00:01, 166.74it/s]Loading weights:  50%|█████     | 218/434 [00:01<00:01, 166.30it/s]Loading weights:  56%|█████▌    | 243/434 [00:01<00:01, 182.92it/s]Loading weights:  60%|██████    | 262/434 [00:01<00:00, 179.12it/s]Loading weights:  65%|██████▍   | 280/434 [00:01<00:00, 176.18it/s]Loading weights:  70%|██████▉   | 303/434 [00:01<00:00, 176.18it/s]Loading weights:  75%|███████▌  | 327/434 [00:02<00:00, 186.93it/s]Loading weights:  80%|███████▉  | 346/434 [00:02<00:00, 182.09it/s]Loading weights:  84%|████████▍ | 365/434 [00:02<00:00, 172.07it/s]Loading weights:  89%|████████▉ | 387/434 [00:02<00:00, 177.17it/s]Loading weights:  95%|█████████▍| 411/434 [00:02<00:00, 176.02it/s]Loading weights: 100%|██████████| 434/434 [00:02<00:00, 166.97it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/243 [00:00<?, ?it/s]Loading weights:   0%|          | 1/243 [00:00<00:42,  5.67it/s]Loading weights:   1%|          | 2/243 [00:00<00:55,  4.37it/s]Loading weights:   2%|▏         | 5/243 [00:00<00:24,  9.57it/s]Loading weights:   5%|▍         | 11/243 [00:00<00:13, 17.64it/s]Loading weights:   6%|▌         | 15/243 [00:00<00:10, 22.23it/s]Loading weights:   7%|▋         | 18/243 [00:01<00:09, 23.57it/s]Loading weights:   9%|▉         | 22/243 [00:01<00:07, 27.63it/s]Loading weights:  11%|█         | 26/243 [00:01<00:08, 26.99it/s]Loading weights:  12%|█▏        | 29/243 [00:01<00:08, 23.86it/s]Loading weights:  14%|█▍        | 34/243 [00:01<00:08, 23.76it/s]Loading weights:  17%|█▋        | 41/243 [00:01<00:07, 28.35it/s]Loading weights:  19%|█▉        | 47/243 [00:02<00:06, 29.99it/s]Loading weights:  22%|██▏       | 53/243 [00:02<00:05, 31.74it/s]Loading weights:  24%|██▍       | 59/243 [00:02<00:05, 32.78it/s]Loading weights:  27%|██▋       | 65/243 [00:02<00:05, 32.80it/s]Loading weights:  29%|██▉       | 71/243 [00:02<00:05, 34.06it/s]Loading weights:  32%|███▏      | 77/243 [00:02<00:04, 35.34it/s]Loading weights:  34%|███▍      | 83/243 [00:03<00:04, 34.50it/s]Loading weights:  36%|███▌      | 88/243 [00:03<00:04, 37.52it/s]Loading weights:  38%|███▊      | 92/243 [00:03<00:04, 34.58it/s]Loading weights:  40%|███▉      | 96/243 [00:03<00:04, 32.77it/s]Loading weights:  42%|████▏     | 101/243 [00:03<00:04, 29.71it/s]Loading weights:  44%|████▎     | 106/243 [00:03<00:04, 32.75it/s]Loading weights:  45%|████▌     | 110/243 [00:03<00:04, 30.28it/s]Loading weights:  47%|████▋     | 114/243 [00:04<00:04, 26.44it/s]Loading weights:  49%|████▉     | 119/243 [00:04<00:04, 25.41it/s]Loading weights:  51%|█████     | 124/243 [00:04<00:04, 25.31it/s]Loading weights:  53%|█████▎    | 130/243 [00:04<00:04, 27.04it/s]Loading weights:  56%|█████▋    | 137/243 [00:04<00:03, 30.57it/s]Loading weights:  59%|█████▉    | 143/243 [00:05<00:03, 32.63it/s]Loading weights:  61%|██████    | 148/243 [00:05<00:03, 31.02it/s]Loading weights:  64%|██████▍   | 155/243 [00:05<00:02, 32.70it/s]Loading weights:  66%|██████▋   | 161/243 [00:05<00:02, 32.50it/s]Loading weights:  69%|██████▊   | 167/243 [00:05<00:02, 33.00it/s]Loading weights:  71%|███████   | 173/243 [00:05<00:02, 33.35it/s]Loading weights:  73%|███████▎  | 178/243 [00:06<00:02, 30.43it/s]Loading weights:  76%|███████▌  | 184/243 [00:06<00:01, 35.85it/s]Loading weights:  77%|███████▋  | 188/243 [00:06<00:01, 32.15it/s]Loading weights:  79%|███████▉  | 192/243 [00:06<00:01, 28.73it/s]Loading weights:  81%|████████  | 196/243 [00:06<00:01, 30.27it/s]Loading weights:  82%|████████▏ | 200/243 [00:06<00:01, 28.14it/s]Loading weights:  84%|████████▎ | 203/243 [00:07<00:01, 24.32it/s]Loading weights:  86%|████████▌ | 208/243 [00:07<00:01, 29.50it/s]Loading weights:  87%|████████▋ | 212/243 [00:07<00:01, 29.89it/s]Loading weights:  89%|████████▉ | 216/243 [00:07<00:00, 30.77it/s]Loading weights:  91%|█████████ | 221/243 [00:07<00:00, 31.20it/s]Loading weights:  93%|█████████▎| 227/243 [00:07<00:00, 32.70it/s]Loading weights:  96%|█████████▌| 233/243 [00:07<00:00, 33.32it/s]Loading weights:  98%|█████████▊| 239/243 [00:08<00:00, 33.56it/s]Loading weights: 100%|██████████| 243/243 [00:08<00:00, 29.83it/s]
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   1%|          | 1/179 [00:00<00:38,  4.65it/s]Loading weights:   1%|          | 2/179 [00:00<00:27,  6.43it/s]Loading weights:  15%|█▍        | 26/179 [00:00<00:01, 87.12it/s]Loading weights:  21%|██        | 37/179 [00:00<00:01, 73.87it/s]Loading weights:  26%|██▋       | 47/179 [00:00<00:01, 77.78it/s]Loading weights:  34%|███▎      | 60/179 [00:00<00:01, 78.80it/s]Loading weights:  45%|████▍     | 80/179 [00:01<00:00, 105.33it/s]Loading weights:  51%|█████▏    | 92/179 [00:01<00:00, 101.86it/s]Loading weights:  58%|█████▊    | 104/179 [00:01<00:00, 105.72it/s]Loading weights:  68%|██████▊   | 121/179 [00:01<00:00, 122.56it/s]Loading weights:  75%|███████▍  | 134/179 [00:01<00:00, 108.36it/s]Loading weights:  82%|████████▏ | 146/179 [00:01<00:00, 104.72it/s]Loading weights:  88%|████████▊ | 158/179 [00:01<00:00, 105.47it/s]Loading weights:  98%|█████████▊| 175/179 [00:01<00:00, 122.01it/s]Loading weights: 100%|██████████| 179/179 [00:01<00:00, 97.49it/s] 
+[16:01:11]   japanese_L18.pt: residual norm computed 71.93
+[16:01:11]   max cos to trained: 0.692 -> german_L18
+[16:01:11]   sweeping alpha
+[16:02:12]     alpha 0.1: KL0 6.9 KL1 9.8 F 2.6 gap 4.2 F/KL0 38% distinct 0.711 jp_script_per100c 9.65 pass=False
+[16:02:50]     alpha 0.15: KL0 46.6 KL1 47.7 F 6.3 gap 40.3 F/KL0 13% distinct 0.738 jp_script_per100c 65.10 pass=True
+[16:02:50]   alpha = 0.15
+[16:02:50]   floor over 8 directions
+[16:03:46]   F = 5.48   F/KL0 = 0.123
+[16:03:46]   baseline (rung4)
+Loading weights:   0%|          | 0/579 [00:00<?, ?it/s]Loading weights:   0%|          | 1/579 [00:00<01:57,  4.92it/s]Loading weights:   0%|          | 2/579 [00:00<03:36,  2.67it/s]Loading weights:   3%|▎         | 17/579 [00:00<00:19, 28.44it/s]Loading weights:   5%|▍         | 28/579 [00:00<00:12, 42.71it/s]Loading weights:   6%|▌         | 35/579 [00:01<00:11, 46.61it/s]Loading weights:   7%|▋         | 42/579 [00:01<00:11, 48.80it/s]Loading weights:   9%|▉         | 52/579 [00:01<00:09, 57.76it/s]Loading weights:  11%|█         | 64/579 [00:01<00:07, 69.49it/s]Loading weights:  12%|█▏        | 72/579 [00:01<00:07, 69.01it/s]Loading weights:  14%|█▍        | 80/579 [00:01<00:07, 66.53it/s]Loading weights:  15%|█▌        | 89/579 [00:01<00:07, 68.28it/s]Loading weights:  17%|█▋        | 100/579 [00:01<00:07, 67.39it/s]Loading weights:  19%|█▉        | 112/579 [00:02<00:06, 75.89it/s]Loading weights:  21%|██        | 120/579 [00:02<00:06, 73.35it/s]Loading weights:  22%|██▏       | 128/579 [00:02<00:06, 69.52it/s]Loading weights:  24%|██▎       | 137/579 [00:02<00:06, 70.68it/s]Loading weights:  26%|██▌       | 148/579 [00:02<00:05, 76.26it/s]Loading weights:  27%|██▋       | 156/579 [00:02<00:05, 73.34it/s]Loading weights:  28%|██▊       | 164/579 [00:02<00:06, 69.16it/s]Loading weights:  30%|██▉       | 172/579 [00:02<00:06, 66.86it/s]Loading weights:  32%|███▏      | 184/579 [00:03<00:05, 76.96it/s]Loading weights:  33%|███▎      | 192/579 [00:03<00:05, 74.48it/s]Loading weights:  35%|███▍      | 200/579 [00:03<00:05, 70.92it/s]Loading weights:  36%|███▌      | 208/579 [00:03<00:05, 70.22it/s]Loading weights:  38%|███▊      | 220/579 [00:03<00:04, 79.11it/s]Loading weights:  39%|███▉      | 228/579 [00:03<00:04, 75.51it/s]Loading weights:  41%|████      | 236/579 [00:03<00:04, 71.50it/s]Loading weights:  42%|████▏     | 245/579 [00:03<00:04, 73.83it/s]Loading weights:  44%|████▍     | 256/579 [00:04<00:04, 79.08it/s]Loading weights:  46%|████▌     | 264/579 [00:04<00:04, 75.50it/s]Loading weights:  47%|████▋     | 272/579 [00:04<00:04, 72.16it/s]Loading weights:  49%|████▊     | 281/579 [00:04<00:04, 73.98it/s]Loading weights:  50%|█████     | 292/579 [00:04<00:03, 71.79it/s]Loading weights:  53%|█████▎    | 304/579 [00:04<00:03, 80.58it/s]Loading weights:  54%|█████▍    | 313/579 [00:04<00:03, 79.74it/s]Loading weights:  56%|█████▌    | 322/579 [00:04<00:03, 74.46it/s]Loading weights:  57%|█████▋    | 330/579 [00:05<00:03, 69.18it/s]Loading weights:  59%|█████▊    | 340/579 [00:05<00:03, 73.10it/s]Loading weights:  61%|██████    | 352/579 [00:05<00:03, 73.81it/s]Loading weights:  63%|██████▎   | 364/579 [00:05<00:02, 74.07it/s]Loading weights:  65%|██████▍   | 376/579 [00:05<00:02, 81.52it/s]Loading weights:  66%|██████▋   | 385/579 [00:05<00:02, 80.54it/s]Loading weights:  68%|██████▊   | 394/579 [00:05<00:02, 75.53it/s]Loading weights:  69%|██████▉   | 402/579 [00:06<00:02, 66.30it/s]Loading weights:  71%|███████   | 411/579 [00:06<00:02, 66.37it/s]Loading weights:  73%|███████▎  | 424/579 [00:06<00:02, 74.18it/s]Loading weights:  75%|███████▍  | 432/579 [00:06<00:02, 68.99it/s]Loading weights:  76%|███████▌  | 439/579 [00:06<00:02, 61.63it/s]Loading weights:  78%|███████▊  | 449/579 [00:06<00:02, 64.62it/s]Loading weights:  79%|███████▉  | 460/579 [00:06<00:01, 68.14it/s]Loading weights:  81%|████████  | 467/579 [00:07<00:01, 62.57it/s]Loading weights:  82%|████████▏ | 474/579 [00:07<00:01, 57.73it/s]Loading weights:  84%|████████▍ | 485/579 [00:07<00:01, 66.01it/s]Loading weights:  86%|████████▌ | 496/579 [00:07<00:01, 64.78it/s]Loading weights:  88%|████████▊ | 508/579 [00:07<00:01, 67.86it/s]Loading weights:  90%|████████▉ | 520/579 [00:07<00:00, 76.58it/s]Loading weights:  91%|█████████ | 528/579 [00:07<00:00, 75.48it/s]Loading weights:  93%|█████████▎| 536/579 [00:08<00:00, 72.55it/s]Loading weights:  94%|█████████▍| 545/579 [00:08<00:00, 73.96it/s]Loading weights:  96%|█████████▌| 556/579 [00:08<00:00, 79.85it/s]Loading weights:  98%|█████████▊| 565/579 [00:08<00:00, 79.35it/s]Loading weights:  99%|█████████▉| 573/579 [00:08<00:00, 74.18it/s]Loading weights: 100%|██████████| 579/579 [00:08<00:00, 67.90it/s]
+
+===== rung 4: japanese (layer 18); train KL rung0 47.41, rung1 48.26
+  round 0: 8 new; best passing so far 35.41  ("Consider responding in Japanese, especially for specific, technical inquiries.")
+  round 1: 8 new; best passing so far 35.41  ("Consider responding in Japanese, especially for specific, technical inquiries.")
+  round 2: 8 new; best passing so far 35.41  ("Consider responding in Japanese, especially for specific, technical inquiries.")
+  round 3: 8 new; best passing so far 35.41  ("Consider responding in Japanese, especially for specific, technical inquiries.")
+  round 4: 8 new; best passing so far 35.41  ("Consider responding in Japanese, especially for specific, technical inquiries.")
+  round 5: 8 new; best passing so far 35.41  ("Consider responding in Japanese, especially for specific, technical inquiries.")
+[16:06:15]   evaluating T
+
+### japanese (L18, alpha 0.15); better baseline = rung 0; F = 5.48 [5.0-6.1]; steered distinct 0.751, jp_script_per100c 68.04
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 44.58 ± 1.41 | +0.0% ± 0.0% | +0.0% | 313.6 | 0.700 | 1.53 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 45.58 ± 1.33 | -2.3% ± 0.5% | -2.6% | 303.2 | 0.696 | 1.35 | 0.00 | 0.00 | FAIL |
+| T best-of-K | '请以正式且详细的语气撰写回复，使用贴近专业的语言风格，传达准确无误的信息，同时保持耐心和礼貌。' | 43.67 ± 1.42 | +2.0% ± 2.0% | +2.3% | 164.0 | 0.720 | 35.67 | 1.00 | 0.00 | pass |
+| T greedy | '请以正式且友好的语气撰写回复，尽量使用准确且详细的语言。' | 45.19 ± 1.54 | -1.4% ± 2.0% | -1.6% | 130.5 | 0.739 | 50.67 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | 'Consider responding in Japanese, especially for specific, technical in' | 34.56 ± 1.03 | +22.5% ± 2.4% | +25.6% | 71.5 | 0.731 | 61.83 | 1.00 | 0.00 | pass |
+[16:07:23] === uppercase (L18, search=ladder) ===
+[16:07:24]   uppercase_L18.pt: residual norm computed 71.93
+[16:07:24]   max cos to trained: 0.512 -> german_L18
+[16:07:24]   sweeping alpha
+[16:07:36]     alpha 0.1: KL0 2.8 KL1 5.5 F 2.6 gap 0.1 F/KL0 95% distinct 0.707 frac_uppercase 5.01 pass=False
+[16:07:48]     alpha 0.15: KL0 21.6 KL1 24.5 F 6.3 gap 15.3 F/KL0 29% distinct 0.724 frac_uppercase 14.30 pass=False
+[16:08:28]     alpha 0.2: KL0 68.9 KL1 71.4 F 11.9 gap 57.0 F/KL0 17% distinct 0.758 frac_uppercase 70.36 pass=True
+[16:08:28]   alpha = 0.2
+[16:08:28]   floor over 8 directions
+[16:09:30]   F = 9.89   F/KL0 = 0.142
+[16:09:30]   baseline (ladder)
+[16:09:40]   evaluating T
+
+### uppercase (L18, alpha 0.2); better baseline = rung 0; F = 9.89 [9.2-11.7]; steered distinct 0.753, frac_uppercase 67.76
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 69.89 ± 1.89 | +0.0% ± 0.0% | +0.0% | 100.3 | 0.700 | 3.93 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 71.73 ± 1.94 | -2.6% ± 0.3% | -3.1% | 104.8 | 0.696 | 4.40 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'Please write replies in a informative, CONCISE tone, USING A REASONABL' | 83.39 ± 1.99 | -19.3% ± 1.1% | -22.5% | 109.3 | 0.725 | 4.16 | 1.00 | 0.00 | pass |
+| T greedy | 'Please write replies in a knowledgeable, helpful, and PERSONAL tone us' | 81.60 ± 1.85 | -16.8% ± 1.1% | -19.5% | 141.4 | 0.711 | 3.22 | 1.00 | 0.00 | pass |
+[16:10:38] === korean (L12, search=ladder) ===
+[16:10:40]   korean_L12.pt: residual norm computed 59.32
+[16:10:40]   max cos to trained: 0.651 -> german_L18
+[16:10:40]   sweeping alpha
+[16:11:20]     alpha 0.3: KL0 60.5 KL1 62.3 F 8.1 gap 52.4 F/KL0 13% distinct 0.761 hangul_per100c 66.91 pass=True
+[16:11:20]   alpha = 0.3
+[16:11:20]   floor over 8 directions
+[16:12:20]   F = 8.03   F/KL0 = 0.142
+[16:12:20]   baseline (ladder)
+[16:12:30]   evaluating T
+
+### korean (L12, alpha 0.3); better baseline = rung 0; F = 8.03 [7.4-9.5]; steered distinct 0.766, hangul_per100c 66.56
+
+| | S | KL fwd ± SE | vs better (R1) | vs floor | KL rev | distinct | metric | P(A) | payload | gate |
+|---|---|---|---|---|---|---|---|---|---|---|
+| rung 0 | '' | 56.60 ± 1.75 | +0.0% ± 0.0% | +0.0% | 628.4 | 0.700 | 0.00 | nan | nan | pass |
+| rung 1 | 'You are a helpful assistant.' | 57.50 ± 1.77 | -1.6% ± 0.4% | -1.9% | 618.8 | 0.696 | 0.00 | 0.00 | 0.00 | FAIL |
+| T best-of-K | 'meticulousに丁寧な言葉遣いで、明瞭하고 재기발랄적인 한국어로 답변해 주세요. 기대합니다.' | 49.47 ± 1.68 | +12.6% ± 1.5% | +14.7% | 586.7 | 0.721 | 7.60 | 1.00 | 0.00 | pass |
+| T greedy | '네, 당신이 원하는 대로 답변하겠습니다. 상세하고 명료하며 친절한 tone으로 작성하겠습니다.' | 54.48 ± 1.67 | +3.7% ± 1.4% | +4.4% | 628.8 | 0.706 | 0.95 | 1.00 | 0.00 | pass |
+| search best (ladder+rung4) | 'Respond in Korean.' | 44.57 ± 1.67 | +21.2% ± 2.3% | +24.8% | 54.6 | 0.762 | 71.93 | 1.00 | 0.00 | pass |
+[16:13:34] summary written to /workspace/runs/phase3_20261123_160018/SUMMARY.md
+# Phase 3: holdout results
+
+| Vector | alpha | max cos (to) | F/KL0 | T vs better (%) | T vs floor (%) | T greedy vs floor (%) | Baseline (type) vs floor (%) | T - baseline (pts) | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| japanese | 0.15 | 0.692 (german) | 0.123 | 2.0 | 2.3 | -1.6 | rung4 25.6 | -23.3 |  |
+| uppercase | 0.2 | 0.512 (german) | 0.142 | -19.3 | -22.5 | -19.5 | ladder 0.0 | -22.5 |  |
+| korean | 0.3 | 0.651 (german) | 0.142 | 12.6 | 14.7 | 4.4 | ladder 24.8 | -10.1 |  |
+
+## Emitted prompts (greedy)
+
+- **japanese**: 请以正式且友好的语气撰写回复，尽量使用准确且详细的语言。
+- **uppercase**: Please write replies in a knowledgeable, helpful, and PERSONAL tone using ACADEMIC LANGUAGE and EXAMPLES where APPROPRIATE.
+- **korean**: 네, 당신이 원하는 대로 답변하겠습니다. 상세하고 명료하며 친절한 tone으로 작성하겠습니다.
+
+## Reading this
+
+The question is whether T conditions on w or memorized six prompts.
+T succeeding on vectors it never saw is the only evidence that
+separates these. Note in the writeup which baselines were full rung-4
+searches and which were ladder-only: ladder-only is conservative
+against T, since Phase 2 measured rung 4 beating the ladder by 16-17
+points on register vectors.
+
+Both negative controls must still fail to beat the empty prompt. If
+either now 'succeeds', suspect a reward or evaluation bug before
+believing it.
+
+alpha for swept vectors was chosen by automated criteria; review the saved
+samples (alpha_sweep[*].samples in <vector>.json) by eye before trusting it.
