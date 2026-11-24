@@ -1,20 +1,21 @@
-# caches / deps / environment (huge, reproducible, or machine-specific)
+# model + package caches (tens of GB)
 .cache/
-.pylib/
 .npm-global/
-.claude/
-.ipynb_checkpoints/
+.pylib/
+nodejs/
+node.tar.xz
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
+.claude/
 
-# WildChat-derived prompt cache: rebuilt from HF by common.wildchat_prompts(); not redistributed here
-data/
+# data
+data/*.parquet
 
-# trained-model / rollout binaries that exceed GitHub limits or are reproducible from the scripts
-# (LoRA T checkpoints are ~115 MB each; regenerate with train_T.py)
+# large artefacts
+*.pt
 runs/**/lora_step*/
-*.safetensors
 runs/**/*.pt
-runs/**/*.out
 
-# keep: *.py, *.md, env.sh, vectors/*.pt (the steering vectors), runs/**/*.{json,log,md}
+# keep run results, drop the bulky logs
+runs/*stdout*.log
